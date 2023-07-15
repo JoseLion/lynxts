@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "incremental": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2019", "ES2020", "ES2021", "ES2022", "ES2023"],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./build",
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES6",
+    "typeRoots" : [
+      "./node_modules/@types/"
+    ],
+  },
+  "exclude": [
+    ".yarn/*",
+    "node_modules/*",
+  ],
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true
+  }
+}
