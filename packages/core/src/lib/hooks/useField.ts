@@ -3,7 +3,8 @@ import { Dispatch, SetStateAction, useCallback, useEffect, useMemo } from "react
 import { useContextSelector } from "use-context-selector";
 import { ValidationError, reach, isSchema } from "yup";
 
-import { Path, isFunctionAction, safeFormContext } from "../Form.context";
+import { Path, safeFormContext } from "../Form.context";
+import { isFunctionAction } from "../helpers/commons";
 
 /**
  * The result of the {@link useField} hook

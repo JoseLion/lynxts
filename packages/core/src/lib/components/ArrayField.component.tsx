@@ -10,41 +10,42 @@ import { UseArrayField, useArrayField } from "../hooks/useArrayField";
  * @param T struct type of the form values
  * @param K the path type of the array field
  */
-type ArrayValue<T extends Struct, K extends Path<T>> =
+export type ArrayValue<T extends Struct, K extends Path<T>> =
   ValueByPath<T, K> extends Array<infer A> | undefined
     ? A
     : never;
 
 /**
- * Helper type to describe an array component of an specific struct `T`.
+ * Helper type to describe an {@link ArrayField} component of an specific
+ * struct `T`.
  *
  * @param T struct type of the form values
  */
 export type ArrayFieldOf<T extends Struct> =
-  <K extends Path<T, ArrayValue<T, K>[]>>(props: ArrayProps<T, K>) => ReactNode;
+  <K extends Path<T, ArrayValue<T, K>[]>>(props: ArrayFieldProps<T, K>) => ReactNode;
 
 /**
- * The props of he array component.
+ * The props of the {@link ArrayField} component.
  *
  * @param T struct type of the form values
  * @param K the path type of the array field
  */
-export interface ArrayProps<T extends Struct, K extends Path<T, unknown[]>> {
+export interface ArrayFieldProps<T extends Struct, K extends Path<T, unknown[]>> {
   /**
    * The children is a function which takes the result of {@link useArrayField}
-   * hook in the arguments and should return a React.js node(s).
+   * hook in the first argument and returns a React.js node.
    *
    * @param props render props same as the `useArrayField` hook result
-   * @returns a React.js node(s)
+   * @returns a React.js node
    */
-  children: (props: UseArrayField<ArrayValue<T, K>>) => ReactNode | ReactNode[];
+  children: (props: UseArrayField<ArrayValue<T, K>>) => ReactNode;
   /**
    * The children render result is memoized in this component and it will only
    * change if the array field value changes. This prop lets you add an
    * additional dependency list to that memoization, so you can add external
    * state changes when required.
    */
-  deps: DependencyList;
+  deps?: DependencyList;
   /**
    * The path to the array field in `T`.
    */
@@ -52,21 +53,21 @@ export interface ArrayProps<T extends Struct, K extends Path<T, unknown[]>> {
 }
 
 /**
- * Helper component for array fields whith finner control over the re-renders.
+ * Helper component for array fields with finner control over the re-renders.
  *
  * @param T struct type of the form values
  * @param K the type of the path of the array field
  * @param props the array field props
  */
-export const Array = memo(<
+export const ArrayField = memo(<
   T extends Struct,
   K extends Path<T, ArrayValue<T, K>[]>,
->(props: ArrayProps<T, K>): ReactElement => {
-  const { children, deps, name } = props;
+>(props: ArrayFieldProps<T, K>): ReactElement => {
+  const { children, deps = [], name } = props;
 
   const helper = useArrayField(name);
 
-  const render = useMemo((): ReactNode | ReactNode[] => {
+  const render = useMemo((): ReactNode => {
     return children(helper);
   }, [helper.items, ...deps]);
 
@@ -75,6 +76,27 @@ export const Array = memo(<
   );
 }, isEqual);
 
-export function arrayOf<T extends Struct>(): ArrayFieldOf<T> {
-  return Array;
+/**
+ * Utility function which helps you create an {@link ArrayField} component of
+ * an specific struct type. Once you have this, the only type parameter left is
+ * the {@link Path|Path\<T\>} of the property which is an array.
+ *
+ * @example
+ * ```
+ * interface User {
+ *   name: string;
+ *   roles: Role[];
+ * }
+ *
+ * const ArrayField = arrayFieldOf<User>();
+ *
+ * <ArrayField name="role">
+ *   ...
+ * </ArrayField>
+ * ```
+ *
+ * @returns an ArrayField of the specified struct type
+ */
+export function arrayFieldOf<T extends Struct>(): ArrayFieldOf<T> {
+  return ArrayField;
 }

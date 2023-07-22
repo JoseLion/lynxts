@@ -2,6 +2,8 @@ import { Dispatch, SetStateAction, useMemo } from "react";
 import { Context, createContext, useContext, useContextSelector } from "use-context-selector";
 import { ObjectSchema, object } from "yup";
 
+import { noop } from "./helpers/commons";
+
 /**
  * Safe type that represents a dotted path of `T`. If the second argument is
  * provided, filters the paths to the ones matching the value value.
@@ -46,14 +48,14 @@ type GetPath<T, V, C> =
 type DeepPath<T, K extends string, V, C> =
   T extends Array<infer S>
       ? T extends V
-        ? K | `${K}.${number}` | `${K}.${number}.${GetPath<S, V, C>}`
+        ? S extends V
+          ? K | `${K}.${number}` | `${K}.${number}.${GetPath<S, V, C>}`
+          : K | `${K}.${number}.${GetPath<S, V, C>}`
         : S extends Struct
           ? T extends V
             ? `${K}.${number}`
             : `${K}.${number}.${GetPath<S, V, C>}`
-          : S extends V
-            ? `${K}.${number}`
-            : never
+          : never
       : T extends Struct
         ? T extends V
           ? K | `${K}.${GetPath<T, V, C>}`
@@ -184,22 +186,4 @@ export function useFormSelector<T extends Struct, V>(selector: (value: FormCtxt<
   const context = useMemo(safeFormContext<T>, []);
 
   return useContextSelector(context, selector);
-}
-
-/**
- * Type guard to discrimiate a React.js `SetStateAction<T>` type between its
- * function or value form.
- *
- * @param action a React.js set satte action
- * @returns true if the action is a function, false otherwise
- */
-export function isFunctionAction<T>(action: SetStateAction<T>): action is (prev: T) => T {
-  return typeof action === "function";
-}
-
-/**
- * Helper function for a no-operation action.
- */
-function noop(): void {
-  return void 0;
 }

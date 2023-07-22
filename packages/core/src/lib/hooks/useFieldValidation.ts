@@ -19,7 +19,7 @@ export interface UseFieldValidation {
 }
 
 /**
- * A hook to retrieve validation related states of a field in the form.
+ * A hook to retrieve validation related states of a field.
  *
  * @param path the path of the field in `T`
  * @returns an object with validation related states

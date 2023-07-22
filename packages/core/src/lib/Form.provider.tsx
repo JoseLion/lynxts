@@ -12,7 +12,8 @@ import {
 import isEqual from "react-fast-compare";
 import { ObjectSchema, ValidationError } from "yup";
 
-import { FormCtxt, Path, ValueByPath, isFunctionAction, safeFormContext } from "./Form.context";
+import { FormCtxt, Path, ValueByPath, safeFormContext } from "./Form.context";
+import { isFunctionAction } from "./helpers/commons";
 
 /**
  * Generic callback function. Infers the arguments types and the return type is
@@ -83,6 +84,10 @@ interface RenderProps<T extends Struct> {
    * @returns a value setter function
    */
   setValue: <K extends Path<T>>(path: K) => SetValue<ValueByPath<T, K>>;
+  /**
+   * Helper function that triggers the form submit on demand.
+   */
+  submit: () => void;
   /**
    * The curretn values `Partial<T>` of the form. These values are partial
    * because they might not be present or changed by the user yet.
@@ -183,7 +188,7 @@ export const FormProvider = memo(<T extends Struct>(props: FormProviderProps<T>)
 
   const renderAsFunction = useMemo((): ReactNode | ReactNode[] => {
     return typeof children === "function"
-      ? children({ handleChange, setValue, values })
+      ? children({ handleChange, setValue, submit, values })
       : undefined;
   }, [children, values]);
 
@@ -207,11 +212,12 @@ export const FormProvider = memo(<T extends Struct>(props: FormProviderProps<T>)
 
   useLayoutEffect(() => {
     const next = props.values as Optional<Partial<T>>;
+
     setValues(prev =>
       !isEqual(prev, next)
         ? next ?? { }
         : prev,
-      );
+    );
   }, [props.values]);
 
   return (

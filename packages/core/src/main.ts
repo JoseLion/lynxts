@@ -12,11 +12,18 @@ export {
   SetValue,
 } from "./lib/Form.provider";
 export {
-  Array,
+  ArrayField,
   ArrayFieldOf,
-  ArrayProps,
-  arrayOf,
-} from "./lib/components/Array.component";
+  ArrayFieldProps,
+  ArrayValue,
+  arrayFieldOf,
+} from "./lib/components/ArrayField.component";
+export {
+  Field,
+  FieldOf,
+  FieldProps,
+  fieldOf,
+} from "./lib/components/Field.component";
 export {
   UseArrayField,
   useArrayField,

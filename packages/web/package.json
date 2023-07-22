@@ -22,7 +22,6 @@
     "build": "tsc -p tsconfig.prod.json",
     "check": "yarn compile && yarn test",
     "compile": "tsc -p tsconfig.json",
-    "test": "NODE_ENV=test mocha",
     "release": "semantic-release"
   },
   "packageManager": "yarn@3.6.1"

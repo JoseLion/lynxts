@@ -22,7 +22,7 @@ export interface UseArrayField<V> {
    */
   clear: () => void;
   /**
-   * Helper function that creates a hendler function which runs the given
+   * Helper function that creates a handler function which runs the given
    * action with the given parameters.
    *
    * @example
@@ -36,7 +36,12 @@ export interface UseArrayField<V> {
    */
   handle: <F extends (...args: any[]) => void>(action: F, ...args: Parameters<F>) => () => void;
   /**
-   * Insert a new item at an specific index of the array.
+   * Insert a new item at an specific index of the array. To encourage type
+   * safety, this function follows these rules upon index outbounds:
+   * - If the index is greater than the array size, the item is added to the
+   * end of the array.
+   * - A negative index is treated as an offset, so -2 refers to the second to
+   * last element of the array.
    *
    * @param item the item to insert
    * @param at the index to insert the item at
@@ -73,6 +78,19 @@ export interface UseArrayField<V> {
    * @param at the index of the item
    */
   remove: (at: number) => void;
+  /**
+   * Replaces an item at an specific index of the array with another. To
+   * encourage type safety, this function follows these rules upon index
+   * outbounds:
+   * - If the index is greater than the array size, the item is added to the
+   * end of the array.
+   * - A negative index is treated as an offset, so -2 refers to the second to
+   * last element of the array.
+   *
+   * @param item the item to replace another
+   * @param at the index that should be replaced
+   */
+  replace: (item: Partial<V>, at: number) => void;
 }
 
 /**
@@ -84,25 +102,17 @@ export interface UseArrayField<V> {
  * @returns an object containing the array items and helper array functions
  */
 export function useArrayField<T extends Struct, V>(path: Path<T, V[]>): UseArrayField<V> {
-  const { setTouched, setValue, value } = useField(path as Path<T, Partial<V>[]>);
+  const { setTouched, setValue, value } = useField(path as Path<T, Partial<V>[]>, []);
 
-  const ids = useRef<string[]>(value?.map(v4) ?? []);
-
-  const items = useMemo((): Partial<V>[] => {
-    return value ?? [];
-  }, [value]);
+  const ids = useRef<string[]>(value.map(v4));
 
   const append = useCallback((item: Partial<V>): void => {
-    setValue(prev =>
-      prev !== undefined
-        ? [...prev, item]
-        : [item],
-    );
+    setValue(prev => [...prev, item]);
     setTouched();
   }, []);
 
   const clear = useCallback((): void => {
-    setValue(undefined);
+    setValue([]);
   }, []);
 
   const handle = useCallback<UseArrayField<V>["handle"]>((action, ...args) => () => {
@@ -110,11 +120,7 @@ export function useArrayField<T extends Struct, V>(path: Path<T, V[]>): UseArray
   }, []);
 
   const insert = useCallback((item: Partial<V>, at: number): void => {
-    setValue(prev =>
-      prev !== undefined
-        ? Object.assign([], prev, { [at]: item })
-        : Object.assign([], { [at]: item }),
-    );
+    setValue(prev => [...prev.slice(0, at), item, ...prev.slice(at)]);
     setTouched();
   }, []);
 
@@ -131,21 +137,17 @@ export function useArrayField<T extends Struct, V>(path: Path<T, V[]>): UseArray
   }, []);
 
   const prepend = useCallback((item: Partial<V>): void => {
-    setValue(prev =>
-      prev !== undefined
-        ? [item, ...prev]
-        : [item],
-    );
+    setValue(prev => [item, ...prev]);
     setTouched();
   }, []);
 
   const remove = useCallback((at: number): void => {
-    setValue(prev =>
-      prev !== undefined
-        ? prev.filter((_item, i) => i !== at)
-        : [],
-    );
+    setValue(prev => prev.filter((_item, i) => i !== at));
     setTouched();
+  }, []);
+
+  const replace = useCallback((item: Partial<V>, at: number): void => {
+    setValue(prev => [...prev.slice(0, at), item, ...prev.slice(at !== -1 ? at + 1 : prev.length)]);
   }, []);
 
   return useMemo((): UseArrayField<V> => ({
@@ -153,9 +155,10 @@ export function useArrayField<T extends Struct, V>(path: Path<T, V[]>): UseArray
     clear,
     handle,
     insert,
-    items,
+    items: value,
     keygen,
     prepend,
     remove,
-  }), [items]);
+    replace,
+  }), [value]);
 }
