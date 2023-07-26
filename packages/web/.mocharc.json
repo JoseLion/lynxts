@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/mocharc",
+  "exit": true,
+  "extension": ["ts", "tsx"],
+  "recursive": true,
+  "require": [
+    "ts-node/register",
+    "jsdom-global/register",
+    "test/hooks.ts"
+  ],
+  "slow": 1000,
+  "spec": [
+    "test/**/*.test.*"
+  ],
+  "timeout": 5000
+}

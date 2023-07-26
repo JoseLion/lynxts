@@ -5,11 +5,36 @@ import { ObjectSchema, object } from "yup";
 import { noop } from "./helpers/commons";
 
 /**
+ * A JavaScript structure-like object where keys are strings and values of any
+ * type.
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type Struct = Record<string, any>;
+
+/**
+ * Helper type which recursively transforms object keys from required to
+ * optional. Like {@link Partial} but for nested objects.
+ *
+ * @param T the object type to make partial recursively
+ */
+export type DeepPartial<T> = {
+  [P in keyof T]?:
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    T[P] extends Function
+      ? T[P]
+      : T[P] extends Array<infer U>
+        ? Array<DeepPartial<U>>
+        : T[P] extends ReadonlyArray<infer U>
+          ? ReadonlyArray<DeepPartial<U>>
+          : DeepPartial<T[P]>
+};
+
+/**
  * Safe type that represents a dotted path of `T`. If the second argument is
  * provided, filters the paths to the ones matching the value value.
  *
  * @param T the type of the object to get the paths
- * @param V the type the paths should match
+ * @param V the type the paths should match including `undefined`
  */
 export type Path<T, V = unknown> = GetPath<T, V, T>;
 

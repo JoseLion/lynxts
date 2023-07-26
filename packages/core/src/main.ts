@@ -1,6 +1,8 @@
 export {
+  DeepPartial,
   FormCtxt,
   Path,
+  Struct,
   ValueByPath,
   useForm,
   useFormSelector,
@@ -9,6 +11,7 @@ export {
   ChangeCallback,
   FormProvider,
   FormProviderProps,
+  RenderProps,
   SetValue,
 } from "./lib/Form.provider";
 export {

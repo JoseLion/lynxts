@@ -3,7 +3,7 @@ import { Dispatch, SetStateAction, useCallback, useEffect, useMemo } from "react
 import { useContextSelector } from "use-context-selector";
 import { ValidationError, reach, isSchema } from "yup";
 
-import { Path, safeFormContext } from "../Form.context";
+import { Path, Struct, safeFormContext } from "../Form.context";
 import { isFunctionAction } from "../helpers/commons";
 
 /**

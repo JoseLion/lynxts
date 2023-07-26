@@ -1,7 +1,7 @@
 import { DependencyList, ReactElement, ReactNode, memo, useCallback, useMemo } from "react";
 import isEqual from "react-fast-compare";
 
-import { Path, ValueByPath } from "../Form.context";
+import { Path, Struct, ValueByPath } from "../Form.context";
 import { UseField, useField } from "../hooks/useField";
 import { UseFieldValidation, useFieldValidation } from "../hooks/useFieldValidation";
 

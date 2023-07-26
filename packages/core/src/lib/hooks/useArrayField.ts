@@ -1,7 +1,7 @@
 import { v4 } from "@lukeed/uuid";
 import { useCallback, useMemo, useRef } from "react";
 
-import { Path } from "../Form.context";
+import { Path, Struct } from "../Form.context";
 
 import { useField } from "./useField";
 
