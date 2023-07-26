@@ -1,6 +1,7 @@
 {
   "name": "@lynxts/core",
-  "description": "Lynx.ts core packages",
+  "version": "0.0.0",
+  "description": "Lynx.ts core package",
   "repository": "git@github.com:JoseLion/lynxts.git",
   "homepage": "https://joselion.github.io/lynxts/",
   "author": "Jose Luis Leon <joseluis5000l@gmail.com>",
@@ -14,17 +15,16 @@
   "types": "./dist/main.d.ts",
   "files": [
     "dist/",
-    "src/",
-    "../../typings"
+    "src/"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.prod.json",
     "check": "yarn compile && yarn test",
     "compile": "tsc -p tsconfig.json",
+    "release": "semantic-release",
     "test": "NODE_ENV=test mocha",
     "test:silent": "DEBUG_PRINT_LIMIT=0 yarn test",
-    "test:verbose": "DEBUG_PRINT_LIMIT=1000000 yarn test",
-    "release": "semantic-release"
+    "test:verbose": "DEBUG_PRINT_LIMIT=1000000 yarn test"
   },
   "packageManager": "yarn@3.6.1",
   "dependencies": {
@@ -39,7 +39,7 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/mocha": "^10.0.1",
-    "@types/react": "^18.2.15",
+    "@types/react": "^18.2.16",
     "@types/react-dom": "^18.2.7",
     "@types/sinon": "^10.0.15",
     "expect-type": "^0.16.0",
@@ -57,8 +57,14 @@
     "yup": ">=1.0.0"
   },
   "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
     "yup": {
       "optional": true
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -12,7 +12,7 @@ import {
 import isEqual from "react-fast-compare";
 import { ObjectSchema, ValidationError } from "yup";
 
-import { FormCtxt, Path, ValueByPath, safeFormContext } from "./Form.context";
+import { DeepPartial, FormCtxt, Path, Struct, ValueByPath, safeFormContext } from "./Form.context";
 import { isFunctionAction } from "./helpers/commons";
 
 /**
@@ -41,7 +41,7 @@ export type SetValue<V> = (action: SetStateAction<Optional<V>>) => void;
  *
  * @param T struct type of the form values
  */
-interface RenderProps<T extends Struct> {
+export interface RenderProps<T extends Struct> {
   /**
    * Helper function which creates a handler to use on callback props and
    * change form values. It infers the arguments of the callback so they can be

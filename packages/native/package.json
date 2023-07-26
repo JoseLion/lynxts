@@ -1,6 +1,7 @@
 {
   "name": "@lynxts/native",
-  "description": "Lynx.ts native packages",
+  "version": "0.0.0",
+  "description": "Lynx.ts native package",
   "repository": "git@github.com:JoseLion/lynxts.git",
   "homepage": "https://joselion.github.io/lynxts/",
   "author": "Jose Luis Leon <joseluis5000l@gmail.com>",
@@ -22,7 +23,11 @@
     "build": "tsc -p tsconfig.prod.json",
     "check": "yarn compile && yarn test",
     "compile": "tsc -p tsconfig.json",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "test": "NODE_ENV=test"
   },
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@3.6.1",
+  "publishConfig": {
+    "access": "public"
+  }
 }
