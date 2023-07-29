@@ -1,5 +1,14 @@
 import { Path, Struct, useField, useFieldValidation } from "@lynxts/core";
-import { ChangeEvent, ReactElement, ReactNode, TextareaHTMLAttributes, memo, useCallback, useMemo } from "react";
+import {
+  ChangeEvent,
+  FocusEvent,
+  ReactElement,
+  ReactNode,
+  TextareaHTMLAttributes,
+  memo,
+  useCallback,
+  useMemo,
+} from "react";
 import isEqual from "react-fast-compare";
 
 /**
@@ -22,7 +31,7 @@ export interface TextareaProps<T extends Struct> extends TextareaHTMLAttributes<
    */
   label?: string;
   /**
-   * The name of the field as a {@link Path|Path\<T\>}.
+   * The name of the field as a {@link Path|Path\<T, string\>}.
    */
   name: Path<T, string>;
   /**
@@ -51,16 +60,30 @@ export type TextareaOf<T extends Struct> = (props: TextareaProps<T>) => ReactEle
  * @param props the TextareaProps plus the HTMLTextAreaElement attributes
  */
 export const Textarea = memo(<T extends Struct>(props: TextareaProps<T>): ReactElement => {
-  const { inline, label, name, requiredText = "*", ...rest } = props;
+  const {
+    inline,
+    label,
+    name,
+    onBlur,
+    onChange,
+    requiredText = "*",
+    ...rest
+  } = props;
 
   const { setTouched, setValue, value } = useField<T, string>(name);
   const { error, required } = useFieldValidation(name);
 
   const errorId = useMemo((): string => `error-${name}`, [name]);
 
-  const handleChange = useCallback(({ target }: ChangeEvent<HTMLTextAreaElement>): void => {
-    setValue(target.value);
-  }, []);
+  const handleChange = useCallback((event: ChangeEvent<HTMLTextAreaElement>): void => {
+    setValue(event.target.value);
+    onChange?.(event);
+  }, [onChange]);
+
+  const handleBlur = useCallback((event: FocusEvent<HTMLTextAreaElement>): void => {
+    setTouched();
+    onBlur?.(event);
+  }, [onBlur]);
 
   const LabelText = useMemo((): ReactNode => (
     <>
@@ -77,7 +100,7 @@ export const Textarea = memo(<T extends Struct>(props: TextareaProps<T>): ReactE
       {...rest}
       name={name}
       onChange={handleChange}
-      onBlur={setTouched}
+      onBlur={handleBlur}
       value={value ?? ""}
     />
   ), [required, error, errorId, name, value, rest]);

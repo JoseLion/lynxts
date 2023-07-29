@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { useContextSelector } from "use-context-selector";
 import { reach } from "yup";
 
-import { Path, Struct, safeFormContext } from "../Form.context";
+import { Optional, Path, Struct, safeFormContext } from "../Form.context";
 
 /**
  * The result of the {@link useFieldValidation} hook.

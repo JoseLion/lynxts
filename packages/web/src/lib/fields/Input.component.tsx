@@ -1,5 +1,14 @@
 import { Path, Struct, useField, useFieldValidation } from "@lynxts/core";
-import { ChangeEvent, InputHTMLAttributes, ReactElement, ReactNode, memo, useCallback, useMemo } from "react";
+import {
+  ChangeEvent,
+  FocusEvent,
+  InputHTMLAttributes,
+  ReactElement,
+  ReactNode,
+  memo,
+  useCallback,
+  useMemo,
+} from "react";
 import isEqual from "react-fast-compare";
 
 /**
@@ -21,7 +30,7 @@ export interface InputProps<T extends Struct> extends InputHTMLAttributes<HTMLIn
    */
   label?: string;
   /**
-   * The name of the field as a {@link Path|Path\<T\>}.
+   * The name of the field as a {@link Path|Path\<T, string\>}.
    */
   name: Path<T, string>;
   /**
@@ -53,6 +62,8 @@ export const Input = memo(<T extends Struct>(props: InputProps<T>): ReactElement
     inline,
     label,
     name,
+    onBlur,
+    onChange,
     requiredText = "*",
     ...rest
   } = props;
@@ -62,9 +73,15 @@ export const Input = memo(<T extends Struct>(props: InputProps<T>): ReactElement
 
   const errorId = useMemo((): string => `error-${name}`, [name]);
 
-  const handleChange = useCallback(({ target }: ChangeEvent<HTMLInputElement>): void => {
-    setValue(target.value);
-  }, []);
+  const handleChange = useCallback((event: ChangeEvent<HTMLInputElement>): void => {
+    setValue(event.target.value);
+    onChange?.(event);
+  }, [onChange]);
+
+  const handleTouched = useCallback((event: FocusEvent<HTMLInputElement>): void => {
+    setTouched();
+    onBlur?.(event);
+  }, [onBlur]);
 
   const LabelText = useMemo((): ReactNode => (
     <>
@@ -81,7 +98,7 @@ export const Input = memo(<T extends Struct>(props: InputProps<T>): ReactElement
       {...rest}
       name={name}
       onChange={handleChange}
-      onBlur={setTouched}
+      onBlur={handleTouched}
       value={value ?? ""}
     />
   ), [required, error, errorId, name, value, rest]);

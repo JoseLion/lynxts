@@ -5,11 +5,13 @@ import { ReactElement, useCallback, useState } from "react";
 import Sinon from "sinon";
 import { ObjectSchema, object, string } from "yup";
 
-import { Form } from "../../../src/lib/Form.component";
-import { textareaOf } from "../../../src/lib/fields/Textarea.component";
+import { Form } from "../../../../src/lib/Form.component";
+import { selectOf } from "../../../../src/lib/fields/Select.component";
+
+type OS = "win" | "mac" | "linux";
 
 interface Foo {
-  name: string;
+  os: OS;
   other?: string;
 }
 
@@ -17,27 +19,43 @@ interface TestFormProps {
   onSubmit?: (values: Foo) => void;
 }
 
-const Textarea = textareaOf<Foo>();
+const OS_OPTIONS: OS[] = ["win", "mac", "linux"];
+
+const Select = selectOf<Foo>();
 
 const schema: ObjectSchema<Foo> = object({
-  name: string().required("The name is required!"),
+  os: string().oneOf(OS_OPTIONS).required("The OS is required!"),
   other: string().optional(),
 });
 
 function TestForm({ onSubmit = Sinon.fake }: TestFormProps): ReactElement {
   const [foo, setFoo] = useState<Partial<Foo>>({ });
 
+  const renderOS = useCallback((os: OS): string => {
+    switch (os) {
+      case "linux": return "Linux";
+      case "mac": return "MacOS";
+      case "win": return "Windows";
+    }
+  }, []);
+
   const updateValues = useCallback((): void => {
-    setFoo({
-      name: "bar",
-      other: "baz",
-    });
+    setFoo({ os: "mac", other: "foo" });
   }, []);
 
   return (
     <Form onSubmit={onSubmit} validation={schema} values={foo}>
-      <Textarea name="name" label="Name:" />
-      <Textarea name="other" label="Other:" />
+      <Select
+        name="os"
+        label="OS:"
+        options={OS_OPTIONS}
+        toText={renderOS}
+      />
+      <Select
+        name="other"
+        label="Other:"
+        options={["foo", "bar"]}
+      />
 
       <button type="button" onClick={updateValues}>{"Update!"}</button>
       <button type="submit">{"Submit!"}</button>
@@ -45,21 +63,21 @@ function TestForm({ onSubmit = Sinon.fake }: TestFormProps): ReactElement {
   );
 }
 
-describe("[Integration] Textarea.component.test.tsx", () => {
-  context("when the textarea changes", () => {
+describe("[Integration] Select.component.test.tsx", () => {
+  context("when the select option changes", () => {
     it("sets the new value in the form context", async () => {
       const spySubmit = Sinon.spy<(values: Foo) => void>(() => undefined);
       const { findByRole } = render(<TestForm onSubmit={spySubmit} />);
 
-      const nameTextarea = await findByRole("textbox", { name: "Name: *" });
+      const osSelect = await findByRole("combobox", { name: "OS: *" });
 
-      await userEvent.type(nameTextarea, "foo");
+      await userEvent.selectOptions(osSelect, "Windows");
 
       const submitButton = await findByRole("button", { name: "Submit!" });
 
       await userEvent.click(submitButton);
 
-      Sinon.assert.calledOnceWithExactly(spySubmit, { name: "foo" });
+      Sinon.assert.calledOnceWithExactly(spySubmit, { os: "win" });
     });
   });
 
@@ -67,23 +85,24 @@ describe("[Integration] Textarea.component.test.tsx", () => {
     it("sets the field as touched", async () => {
       const { findByRole, queryByText, getByText } = render(<TestForm />);
 
-      const nameTextarea = await findByRole("textbox", { name: "Name: *" });
+      const osSelect = await findByRole("combobox", { name: "OS: *" });
 
-      expect(queryByText("The name is required!")).toBeNull();
+      expect(queryByText("The OS is required!")).toBeNull();
 
-      fireEvent.blur(nameTextarea);
+      fireEvent.blur(osSelect);
 
-      await waitFor(() => getByText("The name is required!"));
+      await waitFor(() => getByText("The OS is required!"));
     });
   });
 
   context("when the form context value changes", () => {
-    it("changes the textarea value", async () => {
-      const { queryByDisplayValue, findByRole, getByDisplayValue } = render(<TestForm />);
+    it("changes the input value", async () => {
+      const { getAllByDisplayValue, queryByDisplayValue, findByRole, getByDisplayValue } = render(<TestForm />);
 
       await waitFor(() => {
-        expect(queryByDisplayValue("bar")).toBeNull();
-        expect(queryByDisplayValue("baz")).toBeNull();
+        expect(getAllByDisplayValue("--")).toHaveSize(2);
+        expect(queryByDisplayValue("MacOS")).toBeNull();
+        expect(queryByDisplayValue("foo")).toBeNull();
       });
 
       const updateButton = await findByRole("button", { name: "Update!" });
@@ -91,8 +110,8 @@ describe("[Integration] Textarea.component.test.tsx", () => {
       await userEvent.click(updateButton);
 
       await waitFor(() => {
-        getByDisplayValue("bar");
-        getByDisplayValue("baz");
+        getByDisplayValue("MacOS");
+        getByDisplayValue("foo");
       });
     });
   });
@@ -101,13 +120,13 @@ describe("[Integration] Textarea.component.test.tsx", () => {
     it("does not render a label on the field", async () => {
       const { getByRole, queryByRole } = render(
         <Form<Foo> onSubmit={Sinon.fake} validation={schema}>
-          <Textarea name="name" />
+          <Select name="os" options={OS_OPTIONS} />
         </Form>,
       );
 
-      await waitFor(() => getByRole("textbox"));
+      await waitFor(() => getByRole("combobox"));
 
-      expect(queryByRole("textbox", { name: "Name: *" })).toBeNull();
+      expect(queryByRole("combobox", { name: "OS: *" })).toBeNull();
     });
   });
 
@@ -116,14 +135,14 @@ describe("[Integration] Textarea.component.test.tsx", () => {
       it("uses the text instead of the asterisk", async () => {
         const { getByRole } = render(
           <Form<Foo> onSubmit={Sinon.fake} validation={schema}>
-            <Textarea name="name" label="Name:" requiredText="(required)" />
-            <Textarea name="other" label="Other:" requiredText="(required)" />
+            <Select name="os" label="OS:" options={OS_OPTIONS} requiredText="(required)" />
+            <Select name="other" label="Other:" options={[]} requiredText="(required)" />
           </Form>,
         );
 
         await waitFor(() => {
-          getByRole("textbox", { name: "Name: (required)" });
-          getByRole("textbox", { name: "Other:" });
+          getByRole("combobox", { name: "OS: (required)" });
+          getByRole("combobox", { name: "Other:" });
         });
       });
     });
@@ -132,14 +151,14 @@ describe("[Integration] Textarea.component.test.tsx", () => {
       it("does not show the required superscript", async () => {
         const { getByRole } = render(
           <Form<Foo> onSubmit={Sinon.fake} validation={schema}>
-            <Textarea name="name" label="Name:" requiredText="" />
-            <Textarea name="other" label="Other:" requiredText="" />
+            <Select name="os" label="OS:" options={OS_OPTIONS} requiredText="" />
+            <Select name="other" label="Other:" options={[]} requiredText="" />
           </Form>,
         );
 
         await waitFor(() => {
-          getByRole("textbox", { name: "Name:" });
-          getByRole("textbox", { name: "Other:" });
+          getByRole("combobox", { name: "OS:" });
+          getByRole("combobox", { name: "Other:" });
         });
       });
     });

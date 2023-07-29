@@ -3,7 +3,7 @@ import { RenderHookResult, renderHook } from "@testing-library/react";
 import Sinon from "sinon";
 import { ObjectSchema, number, object, string } from "yup";
 
-import { Path, ValueByPath } from "../../../../src/lib/Form.context";
+import { Optional, Path, ValueByPath } from "../../../../src/lib/Form.context";
 import { FormProvider } from "../../../../src/lib/Form.provider";
 import { UseField, useField } from "../../../../src/lib/hooks/useField";
 

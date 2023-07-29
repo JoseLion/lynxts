@@ -5,6 +5,14 @@
     "typeRoots": [
       "../../node_modules/@types/",
       "./typings/"
+    ],
+    // Jest and Mocha types conflict with eachother.
+    // Check: https://github.com/microsoft/TypeScript/issues/18588#issuecomment-704482601
+    "types": [
+      "node",
+      "react",
+      "react-test-renderer",
+      "sinon"
     ]
   },
   "exclude": [

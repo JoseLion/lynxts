@@ -5,6 +5,13 @@ import { ObjectSchema, object } from "yup";
 import { noop } from "./helpers/commons";
 
 /**
+ * Helper type alias to make another type optional (undefinable).
+ *
+ * @param T the type to make optional
+ */
+export type Optional<T> = T | undefined;
+
+/**
  * A JavaScript structure-like object where keys are strings and values of any
  * type.
  */

@@ -12,7 +12,7 @@ import {
 import isEqual from "react-fast-compare";
 import { ObjectSchema, ValidationError } from "yup";
 
-import { DeepPartial, FormCtxt, Path, Struct, ValueByPath, safeFormContext } from "./Form.context";
+import { DeepPartial, FormCtxt, Optional, Path, Struct, ValueByPath, safeFormContext } from "./Form.context";
 import { isFunctionAction } from "./helpers/commons";
 
 /**
@@ -190,7 +190,7 @@ export const FormProvider = memo(<T extends Struct>(props: FormProviderProps<T>)
     return typeof children === "function"
       ? children({ handleChange, setValue, submit, values })
       : undefined;
-  }, [children, values]);
+  }, [children, submit, values]);
 
   const renderAsElement = useMemo((): ReactNode | ReactNode[] => {
     return typeof children !== "function"
@@ -208,7 +208,7 @@ export const FormProvider = memo(<T extends Struct>(props: FormProviderProps<T>)
     validation,
     values,
     violations,
-  }), [submitted, touched, validation, values, violations]);
+  }), [submit, submitted, touched, validation, values, violations]);
 
   useLayoutEffect(() => {
     const next = props.values as Optional<Partial<T>>;
