@@ -1,5 +1,5 @@
 import { Path, Struct, ValueByPath, useField, useFieldValidation } from "@lynxts/core";
-import { HTMLAttributes, ReactElement, ReactNode, SyntheticEvent, memo, useCallback, useMemo } from "react";
+import { FocusEvent, HTMLAttributes, ReactElement, ReactNode, SyntheticEvent, memo, useCallback, useMemo } from "react";
 import isEqual from "react-fast-compare";
 
 /**
@@ -84,6 +84,8 @@ export const Select = memo(<T extends Struct, K extends Path<T>>(props: SelectPr
     label,
     multiple,
     name,
+    onBlur,
+    onChange,
     options,
     requiredText = "*",
     toText = String,
@@ -96,9 +98,15 @@ export const Select = memo(<T extends Struct, K extends Path<T>>(props: SelectPr
 
   const errorId = useMemo((): string => `error-${name}`, [name]);
 
-  const handleChange = useCallback(({ currentTarget }: SyntheticEvent<HTMLSelectElement>): void => {
-    setValue(options[currentTarget.selectedIndex - 1]);
-  }, [options]);
+  const handleChange = useCallback((event: SyntheticEvent<HTMLSelectElement>): void => {
+    setValue(options[event.currentTarget.selectedIndex - 1]);
+    onChange?.(event);
+  }, [options, onChange]);
+
+  const handleBlur = useCallback((event: FocusEvent<HTMLSelectElement>): void => {
+    setTouched();
+    onBlur?.(event);
+  }, [onBlur]);
 
   const LabelText = useMemo((): ReactNode => (
     <>
@@ -117,7 +125,7 @@ export const Select = memo(<T extends Struct, K extends Path<T>>(props: SelectPr
       multiple={false}
       name={name}
       onChange={handleChange}
-      onBlur={setTouched}
+      onBlur={handleBlur}
       value={value !== undefined ? toText(value) : unselected}
     >
       <option

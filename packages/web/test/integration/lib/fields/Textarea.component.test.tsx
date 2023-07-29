@@ -5,8 +5,8 @@ import { ReactElement, useCallback, useState } from "react";
 import Sinon from "sinon";
 import { ObjectSchema, object, string } from "yup";
 
-import { Form } from "../../../src/lib/Form.component";
-import { inputOf } from "../../../src/lib/fields/Input.component";
+import { Form } from "../../../../src/lib/Form.component";
+import { textareaOf } from "../../../../src/lib/fields/Textarea.component";
 
 interface Foo {
   name: string;
@@ -17,7 +17,7 @@ interface TestFormProps {
   onSubmit?: (values: Foo) => void;
 }
 
-const Input = inputOf<Foo>();
+const Textarea = textareaOf<Foo>();
 
 const schema: ObjectSchema<Foo> = object({
   name: string().required("The name is required!"),
@@ -36,8 +36,8 @@ function TestForm({ onSubmit = Sinon.fake }: TestFormProps): ReactElement {
 
   return (
     <Form onSubmit={onSubmit} validation={schema} values={foo}>
-      <Input name="name" label="Name:" type="text" />
-      <Input name="other" label="Other:" type="text" />
+      <Textarea name="name" label="Name:" />
+      <Textarea name="other" label="Other:" />
 
       <button type="button" onClick={updateValues}>{"Update!"}</button>
       <button type="submit">{"Submit!"}</button>
@@ -45,15 +45,15 @@ function TestForm({ onSubmit = Sinon.fake }: TestFormProps): ReactElement {
   );
 }
 
-describe("[Integration] Input.component.test.tsx", () => {
-  context("when the input changes", () => {
+describe("[Integration] Textarea.component.test.tsx", () => {
+  context("when the textarea changes", () => {
     it("sets the new value in the form context", async () => {
       const spySubmit = Sinon.spy<(values: Foo) => void>(() => undefined);
       const { findByRole } = render(<TestForm onSubmit={spySubmit} />);
 
-      const nameInput = await findByRole("textbox", { name: "Name: *" });
+      const nameTextarea = await findByRole("textbox", { name: "Name: *" });
 
-      await userEvent.type(nameInput, "foo");
+      await userEvent.type(nameTextarea, "foo");
 
       const submitButton = await findByRole("button", { name: "Submit!" });
 
@@ -67,18 +67,18 @@ describe("[Integration] Input.component.test.tsx", () => {
     it("sets the field as touched", async () => {
       const { findByRole, queryByText, getByText } = render(<TestForm />);
 
-      const nameInput = await findByRole("textbox", { name: "Name: *" });
+      const nameTextarea = await findByRole("textbox", { name: "Name: *" });
 
       expect(queryByText("The name is required!")).toBeNull();
 
-      fireEvent.blur(nameInput);
+      fireEvent.blur(nameTextarea);
 
       await waitFor(() => getByText("The name is required!"));
     });
   });
 
   context("when the form context value changes", () => {
-    it("changes the input value", async () => {
+    it("changes the textarea value", async () => {
       const { queryByDisplayValue, findByRole, getByDisplayValue } = render(<TestForm />);
 
       await waitFor(() => {
@@ -101,7 +101,7 @@ describe("[Integration] Input.component.test.tsx", () => {
     it("does not render a label on the field", async () => {
       const { getByRole, queryByRole } = render(
         <Form<Foo> onSubmit={Sinon.fake} validation={schema}>
-          <Input name="name" />
+          <Textarea name="name" />
         </Form>,
       );
 
@@ -116,8 +116,8 @@ describe("[Integration] Input.component.test.tsx", () => {
       it("uses the text instead of the asterisk", async () => {
         const { getByRole } = render(
           <Form<Foo> onSubmit={Sinon.fake} validation={schema}>
-            <Input name="name" label="Name:" requiredText="(required)" />
-            <Input name="other" label="Other:" requiredText="(required)" />
+            <Textarea name="name" label="Name:" requiredText="(required)" />
+            <Textarea name="other" label="Other:" requiredText="(required)" />
           </Form>,
         );
 
@@ -132,8 +132,8 @@ describe("[Integration] Input.component.test.tsx", () => {
       it("does not show the required superscript", async () => {
         const { getByRole } = render(
           <Form<Foo> onSubmit={Sinon.fake} validation={schema}>
-            <Input name="name" label="Name:" requiredText="" />
-            <Input name="other" label="Other:" requiredText="" />
+            <Textarea name="name" label="Name:" requiredText="" />
+            <Textarea name="other" label="Other:" requiredText="" />
           </Form>,
         );
 

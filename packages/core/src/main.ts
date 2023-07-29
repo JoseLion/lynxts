@@ -1,6 +1,7 @@
 export {
   DeepPartial,
   FormCtxt,
+  Optional,
   Path,
   Struct,
   ValueByPath,
