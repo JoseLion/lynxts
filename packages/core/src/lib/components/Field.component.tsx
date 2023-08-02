@@ -119,7 +119,7 @@ export const Field = memo(<
  * <Field path="name" fallback={""}>
  *   {({ value, setValue, setTouched, required, error }) => (
  *     <label>
- *       {`Name: ${required ? "*" : ""}`}</label>
+ *       {`Name: ${required ? "*" : ""}`}
  *       <input
  *         type="number"
  *         onChange={e => setValue(e.target.value)}
@@ -129,7 +129,7 @@ export const Field = memo(<
  *       {error && <small>{error}</small>}
  *     </label>
  *   )}
- * <Field>
+ * </Field>
  * ```
  *
  * @returns a Field of the specified struct type
