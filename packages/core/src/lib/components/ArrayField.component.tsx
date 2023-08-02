@@ -90,7 +90,7 @@ export const ArrayField = memo(<
  *
  * const ArrayField = arrayFieldOf<User>();
  *
- * <ArrayField name="role">
+ * <ArrayField name="roles">
  *   ...
  * </ArrayField>
  * ```
