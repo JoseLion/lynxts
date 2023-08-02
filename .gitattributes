@@ -3,3 +3,6 @@
 
 # specific for windows script files
 *.bat text eol=crlf
+
+# assets
+*.png binary eol=auto
