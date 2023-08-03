@@ -1,12 +1,11 @@
 [![CI](https://github.com/JoseLion/lynxts/actions/workflows/ci.yml/badge.svg)](https://github.com/JoseLion/lynxts/actions/workflows/ci.yml)
 [![Release](https://github.com/JoseLion/lynxts/actions/workflows/release.yml/badge.svg)](https://github.com/JoseLion/lynxts/actions/workflows/release.yml)
-<!-- [![Pages](https://github.com/JoseLion/lynxts/actions/workflows/pages.yml/badge.svg)](https://github.com/JoseLion/lynxts/actions/workflows/pages.yml)
-[![NPM version](https://img.shields.io/npm/v/@JoseLion/lynxts?logo=npm)](https://www.npmjs.com/package/@JoseLion/lynxts)
-[![NPM bundle size](https://img.shields.io/bundlephobia/min/@JoseLion/lynxts)](https://www.npmjs.com/package/@JoseLion/lynxts)
-[![NPM downloads](https://img.shields.io/npm/dm/@JoseLion/lynxts)](https://www.npmjs.com/package/@JoseLion/lynxts)
-[![NPM license](https://img.shields.io/npm/l/@JoseLion/lynxts)](./LICENSE)
+[![NPM version](https://img.shields.io/npm/v/@lynxts/core?logo=npm)](https://www.npmjs.com/package/@lynxts/core)
+[![NPM bundle size](https://img.shields.io/bundlephobia/min/@lynxts/core)](https://www.npmjs.com/package/@lynxts/core)
+[![NPM downloads](https://img.shields.io/npm/dm/@lynxts/core)](https://www.npmjs.com/package/@lynxts/core)
+[![NPM license](https://img.shields.io/npm/l/@lynxts/core)](./LICENSE)
 [![GitHub Release Date](https://img.shields.io/github/release-date/JoseLion/lynxts)](https://github.com/JoseLion/lynxts/releases)
-[![Known Vulnerabilities](https://snyk.io/test/github/JoseLion/lynxts/badge.svg)](https://snyk.io/test/github/JoseLion/lynxts) -->
+[![Known Vulnerabilities](https://snyk.io/test/github/JoseLion/lynxts/badge.svg)](https://snyk.io/test/github/JoseLion/lynxts)
 
 <img alt="Lynx.ts Logo" src="https://github.com/JoseLion/lynxts/blob/main/docs/assets/lynxts-logo%40512x512.png" width="128">
 
