@@ -18,13 +18,13 @@
     "compile": "turbo compile",
     "lint": "eslint . --report-unused-disable-directives",
     "test": "turbo test",
-    "release": "turbo release",
+    "release": "turbo release --concurrency=1",
     "turbo": "turbo"
   },
   "devDependencies": {
-    "@types/node": "^20.4.5",
-    "@typescript-eslint/eslint-plugin": "^6.2.0",
-    "@typescript-eslint/parser": "^6.2.0",
+    "@types/node": "^20.4.6",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
     "eslint": "^8.46.0",
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-etc": "^2.0.3",
