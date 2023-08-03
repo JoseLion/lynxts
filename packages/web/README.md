@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/JoseLion/lynxts/actions/workflows/ci.yml/badge.svg)](https://github.com/JoseLion/lynxts/actions/workflows/ci.yml) [![Release](https://github.com/JoseLion/lynxts/actions/workflows/release.yml/badge.svg)](https://github.com/JoseLion/lynxts/actions/workflows/release.yml) [![NPM version](https://img.shields.io/npm/v/@lynxts/web?logo=npm)](https://www.npmjs.com/package/@lynxts/web) [![NPM bundle size](https://img.shields.io/bundlephobia/min/@lynxts/web)](https://www.npmjs.com/package/@lynxts/web) [![NPM downloads](https://img.shields.io/npm/dm/@lynxts/web)](https://www.npmjs.com/package/@lynxts/web) [![NPM license](https://img.shields.io/npm/l/@lynxts/web)](LICENSE/) [![GitHub Release Date](https://img.shields.io/github/release-date/JoseLion/lynxts)](https://github.com/JoseLion/lynxts/releases) [![Known Vulnerabilities](https://snyk.io/test/github/JoseLion/lynxts/badge.svg)](https://snyk.io/test/github/JoseLion/lynxts)
 
-![Lynx.ts Logo](../../docs/assets/lynxts-logo%40512x512.png)
+<img alt="Lynx.ts Logo" src="https://github.com/JoseLion/lynxts/blob/main/docs/assets/lynxts-logo%40512x512.png?raw=true" width="128">
 
 ## Lynx.ts Web
 
@@ -67,7 +67,7 @@ const SignIn = memo((): ReactElement => {
       <Input name="email" type="email" label="Email:" />
       <Input name="password" type="password" label="Passwrod:" />
       
-      <button type="button">{"SignIn"}</button>
+      <button type="submit">{"SignIn"}</button>
     </FormProvider>
   );
 });
