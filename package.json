@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "The Lynx.ts workspace",
   "repository": "git@github.com:JoseLion/lynxts.git",
-  "homepage": "https://joselion.github.io/lynxts/",
+  "homepage": "https://joselion.gitbook.io/lynx.ts/",
   "author": "Jose Luis Leon <joseluis5000l@gmail.com>",
   "engines": {
     "node": ">=16"
