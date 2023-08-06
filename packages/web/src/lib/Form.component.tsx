@@ -20,7 +20,7 @@ export interface FormProps<T extends Struct> extends FormProviderProps<T>, HTMLF
  * `<form>` would.
  *
  * **Note:** Because the FormProvider is in charge of the validation, the
- * defualt value of the `noValidate` prop of the `<form>` is set to `false`.
+ * defualt value of the `noValidate` prop of the `<form>` is set to `true`.
  *
  * @param T struct type of the form values
  * @param props the FromProvider props plus the HTMLFormElement props

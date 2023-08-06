@@ -1,8 +1,8 @@
 import { FormProviderProps, RenderProps, Struct } from "@lynxts/core";
-import { FormEvent, HTMLAttributes, ReactNode, memo, useCallback, useMemo } from "react";
+import { ComponentProps, FormEvent, ReactNode, memo, useCallback, useMemo } from "react";
 import isEqual from "react-fast-compare";
 
-export type HTMLFormProps = Omit<HTMLAttributes<HTMLFormElement>, "children" | "onSubmit">;
+export type HTMLFormProps = Omit<ComponentProps<"form">, "children" | "onSubmit">;
 
 interface FormDelegateProps<T extends Struct> extends RenderProps<T>, HTMLFormProps {
   children: FormProviderProps<T>["children"];
