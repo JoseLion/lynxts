@@ -38,7 +38,6 @@ To make using forms in React.js web applications as simple as possible, `@lynxts
 Additionally, this package provides helper components of the basic form elements: `<input>`, `<select>`, and `<textarea>`. These components adds a `<label>` and error handling and their intention is for users to quickly jump into using simple forms. However, we strongly recommend creating you own [custom field](../core/#custom-fields) abstractions to get better control and customization.
 
 ```tsx
-import { FormProvider } from "@lynxts/core";
 import { Form, inputOf } from "@lynxts/web";
 import { ReactElement, memo, useCallback } from "react";
 import { ObjectSchema, object, string } from "yup";
@@ -48,27 +47,27 @@ interface Login {
   password: string;
 }
 
-const Input = inputOf<Login>();
-
 const schema: ObjectSchema<Login> = object({
   email: string().email().required(),
   password: string().required(),
 });
 
+const Input = inputOf<Login>();
+
 const SignIn = memo((): ReactElement => {
+
   const handleSubmit = useCallback((values: Login): void => {
     const { email, password } = values;
-
     // Use the validated value to sign in!
   }, []);
 
   return (
     <Form onSubmit={handleSubmit} validation={schema}>
-      <Input name="email" type="email" label="Email:" />
-      <Input name="password" type="password" label="Passwrod:" />
+      <Input name="email" label="Email:" />
+      <Input name="password" label="Password:" />
       
       <button type="submit">{"SignIn"}</button>
-    </FormProvider>
+    </Form>
   );
 });
 ```
