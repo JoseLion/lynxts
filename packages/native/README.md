@@ -39,7 +39,7 @@ To make using forms in React Native as simple as possible, `@lynxts/native` prov
 It also provides a helper `TextField<T>` component based on the [TextInput](https://reactnative.dev/docs/textinput) foundational component. This component adds a label and error handling and its intention is for users to quickly jump into using simple forms. However, we strongly recommend creating you own [custom field](../core/README.md#custom-fields) abstractions to get better control and customization.
 
 ```tsx
-import { FormProvider, fieldOf } from "@lynxts/core";
+import { FormProvider } from "@lynxts/core";
 import { SubmitButton, textFieldOf } from "@lynxts/native";
 import { ReactElement, memo, useCallback } from "react";
 import { ObjectSchema, object, string } from "yup";
@@ -49,17 +49,17 @@ interface Login {
   password: string;
 }
 
-const TextField = textFieldOf<Login>();
-
 const schema: ObjectSchema<Login> = object({
   email: string().email().required(),
   password: string().required(),
 });
 
+const TextField = textFieldOf<Login>();
+
 const SignIn = memo((): ReactElement => {
+
   const handleSubmit = useCallback((values: Login): void => {
     const { email, password } = values;
-
     // Use the validated value to sign in!
   }, []);
 

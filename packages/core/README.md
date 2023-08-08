@@ -44,17 +44,17 @@ interface Login {
   password: string;
 }
 
-const Field = fieldOf<Login>();
-
 const schema: ObjectSchema<Login> = object({
   email: string().email().required(),
   password: string().required(),
 });
 
+const Field = fieldOf<Login>();
+
 const SignIn = memo((): ReactElement => {
+
   const handleSubmit = useCallback((values: Login): void => {
     const { email, password } = values;
-
     // Use the validated value to sign in!
   }, []);
 
