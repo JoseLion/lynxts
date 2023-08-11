@@ -1,10 +1,11 @@
 import { expect } from "@stackbuilders/assertive-ts";
 import { RenderHookResult, renderHook } from "@testing-library/react";
 import Sinon from "sinon";
-import { ObjectSchema, number, object, string } from "yup";
+import { ObjectSchema, isSchema, number, object, string } from "yup";
+import { z } from "zod";
 
 import { Path } from "../../../../src/lib/Form.context";
-import { FormProvider } from "../../../../src/lib/Form.provider";
+import { FormProvider, FormProviderProps } from "../../../../src/lib/Form.provider";
 import { UseFieldValidation, useFieldValidation } from "../../../../src/lib/hooks/useFieldValidation";
 
 interface User {
@@ -12,12 +13,24 @@ interface User {
   name: string;
 }
 
-const schema: ObjectSchema<User> = object({
+interface RenderOptions {
+  path: Path<User>;
+  schema: FormProviderProps<User>["validation"];
+}
+
+const yupSchema: ObjectSchema<User> = object({
   age: number().optional(),
   name: string().required(),
 });
 
-function renderWith(path: Path<User>): RenderHookResult<UseFieldValidation, never> {
+const zodSchema = z.object({
+  age: z.number().optional(),
+  name: z.string(),
+});
+
+function renderWith(options: RenderOptions): RenderHookResult<UseFieldValidation, never> {
+  const { path, schema } = options;
+
   return renderHook(() => useFieldValidation(path), {
     wrapper(props) {
       return (
@@ -30,29 +43,35 @@ function renderWith(path: Path<User>): RenderHookResult<UseFieldValidation, neve
 }
 
 describe("[Integration] useFieldValidation.test.tsx", () => {
-  context("when the hook is rendered", () => {
-    it("returns the error and required states", () => {
-      const { result } = renderWith("name");
-      const { current } = result;
+  [yupSchema, zodSchema].forEach(schema => {
+    const schemaName = isSchema(schema) ? "Yup" : "Zod";
 
-      expect(current.error).toBeUndefined();
-      expect(current.required).toBePresent();
-    });
-  });
+    describe(`when the validation is a ${schemaName} schema`, () => {
+      context("and the hook is rendered", () => {
+        it("returns the error and required states", () => {
+          const { result } = renderWith({ path: "name", schema });
+          const { current } = result;
 
-  context("when the field is required", () => {
-    it("sets the required state to true", () => {
-      const { result } = renderWith("name");
+          expect(current.error).toBeUndefined();
+          expect(current.required).toBePresent();
+        });
+      });
 
-      expect(result.current.required).toBeTrue();
-    });
-  });
+      context("and the field is required", () => {
+        it("sets the required state to true", () => {
+          const { result } = renderWith({ path: "name", schema });
 
-  context("when the field is not required", () => {
-    it("sets the required state to false", () => {
-      const { result } = renderWith("age");
+          expect(result.current.required).toBeTrue();
+        });
+      });
 
-      expect(result.current.required).toBeFalse();
+      context("and the field is not required", () => {
+        it("sets the required state to false", () => {
+          const { result } = renderWith({ path: "age", schema });
+
+          expect(result.current.required).toBeFalse();
+        });
+      });
     });
   });
 });

@@ -1,9 +1,9 @@
 import { get, set } from "dot-prop-immutable";
 import { Dispatch, SetStateAction, useCallback, useEffect, useMemo } from "react";
 import { useContextSelector } from "use-context-selector";
-import { ValidationError, reach, isSchema } from "yup";
 
 import { Optional, Path, Struct, safeFormContext } from "../Form.context";
+import { getAdapter, handleResult } from "../helpers/adapters";
 import { isFunctionAction } from "../helpers/commons";
 
 /**
@@ -79,12 +79,12 @@ export function useField<
 
   useEffect(() => {
     if (touched || submitted) {
-      const schema = reach(validation, path);
+      const { validateAt } = getAdapter(validation);
 
-      if (isSchema(schema)) {
-        schema.validate(value, { recursive: false, strict: true })
-          .then(() =>
-            setViolations(prev => {
+      validateAt(path, value)
+        .then(
+          handleResult(
+            () => setViolations(prev => {
               if (prev.get(path)) {
                 const next = [...prev].filter(([k]) => k !== path);
                 return new Map(next);
@@ -92,21 +92,13 @@ export function useField<
 
               return prev;
             }),
-          )
-          .catch((err: unknown) => {
-            if (err instanceof ValidationError) {
-              const { message } = err;
-
-              return setViolations(prev =>
-                prev.get(path) !== message
-                  ? new Map([...prev, [path, message]])
-                  : prev,
-              );
-            }
-
-            throw err;
-          });
-      }
+            message => setViolations(prev =>
+              prev.get(path) !== message
+                ? new Map([...prev, [path, message]])
+                : prev,
+            ),
+          ),
+        );
     }
   }, [validation, path, value, touched, submitted]);
 

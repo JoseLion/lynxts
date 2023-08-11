@@ -1,10 +1,13 @@
 import { expect } from "@stackbuilders/assertive-ts";
-import { RenderHookResult, renderHook } from "@testing-library/react";
+import { RenderHookResult, fireEvent, render, renderHook, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import { ChangeEvent, ReactElement, useCallback } from "react";
 import Sinon from "sinon";
-import { ObjectSchema, number, object, string } from "yup";
+import { ObjectSchema, isSchema, number, object, string } from "yup";
+import { z } from "zod";
 
-import { Optional, Path, ValueByPath } from "../../../../src/lib/Form.context";
-import { FormProvider } from "../../../../src/lib/Form.provider";
+import { Optional, Path, ValueByPath, useFormSelector } from "../../../../src/lib/Form.context";
+import { FormProvider, FormProviderProps } from "../../../../src/lib/Form.provider";
 import { UseField, useField } from "../../../../src/lib/hooks/useField";
 
 interface User {
@@ -18,9 +21,18 @@ interface RenderOptions<K extends Path<User>, D extends Optional<ValueByPath<Use
   values?: Partial<User>;
 }
 
-const schema: ObjectSchema<User> = object({
+interface TestAppProps {
+  schema: FormProviderProps<User>["validation"];
+}
+
+const yupSchema: ObjectSchema<User> = object({
   age: number().required(),
-  name: string().required(),
+  name: string().required("This field is required!"),
+});
+
+const zodSchema = z.object({
+  age: z.number(),
+  name: z.string().nonempty({ message: "This field is required!" }),
 });
 
 function renderWith<
@@ -30,12 +42,48 @@ function renderWith<
   return renderHook(() => useField(path, fallback), {
     wrapper(props) {
       return (
-        <FormProvider<User> onSubmit={Sinon.fake} validation={schema} values={values}>
+        <FormProvider<User> onSubmit={Sinon.fake} validation={yupSchema} values={values}>
           {props.children}
         </FormProvider>
       );
     },
   });
+}
+
+function TestApp(props: TestAppProps): ReactElement {
+  const { schema } = props;
+
+  return (
+    <FormProvider<User> onSubmit={Sinon.fake} validation={schema}>
+      <Field />
+    </FormProvider>
+  );
+}
+
+function Field(): ReactElement {
+  const { setTouched, setValue, value } = useField<User, string>("name");
+  const errors = useFormSelector(ctxt => ctxt.violations);
+  const touchMap = useFormSelector(ctxt => ctxt.touched);
+
+  const handleChange = useCallback(({ target }: ChangeEvent<HTMLInputElement>): void => {
+    setValue(target.value);
+  }, []);
+
+  return (
+    <>
+      <label>
+        {"Name:"}
+        <input
+          onChange={handleChange}
+          onBlur={setTouched}
+          value={value ?? ""}
+        />
+      </label>
+
+      <div>{`Touched: ${touchMap.get("name") ?? false}`}</div>
+      <div>{`Error: ${errors.get("name") ?? "--"}`}</div>
+    </>
+  );
 }
 
 describe("[Integration] useField.test.tsx", () => {
@@ -83,7 +131,7 @@ describe("[Integration] useField.test.tsx", () => {
 
         expect(result.current.value).toBeEqual(18);
 
-        // TS won't allow, but checking for a runtime edge case
+        // TS won't allow, but checking for runtime edge case
         result.current.setValue(undefined as unknown as number);
 
         rerender();
@@ -104,6 +152,124 @@ describe("[Integration] useField.test.tsx", () => {
       rerender();
 
       expect(result.current.value).toBeEqual("Alice");
+    });
+  });
+
+  [yupSchema, zodSchema].forEach(schema => {
+    const schemaName = isSchema(schema) ? "Yup" : "Zod";
+
+    describe(`[${schemaName}] validation`, () => {
+      context("when the field is valid", () => {
+        context("and the field is untouched", () => {
+          it("does not show any error", async () => {
+            const { findByRole, getByText } = render(<TestApp schema={schema} />);
+
+            await waitFor(() => {
+              getByText("Touched: false");
+              getByText("Error: --");
+            });
+
+            const nameInput = await findByRole("textbox", { name: "Name:" });
+
+            await userEvent.type(nameInput, "foo");
+
+            await waitFor(() => {
+              getByText("Touched: false");
+              getByText("Error: --");
+            });
+          });
+        });
+
+        context("and the field is touched", () => {
+          it("does not show any error", async () => {
+            const { findByRole, getByText } = render(<TestApp schema={schema} />);
+
+            await waitFor(() => {
+              getByText("Touched: false");
+              getByText("Error: --");
+            });
+
+            const nameInput = await findByRole("textbox", { name: "Name:" });
+
+            await userEvent.type(nameInput, "foo");
+
+            await waitFor(() => {
+              getByText("Touched: false");
+              getByText("Error: --");
+            });
+
+            fireEvent.blur(nameInput);
+
+            await waitFor(() => {
+              getByText("Touched: true");
+              getByText("Error: --");
+            });
+          });
+        });
+      });
+
+      context("when the field is invalid", () => {
+        context("and the field is untouched", () => {
+          it("does not show the error", async () => {
+            const { findByRole, getByText } = render(<TestApp schema={schema} />);
+
+            await waitFor(() => {
+              getByText("Touched: false");
+              getByText("Error: --");
+            });
+
+            const nameInput = await findByRole("textbox", { name: "Name:" });
+
+            await userEvent.type(nameInput, "foo");
+
+            await waitFor(() => {
+              getByText("Touched: false");
+              getByText("Error: --");
+            });
+
+            await userEvent.clear(nameInput);
+
+            await waitFor(() => {
+              getByText("Touched: false");
+              getByText("Error: --");
+            });
+          });
+        });
+
+        context("and the field is touched", () => {
+          it("shows the error", async () => {
+            const { findByRole, getByText } = render(<TestApp schema={schema} />);
+
+            await waitFor(() => {
+              getByText("Touched: false");
+              getByText("Error: --");
+            });
+
+            const nameInput = await findByRole("textbox", { name: "Name:" });
+
+            await userEvent.type(nameInput, "foo");
+
+            await waitFor(() => {
+              getByText("Touched: false");
+              getByText("Error: --");
+            });
+
+            await userEvent.clear(nameInput);
+
+            await waitFor(() => {
+              getByText("Touched: false");
+              getByText("Error: --");
+            });
+
+            fireEvent.blur(nameInput);
+
+            await waitFor(() => {
+              getByText("Touched: true");
+              getByText("Error: This field is required!");
+            });
+          });
+        });
+      });
     });
   });
 });

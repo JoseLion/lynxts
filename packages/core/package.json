@@ -53,17 +53,22 @@
     "sinon": "^15.2.0",
     "tslib": "^2.6.1",
     "typescript": "^5.1.6",
-    "yup": "^1.2.0"
+    "yup": "^1.2.0",
+    "zod": "^3.21.4"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
-    "yup": ">=1.0.0"
+    "yup": ">=1.0.0",
+    "zod": ">=3.0.0"
   },
   "peerDependenciesMeta": {
     "react": {
       "optional": false
     },
     "yup": {
+      "optional": true
+    },
+    "zod": {
       "optional": true
     }
   },

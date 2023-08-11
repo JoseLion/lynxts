@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 import { useContextSelector } from "use-context-selector";
-import { reach } from "yup";
 
 import { Optional, Path, Struct, safeFormContext } from "../Form.context";
+import { getAdapter } from "../helpers/adapters";
 
 /**
  * The result of the {@link useFieldValidation} hook.
@@ -39,11 +39,9 @@ export function useFieldValidation<T extends Struct>(path: Path<T>): UseFieldVal
   }, [touched, submitted, violation]);
 
   const required = useMemo((): boolean => {
-    const description = reach(validation, path).describe();
+    const adapter = getAdapter(validation);
 
-    return "tests" in description
-      ? !description.nullable && !description.optional
-      : false;
+    return adapter.required(path);
   }, [validation, path]);
 
   return useMemo((): UseFieldValidation => ({

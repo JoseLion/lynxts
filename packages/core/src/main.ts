@@ -33,6 +33,11 @@ export {
 } from "./lib/components/Field.component";
 
 export {
+  type Adapter,
+  type Result,
+} from "./lib/helpers/adapters";
+
+export {
   type UseArrayField,
   useArrayField,
 } from "./lib/hooks/useArrayField";
