@@ -1,4 +1,4 @@
-[Lynx.ts Core API](../README.md) / FormProviderProps
+[@lynxts/core](../README.md) / FormProviderProps
 
 # Interface: FormProviderProps<T\>
 

@@ -1,4 +1,4 @@
-[Lynx.ts Core API](../README.md) / RenderProps
+[@lynxts/core](../README.md) / RenderProps
 
 # Interface: RenderProps<T\>
 

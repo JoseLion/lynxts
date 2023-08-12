@@ -1,4 +1,4 @@
-[Lynx.ts Native API](../README.md) / TextFiedProps
+[@lynxts/native](../README.md) / TextFiedProps
 
 # Interface: TextFiedProps<T\>
 

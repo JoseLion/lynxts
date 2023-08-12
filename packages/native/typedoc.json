@@ -2,6 +2,6 @@
   "$schema": "https://typedoc.org/schema.json",
   "extends": ["../../typedoc.json"],
   "entryPoints": ["src/main.ts"],
-  "name": "Lynx.ts Native API",
+  "indexTitle": "Lynx.ts Native API",
   "out": "./docs"
 }

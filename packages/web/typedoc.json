@@ -2,6 +2,6 @@
   "$schema": "https://typedoc.org/schema.json",
   "extends": ["../../typedoc.json"],
   "entryPoints": ["src/main.ts"],
-  "name": "Lynx.ts Web API",
+  "indexTitle": "Lynx.ts Web API",
   "out": "./docs"
 }

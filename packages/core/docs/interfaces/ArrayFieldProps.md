@@ -1,4 +1,4 @@
-[Lynx.ts Core API](../README.md) / ArrayFieldProps
+[@lynxts/core](../README.md) / ArrayFieldProps
 
 # Interface: ArrayFieldProps<T, K\>
 

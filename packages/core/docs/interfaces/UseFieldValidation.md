@@ -1,4 +1,4 @@
-[Lynx.ts Core API](../README.md) / UseFieldValidation
+[@lynxts/core](../README.md) / UseFieldValidation
 
 # Interface: UseFieldValidation
 

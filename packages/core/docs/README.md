@@ -1,4 +1,4 @@
-Lynx.ts Core API
+@lynxts/core
 
 # Lynx.ts Core API
 

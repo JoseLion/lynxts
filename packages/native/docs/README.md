@@ -1,4 +1,4 @@
-Lynx.ts Native API
+@lynxts/native
 
 # Lynx.ts Native API
 

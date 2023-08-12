@@ -1,4 +1,4 @@
-[Lynx.ts Core API](../README.md) / FormCtxt
+[@lynxts/core](../README.md) / FormCtxt
 
 # Interface: FormCtxt<T\>
 

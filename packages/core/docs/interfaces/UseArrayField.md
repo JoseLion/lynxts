@@ -1,4 +1,4 @@
-[Lynx.ts Core API](../README.md) / UseArrayField
+[@lynxts/core](../README.md) / UseArrayField
 
 # Interface: UseArrayField<V\>
 

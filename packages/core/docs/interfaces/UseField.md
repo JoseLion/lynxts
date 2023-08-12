@@ -1,4 +1,4 @@
-[Lynx.ts Core API](../README.md) / UseField
+[@lynxts/core](../README.md) / UseField
 
 # Interface: UseField<V, D\>
 

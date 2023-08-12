@@ -1,4 +1,4 @@
-[Lynx.ts Core API](../README.md) / FieldRenderProps
+[@lynxts/core](../README.md) / FieldRenderProps
 
 # Interface: FieldRenderProps<T, K, D\>
 

@@ -1,4 +1,4 @@
-[Lynx.ts Core API](../README.md) / Adapter
+[@lynxts/core](../README.md) / Adapter
 
 # Interface: Adapter<T\>
 

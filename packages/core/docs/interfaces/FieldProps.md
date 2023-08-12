@@ -1,4 +1,4 @@
-[Lynx.ts Core API](../README.md) / FieldProps
+[@lynxts/core](../README.md) / FieldProps
 
 # Interface: FieldProps<T, K, D\>
 
