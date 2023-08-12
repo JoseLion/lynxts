@@ -2,7 +2,7 @@ import { get, set } from "dot-prop-immutable";
 import { Dispatch, SetStateAction, useCallback, useEffect, useMemo } from "react";
 import { useContextSelector } from "use-context-selector";
 
-import { Optional, Path, Struct, safeFormContext } from "../Form.context";
+import { Optional, Path, Struct, ValueByPath, safeFormContext } from "../Form.context";
 import { getAdapter, handleResult } from "../helpers/adapters";
 import { isFunctionAction } from "../helpers/commons";
 
@@ -81,7 +81,7 @@ export function useField<
     if (touched || submitted) {
       const { validateAt } = getAdapter(validation);
 
-      validateAt(path, value)
+      validateAt(path, value as ValueByPath<T, Path<T>>)
         .then(
           handleResult(
             () => setViolations(prev => {

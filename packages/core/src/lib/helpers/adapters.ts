@@ -2,7 +2,7 @@ import { get } from "dot-prop-immutable";
 import { ObjectSchema, ValidationError, isSchema, reach } from "yup";
 import { ZodError, ZodObject, ZodSchema, ZodType } from "zod";
 
-import type { Path, Struct } from "../Form.context";
+import type { Optional, Path, Struct, ValueByPath } from "../Form.context";
 
 /**
  * A result type used to represent either a success or an error value.
@@ -20,8 +20,9 @@ export type Result<S, E> = { success: S; } | { error: E; };
  */
 export interface Adapter<T extends Struct> {
   /**
-   * Should return `true` if the `path` parameter is required in the validation
-   * schema. E.i., when the field cannot be `null` or `undefined`.
+   * Should return `true` if the field in the `path` is required in the
+   * validation schema. I.e., whenever the field cannot be `null`,
+   * `undefined`, non-empty, etc.
    *
    * @param path the path to check if it's requried
    * @returns wether a path is required or not
@@ -51,7 +52,22 @@ export interface Adapter<T extends Struct> {
    * @param value the value to validate against
    * @returns a promise with the `Result<S, E>` of the validation
    */
-  validateAt: <V>(path: Path<T>, value: V) => Promise<Result<true, string>>;
+  validateAt: <K extends Path<T>>(path: K, value: Optional<ValueByPath<T, K>>) => Promise<Result<true, string>>;
+}
+
+/**
+ * Helper function that creates an {@link Adapter|Adapter\<T\>} to bypass the
+ * form validation.
+ *
+ * @param T struct type of the form values
+ * @returns an adapter to bypass validation
+ */
+export function noValidate<T extends Struct>(): Adapter<T> {
+  return {
+    required: () => false,
+    validate: values => Promise.resolve({ success: values as T }),
+    validateAt: () => Promise.resolve({ success: true }),
+  };
 }
 
 /**
