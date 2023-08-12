@@ -3,12 +3,15 @@ import { ReactElement, memo, useCallback } from "react";
 import isEqual from "react-fast-compare";
 import {
   NativeSyntheticEvent,
+  StyleProp,
   Text,
   TextInput,
   TextInputFocusEventData,
   TextInputProps,
   TextInputSubmitEditingEventData,
+  TextStyle,
   View,
+  ViewStyle,
 } from "react-native";
 
 import { SS } from "./TextField.styles";
@@ -21,11 +24,19 @@ import { SS } from "./TextField.styles";
  */
 export interface TextFiedProps<T extends Struct> extends Omit<TextInputProps, "value"> {
   /**
+   * The styles of the error `<Text>` component.
+   */
+  errorStyle?: StyleProp<TextStyle>;
+  /**
    * The text to use as label on top of the field. The component does not
    * render the `<Text>` component when this prop is omited, `undefined`, or an
    * empty string.
    */
   label?: string;
+  /**
+   * The styles of the label `<Text>` component.
+   */
+  labelStyle?: StyleProp<TextStyle>;
   /**
    * The name of the field as a {@link Path|Path\<T, string\>}.
    */
@@ -36,6 +47,18 @@ export interface TextFiedProps<T extends Struct> extends Omit<TextInputProps, "v
    * @default "*"
    */
   requiredText?: string;
+  /**
+   * The styles of the View wrapping the field.
+   */
+  style?: StyleProp<ViewStyle>;
+  /**
+   * The styles of the superscript `<Text>` component.
+   */
+  supStyle?: StyleProp<TextStyle>;
+  /**
+   * The styles of the `<TextInput>` component.
+   */
+  textInputStyle?: StyleProp<TextStyle>;
 }
 
 /**
@@ -57,13 +80,17 @@ export type TextFieldOf<T extends Struct> = (props: TextFiedProps<T>) => ReactEl
  */
 export const TextField = memo(<T extends Struct>(props: TextFiedProps<T>): ReactElement => {
   const {
+    errorStyle,
     label,
+    labelStyle,
     name,
     onBlur,
     onChangeText,
     onSubmitEditing,
     requiredText = "*",
     style,
+    supStyle,
+    textInputStyle,
     ...rest
   } = props;
 
@@ -89,22 +116,23 @@ export const TextField = memo(<T extends Struct>(props: TextFiedProps<T>): React
   return (
     <View style={style}>
         {!!label && (
-          <Text nativeID={`${name}-label`} style={SS.label}>
+          <Text nativeID={`${name}-label`} style={labelStyle ?? SS.label}>
             {label}
             {required && !!requiredText && (
-              <Text style={SS.sup}>{` ${requiredText}`}</Text>
+              <Text style={supStyle ?? SS.sup}>{` ${requiredText}`}</Text>
             )}
           </Text>
         )}
       <TextInput
         accessibilityLabelledBy={`${name}-label`}
         {...rest}
+        style={textInputStyle}
         onChangeText={handleChange}
         onBlur={handleTouched}
         onSubmitEditing={handleSubmit}
         value={value}
       />
-      {!!error && <Text style={SS.error}>{error}</Text>}
+      {!!error && <Text style={errorStyle ?? SS.error}>{error}</Text>}
     </View>
   );
 }, isEqual);
