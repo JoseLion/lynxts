@@ -25,3 +25,19 @@ jobs:
       - run: yarn compile
       - run: yarn lint
       - run: yarn test
+
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+      - run: yarn install --immutable
+      - run: |
+          yarn docs
+          if git diff --exit-code; then
+            echo "::error::The API reference docs have uncommitted changes!"
+            exit 1
+          fi
