@@ -1,0 +1,23 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "cleanOutputDir": true,
+  "entryPointStrategy": "resolve",
+  "gitRevision": "main",
+  "githubPages": false,
+  "hideGenerator": true,
+  "includeVersion": false,
+  "mergeModulesMergeMode": "project",
+  "plugin": [
+    "typedoc-plugin-markdown",
+    "typedoc-plugin-merge-modules"
+  ],
+  "readme": "none",
+  "visibilityFilters": {
+    "@alpha": false,
+    "@beta": false,
+    "external": false,
+    "inherited": true,
+    "private": false,
+    "protected": false
+  }
+}

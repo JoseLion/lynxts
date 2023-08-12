@@ -1,0 +1,8 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "extends": ["../../typedoc.json"],
+  "entryPoints": ["src/main.ts"],
+  "intentionallyNotExported": ["GetPath"],
+  "name": "Lynx.ts Core API",
+  "out": "./docs"
+}
