@@ -13,20 +13,19 @@ TypeScript-first, lightning fast Forms for React.js and React Native. The `@lynx
 * [**lynxts/core**](../core/)**:** Same as the `@lynxts/web` version used
 * [**React.js**](https://react.dev/)**:** >=16.8.0
 * [**React DOM**](https://www.npmjs.com/package/react-dom)**:** >=16.8.0
-* [**Yup**](https://github.com/jquense/yup)**:** >=1.0.0
 
 ### Install
 
 Using Yarn:
 
 ```
-yarn add @lynxts/core @lynxts/web react react-dom yup
+yarn add @lynxts/core @lynxts/web
 ```
 
 Using NPM:
 
 ```
-npm i @lynxts/core @lynxts/web react react-dom yup
+npm i @lynxts/core @lynxts/web
 ```
 
 ### Usage

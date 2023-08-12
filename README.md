@@ -16,7 +16,7 @@ TypeScript-first, lightning fast Forms for React.js and React Native.
 
 Lynx.ts is a [React Context](https://react.dev/learn/passing-data-deeply-with-context) based Form Provider. However, thanks to the brilliant [use-context-selector](https://github.com/dai-shi/use-context-selector) the re-renders caused by changes in the context are drastically reduced. The `use-context-selector` hook implements [React's RFC context selector](https://github.com/reactjs/rfcs/pull/119) in user land, this way we can specifically select what we need from the context and avoid unnecessary re-renders when unused parts of the context change.
 
-Being a TypeScript-first library, you'll find type-safety on every turn: validation, simple/array/nested fields, form submision, etc. The codebase also follows a [full memoization principle](https://attardi.org/why-we-memo-all-the-things/), which makes Lynx.ts fast and ready for small and big projects.
+Being a TypeScript-first library, you'll find type-safety on every turn: validation, simple/array/nested fields, form submision, etc. The codebase also follows a [full memoization principle](https://attardi.org/why-we-memo-all-the-things/), which makes Lynx.ts fast and performant on small or big projects.
 
 ## Compatibility
 
@@ -34,9 +34,9 @@ Check each package documentation for more details on how to use them.
 
 ## Design and next steps
 
-The intention is to keep this library small and simple. So initially, the validation only supports a [Yup](https://github.com/jquense/yup) schemas. However, the intention is to add support for [Zod](https://zod.dev/) moving forward and based user requests. A third option to add custom validators can be implememted if requested too.
+Validation is a crutial part of forms in most cases. For Lynx.ts validation is always required, but because it can be a whole project out on its own, validation is supported through 3rd-party libraries. Both [Yup](https://github.com/jquense/yup) and [Zod](https://zod.dev/) schemas are supported out-of-the-box, but you can use any other library by just implementing an `Adapter<T>` which tells the form how to validate the schema. Check the Core package documentation for more details on [custom validation adapters](./packages/core/README.md#validation-adapters). In the remote case you don't need to validate your forms, we provide a `noValidate()` adapter which you can use as well.
 
-Same as with the schema, errors have a single behavior. They are present only if the **field is dirty or the form was submitted**. Adding other behaviors will be based on requests and their use cases.
+Errors are present only if the **field was touched or the form submitted**. Adding other behaviors to how errors show will be based on requests and their use cases. Feel free to open an issue and share yours!
 
 ## Something's missing?
 

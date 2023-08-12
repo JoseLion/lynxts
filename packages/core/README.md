@@ -16,18 +16,17 @@ TypeScript-first, lightning fast Forms for React.js and React Native. The `@lynx
 ## Requirements
 
 - **[React.js](https://react.dev/):** >=16.8.0
-- **[Yup](https://github.com/jquense/yup):** >=1.0.0
 
 ## Install
 
 Using Yarn:
 ```
-yarn add @lynxts/core react yup
+yarn add @lynxts/core
 ```
 
 Using NPM:
 ```
-npm i @lynxts/core react yup
+npm i @lynxts/core
 ```
 
 ## Usage
@@ -253,6 +252,50 @@ const ArrayField = arrayFieldOf<User>();
     </fieldset>
   )}
 </ArrayField>
+```
+
+### Validation adapters
+
+Lynx.ts works out-of-the-box with both [Yup](https://github.com/jquense/yup) and [Zod](https://zod.dev/) schemas, but if you'd prefer to use a different library, you need only to implement an `Adapter<T>` which tells Lynx.ts how the validation should work.
+
+```ts
+interface Adapter<T extends Struct> {
+  required: (path: Path<T>) => boolean;
+  validate: (values: Partial<T>) => Promise<Result<T, Map<Path<T>, string>>>;
+  validateAt: <V>(path: Path<T>, value: V) => Promise<Result<true, string>>;
+}
+```
+
+An `Adapter<T>` consist on implementing three function:
+
+- **required:** A function that tells if a field in a path is required or not.
+- **validate:** A function used to validate the Form values against a schema.
+- **validateAt:** A function used to validate a single field value in a path.
+
+The `validation` prop accepts either a Yup/Zod schema or a custom adapter, so you could create an function that creates an adapter from your especific schema:
+
+```tsx
+<FormProvider onSubmit={handleSubmit} validation={myAdapter(schema)}>
+  {/* ... */}
+</FormProvider>
+```
+
+#### Bypass validation
+
+
+If you wish not use any validation at all, Lynx.ts provides a `noValidate()` adapter you can use for this purpose.
+
+```tsx
+import { FormProvider, noValidate } from "@lynxts/core";
+
+interface User {
+  age: number;
+  name: string;
+}
+
+<FormProvider<User> onSubmit={handleSubmit} validation={noValidate()}>
+  {/* ... */}
+</FormProvider>
 ```
 
 ## Something's missing?
