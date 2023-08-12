@@ -10,6 +10,7 @@ describe("[Integration] main.test.tsx", () => {
       "FormProvider",
       "arrayFieldOf",
       "fieldOf",
+      "noValidate",
       "useArrayField",
       "useField",
       "useFieldValidation",
