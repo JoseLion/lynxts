@@ -1,10 +1,13 @@
+import { expect } from "@stackbuilders/assertive-ts";
 import { render, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { ReactElement, useCallback, useState } from "react";
 import Sinon from "sinon";
-import { ObjectSchema, boolean, number, object, string } from "yup";
+import { ObjectSchema, boolean, isSchema, number, object, string } from "yup";
+import { z } from "zod";
 
-import { FormProvider } from "../../../src/main";
+import { useFormSelector } from "../../../src/lib/Form.context";
+import { FormProvider, FormProviderProps } from "../../../src/lib/Form.provider";
 
 interface Foo {
   x: number;
@@ -12,14 +15,29 @@ interface Foo {
   z: boolean;
 }
 
-const schema: ObjectSchema<Foo> = object({
+const yupSchema: ObjectSchema<Foo> = object({
   x: number().required(),
   y: string().required(),
   z: boolean().required(),
 });
 
-function TestApp(): ReactElement {
-  const [data, setData] = useState<Partial<Foo>>({ });
+const zodSchema = z.object({
+  x: z.number(),
+  y: z.string(),
+  z: z.boolean(),
+})
+.strict();
+
+interface TestAppProps {
+  init?: Partial<Foo>;
+  onSubmit?: (values: Foo) => void;
+  schema?: FormProviderProps<Foo>["validation"];
+}
+
+function TestApp(props: TestAppProps): ReactElement {
+  const { init = { }, onSubmit = Sinon.fake, schema = yupSchema } = props;
+
+  const [data, setData] = useState<Partial<Foo>>(init);
 
   const changeData = useCallback((): void => {
     setData({
@@ -31,22 +49,48 @@ function TestApp(): ReactElement {
 
   return (
     <FormProvider<Foo>
-      onSubmit={Sinon.fake}
+      onSubmit={onSubmit}
       validation={schema}
       values={data}
     >
-      {({ values }) => (
+      {({ submit, values }) => (
         <>
           <div>{`x: ${values.x}`}</div>
           <div>{`y: ${values.y}`}</div>
           <div>{`z: ${values.z}`}</div>
+          <Errors />
+          <WasSubmitted />
 
           <button type="button" onClick={changeData}>
             {"Change!"}
           </button>
+
+          <button type="button" onClick={submit}>
+            {"Submit!"}
+          </button>
         </>
       )}
     </FormProvider>
+  );
+}
+
+function Errors(): ReactElement | null {
+  const violations = useFormSelector(ctxt => ctxt.violations);
+
+  if (violations.size === 0) {
+    return null;
+  }
+
+  return (
+    <div>{`Errors: ${[...violations.keys()].join(", ")}`}</div>
+  );
+}
+
+function WasSubmitted(): ReactElement {
+  const submmited = useFormSelector(ctxt => ctxt.submitted);
+
+  return (
+    <div>{`Submitted? ${submmited}`}</div>
   );
 }
 
@@ -56,7 +100,7 @@ describe("[Integration] Form.provider.test.tsx", () => {
       const { getByText } = render(
         <FormProvider<Foo>
           onSubmit={Sinon.fake}
-          validation={schema}
+          validation={yupSchema}
           values={{ y: "foo" }}
         >
           {({ values }) => (
@@ -82,7 +126,7 @@ describe("[Integration] Form.provider.test.tsx", () => {
       const { getByText } = render(
         <FormProvider<Foo>
           onSubmit={Sinon.fake}
-          validation={schema}
+          validation={yupSchema}
           values={{ y: "foo" }}
         >
           <div>{"foo"}</div>
@@ -117,11 +161,11 @@ describe("[Integration] Form.provider.test.tsx", () => {
 
   context("when the submit function is called from the context", () => {
     it("calls the onSubmit callback once", async () => {
-      const submitSpy = Sinon.spy<(v: Foo) => void>(() => undefined);
+      const spySubmit = Sinon.spy<(v: Foo) => void>(() => undefined);
       const { findByRole } = render(
         <FormProvider<Foo>
-          onSubmit={submitSpy}
-          validation={schema}
+          onSubmit={spySubmit}
+          validation={yupSchema}
           values={{ x: 1, y: "foo", z: true }}
         >
           {({ submit }) => (
@@ -136,7 +180,77 @@ describe("[Integration] Form.provider.test.tsx", () => {
 
       await userEvent.click(submitButton);
 
-      Sinon.assert.calledOnceWithExactly(submitSpy, { x: 1, y: "foo", z: true });
+      Sinon.assert.calledOnceWithExactly(spySubmit, { x: 1, y: "foo", z: true });
+    });
+  });
+
+  [yupSchema, zodSchema].forEach(schema => {
+    const schemaName = isSchema(schema) ? "Yup" : "Zod";
+
+    context("when the validation fails", () => {
+      it("sets all the violations, does not call the onSubmit callback, sets the form as submitted", async () => {
+        const spySubmit = Sinon.spy<(v: Foo) => void>(() => undefined);
+          const { findByRole, getByText } = render(
+            <TestApp
+              onSubmit={spySubmit}
+              schema={schema}
+            />,
+          );
+
+          await waitFor(() => getByText("Submitted? false"));
+
+          const submitButton = await findByRole("button", { name: "Submit!" });
+
+          await userEvent.click(submitButton);
+
+          await waitFor(() => getByText("Errors: x, y, z"));
+
+          Sinon.assert.notCalled(spySubmit);
+
+          await waitFor(() => getByText("Submitted? true"));
+      });
+    });
+
+    describe(`[${schemaName}] validate`, () => {
+      context("when the validation success", () => {
+        it("clears the errors, calls the onSubmit callback once, and sets the form as submitted", async () => {
+          const spySubmit = Sinon.spy<(v: Foo) => void>(() => undefined);
+          const { findByRole, getByText, queryByText } = render(
+            <TestApp
+              onSubmit={spySubmit}
+              schema={schema}
+            />,
+          );
+
+          await waitFor(() => getByText("Submitted? false"));
+
+          const submitButton = await findByRole("button", { name: "Submit!" });
+
+          await userEvent.click(submitButton);
+
+          await waitFor(() => getByText("Errors: x, y, z"));
+
+          const changeButton = await findByRole("button", { name: "Change!" });
+
+          await userEvent.click(changeButton);
+
+          await waitFor(() => {
+            getByText("x: 5");
+            getByText("y: foo");
+            getByText("z: true");
+          });
+
+          await userEvent.click(submitButton);
+
+          await waitFor(() => {
+            expect(queryByText("Errors: x, y, z")).toBeNull();
+          });
+
+          Sinon.assert.calledWithExactly(spySubmit, { x: 5, y: "foo", z: true });
+
+          await waitFor(() => getByText("Submitted? true"));
+        });
+      });
     });
   });
 });

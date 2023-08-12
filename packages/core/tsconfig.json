@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "./build",
+    "incremental": false,
     "typeRoots": [
       "../../node_modules/@types/",
       "./typings/"

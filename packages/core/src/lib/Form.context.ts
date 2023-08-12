@@ -1,7 +1,9 @@
 import { Dispatch, SetStateAction, useMemo } from "react";
 import { Context, createContext, useContext, useContextSelector } from "use-context-selector";
 import { ObjectSchema, object } from "yup";
+import { ZodSchema } from "zod";
 
+import type { Adapter } from "./helpers/adapters";
 import { noop } from "./helpers/commons";
 
 /**
@@ -158,9 +160,11 @@ export interface FormCtxt<T extends Struct> {
    */
   touched: Map<Path<T>, boolean>;
   /**
-   * The validation schema for the Form
+   * The validation schema used by the Form. This may be Yup/Zod schema or a
+   * custom {@link Adapter|Adapter<T>}, depending on what was passed to the
+   * Form context provider.
    */
-  validation: ObjectSchema<T>;
+  validation: ObjectSchema<T> | ZodSchema<T> | Adapter<T>;
   /**
    * The state of the values `T` of the form.
    */

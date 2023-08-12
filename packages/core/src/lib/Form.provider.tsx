@@ -10,9 +10,11 @@ import {
   useState,
 } from "react";
 import isEqual from "react-fast-compare";
-import { ObjectSchema, ValidationError } from "yup";
+import { ObjectSchema } from "yup";
+import { ZodSchema } from "zod";
 
 import { DeepPartial, FormCtxt, Optional, Path, Struct, ValueByPath, safeFormContext } from "./Form.context";
+import { Adapter, getAdapter, handleResult } from "./helpers/adapters";
 import { isFunctionAction } from "./helpers/commons";
 
 /**
@@ -114,9 +116,14 @@ export interface FormProviderProps<T extends Struct> {
    */
   onSubmit: (values: T) => void;
   /**
-   * A validation schema of `T` used to validate the form fields.
+   * A validation schema of `T` used to validate the form fields. Both Yup and
+   * Zod schemas are supported out-of-the-box.
+   *
+   * However, if you want to use another validation library, or your own
+   * schemas, you can also pass a validation {@link Adapter|Adapter<T>} which
+   * tells the form and the hooks how to handle the validation.
    */
-  validation: ObjectSchema<T>;
+  validation: ObjectSchema<T> | ZodSchema<T> | Adapter<T>;
   /**
    * The values `T` of the form. Changing this prop with a state will change
    * the field values as well.
@@ -141,19 +148,18 @@ export const FormProvider = memo(<T extends Struct>(props: FormProviderProps<T>)
   const [violations, setViolations] = useState(new Map<Path<T>, string>());
 
   const submit = useCallback((): void => {
-    validation
-      .validate(values, { abortEarly: false, strict: true, stripUnknown: true })
-      .then(valid => {
-        setViolations(new Map());
-        onSubmit(valid as T);
-      })
-      .catch((error: unknown) => {
-        if (error instanceof ValidationError) {
-          return setViolations(buildErrorMap(error));
-        }
+    const { validate } = getAdapter(validation);
 
-        throw error;
-      })
+    validate(values)
+      .then(
+        handleResult(
+          valid => {
+            setViolations(new Map());
+            onSubmit(valid);
+          },
+          setViolations,
+        ),
+      )
       .finally(() => setSubmitted(true));
   }, [validation, onSubmit, values]);
 
@@ -226,30 +232,6 @@ export const FormProvider = memo(<T extends Struct>(props: FormProviderProps<T>)
     </FormContext.Provider>
   );
 }, isEqual);
-
-/**
- * Helper function which recursively builds an path/violation map from a
- * validation Error.
- *
- * @param error the validation Error
- * @returns a map of paths and violation messages
- */
-function buildErrorMap<T extends Struct>(error: ValidationError): Map<Path<T>, string> {
-  return error.inner.reduce((errorMap, { inner, message, path }) => {
-    const key = path?.replace(/\[(\d+)\](\.)?/, ".$1$2") as Path<T>;
-
-    return new Map([
-      ...errorMap,
-      [key, message],
-      ...inner
-        .map(buildErrorMap<T>)
-        .reduce((acc, entrie) =>
-          new Map([...acc, ...entrie]),
-          new Map<Path<T>, string>(),
-        ),
-    ]);
-  }, new Map<Path<T>, string>());
-}
 
 /**
  * Type guards which narrows the type of a value or its change callback.
