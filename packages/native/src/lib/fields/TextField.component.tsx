@@ -130,7 +130,7 @@ export const TextField = memo(<T extends Struct>(props: TextFiedProps<T>): React
         onChangeText={handleChange}
         onBlur={handleTouched}
         onSubmitEditing={handleSubmit}
-        value={value}
+        defaultValue={value}
       />
       {!!error && <Text style={errorStyle ?? SS.error}>{error}</Text>}
     </View>
