@@ -2176,6 +2176,11 @@ __metadata:
     react: ">=16.8.0"
     yup: ">=1.0.0"
     zod: ">=3.0.0"
+  dependenciesMeta:
+    yup:
+      optional: true
+    zod:
+      optional: true
   peerDependenciesMeta:
     react:
       optional: false
