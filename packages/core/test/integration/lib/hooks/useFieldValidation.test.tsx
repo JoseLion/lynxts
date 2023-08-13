@@ -1,5 +1,5 @@
 import { expect } from "@stackbuilders/assertive-ts";
-import { RenderHookResult, renderHook } from "@testing-library/react";
+import { RenderHookResult, renderHook, waitFor } from "@testing-library/react";
 import Sinon from "sinon";
 import { ObjectSchema, isSchema, number, object, string } from "yup";
 import { z } from "zod";
@@ -46,30 +46,36 @@ describe("[Integration] useFieldValidation.test.tsx", () => {
   [yupSchema, zodSchema].forEach(schema => {
     const schemaName = isSchema(schema) ? "Yup" : "Zod";
 
-    describe(`when the validation is a ${schemaName} schema`, () => {
+    describe(`[${schemaName}] when the validation is a schema`, () => {
       context("and the hook is rendered", () => {
-        it("returns the error and required states", () => {
+        it("returns the error and required states", async () => {
           const { result } = renderWith({ path: "name", schema });
           const { current } = result;
 
-          expect(current.error).toBeUndefined();
-          expect(current.required).toBePresent();
+          await waitFor(() => {
+            expect(current.error).toBeUndefined();
+            expect(current.required).toBePresent();
+          });
         });
       });
 
       context("and the field is required", () => {
-        it("sets the required state to true", () => {
+        it("sets the required state to true", async () => {
           const { result } = renderWith({ path: "name", schema });
 
-          expect(result.current.required).toBeTrue();
+          await waitFor(() => {
+            expect(result.current.required).toBeTrue();
+          });
         });
       });
 
       context("and the field is not required", () => {
-        it("sets the required state to false", () => {
+        it("sets the required state to false", async () => {
           const { result } = renderWith({ path: "age", schema });
 
-          expect(result.current.required).toBeFalse();
+          await waitFor(() => {
+            expect(result.current.required).toBeFalse();
+          });
         });
       });
     });

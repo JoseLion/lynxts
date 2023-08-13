@@ -79,9 +79,8 @@ export function useField<
 
   useEffect(() => {
     if (touched || submitted) {
-      const { validateAt } = getAdapter(validation);
-
-      validateAt(path, value as ValueByPath<T, Path<T>>)
+      getAdapter(validation)
+        .then(({ validateAt }) => validateAt(path, value as ValueByPath<T, Path<T>>))
         .then(
           handleResult(
             () => setViolations(prev => {

@@ -10,8 +10,8 @@ import {
   useState,
 } from "react";
 import isEqual from "react-fast-compare";
-import { ObjectSchema } from "yup";
-import { ZodSchema } from "zod";
+import type { ObjectSchema } from "yup";
+import type { ZodSchema } from "zod";
 
 import { DeepPartial, FormCtxt, Optional, Path, Struct, ValueByPath, safeFormContext } from "./Form.context";
 import { Adapter, getAdapter, handleResult } from "./helpers/adapters";
@@ -148,9 +148,8 @@ export const FormProvider = memo(<T extends Struct>(props: FormProviderProps<T>)
   const [violations, setViolations] = useState(new Map<Path<T>, string>());
 
   const submit = useCallback((): void => {
-    const { validate } = getAdapter(validation);
-
-    validate(values)
+    getAdapter(validation)
+      .then(({ validate }) => validate(values))
       .then(
         handleResult(
           valid => {
