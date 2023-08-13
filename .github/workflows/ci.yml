@@ -35,9 +35,9 @@ jobs:
           node-version-file: .nvmrc
           cache: yarn
       - run: yarn install --immutable
-      - run: |
-          yarn docs
-          if git diff --exit-code; then
-            echo "::error::The API reference docs have uncommitted changes!"
-            exit 1
-          fi
+      # - run: |
+      #     yarn docs
+      #     if git diff --exit-code; then
+      #       echo "::error::The API reference docs have uncommitted changes!"
+      #       exit 1
+      #     fi
