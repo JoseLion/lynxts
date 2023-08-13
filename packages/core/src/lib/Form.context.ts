@@ -1,9 +1,9 @@
 import { Dispatch, SetStateAction, useMemo } from "react";
 import { Context, createContext, useContext, useContextSelector } from "use-context-selector";
-import { ObjectSchema, object } from "yup";
-import { ZodSchema } from "zod";
+import type { ObjectSchema } from "yup";
+import type { ZodSchema } from "zod";
 
-import type { Adapter } from "./helpers/adapters";
+import { noValidate, type Adapter } from "./helpers/adapters";
 import { noop } from "./helpers/commons";
 
 /**
@@ -185,7 +185,7 @@ export const FormContext = createContext<FormCtxt<Struct>>({
   submit: noop,
   submitted: false,
   touched: new Map(),
-  validation: object({ }),
+  validation: noValidate(),
   values: { },
   violations: new Map(),
 });

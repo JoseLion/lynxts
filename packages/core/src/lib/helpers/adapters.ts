@@ -1,6 +1,6 @@
 import { get } from "dot-prop-immutable";
-import { ObjectSchema, ValidationError, isSchema, reach } from "yup";
-import { ZodError, ZodObject, ZodSchema, ZodType } from "zod";
+import type { ObjectSchema, ValidationError } from "yup";
+import type { ZodObject, ZodSchema } from "zod";
 
 import type { Optional, Path, Struct, ValueByPath } from "../Form.context";
 
@@ -79,20 +79,26 @@ export function noValidate<T extends Struct>(): Adapter<T> {
  */
 export function getAdapter<T extends Struct>(
   validation: ObjectSchema<T> | ZodSchema<T> | Adapter<T>,
-): Adapter<T> {
+): Promise<Adapter<T>> {
+  if (isAdapter(validation)) {
+    return Promise.resolve(validation);
+  }
+
   if ("__isYupSchema__" in validation) {
     return yupAdapter(validation);
   }
 
-  if (validation instanceof ZodSchema) {
-    if (validation instanceof ZodObject) {
-      return zodAdapter(validation as ZodObject<T>);
+  return import("zod").then(({ ZodObject, ZodSchema }) => {
+    if (validation instanceof ZodSchema) {
+      if (validation instanceof ZodObject) {
+        return zodAdapter(validation as ZodObject<T>);
+      }
+
+      throw Error("Validation schema must be `z.object(..)` when using Zod");
     }
 
-    throw Error("Validation schema must be a z.object when using Zod");
-  }
-
-  return validation;
+    return validation;
+  });
 }
 
 /**
@@ -101,8 +107,8 @@ export function getAdapter<T extends Struct>(
  * @param validation the Yup validation schema
  * @returns a validation adapter for Yup
  */
-function yupAdapter<T extends Struct>(validation: ObjectSchema<T>): Adapter<T> {
-  return {
+function yupAdapter<T extends Struct>(validation: ObjectSchema<T>): Promise<Adapter<T>> {
+  return import("yup").then(({ ValidationError, isSchema, reach }) => ({
     required: path => {
       const description = reach(validation, path).describe();
 
@@ -138,9 +144,9 @@ function yupAdapter<T extends Struct>(validation: ObjectSchema<T>): Adapter<T> {
           });
       }
 
-      return Promise.reject(Error(`Invalid Yup schema at: ${path}`));
+      throw Error(`Invalid Yup schema at: ${path}`);
     },
-  };
+  }));
 }
 
 /**
@@ -149,50 +155,51 @@ function yupAdapter<T extends Struct>(validation: ObjectSchema<T>): Adapter<T> {
  * @param validation the Zod validation schema
  * @returns a Zod validation adapter
  */
-function zodAdapter<T extends Struct>(validation: ZodObject<T>): Adapter<T> {
-  return {
-    required: path => {
-      const schema = get<T, unknown>(validation.shape, path);
+function zodAdapter<T extends Struct>(validation: ZodObject<T>): Promise<Adapter<T>> {
+  return import("zod")
+    .then(({ ZodError, ZodType }) => ({
+      required: path => {
+        const schema = get<T, unknown>(validation.shape, path);
 
-      return schema instanceof ZodType
-        ? !schema.isNullable() && !schema.isOptional()
-        : false;
-    },
-    validate: values => {
-      return validation.parseAsync(values)
-        .then(valid => ({ success: valid as unknown as T }))
-        .catch((error: unknown) => {
-          if (error instanceof ZodError) {
-            return {
-              error: error.issues.reduce((acc, issue) => {
-                const path = issue.path.join(".") as Path<T>;
-                return new Map([...acc, [path, issue.message]]);
-              }, new Map<Path<T>, string>()),
-            };
-          }
-
-          throw error;
-        });
-    },
-    validateAt: (path, value) => {
-      const schema = get<T, unknown>(validation.shape, path);
-
-      if (schema instanceof ZodType) {
-        return schema.parseAsync(value)
-          .then(() => ({ success: true as const }))
+        return schema instanceof ZodType
+          ? !schema.isNullable() && !schema.isOptional()
+          : false;
+      },
+      validate: values => {
+        return validation.parseAsync(values)
+          .then(valid => ({ success: valid as unknown as T }))
           .catch((error: unknown) => {
             if (error instanceof ZodError) {
-              const { issues, message } = error;
-              return { error: issues[0]?.message ?? message };
+              return {
+                error: error.issues.reduce((acc, issue) => {
+                  const path = issue.path.join(".") as Path<T>;
+                  return new Map([...acc, [path, issue.message]]);
+                }, new Map<Path<T>, string>()),
+              };
             }
 
             throw error;
           });
-      }
+      },
+      validateAt: (path, value) => {
+        const schema = get<T, unknown>(validation.shape, path);
 
-      return Promise.reject(Error(`Invalid Zod schema at: ${path}`));
-    },
-  };
+        if (schema instanceof ZodType) {
+          return schema.parseAsync(value)
+            .then(() => ({ success: true as const }))
+            .catch((error: unknown) => {
+              if (error instanceof ZodError) {
+                const { issues, message } = error;
+                return { error: issues[0]?.message ?? message };
+              }
+
+              throw error;
+            });
+        }
+
+        return Promise.reject(Error(`Invalid Zod schema at: ${path}`));
+      },
+    }));
 }
 
 /**
@@ -237,4 +244,14 @@ function errorsFromYup<T extends Struct>(error: ValidationError): Map<Path<T>, s
         ),
     ]);
   }, new Map<Path<T>, string>());
+}
+
+function isAdapter<T extends Struct>(value: ObjectSchema<T> | ZodSchema<T> | Adapter<T>): value is Adapter<T> {
+  return Object.keys(value).length === 3
+    && "required" in value
+    && "validate" in value
+    && "validateAt" in value
+    && typeof value.required === "function"
+    && typeof value.validate === "function"
+    && typeof value.validateAt === "function";
 }

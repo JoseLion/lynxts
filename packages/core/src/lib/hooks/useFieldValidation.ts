@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useContextSelector } from "use-context-selector";
 
 import { Optional, Path, Struct, safeFormContext } from "../Form.context";
@@ -32,16 +32,18 @@ export function useFieldValidation<T extends Struct>(path: Path<T>): UseFieldVal
   const validation = useContextSelector(FormContext, ctxt => ctxt.validation);
   const violation = useContextSelector(FormContext, ctxt => ctxt.violations.get(path));
 
+  const [required, setRequired] = useState(false);
+
   const error = useMemo((): Optional<string> => {
     return touched || submitted
       ? violation
       : undefined;
   }, [touched, submitted, violation]);
 
-  const required = useMemo((): boolean => {
-    const adapter = getAdapter(validation);
-
-    return adapter.required(path);
+  useEffect(() => {
+    getAdapter(validation)
+      .then(adapter => adapter.required(path))
+      .then(setRequired);
   }, [validation, path]);
 
   return useMemo((): UseFieldValidation => ({
