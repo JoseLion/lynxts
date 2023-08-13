@@ -239,4 +239,4 @@ const TextField = textFieldOf<User>();
 
 #### Defined in
 
-[packages/native/src/lib/fields/TextField.component.tsx:160](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L160)
+[packages/native/src/lib/fields/TextField.component.tsx:162](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L162)
