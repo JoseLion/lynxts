@@ -71,6 +71,10 @@ const SignIn = memo((): ReactElement => {
 });
 ```
 
+## API Reference
+
+You can find the complete API refence [here](./docs/README.md) 📚
+
 ### Something's missing?
 
 Suggestions are always welcome! Please create an [issue](https://github.com/JoseLion/lynxts/issues/new) describing the request, feature, or bug. We'll try to look into it as soon as possible 🙂

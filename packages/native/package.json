@@ -22,6 +22,7 @@
     "build": "tsc -p tsconfig.prod.json",
     "check": "yarn compile && yarn test",
     "compile": "tsc -p tsconfig.json",
+    "docs": "typedoc",
     "release": "semantic-release",
     "test": "NODE_ENV=test jest",
     "test:silent": "DEBUG_PRINT_LIMIT=0 yarn test",

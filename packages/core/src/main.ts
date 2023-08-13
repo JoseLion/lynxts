@@ -28,6 +28,7 @@ export {
 export {
   type FieldOf,
   type FieldProps,
+  type FieldRenderProps,
   Field,
   fieldOf,
 } from "./lib/components/Field.component";

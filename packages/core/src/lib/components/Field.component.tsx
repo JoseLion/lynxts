@@ -15,7 +15,7 @@ export type FieldOf<T extends Struct> = <
   D extends Optional<ValueByPath<T, K>> = Optional<ValueByPath<T, K>>,
 >(props: FieldProps<T, K, D>) => ReactNode;
 
-interface FieldRenderProps<
+export interface FieldRenderProps<
   T extends Struct,
   K extends Path<T, ValueByPath<T, K>>,
   D extends Optional<ValueByPath<T, K>>,
