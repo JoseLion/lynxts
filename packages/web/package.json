@@ -10,7 +10,10 @@
     "react.js",
     "react dom",
     "form",
-    "typescript"
+    "typescript",
+    "validation",
+    "yup",
+    "zod"
   ],
   "main": "./dist/main.js",
   "types": "./dist/main.d.ts",
