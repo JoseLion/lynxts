@@ -114,27 +114,27 @@ export const TextField = memo(<T extends Struct>(props: TextFiedProps<T>): React
   }, [onSubmitEditing, submit]);
 
   return (
-    <View style={SS.container ?? style}>
+    <View style={[SS.container, style]}>
       {!!label && (
         <View nativeID={`${name}-label`} style={SS.labelView}>
-          <Text style={labelStyle ?? SS.labelText}>
+          <Text style={[SS.labelText, labelStyle]}>
             {label}
           </Text>
           {required && !!requiredText && (
-            <Text style={supStyle ?? SS.sup}>{` ${requiredText}`}</Text>
+            <Text style={[SS.sup, supStyle]}>{` ${requiredText}`}</Text>
           )}
         </View>
       )}
       <TextInput
         accessibilityLabelledBy={`${name}-label`}
         {...rest}
-        style={textInputStyle}
+        style={[SS.input, error ? SS.inputError : undefined, textInputStyle]}
         onChangeText={handleChange}
         onBlur={handleTouched}
         onSubmitEditing={handleSubmit}
         defaultValue={value}
       />
-      {!!error && <Text style={errorStyle ?? SS.error}>{error}</Text>}
+      {!!error && <Text style={[SS.error, errorStyle]}>{error}</Text>}
     </View>
   );
 }, isEqual);
