@@ -21,7 +21,7 @@ The result of the [useFieldValidation](../README.md#usefieldvalidation) hook.
 
 ### error
 
-• **error**: [`Optional`](../README.md#optional)<`string`\>
+• **error**: [`Optional`](../README.md#optional)\<`string`\>
 
 The error message of the field (if any).
 

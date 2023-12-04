@@ -1,4 +1,4 @@
-import { expect } from "@stackbuilders/assertive-ts";
+import { expect } from "@assertive-ts/core";
 
 // eslint-disable-next-line import/no-namespace
 import * as native from "../../src/main";

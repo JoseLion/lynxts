@@ -156,6 +156,7 @@
     "constructor-super": "error",
     "curly": "error",
     "etc/no-commented-out-code": "error",
+    "etc/no-deprecated": "error",
     "etc/throw-error": "error",
     "eol-last": "error",
     "eqeqeq": "error",

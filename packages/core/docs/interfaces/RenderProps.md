@@ -1,6 +1,6 @@
 [@lynxts/core](../README.md) / RenderProps
 
-# Interface: RenderProps<T\>
+# Interface: RenderProps\<T\>
 
 The renders props when the children of [FormProvider](../README.md#formprovider) is a function.
 
@@ -23,11 +23,11 @@ The renders props when the children of [FormProvider](../README.md#formprovider)
 
 ### handleChange
 
-• **handleChange**: <K, A\>(`path`: `K`, `valueOrCallback`: [`Optional`](../README.md#optional)<[`ValueByPath`](../README.md#valuebypath)<`T`, `K`\>\> \| [`ChangeCallback`](../README.md#changecallback)<`T`, `K`, `A`\>) => (...`args`: `A`) => `void`
+• **handleChange**: \<K, A\>(`path`: `K`, `valueOrCallback`: [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> \| [`ChangeCallback`](../README.md#changecallback)\<`T`, `K`, `A`\>) => (...`args`: `A`) => `void`
 
 #### Type declaration
 
-▸ <`K`, `A`\>(`path`, `valueOrCallback`): (...`args`: `A`) => `void`
+▸ \<`K`, `A`\>(`path`, `valueOrCallback`): (...`args`: `A`) => `void`
 
 Helper function which creates a handler to use on callback props and
 change form values. It infers the arguments of the callback so they can be
@@ -45,7 +45,7 @@ used dreing the change callback.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `path` | `K` | the path to change the value |
-| `valueOrCallback` | [`Optional`](../README.md#optional)<[`ValueByPath`](../README.md#valuebypath)<`T`, `K`\>\> \| [`ChangeCallback`](../README.md#changecallback)<`T`, `K`, `A`\> | either a value or a callback to change it |
+| `valueOrCallback` | [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> \| [`ChangeCallback`](../README.md#changecallback)\<`T`, `K`, `A`\> | either a value or a callback to change it |
 
 ##### Returns
 
@@ -84,11 +84,11 @@ ___
 
 ### setValue
 
-• **setValue**: <K\>(`path`: `K`) => [`SetValue`](../README.md#setvalue)<[`ValueByPath`](../README.md#valuebypath)<`T`, `K`\>\>
+• **setValue**: \<K\>(`path`: `K`) => [`SetValue`](../README.md#setvalue)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\>
 
 #### Type declaration
 
-▸ <`K`\>(`path`): [`SetValue`](../README.md#setvalue)<[`ValueByPath`](../README.md#valuebypath)<`T`, `K`\>\>
+▸ \<`K`\>(`path`): [`SetValue`](../README.md#setvalue)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\>
 
 Helper function which creates a setter function for the specified path.
 
@@ -106,7 +106,7 @@ Helper function which creates a setter function for the specified path.
 
 ##### Returns
 
-[`SetValue`](../README.md#setvalue)<[`ValueByPath`](../README.md#valuebypath)<`T`, `K`\>\>
+[`SetValue`](../README.md#setvalue)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\>
 
 a value setter function
 
@@ -151,7 +151,7 @@ ___
 
 ### values
 
-• **values**: `Partial`<`T`\>
+• **values**: `Partial`\<`T`\>
 
 The curretn values `Partial<T>` of the form. These values are partial
 because they might not be present or changed by the user yet.

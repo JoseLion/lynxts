@@ -1,6 +1,6 @@
 [@lynxts/native](../README.md) / TextFiedProps
 
-# Interface: TextFiedProps<T\>
+# Interface: TextFiedProps\<T\>
 
 The [TextField](../README.md#textfield) component props which extend from
 TextInputProps.
@@ -13,7 +13,7 @@ TextInputProps.
 
 ## Hierarchy
 
-- `Omit`<`TextInputProps`, ``"value"``\>
+- `Omit`\<`TextInputProps`, ``"value"``\>
 
   ↳ **`TextFiedProps`**
 
@@ -66,6 +66,7 @@ TextInputProps.
 - [disableFullscreenUI](TextFiedProps.md#disablefullscreenui)
 - [editable](TextFiedProps.md#editable)
 - [enablesReturnKeyAutomatically](TextFiedProps.md#enablesreturnkeyautomatically)
+- [enterKeyHint](TextFiedProps.md#enterkeyhint)
 - [errorStyle](TextFiedProps.md#errorstyle)
 - [focusable](TextFiedProps.md#focusable)
 - [hasTVPreferredFocus](TextFiedProps.md#hastvpreferredfocus)
@@ -177,7 +178,7 @@ TextInputProps.
 
 ### accessibilityActions
 
-• `Optional` **accessibilityActions**: readonly `Readonly`<{ `label?`: `string` ; `name`: `string`  }\>[]
+• `Optional` **accessibilityActions**: readonly `Readonly`\<\{ `label?`: `string` ; `name`: `string`  }\>[]
 
 Provides an array of custom actions available for accessibility.
 
@@ -427,7 +428,7 @@ Omit.allowFontScaling
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:462
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:471
 
 ___
 
@@ -661,7 +662,7 @@ Omit.autoCapitalize
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:473
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:482
 
 ___
 
@@ -740,7 +741,7 @@ Omit.autoComplete
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:541
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:550
 
 ___
 
@@ -757,7 +758,7 @@ Omit.autoCorrect
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:600
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:609
 
 ___
 
@@ -774,7 +775,7 @@ Omit.autoFocus
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:606
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:615
 
 ___
 
@@ -791,7 +792,7 @@ Omit.blurOnSubmit
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:612
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:621
 
 ___
 
@@ -807,7 +808,7 @@ Omit.caretHidden
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:617
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:626
 
 ___
 
@@ -838,7 +839,7 @@ Omit.clearButtonMode
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:129
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:138
 
 ___
 
@@ -854,7 +855,7 @@ Omit.clearTextOnFocus
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:139
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:148
 
 ___
 
@@ -888,7 +889,7 @@ Omit.contextMenuHidden
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:622
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:631
 
 ___
 
@@ -910,7 +911,7 @@ Omit.cursorColor
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:298
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:307
 
 ___
 
@@ -939,7 +940,7 @@ Omit.dataDetectorTypes
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:157
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:166
 
 ___
 
@@ -957,7 +958,7 @@ Omit.defaultValue
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:629
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:638
 
 ___
 
@@ -976,7 +977,7 @@ Omit.disableFullscreenUI
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:329
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:338
 
 ___
 
@@ -992,7 +993,7 @@ Omit.editable
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:634
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:643
 
 ___
 
@@ -1009,13 +1010,30 @@ Omit.enablesReturnKeyAutomatically
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:163
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:172
+
+___
+
+### enterKeyHint
+
+• `Optional` **enterKeyHint**: `EnterKeyHintTypeOptions`
+
+Determines what text should be shown to the return key on virtual keyboards.
+Has precedence over the returnKeyType prop.
+
+#### Inherited from
+
+Omit.enterKeyHint
+
+#### Defined in
+
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:795
 
 ___
 
 ### errorStyle
 
-• `Optional` **errorStyle**: `StyleProp`<`TextStyle`\>
+• `Optional` **errorStyle**: `StyleProp`\<`TextStyle`\>
 
 The styles of the error `<Text>` component.
 
@@ -1140,7 +1158,7 @@ Omit.importantForAutofill
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:315
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:324
 
 ___
 
@@ -1156,7 +1174,7 @@ Omit.inlineImageLeft
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:334
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:343
 
 ___
 
@@ -1172,7 +1190,7 @@ Omit.inlineImagePadding
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:339
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:348
 
 ___
 
@@ -1190,7 +1208,7 @@ Omit.inputAccessoryViewID
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:824
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:839
 
 ___
 
@@ -1206,7 +1224,7 @@ Omit.inputMode
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:649
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:658
 
 ___
 
@@ -1243,7 +1261,7 @@ Omit.keyboardAppearance
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:168
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:177
 
 ___
 
@@ -1264,7 +1282,7 @@ Omit.keyboardType
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:644
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:653
 
 ___
 
@@ -1284,7 +1302,7 @@ ___
 
 ### labelStyle
 
-• `Optional` **labelStyle**: `StyleProp`<`TextStyle`\>
+• `Optional` **labelStyle**: `StyleProp`\<`TextStyle`\>
 
 The styles of the label `<Text>` component.
 
@@ -1306,7 +1324,7 @@ Omit.lineBreakStrategyIOS
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:279
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:288
 
 ___
 
@@ -1325,7 +1343,7 @@ Omit.maxFontSizeMultiplier
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:841
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:856
 
 ___
 
@@ -1342,7 +1360,7 @@ Omit.maxLength
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:655
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:664
 
 ___
 
@@ -1358,13 +1376,13 @@ Omit.multiline
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:660
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:669
 
 ___
 
 ### name
 
-• **name**: `GetPath`<`T`, `string`, `T`\>
+• **name**: `GetPath`\<`T`, `string`, `T`\>
 
 The name of the field as a Path|Path\<T, string\>.
 
@@ -1430,7 +1448,7 @@ Omit.numberOfLines
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:345
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:354
 
 ___
 
@@ -1522,7 +1540,7 @@ ___
 
 ### onBlur
 
-• `Optional` **onBlur**: (`e`: `NativeSyntheticEvent`<`TextInputFocusEventData`\>) => `void`
+• `Optional` **onBlur**: (`e`: `NativeSyntheticEvent`\<`TextInputFocusEventData`\>) => `void`
 
 #### Type declaration
 
@@ -1534,7 +1552,7 @@ Callback that is called when the text input is blurred
 
 | Name | Type |
 | :------ | :------ |
-| `e` | `NativeSyntheticEvent`<`TextInputFocusEventData`\> |
+| `e` | `NativeSyntheticEvent`\<`TextInputFocusEventData`\> |
 
 ##### Returns
 
@@ -1546,13 +1564,13 @@ Omit.onBlur
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:665
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:674
 
 ___
 
 ### onChange
 
-• `Optional` **onChange**: (`e`: `NativeSyntheticEvent`<`TextInputChangeEventData`\>) => `void`
+• `Optional` **onChange**: (`e`: `NativeSyntheticEvent`\<`TextInputChangeEventData`\>) => `void`
 
 #### Type declaration
 
@@ -1564,7 +1582,7 @@ Callback that is called when the text input's text changes.
 
 | Name | Type |
 | :------ | :------ |
-| `e` | `NativeSyntheticEvent`<`TextInputChangeEventData`\> |
+| `e` | `NativeSyntheticEvent`\<`TextInputChangeEventData`\> |
 
 ##### Returns
 
@@ -1576,7 +1594,7 @@ Omit.onChange
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:672
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:681
 
 ___
 
@@ -1607,13 +1625,13 @@ Omit.onChangeText
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:680
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:689
 
 ___
 
 ### onContentSizeChange
 
-• `Optional` **onContentSizeChange**: (`e`: `NativeSyntheticEvent`<`TextInputContentSizeChangeEventData`\>) => `void`
+• `Optional` **onContentSizeChange**: (`e`: `NativeSyntheticEvent`\<`TextInputContentSizeChangeEventData`\>) => `void`
 
 #### Type declaration
 
@@ -1629,7 +1647,7 @@ Only called for multiline text inputs.
 
 | Name | Type |
 | :------ | :------ |
-| `e` | `NativeSyntheticEvent`<`TextInputContentSizeChangeEventData`\> |
+| `e` | `NativeSyntheticEvent`\<`TextInputContentSizeChangeEventData`\> |
 
 ##### Returns
 
@@ -1641,13 +1659,13 @@ Omit.onContentSizeChange
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:689
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:698
 
 ___
 
 ### onEndEditing
 
-• `Optional` **onEndEditing**: (`e`: `NativeSyntheticEvent`<`TextInputEndEditingEventData`\>) => `void`
+• `Optional` **onEndEditing**: (`e`: `NativeSyntheticEvent`\<`TextInputEndEditingEventData`\>) => `void`
 
 #### Type declaration
 
@@ -1659,7 +1677,7 @@ Callback that is called when text input ends.
 
 | Name | Type |
 | :------ | :------ |
-| `e` | `NativeSyntheticEvent`<`TextInputEndEditingEventData`\> |
+| `e` | `NativeSyntheticEvent`\<`TextInputEndEditingEventData`\> |
 
 ##### Returns
 
@@ -1671,13 +1689,13 @@ Omit.onEndEditing
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:696
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:705
 
 ___
 
 ### onFocus
 
-• `Optional` **onFocus**: (`e`: `NativeSyntheticEvent`<`TextInputFocusEventData`\>) => `void`
+• `Optional` **onFocus**: (`e`: `NativeSyntheticEvent`\<`TextInputFocusEventData`\>) => `void`
 
 #### Type declaration
 
@@ -1689,7 +1707,7 @@ Callback that is called when the text input is focused
 
 | Name | Type |
 | :------ | :------ |
-| `e` | `NativeSyntheticEvent`<`TextInputFocusEventData`\> |
+| `e` | `NativeSyntheticEvent`\<`TextInputFocusEventData`\> |
 
 ##### Returns
 
@@ -1701,13 +1719,13 @@ Omit.onFocus
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:715
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:724
 
 ___
 
 ### onKeyPress
 
-• `Optional` **onKeyPress**: (`e`: `NativeSyntheticEvent`<`TextInputKeyPressEventData`\>) => `void`
+• `Optional` **onKeyPress**: (`e`: `NativeSyntheticEvent`\<`TextInputKeyPressEventData`\>) => `void`
 
 #### Type declaration
 
@@ -1725,7 +1743,7 @@ Note: on Android only the inputs from soft keyboard are handled, not the hardwar
 
 | Name | Type |
 | :------ | :------ |
-| `e` | `NativeSyntheticEvent`<`TextInputKeyPressEventData`\> |
+| `e` | `NativeSyntheticEvent`\<`TextInputKeyPressEventData`\> |
 
 ##### Returns
 
@@ -1737,7 +1755,7 @@ Omit.onKeyPress
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:762
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:771
 
 ___
 
@@ -2209,7 +2227,7 @@ ___
 
 ### onPressIn
 
-• `Optional` **onPressIn**: (`e`: `NativeSyntheticEvent`<`NativeTouchEvent`\>) => `void`
+• `Optional` **onPressIn**: (`e`: `NativeSyntheticEvent`\<`NativeTouchEvent`\>) => `void`
 
 #### Type declaration
 
@@ -2221,7 +2239,7 @@ Callback that is called when a touch is engaged.
 
 | Name | Type |
 | :------ | :------ |
-| `e` | `NativeSyntheticEvent`<`NativeTouchEvent`\> |
+| `e` | `NativeSyntheticEvent`\<`NativeTouchEvent`\> |
 
 ##### Returns
 
@@ -2233,13 +2251,13 @@ Omit.onPressIn
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:703
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:712
 
 ___
 
 ### onPressOut
 
-• `Optional` **onPressOut**: (`e`: `NativeSyntheticEvent`<`NativeTouchEvent`\>) => `void`
+• `Optional` **onPressOut**: (`e`: `NativeSyntheticEvent`\<`NativeTouchEvent`\>) => `void`
 
 #### Type declaration
 
@@ -2251,7 +2269,7 @@ Callback that is called when a touch is released.
 
 | Name | Type |
 | :------ | :------ |
-| `e` | `NativeSyntheticEvent`<`NativeTouchEvent`\> |
+| `e` | `NativeSyntheticEvent`\<`NativeTouchEvent`\> |
 
 ##### Returns
 
@@ -2263,7 +2281,7 @@ Omit.onPressOut
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:708
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:717
 
 ___
 
@@ -2511,7 +2529,7 @@ ___
 
 ### onScroll
 
-• `Optional` **onScroll**: (`e`: `NativeSyntheticEvent`<`TextInputScrollEventData`\>) => `void`
+• `Optional` **onScroll**: (`e`: `NativeSyntheticEvent`\<`TextInputScrollEventData`\>) => `void`
 
 #### Type declaration
 
@@ -2526,7 +2544,7 @@ May also contain other properties from ScrollEvent but on Android contentSize is
 
 | Name | Type |
 | :------ | :------ |
-| `e` | `NativeSyntheticEvent`<`TextInputScrollEventData`\> |
+| `e` | `NativeSyntheticEvent`\<`TextInputScrollEventData`\> |
 
 ##### Returns
 
@@ -2538,13 +2556,13 @@ Omit.onScroll
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:749
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:758
 
 ___
 
 ### onSelectionChange
 
-• `Optional` **onSelectionChange**: (`e`: `NativeSyntheticEvent`<`TextInputSelectionChangeEventData`\>) => `void`
+• `Optional` **onSelectionChange**: (`e`: `NativeSyntheticEvent`\<`TextInputSelectionChangeEventData`\>) => `void`
 
 #### Type declaration
 
@@ -2556,7 +2574,7 @@ Callback that is called when the text input selection is changed.
 
 | Name | Type |
 | :------ | :------ |
-| `e` | `NativeSyntheticEvent`<`TextInputSelectionChangeEventData`\> |
+| `e` | `NativeSyntheticEvent`\<`TextInputSelectionChangeEventData`\> |
 
 ##### Returns
 
@@ -2568,7 +2586,7 @@ Omit.onSelectionChange
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:722
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:731
 
 ___
 
@@ -2644,7 +2662,7 @@ ___
 
 ### onSubmitEditing
 
-• `Optional` **onSubmitEditing**: (`e`: `NativeSyntheticEvent`<`TextInputSubmitEditingEventData`\>) => `void`
+• `Optional` **onSubmitEditing**: (`e`: `NativeSyntheticEvent`\<`TextInputSubmitEditingEventData`\>) => `void`
 
 #### Type declaration
 
@@ -2656,7 +2674,7 @@ Callback that is called when the text input's submit button is pressed.
 
 | Name | Type |
 | :------ | :------ |
-| `e` | `NativeSyntheticEvent`<`TextInputSubmitEditingEventData`\> |
+| `e` | `NativeSyntheticEvent`\<`TextInputSubmitEditingEventData`\> |
 
 ##### Returns
 
@@ -2668,13 +2686,13 @@ Omit.onSubmitEditing
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:729
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:738
 
 ___
 
 ### onTextInput
 
-• `Optional` **onTextInput**: (`e`: `NativeSyntheticEvent`<`TextInputTextInputEventData`\>) => `void`
+• `Optional` **onTextInput**: (`e`: `NativeSyntheticEvent`\<`TextInputTextInputEventData`\>) => `void`
 
 #### Type declaration
 
@@ -2689,7 +2707,7 @@ This prop requires multiline={true} to be set.
 
 | Name | Type |
 | :------ | :------ |
-| `e` | `NativeSyntheticEvent`<`TextInputTextInputEventData`\> |
+| `e` | `NativeSyntheticEvent`\<`TextInputTextInputEventData`\> |
 
 ##### Returns
 
@@ -2701,7 +2719,7 @@ Omit.onTextInput
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:739
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:748
 
 ___
 
@@ -2859,7 +2877,7 @@ Omit.passwordRules
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:175
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:184
 
 ___
 
@@ -2875,7 +2893,7 @@ Omit.placeholder
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:769
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:778
 
 ___
 
@@ -2891,7 +2909,7 @@ Omit.placeholderTextColor
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:774
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:783
 
 ___
 
@@ -2945,7 +2963,7 @@ Omit.rejectResponderTermination
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:183
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:192
 
 ___
 
@@ -3021,7 +3039,7 @@ Omit.returnKeyLabel
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:351
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:360
 
 ___
 
@@ -3038,7 +3056,7 @@ Omit.returnKeyType
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:780
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:789
 
 ___
 
@@ -3070,7 +3088,7 @@ Omit.scrollEnabled
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:274
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:283
 
 ___
 
@@ -3087,7 +3105,7 @@ Omit.secureTextEntry
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:786
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:801
 
 ___
 
@@ -3103,7 +3121,7 @@ Omit.selectTextOnFocus
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:791
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:806
 
 ___
 
@@ -3127,7 +3145,7 @@ Omit.selection
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:797
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:812
 
 ___
 
@@ -3143,7 +3161,7 @@ Omit.selectionColor
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:802
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:817
 
 ___
 
@@ -3159,7 +3177,7 @@ Omit.selectionState
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:188
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:197
 
 ___
 
@@ -3198,7 +3216,7 @@ Omit.showSoftInputOnFocus
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:372
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:381
 
 ___
 
@@ -3214,13 +3232,13 @@ Omit.spellCheck
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:193
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:202
 
 ___
 
 ### style
 
-• `Optional` **style**: `StyleProp`<`ViewStyle`\>
+• `Optional` **style**: `StyleProp`\<`ViewStyle`\>
 
 The styles of the View wrapping the field.
 
@@ -3236,7 +3254,7 @@ ___
 
 ### supStyle
 
-• `Optional` **supStyle**: `StyleProp`<`TextStyle`\>
+• `Optional` **supStyle**: `StyleProp`\<`TextStyle`\>
 
 The styles of the superscript `<Text>` component.
 
@@ -3258,7 +3276,7 @@ Omit.testID
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:817
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:832
 
 ___
 
@@ -3274,7 +3292,7 @@ Omit.textAlign
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:812
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:827
 
 ___
 
@@ -3290,7 +3308,7 @@ Omit.textAlignVertical
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:367
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:376
 
 ___
 
@@ -3307,7 +3325,7 @@ Omit.textBreakStrategy
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:357
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:366
 
 ___
 
@@ -3364,13 +3382,13 @@ Omit.textContentType
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:240
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:249
 
 ___
 
 ### textInputStyle
 
-• `Optional` **textInputStyle**: `StyleProp`<`TextStyle`\>
+• `Optional` **textInputStyle**: `StyleProp`\<`TextStyle`\>
 
 The styles of the `<TextInput>` component.
 
@@ -3492,7 +3510,7 @@ Omit.underlineColorAndroid
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:362
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:371
 
 ___
 
@@ -3508,4 +3526,4 @@ Omit.verticalAlign
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:377
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:386

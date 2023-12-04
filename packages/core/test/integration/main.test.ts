@@ -1,4 +1,4 @@
-import { expect } from "@stackbuilders/assertive-ts";
+import { expect } from "@assertive-ts/core";
 
 describe("[Integration] main.test.tsx", () => {
   it("re-exports the library exports", async () => {

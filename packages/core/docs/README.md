@@ -49,7 +49,7 @@
 
 ### ArrayFieldOf
 
-Ƭ **ArrayFieldOf**<`T`\>: <K\>(`props`: [`ArrayFieldProps`](interfaces/ArrayFieldProps.md)<`T`, `K`\>) => `ReactNode`
+Ƭ **ArrayFieldOf**\<`T`\>: \<K\>(`props`: [`ArrayFieldProps`](interfaces/ArrayFieldProps.md)\<`T`, `K`\>) => `ReactNode`
 
 #### Type parameters
 
@@ -59,7 +59,7 @@
 
 #### Type declaration
 
-▸ <`K`\>(`props`): `ReactNode`
+▸ \<`K`\>(`props`): `ReactNode`
 
 Helper type to describe an [ArrayField](README.md#arrayfield) component of an specific
 struct `T`.
@@ -68,13 +68,13 @@ struct `T`.
 
 | Name | Type |
 | :------ | :------ |
-| `K` | extends [`Path`](README.md#path)<`T`, [`ArrayValue`](README.md#arrayvalue)<`T`, `K`\>[]\> |
+| `K` | extends [`Path`](README.md#path)\<`T`, [`ArrayValue`](README.md#arrayvalue)\<`T`, `K`\>[]\> |
 
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `props` | [`ArrayFieldProps`](interfaces/ArrayFieldProps.md)<`T`, `K`\> |
+| `props` | [`ArrayFieldProps`](interfaces/ArrayFieldProps.md)\<`T`, `K`\> |
 
 ##### Returns
 
@@ -88,7 +88,7 @@ ___
 
 ### ArrayValue
 
-Ƭ **ArrayValue**<`T`, `K`\>: [`ValueByPath`](README.md#valuebypath)<`T`, `K`\> extends infer A[] \| `undefined` ? `A` : `never`
+Ƭ **ArrayValue**\<`T`, `K`\>: [`ValueByPath`](README.md#valuebypath)\<`T`, `K`\> extends infer A[] \| `undefined` ? `A` : `never`
 
 Helper type to look up the inner type of an array field.
 
@@ -97,7 +97,7 @@ Helper type to look up the inner type of an array field.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `T` | extends [`Struct`](README.md#struct) | struct type of the form values |
-| `K` | extends [`Path`](README.md#path)<`T`\> | the path type of the array field |
+| `K` | extends [`Path`](README.md#path)\<`T`\> | the path type of the array field |
 
 #### Defined in
 
@@ -107,19 +107,19 @@ ___
 
 ### ChangeCallback
 
-Ƭ **ChangeCallback**<`T`, `K`, `A`\>: (...`args`: `A`) => [`Optional`](README.md#optional)<[`ValueByPath`](README.md#valuebypath)<`T`, `K`\>\>
+Ƭ **ChangeCallback**\<`T`, `K`, `A`\>: (...`args`: `A`) => [`Optional`](README.md#optional)\<[`ValueByPath`](README.md#valuebypath)\<`T`, `K`\>\>
 
 #### Type parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `T` | extends [`Struct`](README.md#struct) | struct type of the form values |
-| `K` | extends [`Path`](README.md#path)<`T`\> | path type of `T` |
+| `K` | extends [`Path`](README.md#path)\<`T`\> | path type of `T` |
 | `A` | extends `unknown`[] | callback arguments types |
 
 #### Type declaration
 
-▸ (`...args`): [`Optional`](README.md#optional)<[`ValueByPath`](README.md#valuebypath)<`T`, `K`\>\>
+▸ (`...args`): [`Optional`](README.md#optional)\<[`ValueByPath`](README.md#valuebypath)\<`T`, `K`\>\>
 
 Generic callback function. Infers the arguments types and the return type is
 resolved from the path type.
@@ -132,7 +132,7 @@ resolved from the path type.
 
 ##### Returns
 
-[`Optional`](README.md#optional)<[`ValueByPath`](README.md#valuebypath)<`T`, `K`\>\>
+[`Optional`](README.md#optional)\<[`ValueByPath`](README.md#valuebypath)\<`T`, `K`\>\>
 
 #### Defined in
 
@@ -142,7 +142,7 @@ ___
 
 ### DeepPartial
 
-Ƭ **DeepPartial**<`T`\>: { [P in keyof T]?: T[P] extends Function ? T[P] : T[P] extends (infer U)[] ? DeepPartial<U\>[] : T[P] extends ReadonlyArray<infer U\> ? ReadonlyArray<DeepPartial<U\>\> : DeepPartial<T[P]\> }
+Ƭ **DeepPartial**\<`T`\>: \{ [P in keyof T]?: T[P] extends Function ? T[P] : T[P] extends (infer U)[] ? DeepPartial\<U\>[] : T[P] extends ReadonlyArray\<infer U\> ? ReadonlyArray\<DeepPartial\<U\>\> : DeepPartial\<T[P]\> }
 
 Helper type which recursively transforms object keys from required to
 optional. Like Partial but for nested objects.
@@ -161,7 +161,7 @@ ___
 
 ### FieldOf
 
-Ƭ **FieldOf**<`T`\>: <K, D\>(`props`: [`FieldProps`](interfaces/FieldProps.md)<`T`, `K`, `D`\>) => `ReactNode`
+Ƭ **FieldOf**\<`T`\>: \<K, D\>(`props`: [`FieldProps`](interfaces/FieldProps.md)\<`T`, `K`, `D`\>) => `ReactNode`
 
 #### Type parameters
 
@@ -171,7 +171,7 @@ ___
 
 #### Type declaration
 
-▸ <`K`, `D`\>(`props`): `ReactNode`
+▸ \<`K`, `D`\>(`props`): `ReactNode`
 
 Helper type to describe a [Field](README.md#field) component of an specific struct `T`.
 
@@ -179,14 +179,14 @@ Helper type to describe a [Field](README.md#field) component of an specific stru
 
 | Name | Type |
 | :------ | :------ |
-| `K` | extends [`Path`](README.md#path)<`T`, [`ValueByPath`](README.md#valuebypath)<`T`, `K`\>\> |
-| `D` | extends [`Optional`](README.md#optional)<[`ValueByPath`](README.md#valuebypath)<`T`, `K`\>\> = [`Optional`](README.md#optional)<[`ValueByPath`](README.md#valuebypath)<`T`, `K`\>\> |
+| `K` | extends [`Path`](README.md#path)\<`T`, [`ValueByPath`](README.md#valuebypath)\<`T`, `K`\>\> |
+| `D` | extends [`Optional`](README.md#optional)\<[`ValueByPath`](README.md#valuebypath)\<`T`, `K`\>\> = [`Optional`](README.md#optional)\<[`ValueByPath`](README.md#valuebypath)\<`T`, `K`\>\> |
 
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `props` | [`FieldProps`](interfaces/FieldProps.md)<`T`, `K`, `D`\> |
+| `props` | [`FieldProps`](interfaces/FieldProps.md)\<`T`, `K`, `D`\> |
 
 ##### Returns
 
@@ -200,7 +200,7 @@ ___
 
 ### Optional
 
-Ƭ **Optional**<`T`\>: `T` \| `undefined`
+Ƭ **Optional**\<`T`\>: `T` \| `undefined`
 
 Helper type alias to make another type optional (undefinable).
 
@@ -218,7 +218,7 @@ ___
 
 ### Path
 
-Ƭ **Path**<`T`, `V`\>: `GetPath`<`T`, `V`, `T`\>
+Ƭ **Path**\<`T`, `V`\>: `GetPath`\<`T`, `V`, `T`\>
 
 Safe type that represents a dotted path of `T`. If the second argument is
 provided, filters the paths to the ones matching the value value.
@@ -238,7 +238,7 @@ ___
 
 ### Result
 
-Ƭ **Result**<`S`, `E`\>: { `success`: `S`  } \| { `error`: `E`  }
+Ƭ **Result**\<`S`, `E`\>: \{ `success`: `S`  } \| \{ `error`: `E`  }
 
 A result type used to represent either a success or an error value.
 
@@ -257,7 +257,7 @@ ___
 
 ### SetValue
 
-Ƭ **SetValue**<`V`\>: (`action`: `SetStateAction`<[`Optional`](README.md#optional)<`V`\>\>) => `void`
+Ƭ **SetValue**\<`V`\>: (`action`: `SetStateAction`\<[`Optional`](README.md#optional)\<`V`\>\>) => `void`
 
 #### Type parameters
 
@@ -275,7 +275,7 @@ Function that receives an action to set a value of `V` and retunrs void.
 
 | Name | Type |
 | :------ | :------ |
-| `action` | `SetStateAction`<[`Optional`](README.md#optional)<`V`\>\> |
+| `action` | `SetStateAction`\<[`Optional`](README.md#optional)\<`V`\>\> |
 
 ##### Returns
 
@@ -289,7 +289,7 @@ ___
 
 ### Struct
 
-Ƭ **Struct**: `Record`<`string`, `any`\>
+Ƭ **Struct**: `Record`\<`string`, `any`\>
 
 A JavaScript structure-like object where keys are strings and values of any
 type.
@@ -302,7 +302,7 @@ ___
 
 ### ValueByPath
 
-Ƭ **ValueByPath**<`T`, `P`\>: `P` extends \`${infer S}.${infer R}\` ? `R` extends [`Path`](README.md#path)<`T`[`S`]\> ? [`ValueByPath`](README.md#valuebypath)<`T`[`S`], `R`\> : `R` extends \`${number}.${infer R2}\` ? `R2` extends [`Path`](README.md#path)<`T`[`S`][`number`]\> ? [`ValueByPath`](README.md#valuebypath)<`T`[`S`][`number`], `R2`\> : `R` extends \`${number}\` ? `T`[`S`][`number`] : `never` : `R` extends \`${number}\` ? `T`[`S`][`number`] : `never` : `P` extends \`${infer S}\` ? `T`[`S`] : `never`
+Ƭ **ValueByPath**\<`T`, `P`\>: `P` extends \`$\{infer S}.$\{infer R}\` ? `R` extends [`Path`](README.md#path)\<`T`[`S`]\> ? [`ValueByPath`](README.md#valuebypath)\<`T`[`S`], `R`\> : `R` extends \`$\{number}.$\{infer R2}\` ? `R2` extends [`Path`](README.md#path)\<`T`[`S`][`number`]\> ? [`ValueByPath`](README.md#valuebypath)\<`T`[`S`][`number`], `R2`\> : `R` extends \`$\{number}\` ? `T`[`S`][`number`] : `never` : `R` extends \`$\{number}\` ? `T`[`S`][`number`] : `never` : `P` extends \`$\{infer S}\` ? `T`[`S`] : `never`
 
 Helper type to look up the type of the value of the passed path `P`.
 
@@ -311,7 +311,7 @@ Helper type to look up the type of the value of the passed path `P`.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `T` | extends [`Struct`](README.md#struct) | the type of the object of the path |
-| `P` | extends [`Path`](README.md#path)<`T`\> | the [Path](README.md#path) type to get the value type |
+| `P` | extends [`Path`](README.md#path)\<`T`\> | the [Path](README.md#path) type to get the value type |
 
 #### Defined in
 
@@ -321,7 +321,7 @@ Helper type to look up the type of the value of the passed path `P`.
 
 ### ArrayField
 
-▸ **ArrayField**<`T`, `K`\>(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **ArrayField**\<`T`, `K`\>(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 Helper component for array fields with finner control over the re-renders.
 
@@ -336,11 +336,11 @@ Helper component for array fields with finner control over the re-renders.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `props` | [`ArrayFieldProps`](interfaces/ArrayFieldProps.md)<`T`, `K`\> | the array field props |
+| `props` | [`ArrayFieldProps`](interfaces/ArrayFieldProps.md)\<`T`, `K`\> | the array field props |
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -350,7 +350,7 @@ ___
 
 ### Field
 
-▸ **Field**<`T`, `K`, `D`\>(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **Field**\<`T`, `K`, `D`\>(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 Helper component for rendering fields with finner control over the re-renders
 
@@ -360,17 +360,17 @@ Helper component for rendering fields with finner control over the re-renders
 | :------ | :------ |
 | `T` | extends [`Struct`](README.md#struct) |
 | `K` | extends `string` |
-| `D` | [`Optional`](README.md#optional)<[`ValueByPath`](README.md#valuebypath)<`T`, `K`\>\> |
+| `D` | [`Optional`](README.md#optional)\<[`ValueByPath`](README.md#valuebypath)\<`T`, `K`\>\> |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `props` | [`FieldProps`](interfaces/FieldProps.md)<`T`, `K`, `D`\> | the field props |
+| `props` | [`FieldProps`](interfaces/FieldProps.md)\<`T`, `K`, `D`\> | the field props |
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -380,7 +380,7 @@ ___
 
 ### FormProvider
 
-▸ **FormProvider**<`T`\>(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **FormProvider**\<`T`\>(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 The form context provider component.
 
@@ -394,11 +394,11 @@ The form context provider component.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `props` | [`FormProviderProps`](interfaces/FormProviderProps.md)<`T`\> | the provider component props |
+| `props` | [`FormProviderProps`](interfaces/FormProviderProps.md)\<`T`\> | the provider component props |
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -408,7 +408,7 @@ ___
 
 ### arrayFieldOf
 
-▸ **arrayFieldOf**<`T`\>(): [`ArrayFieldOf`](README.md#arrayfieldof)<`T`\>
+▸ **arrayFieldOf**\<`T`\>(): [`ArrayFieldOf`](README.md#arrayfieldof)\<`T`\>
 
 Utility function which helps you create an [ArrayField](README.md#arrayfield) component of
 an specific struct type. Once you have this, the only type parameter left is
@@ -422,7 +422,7 @@ the [Path\<T\>](README.md#path) of the property which is an array.
 
 #### Returns
 
-[`ArrayFieldOf`](README.md#arrayfieldof)<`T`\>
+[`ArrayFieldOf`](README.md#arrayfieldof)\<`T`\>
 
 an ArrayField of the specified struct type
 
@@ -449,7 +449,7 @@ ___
 
 ### fieldOf
 
-▸ **fieldOf**<`T`\>(): [`FieldOf`](README.md#fieldof)<`T`\>
+▸ **fieldOf**\<`T`\>(): [`FieldOf`](README.md#fieldof)\<`T`\>
 
 Utility function which helps you create a [Field](README.md#field) component of an
 specific struct type. Once you have this, the only type parameters left is
@@ -463,7 +463,7 @@ the [Path\<T\>](README.md#path) of the property and the optional fallback type.
 
 #### Returns
 
-[`FieldOf`](README.md#fieldof)<`T`\>
+[`FieldOf`](README.md#fieldof)\<`T`\>
 
 a Field of the specified struct type
 
@@ -502,7 +502,7 @@ ___
 
 ### noValidate
 
-▸ **noValidate**<`T`\>(): [`Adapter`](interfaces/Adapter.md)<`T`\>
+▸ **noValidate**\<`T`\>(): [`Adapter`](interfaces/Adapter.md)\<`T`\>
 
 Helper function that creates an [Adapter\<T\>](interfaces/Adapter.md) to bypass the
 form validation.
@@ -515,7 +515,7 @@ form validation.
 
 #### Returns
 
-[`Adapter`](interfaces/Adapter.md)<`T`\>
+[`Adapter`](interfaces/Adapter.md)\<`T`\>
 
 an adapter to bypass validation
 
@@ -527,7 +527,7 @@ ___
 
 ### useArrayField
 
-▸ **useArrayField**<`T`, `V`\>(`path`): [`UseArrayField`](interfaces/UseArrayField.md)<`V`\>
+▸ **useArrayField**\<`T`, `V`\>(`path`): [`UseArrayField`](interfaces/UseArrayField.md)\<`V`\>
 
 A hook to handle array field in the form. It provides the array field items
 to iterate over and a few helper functions to handle changes and renders on
@@ -544,11 +544,11 @@ the array.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `path` | [`Path`](README.md#path)<`T`, `V`[]\> | the path of the array field in `T` |
+| `path` | [`Path`](README.md#path)\<`T`, `V`[]\> | the path of the array field in `T` |
 
 #### Returns
 
-[`UseArrayField`](interfaces/UseArrayField.md)<`V`\>
+[`UseArrayField`](interfaces/UseArrayField.md)\<`V`\>
 
 an object containing the array items and helper array functions
 
@@ -560,7 +560,7 @@ ___
 
 ### useField
 
-▸ **useField**<`T`, `V`, `D`\>(`path`, `fallback?`): [`UseField`](interfaces/UseField.md)<`V`, `D`\>
+▸ **useField**\<`T`, `V`, `D`\>(`path`, `fallback?`): [`UseField`](interfaces/UseField.md)\<`V`, `D`\>
 
 A hook to handle fields in the form. It provides the current value of the
 field and helper function to change its state.
@@ -573,18 +573,18 @@ If the `fallback` parameter is not set, the default value is `undefined`.
 | :------ | :------ |
 | `T` | extends [`Struct`](README.md#struct) |
 | `V` | `V` |
-| `D` | [`Optional`](README.md#optional)<`V`\> |
+| `D` | [`Optional`](README.md#optional)\<`V`\> |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `path` | [`Path`](README.md#path)<`T`, [`Optional`](README.md#optional)<`V`\>\> | the path of the field in `T` |
+| `path` | [`Path`](README.md#path)\<`T`, [`Optional`](README.md#optional)\<`V`\>\> | the path of the field in `T` |
 | `fallback?` | `D` | optional default value the field should take |
 
 #### Returns
 
-[`UseField`](interfaces/UseField.md)<`V`, `D`\>
+[`UseField`](interfaces/UseField.md)\<`V`, `D`\>
 
 an object with the field value and some helper functions
 
@@ -596,7 +596,7 @@ ___
 
 ### useFieldValidation
 
-▸ **useFieldValidation**<`T`\>(`path`): [`UseFieldValidation`](interfaces/UseFieldValidation.md)
+▸ **useFieldValidation**\<`T`\>(`path`): [`UseFieldValidation`](interfaces/UseFieldValidation.md)
 
 A hook to retrieve validation related states of a field.
 
@@ -610,7 +610,7 @@ A hook to retrieve validation related states of a field.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `path` | [`Path`](README.md#path)<`T`\> | the path of the field in `T` |
+| `path` | [`Path`](README.md#path)\<`T`\> | the path of the field in `T` |
 
 #### Returns
 
@@ -626,7 +626,7 @@ ___
 
 ### useForm
 
-▸ **useForm**<`T`\>(): [`FormCtxt`](interfaces/FormCtxt.md)<`T`\>
+▸ **useForm**\<`T`\>(): [`FormCtxt`](interfaces/FormCtxt.md)\<`T`\>
 
 A hook to access the entire value of `FormCtxt<T>`. If you want just some
 properties of the context, use [useFormSelector](README.md#useformselector) instead for an
@@ -640,7 +640,7 @@ increased performance and avoid unnecessary renders.
 
 #### Returns
 
-[`FormCtxt`](interfaces/FormCtxt.md)<`T`\>
+[`FormCtxt`](interfaces/FormCtxt.md)\<`T`\>
 
 the entire value of the form context
 
@@ -652,7 +652,7 @@ ___
 
 ### useFormSelector
 
-▸ **useFormSelector**<`T`, `V`\>(`selector`): `V`
+▸ **useFormSelector**\<`T`, `V`\>(`selector`): `V`
 
 A hook to select a value from the form `FormCtxt<T>`.
 
@@ -667,7 +667,7 @@ A hook to select a value from the form `FormCtxt<T>`.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selector` | (`value`: [`FormCtxt`](interfaces/FormCtxt.md)<`T`\>) => `V` | a function to select a value from the context |
+| `selector` | (`value`: [`FormCtxt`](interfaces/FormCtxt.md)\<`T`\>) => `V` | a function to select a value from the context |
 
 #### Returns
 

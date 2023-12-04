@@ -1,6 +1,6 @@
 [@lynxts/core](../README.md) / UseField
 
-# Interface: UseField<V, D\>
+# Interface: UseField\<V, D\>
 
 The result of the [useField](../README.md#usefield) hook
 
@@ -9,7 +9,7 @@ The result of the [useField](../README.md#usefield) hook
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `V` | `V` | the type of the value of the field |
-| `D` | extends [`Optional`](../README.md#optional)<`V`\> | the type of the default value of the field |
+| `D` | extends [`Optional`](../README.md#optional)\<`V`\> | the type of the default value of the field |
 
 ## Hierarchy
 
@@ -49,7 +49,7 @@ ___
 
 ### setValue
 
-• **setValue**: `Dispatch`<`SetStateAction`<`V` \| `D`\>\>
+• **setValue**: `Dispatch`\<`SetStateAction`\<`V` \| `D`\>\>
 
 Changes the value of the field.
 

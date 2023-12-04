@@ -1,6 +1,6 @@
 [@lynxts/web](../README.md) / InputProps
 
-# Interface: InputProps<T\>
+# Interface: InputProps\<T\>
 
 The [Input](../README.md#input) component props which extends from the
 HTMLInputElement attributes.
@@ -13,7 +13,7 @@ HTMLInputElement attributes.
 
 ## Hierarchy
 
-- `InputHTMLAttributes`<`HTMLInputElement`\>
+- `InputHTMLAttributes`\<`HTMLInputElement`\>
 
   ↳ **`InputProps`**
 
@@ -91,7 +91,6 @@ HTMLInputElement attributes.
 - [content](InputProps.md#content)
 - [contentEditable](InputProps.md#contenteditable)
 - [contextMenu](InputProps.md#contextmenu)
-- [crossOrigin](InputProps.md#crossorigin)
 - [dangerouslySetInnerHTML](InputProps.md#dangerouslysetinnerhtml)
 - [datatype](InputProps.md#datatype)
 - [defaultChecked](InputProps.md#defaultchecked)
@@ -334,7 +333,7 @@ InputHTMLAttributes.about
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1953
+node_modules/@types/react/index.d.ts:1990
 
 ___
 
@@ -348,7 +347,7 @@ InputHTMLAttributes.accept
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2312
+node_modules/@types/react/index.d.ts:2357
 
 ___
 
@@ -362,7 +361,7 @@ InputHTMLAttributes.accessKey
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1927
+node_modules/@types/react/index.d.ts:1964
 
 ___
 
@@ -376,7 +375,7 @@ InputHTMLAttributes.alt
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2313
+node_modules/@types/react/index.d.ts:2358
 
 ___
 
@@ -392,7 +391,7 @@ InputHTMLAttributes.aria-activedescendant
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1636
+node_modules/@types/react/index.d.ts:1662
 
 ___
 
@@ -408,7 +407,7 @@ InputHTMLAttributes.aria-atomic
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1638
+node_modules/@types/react/index.d.ts:1664
 
 ___
 
@@ -425,7 +424,7 @@ InputHTMLAttributes.aria-autocomplete
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1643
+node_modules/@types/react/index.d.ts:1669
 
 ___
 
@@ -445,7 +444,7 @@ InputHTMLAttributes.aria-braillelabel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1649
+node_modules/@types/react/index.d.ts:1675
 
 ___
 
@@ -465,7 +464,7 @@ InputHTMLAttributes.aria-brailleroledescription
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1654
+node_modules/@types/react/index.d.ts:1680
 
 ___
 
@@ -479,7 +478,7 @@ InputHTMLAttributes.aria-busy
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1655
+node_modules/@types/react/index.d.ts:1681
 
 ___
 
@@ -500,7 +499,7 @@ InputHTMLAttributes.aria-checked
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1660
+node_modules/@types/react/index.d.ts:1686
 
 ___
 
@@ -520,7 +519,7 @@ InputHTMLAttributes.aria-colcount
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1665
+node_modules/@types/react/index.d.ts:1691
 
 ___
 
@@ -541,7 +540,7 @@ InputHTMLAttributes.aria-colindex
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1670
+node_modules/@types/react/index.d.ts:1696
 
 ___
 
@@ -561,7 +560,7 @@ InputHTMLAttributes.aria-colindextext
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1675
+node_modules/@types/react/index.d.ts:1701
 
 ___
 
@@ -582,7 +581,7 @@ InputHTMLAttributes.aria-colspan
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1680
+node_modules/@types/react/index.d.ts:1706
 
 ___
 
@@ -602,7 +601,7 @@ InputHTMLAttributes.aria-controls
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1685
+node_modules/@types/react/index.d.ts:1711
 
 ___
 
@@ -618,7 +617,7 @@ InputHTMLAttributes.aria-current
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1687
+node_modules/@types/react/index.d.ts:1713
 
 ___
 
@@ -638,7 +637,7 @@ InputHTMLAttributes.aria-describedby
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1692
+node_modules/@types/react/index.d.ts:1718
 
 ___
 
@@ -658,7 +657,7 @@ InputHTMLAttributes.aria-description
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1697
+node_modules/@types/react/index.d.ts:1723
 
 ___
 
@@ -678,7 +677,7 @@ InputHTMLAttributes.aria-details
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1702
+node_modules/@types/react/index.d.ts:1728
 
 ___
 
@@ -699,7 +698,7 @@ InputHTMLAttributes.aria-disabled
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1707
+node_modules/@types/react/index.d.ts:1733
 
 ___
 
@@ -719,7 +718,7 @@ InputHTMLAttributes.aria-dropeffect
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1712
+node_modules/@types/react/index.d.ts:1738
 
 ___
 
@@ -740,7 +739,7 @@ InputHTMLAttributes.aria-errormessage
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1717
+node_modules/@types/react/index.d.ts:1743
 
 ___
 
@@ -756,7 +755,7 @@ InputHTMLAttributes.aria-expanded
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1719
+node_modules/@types/react/index.d.ts:1745
 
 ___
 
@@ -773,7 +772,7 @@ InputHTMLAttributes.aria-flowto
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1724
+node_modules/@types/react/index.d.ts:1750
 
 ___
 
@@ -793,7 +792,7 @@ InputHTMLAttributes.aria-grabbed
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1729
+node_modules/@types/react/index.d.ts:1755
 
 ___
 
@@ -809,7 +808,7 @@ InputHTMLAttributes.aria-haspopup
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1731
+node_modules/@types/react/index.d.ts:1757
 
 ___
 
@@ -829,7 +828,7 @@ InputHTMLAttributes.aria-hidden
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1736
+node_modules/@types/react/index.d.ts:1762
 
 ___
 
@@ -849,7 +848,7 @@ InputHTMLAttributes.aria-invalid
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1741
+node_modules/@types/react/index.d.ts:1767
 
 ___
 
@@ -865,7 +864,7 @@ InputHTMLAttributes.aria-keyshortcuts
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1743
+node_modules/@types/react/index.d.ts:1769
 
 ___
 
@@ -885,7 +884,7 @@ InputHTMLAttributes.aria-label
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1748
+node_modules/@types/react/index.d.ts:1774
 
 ___
 
@@ -905,7 +904,7 @@ InputHTMLAttributes.aria-labelledby
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1753
+node_modules/@types/react/index.d.ts:1779
 
 ___
 
@@ -921,7 +920,7 @@ InputHTMLAttributes.aria-level
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1755
+node_modules/@types/react/index.d.ts:1781
 
 ___
 
@@ -937,7 +936,7 @@ InputHTMLAttributes.aria-live
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1757
+node_modules/@types/react/index.d.ts:1783
 
 ___
 
@@ -953,7 +952,7 @@ InputHTMLAttributes.aria-modal
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1759
+node_modules/@types/react/index.d.ts:1785
 
 ___
 
@@ -969,7 +968,7 @@ InputHTMLAttributes.aria-multiline
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1761
+node_modules/@types/react/index.d.ts:1787
 
 ___
 
@@ -985,7 +984,7 @@ InputHTMLAttributes.aria-multiselectable
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1763
+node_modules/@types/react/index.d.ts:1789
 
 ___
 
@@ -1001,7 +1000,7 @@ InputHTMLAttributes.aria-orientation
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1765
+node_modules/@types/react/index.d.ts:1791
 
 ___
 
@@ -1022,7 +1021,7 @@ InputHTMLAttributes.aria-owns
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1771
+node_modules/@types/react/index.d.ts:1797
 
 ___
 
@@ -1039,7 +1038,7 @@ InputHTMLAttributes.aria-placeholder
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1776
+node_modules/@types/react/index.d.ts:1802
 
 ___
 
@@ -1059,7 +1058,7 @@ InputHTMLAttributes.aria-posinset
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1781
+node_modules/@types/react/index.d.ts:1807
 
 ___
 
@@ -1080,7 +1079,7 @@ InputHTMLAttributes.aria-pressed
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1786
+node_modules/@types/react/index.d.ts:1812
 
 ___
 
@@ -1100,7 +1099,7 @@ InputHTMLAttributes.aria-readonly
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1791
+node_modules/@types/react/index.d.ts:1817
 
 ___
 
@@ -1120,7 +1119,7 @@ InputHTMLAttributes.aria-relevant
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1796
+node_modules/@types/react/index.d.ts:1822
 
 ___
 
@@ -1136,7 +1135,7 @@ InputHTMLAttributes.aria-required
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1798
+node_modules/@types/react/index.d.ts:1835
 
 ___
 
@@ -1152,7 +1151,7 @@ InputHTMLAttributes.aria-roledescription
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1800
+node_modules/@types/react/index.d.ts:1837
 
 ___
 
@@ -1172,7 +1171,7 @@ InputHTMLAttributes.aria-rowcount
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1805
+node_modules/@types/react/index.d.ts:1842
 
 ___
 
@@ -1193,7 +1192,7 @@ InputHTMLAttributes.aria-rowindex
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1810
+node_modules/@types/react/index.d.ts:1847
 
 ___
 
@@ -1213,7 +1212,7 @@ InputHTMLAttributes.aria-rowindextext
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1815
+node_modules/@types/react/index.d.ts:1852
 
 ___
 
@@ -1234,7 +1233,7 @@ InputHTMLAttributes.aria-rowspan
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1820
+node_modules/@types/react/index.d.ts:1857
 
 ___
 
@@ -1255,7 +1254,7 @@ InputHTMLAttributes.aria-selected
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1825
+node_modules/@types/react/index.d.ts:1862
 
 ___
 
@@ -1275,7 +1274,7 @@ InputHTMLAttributes.aria-setsize
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1830
+node_modules/@types/react/index.d.ts:1867
 
 ___
 
@@ -1291,7 +1290,7 @@ InputHTMLAttributes.aria-sort
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1832
+node_modules/@types/react/index.d.ts:1869
 
 ___
 
@@ -1307,7 +1306,7 @@ InputHTMLAttributes.aria-valuemax
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1834
+node_modules/@types/react/index.d.ts:1871
 
 ___
 
@@ -1323,7 +1322,7 @@ InputHTMLAttributes.aria-valuemin
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1836
+node_modules/@types/react/index.d.ts:1873
 
 ___
 
@@ -1343,7 +1342,7 @@ InputHTMLAttributes.aria-valuenow
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1841
+node_modules/@types/react/index.d.ts:1878
 
 ___
 
@@ -1359,7 +1358,7 @@ InputHTMLAttributes.aria-valuetext
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1843
+node_modules/@types/react/index.d.ts:1880
 
 ___
 
@@ -1373,7 +1372,7 @@ InputHTMLAttributes.autoCapitalize
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1966
+node_modules/@types/react/index.d.ts:2003
 
 ___
 
@@ -1387,7 +1386,7 @@ InputHTMLAttributes.autoComplete
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2314
+node_modules/@types/react/index.d.ts:2359
 
 ___
 
@@ -1401,7 +1400,7 @@ InputHTMLAttributes.autoCorrect
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1967
+node_modules/@types/react/index.d.ts:2004
 
 ___
 
@@ -1415,7 +1414,7 @@ InputHTMLAttributes.autoFocus
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1928
+node_modules/@types/react/index.d.ts:1965
 
 ___
 
@@ -1429,7 +1428,7 @@ InputHTMLAttributes.autoSave
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1968
+node_modules/@types/react/index.d.ts:2005
 
 ___
 
@@ -1443,7 +1442,7 @@ InputHTMLAttributes.capture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2315
+node_modules/@types/react/index.d.ts:2360
 
 ___
 
@@ -1457,7 +1456,7 @@ InputHTMLAttributes.checked
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2316
+node_modules/@types/react/index.d.ts:2361
 
 ___
 
@@ -1471,7 +1470,7 @@ InputHTMLAttributes.children
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1420
+node_modules/@types/react/index.d.ts:1446
 
 ___
 
@@ -1485,7 +1484,7 @@ InputHTMLAttributes.className
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1929
+node_modules/@types/react/index.d.ts:1966
 
 ___
 
@@ -1499,7 +1498,7 @@ InputHTMLAttributes.color
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1969
+node_modules/@types/react/index.d.ts:2006
 
 ___
 
@@ -1513,13 +1512,13 @@ InputHTMLAttributes.content
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1954
+node_modules/@types/react/index.d.ts:1991
 
 ___
 
 ### contentEditable
 
-• `Optional` **contentEditable**: `Booleanish` \| ``"inherit"``
+• `Optional` **contentEditable**: `Booleanish` \| ``"inherit"`` \| ``"plaintext-only"``
 
 #### Inherited from
 
@@ -1527,7 +1526,7 @@ InputHTMLAttributes.contentEditable
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1930
+node_modules/@types/react/index.d.ts:1967
 
 ___
 
@@ -1541,21 +1540,7 @@ InputHTMLAttributes.contextMenu
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1931
-
-___
-
-### crossOrigin
-
-• `Optional` **crossOrigin**: ``""`` \| ``"anonymous"`` \| ``"use-credentials"``
-
-#### Inherited from
-
-InputHTMLAttributes.crossOrigin
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:2317
+node_modules/@types/react/index.d.ts:1968
 
 ___
 
@@ -1575,7 +1560,7 @@ InputHTMLAttributes.dangerouslySetInnerHTML
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1421
+node_modules/@types/react/index.d.ts:1447
 
 ___
 
@@ -1589,7 +1574,7 @@ InputHTMLAttributes.datatype
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1955
+node_modules/@types/react/index.d.ts:1992
 
 ___
 
@@ -1603,7 +1588,7 @@ InputHTMLAttributes.defaultChecked
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1921
+node_modules/@types/react/index.d.ts:1958
 
 ___
 
@@ -1617,7 +1602,7 @@ InputHTMLAttributes.defaultValue
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1922
+node_modules/@types/react/index.d.ts:1959
 
 ___
 
@@ -1631,7 +1616,7 @@ InputHTMLAttributes.dir
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1932
+node_modules/@types/react/index.d.ts:1969
 
 ___
 
@@ -1645,7 +1630,7 @@ InputHTMLAttributes.disabled
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2318
+node_modules/@types/react/index.d.ts:2362
 
 ___
 
@@ -1659,7 +1644,7 @@ InputHTMLAttributes.draggable
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1933
+node_modules/@types/react/index.d.ts:1970
 
 ___
 
@@ -1673,7 +1658,7 @@ InputHTMLAttributes.enterKeyHint
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2319
+node_modules/@types/react/index.d.ts:2363
 
 ___
 
@@ -1687,7 +1672,7 @@ InputHTMLAttributes.form
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2320
+node_modules/@types/react/index.d.ts:2364
 
 ___
 
@@ -1701,7 +1686,7 @@ InputHTMLAttributes.formAction
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2321
+node_modules/@types/react/index.d.ts:2365
 
 ___
 
@@ -1715,7 +1700,7 @@ InputHTMLAttributes.formEncType
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2325
+node_modules/@types/react/index.d.ts:2371
 
 ___
 
@@ -1729,7 +1714,7 @@ InputHTMLAttributes.formMethod
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2326
+node_modules/@types/react/index.d.ts:2372
 
 ___
 
@@ -1743,7 +1728,7 @@ InputHTMLAttributes.formNoValidate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2327
+node_modules/@types/react/index.d.ts:2373
 
 ___
 
@@ -1757,7 +1742,7 @@ InputHTMLAttributes.formTarget
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2328
+node_modules/@types/react/index.d.ts:2374
 
 ___
 
@@ -1771,7 +1756,7 @@ InputHTMLAttributes.height
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2329
+node_modules/@types/react/index.d.ts:2375
 
 ___
 
@@ -1785,7 +1770,7 @@ InputHTMLAttributes.hidden
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1934
+node_modules/@types/react/index.d.ts:1971
 
 ___
 
@@ -1799,7 +1784,7 @@ InputHTMLAttributes.id
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1935
+node_modules/@types/react/index.d.ts:1972
 
 ___
 
@@ -1831,7 +1816,7 @@ InputHTMLAttributes.inlist
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1956
+node_modules/@types/react/index.d.ts:1993
 
 ___
 
@@ -1851,7 +1836,7 @@ InputHTMLAttributes.inputMode
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1984
+node_modules/@types/react/index.d.ts:2021
 
 ___
 
@@ -1871,7 +1856,7 @@ InputHTMLAttributes.is
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1989
+node_modules/@types/react/index.d.ts:2026
 
 ___
 
@@ -1885,7 +1870,7 @@ InputHTMLAttributes.itemID
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1973
+node_modules/@types/react/index.d.ts:2010
 
 ___
 
@@ -1899,7 +1884,7 @@ InputHTMLAttributes.itemProp
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1970
+node_modules/@types/react/index.d.ts:2007
 
 ___
 
@@ -1913,7 +1898,7 @@ InputHTMLAttributes.itemRef
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1974
+node_modules/@types/react/index.d.ts:2011
 
 ___
 
@@ -1927,7 +1912,7 @@ InputHTMLAttributes.itemScope
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1971
+node_modules/@types/react/index.d.ts:2008
 
 ___
 
@@ -1941,7 +1926,7 @@ InputHTMLAttributes.itemType
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1972
+node_modules/@types/react/index.d.ts:2009
 
 ___
 
@@ -1968,7 +1953,7 @@ InputHTMLAttributes.lang
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1936
+node_modules/@types/react/index.d.ts:1973
 
 ___
 
@@ -1982,7 +1967,7 @@ InputHTMLAttributes.list
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2330
+node_modules/@types/react/index.d.ts:2376
 
 ___
 
@@ -1996,7 +1981,7 @@ InputHTMLAttributes.max
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2331
+node_modules/@types/react/index.d.ts:2377
 
 ___
 
@@ -2010,7 +1995,7 @@ InputHTMLAttributes.maxLength
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2332
+node_modules/@types/react/index.d.ts:2378
 
 ___
 
@@ -2024,7 +2009,7 @@ InputHTMLAttributes.min
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2333
+node_modules/@types/react/index.d.ts:2379
 
 ___
 
@@ -2038,7 +2023,7 @@ InputHTMLAttributes.minLength
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2334
+node_modules/@types/react/index.d.ts:2380
 
 ___
 
@@ -2052,13 +2037,13 @@ InputHTMLAttributes.multiple
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2335
+node_modules/@types/react/index.d.ts:2381
 
 ___
 
 ### name
 
-• **name**: `GetPath`<`T`, `string`, `T`\>
+• **name**: `GetPath`\<`T`, `string`, `T`\>
 
 The name of the field as a Path|Path\<T, string\>.
 
@@ -2082,13 +2067,13 @@ InputHTMLAttributes.nonce
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1937
+node_modules/@types/react/index.d.ts:1974
 
 ___
 
 ### onAbort
 
-• `Optional` **onAbort**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onAbort**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2096,13 +2081,13 @@ InputHTMLAttributes.onAbort
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1480
+node_modules/@types/react/index.d.ts:1506
 
 ___
 
 ### onAbortCapture
 
-• `Optional` **onAbortCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onAbortCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2110,13 +2095,13 @@ InputHTMLAttributes.onAbortCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1481
+node_modules/@types/react/index.d.ts:1507
 
 ___
 
 ### onAnimationEnd
 
-• `Optional` **onAnimationEnd**: `AnimationEventHandler`<`HTMLInputElement`\>
+• `Optional` **onAnimationEnd**: `AnimationEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2124,13 +2109,13 @@ InputHTMLAttributes.onAnimationEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1612
+node_modules/@types/react/index.d.ts:1638
 
 ___
 
 ### onAnimationEndCapture
 
-• `Optional` **onAnimationEndCapture**: `AnimationEventHandler`<`HTMLInputElement`\>
+• `Optional` **onAnimationEndCapture**: `AnimationEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2138,13 +2123,13 @@ InputHTMLAttributes.onAnimationEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1613
+node_modules/@types/react/index.d.ts:1639
 
 ___
 
 ### onAnimationIteration
 
-• `Optional` **onAnimationIteration**: `AnimationEventHandler`<`HTMLInputElement`\>
+• `Optional` **onAnimationIteration**: `AnimationEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2152,13 +2137,13 @@ InputHTMLAttributes.onAnimationIteration
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1614
+node_modules/@types/react/index.d.ts:1640
 
 ___
 
 ### onAnimationIterationCapture
 
-• `Optional` **onAnimationIterationCapture**: `AnimationEventHandler`<`HTMLInputElement`\>
+• `Optional` **onAnimationIterationCapture**: `AnimationEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2166,13 +2151,13 @@ InputHTMLAttributes.onAnimationIterationCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1615
+node_modules/@types/react/index.d.ts:1641
 
 ___
 
 ### onAnimationStart
 
-• `Optional` **onAnimationStart**: `AnimationEventHandler`<`HTMLInputElement`\>
+• `Optional` **onAnimationStart**: `AnimationEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2180,13 +2165,13 @@ InputHTMLAttributes.onAnimationStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1610
+node_modules/@types/react/index.d.ts:1636
 
 ___
 
 ### onAnimationStartCapture
 
-• `Optional` **onAnimationStartCapture**: `AnimationEventHandler`<`HTMLInputElement`\>
+• `Optional` **onAnimationStartCapture**: `AnimationEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2194,13 +2179,13 @@ InputHTMLAttributes.onAnimationStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1611
+node_modules/@types/react/index.d.ts:1637
 
 ___
 
 ### onAuxClick
 
-• `Optional` **onAuxClick**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onAuxClick**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2208,13 +2193,13 @@ InputHTMLAttributes.onAuxClick
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1528
+node_modules/@types/react/index.d.ts:1554
 
 ___
 
 ### onAuxClickCapture
 
-• `Optional` **onAuxClickCapture**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onAuxClickCapture**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2222,13 +2207,13 @@ InputHTMLAttributes.onAuxClickCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1529
+node_modules/@types/react/index.d.ts:1555
 
 ___
 
 ### onBeforeInput
 
-• `Optional` **onBeforeInput**: `FormEventHandler`<`HTMLInputElement`\>
+• `Optional` **onBeforeInput**: `FormEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2236,13 +2221,13 @@ InputHTMLAttributes.onBeforeInput
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1452
+node_modules/@types/react/index.d.ts:1478
 
 ___
 
 ### onBeforeInputCapture
 
-• `Optional` **onBeforeInputCapture**: `FormEventHandler`<`HTMLInputElement`\>
+• `Optional` **onBeforeInputCapture**: `FormEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2250,13 +2235,13 @@ InputHTMLAttributes.onBeforeInputCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1453
+node_modules/@types/react/index.d.ts:1479
 
 ___
 
 ### onBlur
 
-• `Optional` **onBlur**: `FocusEventHandler`<`HTMLInputElement`\>
+• `Optional` **onBlur**: `FocusEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2264,13 +2249,13 @@ InputHTMLAttributes.onBlur
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1446
+node_modules/@types/react/index.d.ts:1472
 
 ___
 
 ### onBlurCapture
 
-• `Optional` **onBlurCapture**: `FocusEventHandler`<`HTMLInputElement`\>
+• `Optional` **onBlurCapture**: `FocusEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2278,13 +2263,13 @@ InputHTMLAttributes.onBlurCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1447
+node_modules/@types/react/index.d.ts:1473
 
 ___
 
 ### onCanPlay
 
-• `Optional` **onCanPlay**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCanPlay**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2292,13 +2277,13 @@ InputHTMLAttributes.onCanPlay
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1482
+node_modules/@types/react/index.d.ts:1508
 
 ___
 
 ### onCanPlayCapture
 
-• `Optional` **onCanPlayCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCanPlayCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2306,13 +2291,13 @@ InputHTMLAttributes.onCanPlayCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1483
+node_modules/@types/react/index.d.ts:1509
 
 ___
 
 ### onCanPlayThrough
 
-• `Optional` **onCanPlayThrough**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCanPlayThrough**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2320,13 +2305,13 @@ InputHTMLAttributes.onCanPlayThrough
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1484
+node_modules/@types/react/index.d.ts:1510
 
 ___
 
 ### onCanPlayThroughCapture
 
-• `Optional` **onCanPlayThroughCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCanPlayThroughCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2334,13 +2319,13 @@ InputHTMLAttributes.onCanPlayThroughCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1485
+node_modules/@types/react/index.d.ts:1511
 
 ___
 
 ### onChange
 
-• `Optional` **onChange**: `ChangeEventHandler`<`HTMLInputElement`\>
+• `Optional` **onChange**: `ChangeEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2348,13 +2333,13 @@ InputHTMLAttributes.onChange
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2348
+node_modules/@types/react/index.d.ts:2394
 
 ___
 
 ### onChangeCapture
 
-• `Optional` **onChangeCapture**: `FormEventHandler`<`HTMLInputElement`\>
+• `Optional` **onChangeCapture**: `FormEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2362,13 +2347,13 @@ InputHTMLAttributes.onChangeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1451
+node_modules/@types/react/index.d.ts:1477
 
 ___
 
 ### onClick
 
-• `Optional` **onClick**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onClick**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2376,13 +2361,13 @@ InputHTMLAttributes.onClick
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1530
+node_modules/@types/react/index.d.ts:1556
 
 ___
 
 ### onClickCapture
 
-• `Optional` **onClickCapture**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onClickCapture**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2390,13 +2375,13 @@ InputHTMLAttributes.onClickCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1531
+node_modules/@types/react/index.d.ts:1557
 
 ___
 
 ### onCompositionEnd
 
-• `Optional` **onCompositionEnd**: `CompositionEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCompositionEnd**: `CompositionEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2404,13 +2389,13 @@ InputHTMLAttributes.onCompositionEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1436
+node_modules/@types/react/index.d.ts:1462
 
 ___
 
 ### onCompositionEndCapture
 
-• `Optional` **onCompositionEndCapture**: `CompositionEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCompositionEndCapture**: `CompositionEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2418,13 +2403,13 @@ InputHTMLAttributes.onCompositionEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1437
+node_modules/@types/react/index.d.ts:1463
 
 ___
 
 ### onCompositionStart
 
-• `Optional` **onCompositionStart**: `CompositionEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCompositionStart**: `CompositionEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2432,13 +2417,13 @@ InputHTMLAttributes.onCompositionStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1438
+node_modules/@types/react/index.d.ts:1464
 
 ___
 
 ### onCompositionStartCapture
 
-• `Optional` **onCompositionStartCapture**: `CompositionEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCompositionStartCapture**: `CompositionEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2446,13 +2431,13 @@ InputHTMLAttributes.onCompositionStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1439
+node_modules/@types/react/index.d.ts:1465
 
 ___
 
 ### onCompositionUpdate
 
-• `Optional` **onCompositionUpdate**: `CompositionEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCompositionUpdate**: `CompositionEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2460,13 +2445,13 @@ InputHTMLAttributes.onCompositionUpdate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1440
+node_modules/@types/react/index.d.ts:1466
 
 ___
 
 ### onCompositionUpdateCapture
 
-• `Optional` **onCompositionUpdateCapture**: `CompositionEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCompositionUpdateCapture**: `CompositionEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2474,13 +2459,13 @@ InputHTMLAttributes.onCompositionUpdateCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1441
+node_modules/@types/react/index.d.ts:1467
 
 ___
 
 ### onContextMenu
 
-• `Optional` **onContextMenu**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onContextMenu**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2488,13 +2473,13 @@ InputHTMLAttributes.onContextMenu
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1532
+node_modules/@types/react/index.d.ts:1558
 
 ___
 
 ### onContextMenuCapture
 
-• `Optional` **onContextMenuCapture**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onContextMenuCapture**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2502,13 +2487,13 @@ InputHTMLAttributes.onContextMenuCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1533
+node_modules/@types/react/index.d.ts:1559
 
 ___
 
 ### onCopy
 
-• `Optional` **onCopy**: `ClipboardEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCopy**: `ClipboardEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2516,13 +2501,13 @@ InputHTMLAttributes.onCopy
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1428
+node_modules/@types/react/index.d.ts:1454
 
 ___
 
 ### onCopyCapture
 
-• `Optional` **onCopyCapture**: `ClipboardEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCopyCapture**: `ClipboardEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2530,13 +2515,13 @@ InputHTMLAttributes.onCopyCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1429
+node_modules/@types/react/index.d.ts:1455
 
 ___
 
 ### onCut
 
-• `Optional` **onCut**: `ClipboardEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCut**: `ClipboardEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2544,13 +2529,13 @@ InputHTMLAttributes.onCut
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1430
+node_modules/@types/react/index.d.ts:1456
 
 ___
 
 ### onCutCapture
 
-• `Optional` **onCutCapture**: `ClipboardEventHandler`<`HTMLInputElement`\>
+• `Optional` **onCutCapture**: `ClipboardEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2558,13 +2543,13 @@ InputHTMLAttributes.onCutCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1431
+node_modules/@types/react/index.d.ts:1457
 
 ___
 
 ### onDoubleClick
 
-• `Optional` **onDoubleClick**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDoubleClick**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2572,13 +2557,13 @@ InputHTMLAttributes.onDoubleClick
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1534
+node_modules/@types/react/index.d.ts:1560
 
 ___
 
 ### onDoubleClickCapture
 
-• `Optional` **onDoubleClickCapture**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDoubleClickCapture**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2586,13 +2571,13 @@ InputHTMLAttributes.onDoubleClickCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1535
+node_modules/@types/react/index.d.ts:1561
 
 ___
 
 ### onDrag
 
-• `Optional` **onDrag**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDrag**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2600,13 +2585,13 @@ InputHTMLAttributes.onDrag
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1536
+node_modules/@types/react/index.d.ts:1562
 
 ___
 
 ### onDragCapture
 
-• `Optional` **onDragCapture**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragCapture**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2614,13 +2599,13 @@ InputHTMLAttributes.onDragCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1537
+node_modules/@types/react/index.d.ts:1563
 
 ___
 
 ### onDragEnd
 
-• `Optional` **onDragEnd**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragEnd**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2628,13 +2613,13 @@ InputHTMLAttributes.onDragEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1538
+node_modules/@types/react/index.d.ts:1564
 
 ___
 
 ### onDragEndCapture
 
-• `Optional` **onDragEndCapture**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragEndCapture**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2642,13 +2627,13 @@ InputHTMLAttributes.onDragEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1539
+node_modules/@types/react/index.d.ts:1565
 
 ___
 
 ### onDragEnter
 
-• `Optional` **onDragEnter**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragEnter**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2656,13 +2641,13 @@ InputHTMLAttributes.onDragEnter
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1540
+node_modules/@types/react/index.d.ts:1566
 
 ___
 
 ### onDragEnterCapture
 
-• `Optional` **onDragEnterCapture**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragEnterCapture**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2670,13 +2655,13 @@ InputHTMLAttributes.onDragEnterCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1541
+node_modules/@types/react/index.d.ts:1567
 
 ___
 
 ### onDragExit
 
-• `Optional` **onDragExit**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragExit**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2684,13 +2669,13 @@ InputHTMLAttributes.onDragExit
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1542
+node_modules/@types/react/index.d.ts:1568
 
 ___
 
 ### onDragExitCapture
 
-• `Optional` **onDragExitCapture**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragExitCapture**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2698,13 +2683,13 @@ InputHTMLAttributes.onDragExitCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1543
+node_modules/@types/react/index.d.ts:1569
 
 ___
 
 ### onDragLeave
 
-• `Optional` **onDragLeave**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragLeave**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2712,13 +2697,13 @@ InputHTMLAttributes.onDragLeave
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1544
+node_modules/@types/react/index.d.ts:1570
 
 ___
 
 ### onDragLeaveCapture
 
-• `Optional` **onDragLeaveCapture**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragLeaveCapture**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2726,13 +2711,13 @@ InputHTMLAttributes.onDragLeaveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1545
+node_modules/@types/react/index.d.ts:1571
 
 ___
 
 ### onDragOver
 
-• `Optional` **onDragOver**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragOver**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2740,13 +2725,13 @@ InputHTMLAttributes.onDragOver
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1546
+node_modules/@types/react/index.d.ts:1572
 
 ___
 
 ### onDragOverCapture
 
-• `Optional` **onDragOverCapture**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragOverCapture**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2754,13 +2739,13 @@ InputHTMLAttributes.onDragOverCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1547
+node_modules/@types/react/index.d.ts:1573
 
 ___
 
 ### onDragStart
 
-• `Optional` **onDragStart**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragStart**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2768,13 +2753,13 @@ InputHTMLAttributes.onDragStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1548
+node_modules/@types/react/index.d.ts:1574
 
 ___
 
 ### onDragStartCapture
 
-• `Optional` **onDragStartCapture**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDragStartCapture**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2782,13 +2767,13 @@ InputHTMLAttributes.onDragStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1549
+node_modules/@types/react/index.d.ts:1575
 
 ___
 
 ### onDrop
 
-• `Optional` **onDrop**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDrop**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2796,13 +2781,13 @@ InputHTMLAttributes.onDrop
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1550
+node_modules/@types/react/index.d.ts:1576
 
 ___
 
 ### onDropCapture
 
-• `Optional` **onDropCapture**: `DragEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDropCapture**: `DragEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2810,13 +2795,13 @@ InputHTMLAttributes.onDropCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1551
+node_modules/@types/react/index.d.ts:1577
 
 ___
 
 ### onDurationChange
 
-• `Optional` **onDurationChange**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDurationChange**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2824,13 +2809,13 @@ InputHTMLAttributes.onDurationChange
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1486
+node_modules/@types/react/index.d.ts:1512
 
 ___
 
 ### onDurationChangeCapture
 
-• `Optional` **onDurationChangeCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onDurationChangeCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2838,13 +2823,13 @@ InputHTMLAttributes.onDurationChangeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1487
+node_modules/@types/react/index.d.ts:1513
 
 ___
 
 ### onEmptied
 
-• `Optional` **onEmptied**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onEmptied**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2852,13 +2837,13 @@ InputHTMLAttributes.onEmptied
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1488
+node_modules/@types/react/index.d.ts:1514
 
 ___
 
 ### onEmptiedCapture
 
-• `Optional` **onEmptiedCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onEmptiedCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2866,13 +2851,13 @@ InputHTMLAttributes.onEmptiedCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1489
+node_modules/@types/react/index.d.ts:1515
 
 ___
 
 ### onEncrypted
 
-• `Optional` **onEncrypted**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onEncrypted**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2880,13 +2865,13 @@ InputHTMLAttributes.onEncrypted
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1490
+node_modules/@types/react/index.d.ts:1516
 
 ___
 
 ### onEncryptedCapture
 
-• `Optional` **onEncryptedCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onEncryptedCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2894,13 +2879,13 @@ InputHTMLAttributes.onEncryptedCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1491
+node_modules/@types/react/index.d.ts:1517
 
 ___
 
 ### onEnded
 
-• `Optional` **onEnded**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onEnded**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2908,13 +2893,13 @@ InputHTMLAttributes.onEnded
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1492
+node_modules/@types/react/index.d.ts:1518
 
 ___
 
 ### onEndedCapture
 
-• `Optional` **onEndedCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onEndedCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2922,13 +2907,13 @@ InputHTMLAttributes.onEndedCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1493
+node_modules/@types/react/index.d.ts:1519
 
 ___
 
 ### onError
 
-• `Optional` **onError**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onError**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2936,13 +2921,13 @@ InputHTMLAttributes.onError
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1466
+node_modules/@types/react/index.d.ts:1492
 
 ___
 
 ### onErrorCapture
 
-• `Optional` **onErrorCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onErrorCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2950,13 +2935,13 @@ InputHTMLAttributes.onErrorCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1467
+node_modules/@types/react/index.d.ts:1493
 
 ___
 
 ### onFocus
 
-• `Optional` **onFocus**: `FocusEventHandler`<`HTMLInputElement`\>
+• `Optional` **onFocus**: `FocusEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2964,13 +2949,13 @@ InputHTMLAttributes.onFocus
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1444
+node_modules/@types/react/index.d.ts:1470
 
 ___
 
 ### onFocusCapture
 
-• `Optional` **onFocusCapture**: `FocusEventHandler`<`HTMLInputElement`\>
+• `Optional` **onFocusCapture**: `FocusEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2978,13 +2963,13 @@ InputHTMLAttributes.onFocusCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1445
+node_modules/@types/react/index.d.ts:1471
 
 ___
 
 ### onGotPointerCapture
 
-• `Optional` **onGotPointerCapture**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onGotPointerCapture**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -2992,13 +2977,13 @@ InputHTMLAttributes.onGotPointerCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1596
+node_modules/@types/react/index.d.ts:1622
 
 ___
 
 ### onGotPointerCaptureCapture
 
-• `Optional` **onGotPointerCaptureCapture**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onGotPointerCaptureCapture**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3006,13 +2991,13 @@ InputHTMLAttributes.onGotPointerCaptureCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1597
+node_modules/@types/react/index.d.ts:1623
 
 ___
 
 ### onInput
 
-• `Optional` **onInput**: `FormEventHandler`<`HTMLInputElement`\>
+• `Optional` **onInput**: `FormEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3020,13 +3005,13 @@ InputHTMLAttributes.onInput
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1454
+node_modules/@types/react/index.d.ts:1480
 
 ___
 
 ### onInputCapture
 
-• `Optional` **onInputCapture**: `FormEventHandler`<`HTMLInputElement`\>
+• `Optional` **onInputCapture**: `FormEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3034,13 +3019,13 @@ InputHTMLAttributes.onInputCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1455
+node_modules/@types/react/index.d.ts:1481
 
 ___
 
 ### onInvalid
 
-• `Optional` **onInvalid**: `FormEventHandler`<`HTMLInputElement`\>
+• `Optional` **onInvalid**: `FormEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3048,13 +3033,13 @@ InputHTMLAttributes.onInvalid
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1460
+node_modules/@types/react/index.d.ts:1486
 
 ___
 
 ### onInvalidCapture
 
-• `Optional` **onInvalidCapture**: `FormEventHandler`<`HTMLInputElement`\>
+• `Optional` **onInvalidCapture**: `FormEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3062,13 +3047,13 @@ InputHTMLAttributes.onInvalidCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1461
+node_modules/@types/react/index.d.ts:1487
 
 ___
 
 ### onKeyDown
 
-• `Optional` **onKeyDown**: `KeyboardEventHandler`<`HTMLInputElement`\>
+• `Optional` **onKeyDown**: `KeyboardEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3076,13 +3061,13 @@ InputHTMLAttributes.onKeyDown
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1470
+node_modules/@types/react/index.d.ts:1496
 
 ___
 
 ### onKeyDownCapture
 
-• `Optional` **onKeyDownCapture**: `KeyboardEventHandler`<`HTMLInputElement`\>
+• `Optional` **onKeyDownCapture**: `KeyboardEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3090,13 +3075,13 @@ InputHTMLAttributes.onKeyDownCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1471
+node_modules/@types/react/index.d.ts:1497
 
 ___
 
 ### onKeyPress
 
-• `Optional` **onKeyPress**: `KeyboardEventHandler`<`HTMLInputElement`\>
+• `Optional` **onKeyPress**: `KeyboardEventHandler`\<`HTMLInputElement`\>
 
 **`Deprecated`**
 
@@ -3106,13 +3091,13 @@ InputHTMLAttributes.onKeyPress
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1473
+node_modules/@types/react/index.d.ts:1499
 
 ___
 
 ### onKeyPressCapture
 
-• `Optional` **onKeyPressCapture**: `KeyboardEventHandler`<`HTMLInputElement`\>
+• `Optional` **onKeyPressCapture**: `KeyboardEventHandler`\<`HTMLInputElement`\>
 
 **`Deprecated`**
 
@@ -3122,13 +3107,13 @@ InputHTMLAttributes.onKeyPressCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1475
+node_modules/@types/react/index.d.ts:1501
 
 ___
 
 ### onKeyUp
 
-• `Optional` **onKeyUp**: `KeyboardEventHandler`<`HTMLInputElement`\>
+• `Optional` **onKeyUp**: `KeyboardEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3136,13 +3121,13 @@ InputHTMLAttributes.onKeyUp
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1476
+node_modules/@types/react/index.d.ts:1502
 
 ___
 
 ### onKeyUpCapture
 
-• `Optional` **onKeyUpCapture**: `KeyboardEventHandler`<`HTMLInputElement`\>
+• `Optional` **onKeyUpCapture**: `KeyboardEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3150,13 +3135,13 @@ InputHTMLAttributes.onKeyUpCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1477
+node_modules/@types/react/index.d.ts:1503
 
 ___
 
 ### onLoad
 
-• `Optional` **onLoad**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onLoad**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3164,13 +3149,13 @@ InputHTMLAttributes.onLoad
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1464
+node_modules/@types/react/index.d.ts:1490
 
 ___
 
 ### onLoadCapture
 
-• `Optional` **onLoadCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onLoadCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3178,13 +3163,13 @@ InputHTMLAttributes.onLoadCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1465
+node_modules/@types/react/index.d.ts:1491
 
 ___
 
 ### onLoadStart
 
-• `Optional` **onLoadStart**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onLoadStart**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3192,13 +3177,13 @@ InputHTMLAttributes.onLoadStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1498
+node_modules/@types/react/index.d.ts:1524
 
 ___
 
 ### onLoadStartCapture
 
-• `Optional` **onLoadStartCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onLoadStartCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3206,13 +3191,13 @@ InputHTMLAttributes.onLoadStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1499
+node_modules/@types/react/index.d.ts:1525
 
 ___
 
 ### onLoadedData
 
-• `Optional` **onLoadedData**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onLoadedData**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3220,13 +3205,13 @@ InputHTMLAttributes.onLoadedData
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1494
+node_modules/@types/react/index.d.ts:1520
 
 ___
 
 ### onLoadedDataCapture
 
-• `Optional` **onLoadedDataCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onLoadedDataCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3234,13 +3219,13 @@ InputHTMLAttributes.onLoadedDataCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1495
+node_modules/@types/react/index.d.ts:1521
 
 ___
 
 ### onLoadedMetadata
 
-• `Optional` **onLoadedMetadata**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onLoadedMetadata**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3248,13 +3233,13 @@ InputHTMLAttributes.onLoadedMetadata
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1496
+node_modules/@types/react/index.d.ts:1522
 
 ___
 
 ### onLoadedMetadataCapture
 
-• `Optional` **onLoadedMetadataCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onLoadedMetadataCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3262,13 +3247,13 @@ InputHTMLAttributes.onLoadedMetadataCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1497
+node_modules/@types/react/index.d.ts:1523
 
 ___
 
 ### onLostPointerCapture
 
-• `Optional` **onLostPointerCapture**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onLostPointerCapture**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3276,13 +3261,13 @@ InputHTMLAttributes.onLostPointerCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1598
+node_modules/@types/react/index.d.ts:1624
 
 ___
 
 ### onLostPointerCaptureCapture
 
-• `Optional` **onLostPointerCaptureCapture**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onLostPointerCaptureCapture**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3290,13 +3275,13 @@ InputHTMLAttributes.onLostPointerCaptureCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1599
+node_modules/@types/react/index.d.ts:1625
 
 ___
 
 ### onMouseDown
 
-• `Optional` **onMouseDown**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onMouseDown**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3304,13 +3289,13 @@ InputHTMLAttributes.onMouseDown
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1552
+node_modules/@types/react/index.d.ts:1578
 
 ___
 
 ### onMouseDownCapture
 
-• `Optional` **onMouseDownCapture**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onMouseDownCapture**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3318,13 +3303,13 @@ InputHTMLAttributes.onMouseDownCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1553
+node_modules/@types/react/index.d.ts:1579
 
 ___
 
 ### onMouseEnter
 
-• `Optional` **onMouseEnter**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onMouseEnter**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3332,13 +3317,13 @@ InputHTMLAttributes.onMouseEnter
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1554
+node_modules/@types/react/index.d.ts:1580
 
 ___
 
 ### onMouseLeave
 
-• `Optional` **onMouseLeave**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onMouseLeave**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3346,13 +3331,13 @@ InputHTMLAttributes.onMouseLeave
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1555
+node_modules/@types/react/index.d.ts:1581
 
 ___
 
 ### onMouseMove
 
-• `Optional` **onMouseMove**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onMouseMove**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3360,13 +3345,13 @@ InputHTMLAttributes.onMouseMove
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1556
+node_modules/@types/react/index.d.ts:1582
 
 ___
 
 ### onMouseMoveCapture
 
-• `Optional` **onMouseMoveCapture**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onMouseMoveCapture**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3374,13 +3359,13 @@ InputHTMLAttributes.onMouseMoveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1557
+node_modules/@types/react/index.d.ts:1583
 
 ___
 
 ### onMouseOut
 
-• `Optional` **onMouseOut**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onMouseOut**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3388,13 +3373,13 @@ InputHTMLAttributes.onMouseOut
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1558
+node_modules/@types/react/index.d.ts:1584
 
 ___
 
 ### onMouseOutCapture
 
-• `Optional` **onMouseOutCapture**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onMouseOutCapture**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3402,13 +3387,13 @@ InputHTMLAttributes.onMouseOutCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1559
+node_modules/@types/react/index.d.ts:1585
 
 ___
 
 ### onMouseOver
 
-• `Optional` **onMouseOver**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onMouseOver**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3416,13 +3401,13 @@ InputHTMLAttributes.onMouseOver
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1560
+node_modules/@types/react/index.d.ts:1586
 
 ___
 
 ### onMouseOverCapture
 
-• `Optional` **onMouseOverCapture**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onMouseOverCapture**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3430,13 +3415,13 @@ InputHTMLAttributes.onMouseOverCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1561
+node_modules/@types/react/index.d.ts:1587
 
 ___
 
 ### onMouseUp
 
-• `Optional` **onMouseUp**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onMouseUp**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3444,13 +3429,13 @@ InputHTMLAttributes.onMouseUp
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1562
+node_modules/@types/react/index.d.ts:1588
 
 ___
 
 ### onMouseUpCapture
 
-• `Optional` **onMouseUpCapture**: `MouseEventHandler`<`HTMLInputElement`\>
+• `Optional` **onMouseUpCapture**: `MouseEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3458,13 +3443,13 @@ InputHTMLAttributes.onMouseUpCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1563
+node_modules/@types/react/index.d.ts:1589
 
 ___
 
 ### onPaste
 
-• `Optional` **onPaste**: `ClipboardEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPaste**: `ClipboardEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3472,13 +3457,13 @@ InputHTMLAttributes.onPaste
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1432
+node_modules/@types/react/index.d.ts:1458
 
 ___
 
 ### onPasteCapture
 
-• `Optional` **onPasteCapture**: `ClipboardEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPasteCapture**: `ClipboardEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3486,13 +3471,13 @@ InputHTMLAttributes.onPasteCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1433
+node_modules/@types/react/index.d.ts:1459
 
 ___
 
 ### onPause
 
-• `Optional` **onPause**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPause**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3500,13 +3485,13 @@ InputHTMLAttributes.onPause
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1500
+node_modules/@types/react/index.d.ts:1526
 
 ___
 
 ### onPauseCapture
 
-• `Optional` **onPauseCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPauseCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3514,13 +3499,13 @@ InputHTMLAttributes.onPauseCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1501
+node_modules/@types/react/index.d.ts:1527
 
 ___
 
 ### onPlay
 
-• `Optional` **onPlay**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPlay**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3528,13 +3513,13 @@ InputHTMLAttributes.onPlay
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1502
+node_modules/@types/react/index.d.ts:1528
 
 ___
 
 ### onPlayCapture
 
-• `Optional` **onPlayCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPlayCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3542,13 +3527,13 @@ InputHTMLAttributes.onPlayCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1503
+node_modules/@types/react/index.d.ts:1529
 
 ___
 
 ### onPlaying
 
-• `Optional` **onPlaying**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPlaying**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3556,13 +3541,13 @@ InputHTMLAttributes.onPlaying
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1504
+node_modules/@types/react/index.d.ts:1530
 
 ___
 
 ### onPlayingCapture
 
-• `Optional` **onPlayingCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPlayingCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3570,13 +3555,13 @@ InputHTMLAttributes.onPlayingCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1505
+node_modules/@types/react/index.d.ts:1531
 
 ___
 
 ### onPointerCancel
 
-• `Optional` **onPointerCancel**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerCancel**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3584,13 +3569,13 @@ InputHTMLAttributes.onPointerCancel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1586
+node_modules/@types/react/index.d.ts:1612
 
 ___
 
 ### onPointerCancelCapture
 
-• `Optional` **onPointerCancelCapture**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerCancelCapture**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3598,13 +3583,13 @@ InputHTMLAttributes.onPointerCancelCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1587
+node_modules/@types/react/index.d.ts:1613
 
 ___
 
 ### onPointerDown
 
-• `Optional` **onPointerDown**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerDown**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3612,13 +3597,13 @@ InputHTMLAttributes.onPointerDown
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1580
+node_modules/@types/react/index.d.ts:1606
 
 ___
 
 ### onPointerDownCapture
 
-• `Optional` **onPointerDownCapture**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerDownCapture**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3626,13 +3611,13 @@ InputHTMLAttributes.onPointerDownCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1581
+node_modules/@types/react/index.d.ts:1607
 
 ___
 
 ### onPointerEnter
 
-• `Optional` **onPointerEnter**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerEnter**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3640,13 +3625,13 @@ InputHTMLAttributes.onPointerEnter
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1588
+node_modules/@types/react/index.d.ts:1614
 
 ___
 
 ### onPointerEnterCapture
 
-• `Optional` **onPointerEnterCapture**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerEnterCapture**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3654,13 +3639,13 @@ InputHTMLAttributes.onPointerEnterCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1589
+node_modules/@types/react/index.d.ts:1615
 
 ___
 
 ### onPointerLeave
 
-• `Optional` **onPointerLeave**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerLeave**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3668,13 +3653,13 @@ InputHTMLAttributes.onPointerLeave
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1590
+node_modules/@types/react/index.d.ts:1616
 
 ___
 
 ### onPointerLeaveCapture
 
-• `Optional` **onPointerLeaveCapture**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerLeaveCapture**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3682,13 +3667,13 @@ InputHTMLAttributes.onPointerLeaveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1591
+node_modules/@types/react/index.d.ts:1617
 
 ___
 
 ### onPointerMove
 
-• `Optional` **onPointerMove**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerMove**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3696,13 +3681,13 @@ InputHTMLAttributes.onPointerMove
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1582
+node_modules/@types/react/index.d.ts:1608
 
 ___
 
 ### onPointerMoveCapture
 
-• `Optional` **onPointerMoveCapture**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerMoveCapture**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3710,13 +3695,13 @@ InputHTMLAttributes.onPointerMoveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1583
+node_modules/@types/react/index.d.ts:1609
 
 ___
 
 ### onPointerOut
 
-• `Optional` **onPointerOut**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerOut**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3724,13 +3709,13 @@ InputHTMLAttributes.onPointerOut
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1594
+node_modules/@types/react/index.d.ts:1620
 
 ___
 
 ### onPointerOutCapture
 
-• `Optional` **onPointerOutCapture**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerOutCapture**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3738,13 +3723,13 @@ InputHTMLAttributes.onPointerOutCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1595
+node_modules/@types/react/index.d.ts:1621
 
 ___
 
 ### onPointerOver
 
-• `Optional` **onPointerOver**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerOver**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3752,13 +3737,13 @@ InputHTMLAttributes.onPointerOver
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1592
+node_modules/@types/react/index.d.ts:1618
 
 ___
 
 ### onPointerOverCapture
 
-• `Optional` **onPointerOverCapture**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerOverCapture**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3766,13 +3751,13 @@ InputHTMLAttributes.onPointerOverCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1593
+node_modules/@types/react/index.d.ts:1619
 
 ___
 
 ### onPointerUp
 
-• `Optional` **onPointerUp**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerUp**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3780,13 +3765,13 @@ InputHTMLAttributes.onPointerUp
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1584
+node_modules/@types/react/index.d.ts:1610
 
 ___
 
 ### onPointerUpCapture
 
-• `Optional` **onPointerUpCapture**: `PointerEventHandler`<`HTMLInputElement`\>
+• `Optional` **onPointerUpCapture**: `PointerEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3794,13 +3779,13 @@ InputHTMLAttributes.onPointerUpCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1585
+node_modules/@types/react/index.d.ts:1611
 
 ___
 
 ### onProgress
 
-• `Optional` **onProgress**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onProgress**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3808,13 +3793,13 @@ InputHTMLAttributes.onProgress
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1506
+node_modules/@types/react/index.d.ts:1532
 
 ___
 
 ### onProgressCapture
 
-• `Optional` **onProgressCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onProgressCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3822,13 +3807,13 @@ InputHTMLAttributes.onProgressCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1507
+node_modules/@types/react/index.d.ts:1533
 
 ___
 
 ### onRateChange
 
-• `Optional` **onRateChange**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onRateChange**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3836,13 +3821,13 @@ InputHTMLAttributes.onRateChange
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1508
+node_modules/@types/react/index.d.ts:1534
 
 ___
 
 ### onRateChangeCapture
 
-• `Optional` **onRateChangeCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onRateChangeCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3850,13 +3835,13 @@ InputHTMLAttributes.onRateChangeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1509
+node_modules/@types/react/index.d.ts:1535
 
 ___
 
 ### onReset
 
-• `Optional` **onReset**: `FormEventHandler`<`HTMLInputElement`\>
+• `Optional` **onReset**: `FormEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3864,13 +3849,13 @@ InputHTMLAttributes.onReset
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1456
+node_modules/@types/react/index.d.ts:1482
 
 ___
 
 ### onResetCapture
 
-• `Optional` **onResetCapture**: `FormEventHandler`<`HTMLInputElement`\>
+• `Optional` **onResetCapture**: `FormEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3878,13 +3863,13 @@ InputHTMLAttributes.onResetCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1457
+node_modules/@types/react/index.d.ts:1483
 
 ___
 
 ### onResize
 
-• `Optional` **onResize**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onResize**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3892,13 +3877,13 @@ InputHTMLAttributes.onResize
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1510
+node_modules/@types/react/index.d.ts:1536
 
 ___
 
 ### onResizeCapture
 
-• `Optional` **onResizeCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onResizeCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3906,13 +3891,13 @@ InputHTMLAttributes.onResizeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1511
+node_modules/@types/react/index.d.ts:1537
 
 ___
 
 ### onScroll
 
-• `Optional` **onScroll**: `UIEventHandler`<`HTMLInputElement`\>
+• `Optional` **onScroll**: `UIEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3920,13 +3905,13 @@ InputHTMLAttributes.onScroll
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1602
+node_modules/@types/react/index.d.ts:1628
 
 ___
 
 ### onScrollCapture
 
-• `Optional` **onScrollCapture**: `UIEventHandler`<`HTMLInputElement`\>
+• `Optional` **onScrollCapture**: `UIEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3934,13 +3919,13 @@ InputHTMLAttributes.onScrollCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1603
+node_modules/@types/react/index.d.ts:1629
 
 ___
 
 ### onSeeked
 
-• `Optional` **onSeeked**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onSeeked**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3948,13 +3933,13 @@ InputHTMLAttributes.onSeeked
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1512
+node_modules/@types/react/index.d.ts:1538
 
 ___
 
 ### onSeekedCapture
 
-• `Optional` **onSeekedCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onSeekedCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3962,13 +3947,13 @@ InputHTMLAttributes.onSeekedCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1513
+node_modules/@types/react/index.d.ts:1539
 
 ___
 
 ### onSeeking
 
-• `Optional` **onSeeking**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onSeeking**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3976,13 +3961,13 @@ InputHTMLAttributes.onSeeking
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1514
+node_modules/@types/react/index.d.ts:1540
 
 ___
 
 ### onSeekingCapture
 
-• `Optional` **onSeekingCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onSeekingCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -3990,13 +3975,13 @@ InputHTMLAttributes.onSeekingCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1515
+node_modules/@types/react/index.d.ts:1541
 
 ___
 
 ### onSelect
 
-• `Optional` **onSelect**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onSelect**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4004,13 +3989,13 @@ InputHTMLAttributes.onSelect
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1566
+node_modules/@types/react/index.d.ts:1592
 
 ___
 
 ### onSelectCapture
 
-• `Optional` **onSelectCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onSelectCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4018,13 +4003,13 @@ InputHTMLAttributes.onSelectCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1567
+node_modules/@types/react/index.d.ts:1593
 
 ___
 
 ### onStalled
 
-• `Optional` **onStalled**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onStalled**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4032,13 +4017,13 @@ InputHTMLAttributes.onStalled
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1516
+node_modules/@types/react/index.d.ts:1542
 
 ___
 
 ### onStalledCapture
 
-• `Optional` **onStalledCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onStalledCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4046,13 +4031,13 @@ InputHTMLAttributes.onStalledCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1517
+node_modules/@types/react/index.d.ts:1543
 
 ___
 
 ### onSubmit
 
-• `Optional` **onSubmit**: `FormEventHandler`<`HTMLInputElement`\>
+• `Optional` **onSubmit**: `FormEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4060,13 +4045,13 @@ InputHTMLAttributes.onSubmit
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1458
+node_modules/@types/react/index.d.ts:1484
 
 ___
 
 ### onSubmitCapture
 
-• `Optional` **onSubmitCapture**: `FormEventHandler`<`HTMLInputElement`\>
+• `Optional` **onSubmitCapture**: `FormEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4074,13 +4059,13 @@ InputHTMLAttributes.onSubmitCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1459
+node_modules/@types/react/index.d.ts:1485
 
 ___
 
 ### onSuspend
 
-• `Optional` **onSuspend**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onSuspend**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4088,13 +4073,13 @@ InputHTMLAttributes.onSuspend
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1518
+node_modules/@types/react/index.d.ts:1544
 
 ___
 
 ### onSuspendCapture
 
-• `Optional` **onSuspendCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onSuspendCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4102,13 +4087,13 @@ InputHTMLAttributes.onSuspendCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1519
+node_modules/@types/react/index.d.ts:1545
 
 ___
 
 ### onTimeUpdate
 
-• `Optional` **onTimeUpdate**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onTimeUpdate**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4116,13 +4101,13 @@ InputHTMLAttributes.onTimeUpdate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1520
+node_modules/@types/react/index.d.ts:1546
 
 ___
 
 ### onTimeUpdateCapture
 
-• `Optional` **onTimeUpdateCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onTimeUpdateCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4130,13 +4115,13 @@ InputHTMLAttributes.onTimeUpdateCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1521
+node_modules/@types/react/index.d.ts:1547
 
 ___
 
 ### onTouchCancel
 
-• `Optional` **onTouchCancel**: `TouchEventHandler`<`HTMLInputElement`\>
+• `Optional` **onTouchCancel**: `TouchEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4144,13 +4129,13 @@ InputHTMLAttributes.onTouchCancel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1570
+node_modules/@types/react/index.d.ts:1596
 
 ___
 
 ### onTouchCancelCapture
 
-• `Optional` **onTouchCancelCapture**: `TouchEventHandler`<`HTMLInputElement`\>
+• `Optional` **onTouchCancelCapture**: `TouchEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4158,13 +4143,13 @@ InputHTMLAttributes.onTouchCancelCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1571
+node_modules/@types/react/index.d.ts:1597
 
 ___
 
 ### onTouchEnd
 
-• `Optional` **onTouchEnd**: `TouchEventHandler`<`HTMLInputElement`\>
+• `Optional` **onTouchEnd**: `TouchEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4172,13 +4157,13 @@ InputHTMLAttributes.onTouchEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1572
+node_modules/@types/react/index.d.ts:1598
 
 ___
 
 ### onTouchEndCapture
 
-• `Optional` **onTouchEndCapture**: `TouchEventHandler`<`HTMLInputElement`\>
+• `Optional` **onTouchEndCapture**: `TouchEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4186,13 +4171,13 @@ InputHTMLAttributes.onTouchEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1573
+node_modules/@types/react/index.d.ts:1599
 
 ___
 
 ### onTouchMove
 
-• `Optional` **onTouchMove**: `TouchEventHandler`<`HTMLInputElement`\>
+• `Optional` **onTouchMove**: `TouchEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4200,13 +4185,13 @@ InputHTMLAttributes.onTouchMove
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1574
+node_modules/@types/react/index.d.ts:1600
 
 ___
 
 ### onTouchMoveCapture
 
-• `Optional` **onTouchMoveCapture**: `TouchEventHandler`<`HTMLInputElement`\>
+• `Optional` **onTouchMoveCapture**: `TouchEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4214,13 +4199,13 @@ InputHTMLAttributes.onTouchMoveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1575
+node_modules/@types/react/index.d.ts:1601
 
 ___
 
 ### onTouchStart
 
-• `Optional` **onTouchStart**: `TouchEventHandler`<`HTMLInputElement`\>
+• `Optional` **onTouchStart**: `TouchEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4228,13 +4213,13 @@ InputHTMLAttributes.onTouchStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1576
+node_modules/@types/react/index.d.ts:1602
 
 ___
 
 ### onTouchStartCapture
 
-• `Optional` **onTouchStartCapture**: `TouchEventHandler`<`HTMLInputElement`\>
+• `Optional` **onTouchStartCapture**: `TouchEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4242,13 +4227,13 @@ InputHTMLAttributes.onTouchStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1577
+node_modules/@types/react/index.d.ts:1603
 
 ___
 
 ### onTransitionEnd
 
-• `Optional` **onTransitionEnd**: `TransitionEventHandler`<`HTMLInputElement`\>
+• `Optional` **onTransitionEnd**: `TransitionEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4256,13 +4241,13 @@ InputHTMLAttributes.onTransitionEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1618
+node_modules/@types/react/index.d.ts:1644
 
 ___
 
 ### onTransitionEndCapture
 
-• `Optional` **onTransitionEndCapture**: `TransitionEventHandler`<`HTMLInputElement`\>
+• `Optional` **onTransitionEndCapture**: `TransitionEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4270,13 +4255,13 @@ InputHTMLAttributes.onTransitionEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1619
+node_modules/@types/react/index.d.ts:1645
 
 ___
 
 ### onVolumeChange
 
-• `Optional` **onVolumeChange**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onVolumeChange**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4284,13 +4269,13 @@ InputHTMLAttributes.onVolumeChange
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1522
+node_modules/@types/react/index.d.ts:1548
 
 ___
 
 ### onVolumeChangeCapture
 
-• `Optional` **onVolumeChangeCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onVolumeChangeCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4298,13 +4283,13 @@ InputHTMLAttributes.onVolumeChangeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1523
+node_modules/@types/react/index.d.ts:1549
 
 ___
 
 ### onWaiting
 
-• `Optional` **onWaiting**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onWaiting**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4312,13 +4297,13 @@ InputHTMLAttributes.onWaiting
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1524
+node_modules/@types/react/index.d.ts:1550
 
 ___
 
 ### onWaitingCapture
 
-• `Optional` **onWaitingCapture**: `ReactEventHandler`<`HTMLInputElement`\>
+• `Optional` **onWaitingCapture**: `ReactEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4326,13 +4311,13 @@ InputHTMLAttributes.onWaitingCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1525
+node_modules/@types/react/index.d.ts:1551
 
 ___
 
 ### onWheel
 
-• `Optional` **onWheel**: `WheelEventHandler`<`HTMLInputElement`\>
+• `Optional` **onWheel**: `WheelEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4340,13 +4325,13 @@ InputHTMLAttributes.onWheel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1606
+node_modules/@types/react/index.d.ts:1632
 
 ___
 
 ### onWheelCapture
 
-• `Optional` **onWheelCapture**: `WheelEventHandler`<`HTMLInputElement`\>
+• `Optional` **onWheelCapture**: `WheelEventHandler`\<`HTMLInputElement`\>
 
 #### Inherited from
 
@@ -4354,7 +4339,7 @@ InputHTMLAttributes.onWheelCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1607
+node_modules/@types/react/index.d.ts:1633
 
 ___
 
@@ -4368,7 +4353,7 @@ InputHTMLAttributes.pattern
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2337
+node_modules/@types/react/index.d.ts:2383
 
 ___
 
@@ -4382,7 +4367,7 @@ InputHTMLAttributes.placeholder
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2338
+node_modules/@types/react/index.d.ts:2384
 
 ___
 
@@ -4396,7 +4381,7 @@ InputHTMLAttributes.prefix
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1957
+node_modules/@types/react/index.d.ts:1994
 
 ___
 
@@ -4410,7 +4395,7 @@ InputHTMLAttributes.property
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1958
+node_modules/@types/react/index.d.ts:1995
 
 ___
 
@@ -4424,7 +4409,7 @@ InputHTMLAttributes.radioGroup
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1947
+node_modules/@types/react/index.d.ts:1984
 
 ___
 
@@ -4438,7 +4423,7 @@ InputHTMLAttributes.readOnly
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2339
+node_modules/@types/react/index.d.ts:2385
 
 ___
 
@@ -4452,7 +4437,7 @@ InputHTMLAttributes.rel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1959
+node_modules/@types/react/index.d.ts:1996
 
 ___
 
@@ -4466,7 +4451,7 @@ InputHTMLAttributes.required
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2340
+node_modules/@types/react/index.d.ts:2386
 
 ___
 
@@ -4498,7 +4483,7 @@ InputHTMLAttributes.resource
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1960
+node_modules/@types/react/index.d.ts:1997
 
 ___
 
@@ -4512,7 +4497,7 @@ InputHTMLAttributes.results
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1975
+node_modules/@types/react/index.d.ts:2012
 
 ___
 
@@ -4526,7 +4511,7 @@ InputHTMLAttributes.rev
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1961
+node_modules/@types/react/index.d.ts:1998
 
 ___
 
@@ -4540,7 +4525,7 @@ InputHTMLAttributes.role
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1950
+node_modules/@types/react/index.d.ts:1987
 
 ___
 
@@ -4554,7 +4539,7 @@ InputHTMLAttributes.security
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1976
+node_modules/@types/react/index.d.ts:2013
 
 ___
 
@@ -4568,7 +4553,7 @@ InputHTMLAttributes.size
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2341
+node_modules/@types/react/index.d.ts:2387
 
 ___
 
@@ -4582,7 +4567,7 @@ InputHTMLAttributes.slot
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1939
+node_modules/@types/react/index.d.ts:1976
 
 ___
 
@@ -4596,7 +4581,7 @@ InputHTMLAttributes.spellCheck
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1940
+node_modules/@types/react/index.d.ts:1977
 
 ___
 
@@ -4610,7 +4595,7 @@ InputHTMLAttributes.src
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2342
+node_modules/@types/react/index.d.ts:2388
 
 ___
 
@@ -4624,7 +4609,7 @@ InputHTMLAttributes.step
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2343
+node_modules/@types/react/index.d.ts:2389
 
 ___
 
@@ -4638,7 +4623,7 @@ InputHTMLAttributes.style
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1941
+node_modules/@types/react/index.d.ts:1978
 
 ___
 
@@ -4652,7 +4637,7 @@ InputHTMLAttributes.suppressContentEditableWarning
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1923
+node_modules/@types/react/index.d.ts:1960
 
 ___
 
@@ -4666,7 +4651,7 @@ InputHTMLAttributes.suppressHydrationWarning
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1924
+node_modules/@types/react/index.d.ts:1961
 
 ___
 
@@ -4680,7 +4665,7 @@ InputHTMLAttributes.tabIndex
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1942
+node_modules/@types/react/index.d.ts:1979
 
 ___
 
@@ -4694,7 +4679,7 @@ InputHTMLAttributes.title
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1943
+node_modules/@types/react/index.d.ts:1980
 
 ___
 
@@ -4708,7 +4693,7 @@ InputHTMLAttributes.translate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1944
+node_modules/@types/react/index.d.ts:1981
 
 ___
 
@@ -4722,7 +4707,7 @@ InputHTMLAttributes.type
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2344
+node_modules/@types/react/index.d.ts:2390
 
 ___
 
@@ -4736,7 +4721,7 @@ InputHTMLAttributes.typeof
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1962
+node_modules/@types/react/index.d.ts:1999
 
 ___
 
@@ -4750,7 +4735,7 @@ InputHTMLAttributes.unselectable
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1977
+node_modules/@types/react/index.d.ts:2014
 
 ___
 
@@ -4764,7 +4749,7 @@ InputHTMLAttributes.value
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2345
+node_modules/@types/react/index.d.ts:2391
 
 ___
 
@@ -4778,7 +4763,7 @@ InputHTMLAttributes.vocab
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1963
+node_modules/@types/react/index.d.ts:2000
 
 ___
 
@@ -4792,4 +4777,4 @@ InputHTMLAttributes.width
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2346
+node_modules/@types/react/index.d.ts:2392

@@ -1,6 +1,6 @@
 [@lynxts/core](../README.md) / FieldProps
 
-# Interface: FieldProps<T, K, D\>
+# Interface: FieldProps\<T, K, D\>
 
 The props of the [ArrayField](../README.md#arrayfield) component.
 
@@ -9,8 +9,8 @@ The props of the [ArrayField](../README.md#arrayfield) component.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `T` | extends [`Struct`](../README.md#struct) | struct type of the form values |
-| `K` | extends [`Path`](../README.md#path)<`T`, [`ValueByPath`](../README.md#valuebypath)<`T`, `K`\>\> | the path type of the field |
-| `D` | extends [`Optional`](../README.md#optional)<[`ValueByPath`](../README.md#valuebypath)<`T`, `K`\>\> | the default type to use in case of fallback |
+| `K` | extends [`Path`](../README.md#path)\<`T`, [`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> | the path type of the field |
+| `D` | extends [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> | the default type to use in case of fallback |
 
 ## Table of contents
 
@@ -25,7 +25,7 @@ The props of the [ArrayField](../README.md#arrayfield) component.
 
 ### children
 
-• **children**: (`props`: [`FieldRenderProps`](FieldRenderProps.md)<`T`, `K`, `D`\>) => `ReactNode`
+• **children**: (`props`: [`FieldRenderProps`](FieldRenderProps.md)\<`T`, `K`, `D`\>) => `ReactNode`
 
 #### Type declaration
 
@@ -39,7 +39,7 @@ React.js node.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `props` | [`FieldRenderProps`](FieldRenderProps.md)<`T`, `K`, `D`\> | the render props same as `useField` result |
+| `props` | [`FieldRenderProps`](FieldRenderProps.md)\<`T`, `K`, `D`\> | the render props same as `useField` result |
 
 ##### Returns
 

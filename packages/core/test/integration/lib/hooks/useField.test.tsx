@@ -1,4 +1,4 @@
-import { expect } from "@stackbuilders/assertive-ts";
+import { expect } from "@assertive-ts/core";
 import { RenderHookResult, fireEvent, render, renderHook, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { ChangeEvent, ReactElement, useCallback } from "react";
@@ -32,7 +32,7 @@ const yupSchema: ObjectSchema<User> = object({
 
 const zodSchema = z.object({
   age: z.number(),
-  name: z.string().nonempty({ message: "This field is required!" }),
+  name: z.string().min(1, { message: "This field is required!" }),
 });
 
 function renderWith<

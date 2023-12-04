@@ -1,6 +1,6 @@
 [@lynxts/core](../README.md) / FormProviderProps
 
-# Interface: FormProviderProps<T\>
+# Interface: FormProviderProps\<T\>
 
 The [FormProvider](../README.md#formprovider) component props.
 
@@ -23,7 +23,7 @@ The [FormProvider](../README.md#formprovider) component props.
 
 ### children
 
-• **children**: `ReactNode` \| `ReactNode`[] \| (`props`: [`RenderProps`](RenderProps.md)<`T`\>) => `ReactNode`
+• **children**: `ReactNode` \| `ReactNode`[] \| (`props`: [`RenderProps`](RenderProps.md)\<`T`\>) => `ReactNode`
 
 The children of the provider may rather be any kind of React.js node(s),
 or a function which takes [<T>|RenderProps\<T\>](RenderProps.md) and
@@ -63,7 +63,7 @@ ___
 
 ### validation
 
-• **validation**: `ObjectSchema`<`T`, `AnyObject`, `any`, ``""``\> \| `ZodType`<`T`, `ZodTypeDef`, `T`\> \| [`Adapter`](Adapter.md)<`T`\>
+• **validation**: `ObjectSchema`\<`T`, `AnyObject`, `any`, ``""``\> \| `ZodType`\<`T`, `ZodTypeDef`, `T`\> \| [`Adapter`](Adapter.md)\<`T`\>
 
 A validation schema of `T` used to validate the form fields. Both Yup and
 Zod schemas are supported out-of-the-box.
@@ -80,7 +80,7 @@ ___
 
 ### values
 
-• `Optional` **values**: [`DeepPartial`](../README.md#deeppartial)<`T`\>
+• `Optional` **values**: [`DeepPartial`](../README.md#deeppartial)\<`T`\>
 
 The values `T` of the form. Changing this prop with a state will change
 the field values as well.
