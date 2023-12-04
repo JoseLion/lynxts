@@ -1,6 +1,6 @@
 [@lynxts/core](../README.md) / UseArrayField
 
-# Interface: UseArrayField<V\>
+# Interface: UseArrayField\<V\>
 
 The result of the [useArrayField](../README.md#usearrayfield) hook.
 
@@ -28,7 +28,7 @@ The result of the [useArrayField](../README.md#usearrayfield) hook.
 
 ### append
 
-• **append**: (`item`: `Partial`<`V`\>) => `void`
+• **append**: (`item`: `Partial`\<`V`\>) => `void`
 
 #### Type declaration
 
@@ -40,7 +40,7 @@ Appends a new item to the end of the array.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `item` | `Partial`<`V`\> | the item to append |
+| `item` | `Partial`\<`V`\> | the item to append |
 
 ##### Returns
 
@@ -74,11 +74,11 @@ ___
 
 ### handle
 
-• **handle**: <F\>(`action`: `F`, ...`args`: `Parameters`<`F`\>) => () => `void`
+• **handle**: \<F\>(`action`: `F`, ...`args`: `Parameters`\<`F`\>) => () => `void`
 
 #### Type declaration
 
-▸ <`F`\>(`action`, `...args`): () => `void`
+▸ \<`F`\>(`action`, `...args`): () => `void`
 
 Helper function that creates a handler function which runs the given
 action with the given parameters.
@@ -94,7 +94,7 @@ action with the given parameters.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `action` | `F` | the action to make the handle of |
-| `...args` | `Parameters`<`F`\> | the parameters of the action |
+| `...args` | `Parameters`\<`F`\> | the parameters of the action |
 
 ##### Returns
 
@@ -122,7 +122,7 @@ ___
 
 ### insert
 
-• **insert**: (`item`: `Partial`<`V`\>, `at`: `number`) => `void`
+• **insert**: (`item`: `Partial`\<`V`\>, `at`: `number`) => `void`
 
 #### Type declaration
 
@@ -139,7 +139,7 @@ last element of the array.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `item` | `Partial`<`V`\> | the item to insert |
+| `item` | `Partial`\<`V`\> | the item to insert |
 | `at` | `number` | the index to insert the item at |
 
 ##### Returns
@@ -154,7 +154,7 @@ ___
 
 ### items
 
-• **items**: `Partial`<`V`\>[]
+• **items**: `Partial`\<`V`\>[]
 
 The currret items `Partial<V>[]` of the array. These values are partial
 because they might not be present or changed by the user yet.
@@ -167,11 +167,11 @@ ___
 
 ### keygen
 
-• **keygen**: <S\>(`index`: `number`, `key?`: `string` \| `S`) => `string`
+• **keygen**: \<S\>(`index`: `number`, `key?`: `string` \| `S`) => `string`
 
 #### Type declaration
 
-▸ <`S`\>(`index`, `key?`): `string`
+▸ \<`S`\>(`index`, `key?`): `string`
 
 Helper function to retrieve an auto-generated key string which is memoized
 for each index. The second parameter serves as a prefferd unique key
@@ -208,7 +208,7 @@ ___
 
 ### prepend
 
-• **prepend**: (`item`: `Partial`<`V`\>) => `void`
+• **prepend**: (`item`: `Partial`\<`V`\>) => `void`
 
 #### Type declaration
 
@@ -220,7 +220,7 @@ Prepends a new item to the start of the array.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `item` | `Partial`<`V`\> | the item to prepend |
+| `item` | `Partial`\<`V`\> | the item to prepend |
 
 ##### Returns
 
@@ -260,7 +260,7 @@ ___
 
 ### replace
 
-• **replace**: (`item`: `Partial`<`V`\>, `at`: `number`) => `void`
+• **replace**: (`item`: `Partial`\<`V`\>, `at`: `number`) => `void`
 
 #### Type declaration
 
@@ -278,7 +278,7 @@ last element of the array.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `item` | `Partial`<`V`\> | the item to replace another |
+| `item` | `Partial`\<`V`\> | the item to replace another |
 | `at` | `number` | the index that should be replaced |
 
 ##### Returns

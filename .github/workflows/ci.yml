@@ -1,8 +1,9 @@
----
 name: CI
 
 on:
   push:
+    branches: [main]
+  pull_request:
   workflow_call:
 
 concurrency:
@@ -14,12 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [16, 17, 18, 19, 20]
+        nodejs: [18, 19, 20, 21]
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
+          node-version: ${{ matrix.nodejs }}
           cache: yarn
       - run: yarn install --immutable
       - run: yarn compile
@@ -29,8 +31,8 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
           cache: yarn

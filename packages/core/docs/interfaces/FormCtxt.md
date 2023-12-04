@@ -1,6 +1,6 @@
 [@lynxts/core](../README.md) / FormCtxt
 
-# Interface: FormCtxt<T\>
+# Interface: FormCtxt\<T\>
 
 The from context type based on a struct type `T`.
 
@@ -28,7 +28,7 @@ The from context type based on a struct type `T`.
 
 ### setTouched
 
-• **setTouched**: `Dispatch`<`SetStateAction`<`Map`<`GetPath`<`T`, `unknown`, `T`\>, `boolean`\>\>\>
+• **setTouched**: `Dispatch`\<`SetStateAction`\<`Map`\<`GetPath`\<`T`, `unknown`, `T`\>, `boolean`\>\>\>
 
 Changes the touched state of the fields.
 
@@ -45,7 +45,7 @@ ___
 
 ### setValues
 
-• **setValues**: `Dispatch`<`SetStateAction`<`Partial`<`T`\>\>\>
+• **setValues**: `Dispatch`\<`SetStateAction`\<`Partial`\<`T`\>\>\>
 
 Changes the values `T` of the form.
 
@@ -61,7 +61,7 @@ ___
 
 ### setViolations
 
-• **setViolations**: `Dispatch`<`SetStateAction`<`Map`<`GetPath`<`T`, `unknown`, `T`\>, `string`\>\>\>
+• **setViolations**: `Dispatch`\<`SetStateAction`\<`Map`\<`GetPath`\<`T`, `unknown`, `T`\>, `string`\>\>\>
 
 Changes the violation state of the fields.
 
@@ -110,7 +110,7 @@ ___
 
 ### touched
 
-• **touched**: `Map`<`GetPath`<`T`, `unknown`, `T`\>, `boolean`\>
+• **touched**: `Map`\<`GetPath`\<`T`, `unknown`, `T`\>, `boolean`\>
 
 A Map of the path and a touched state boolean.
 
@@ -122,7 +122,7 @@ ___
 
 ### validation
 
-• **validation**: `ObjectSchema`<`T`, `AnyObject`, `any`, ``""``\> \| `ZodType`<`T`, `ZodTypeDef`, `T`\> \| [`Adapter`](Adapter.md)<`T`\>
+• **validation**: `ObjectSchema`\<`T`, `AnyObject`, `any`, ``""``\> \| `ZodType`\<`T`, `ZodTypeDef`, `T`\> \| [`Adapter`](Adapter.md)\<`T`\>
 
 The validation schema used by the Form. This may be Yup/Zod schema or a
 custom [Adapter<T>](Adapter.md), depending on what was passed to the
@@ -136,7 +136,7 @@ ___
 
 ### values
 
-• **values**: `Partial`<`T`\>
+• **values**: `Partial`\<`T`\>
 
 The state of the values `T` of the form.
 
@@ -148,7 +148,7 @@ ___
 
 ### violations
 
-• **violations**: `Map`<`GetPath`<`T`, `unknown`, `T`\>, `string`\>
+• **violations**: `Map`\<`GetPath`\<`T`, `unknown`, `T`\>, `string`\>
 
 A Map of the path and a violation message (if any).
 

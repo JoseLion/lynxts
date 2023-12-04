@@ -1,6 +1,6 @@
 [@lynxts/core](../README.md) / Adapter
 
-# Interface: Adapter<T\>
+# Interface: Adapter\<T\>
 
 Validation adapter for a `T` structure. Specifies functions required for the
 form validations and their hooks.
@@ -23,7 +23,7 @@ form validations and their hooks.
 
 ### required
 
-• **required**: (`path`: [`Path`](../README.md#path)<`T`\>) => `boolean`
+• **required**: (`path`: [`Path`](../README.md#path)\<`T`\>) => `boolean`
 
 #### Type declaration
 
@@ -37,7 +37,7 @@ validation schema. I.e., whenever the field cannot be `null`,
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `path` | [`Path`](../README.md#path)<`T`\> | the path to check if it's requried |
+| `path` | [`Path`](../README.md#path)\<`T`\> | the path to check if it's requried |
 
 ##### Returns
 
@@ -53,11 +53,11 @@ ___
 
 ### validate
 
-• **validate**: (`values`: `Partial`<`T`\>) => `Promise`<[`Result`](../README.md#result)<`T`, `Map`<[`Path`](../README.md#path)<`T`\>, `string`\>\>\>
+• **validate**: (`values`: `Partial`\<`T`\>) => `Promise`\<[`Result`](../README.md#result)\<`T`, `Map`\<[`Path`](../README.md#path)\<`T`\>, `string`\>\>\>
 
 #### Type declaration
 
-▸ (`values`): `Promise`<[`Result`](../README.md#result)<`T`, `Map`<[`Path`](../README.md#path)<`T`\>, `string`\>\>\>
+▸ (`values`): `Promise`\<[`Result`](../README.md#result)\<`T`, `Map`\<[`Path`](../README.md#path)\<`T`\>, `string`\>\>\>
 
 Should return a promise containing the `Result<S, E>` of the validation.
 Where `S` represents the success and `E` the error.
@@ -70,11 +70,11 @@ Otherwise, if the validation fails, the promise should resolve to a
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `values` | `Partial`<`T`\> | the form values to validate |
+| `values` | `Partial`\<`T`\> | the form values to validate |
 
 ##### Returns
 
-`Promise`<[`Result`](../README.md#result)<`T`, `Map`<[`Path`](../README.md#path)<`T`\>, `string`\>\>\>
+`Promise`\<[`Result`](../README.md#result)\<`T`, `Map`\<[`Path`](../README.md#path)\<`T`\>, `string`\>\>\>
 
 a promise with the `Result<S, E>` of the validation
 
@@ -86,11 +86,11 @@ ___
 
 ### validateAt
 
-• **validateAt**: <K\>(`path`: `K`, `value`: [`Optional`](../README.md#optional)<[`ValueByPath`](../README.md#valuebypath)<`T`, `K`\>\>) => `Promise`<[`Result`](../README.md#result)<``true``, `string`\>\>
+• **validateAt**: \<K\>(`path`: `K`, `value`: [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\>) => `Promise`\<[`Result`](../README.md#result)\<``true``, `string`\>\>
 
 #### Type declaration
 
-▸ <`K`\>(`path`, `value`): `Promise`<[`Result`](../README.md#result)<``true``, `string`\>\>
+▸ \<`K`\>(`path`, `value`): `Promise`\<[`Result`](../README.md#result)\<``true``, `string`\>\>
 
 Should return a promise containing the `Result<S, E>` of the field
 validation. Where `S` represents the success and `E` the error.
@@ -110,11 +110,11 @@ Otherwise, if the validation fails, the promise should resolve to a
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `path` | `K` | the path on the schema to validate |
-| `value` | [`Optional`](../README.md#optional)<[`ValueByPath`](../README.md#valuebypath)<`T`, `K`\>\> | the value to validate against |
+| `value` | [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> | the value to validate against |
 
 ##### Returns
 
-`Promise`<[`Result`](../README.md#result)<``true``, `string`\>\>
+`Promise`\<[`Result`](../README.md#result)\<``true``, `string`\>\>
 
 a promise with the `Result<S, E>` of the validation
 

@@ -1,6 +1,6 @@
 [@lynxts/core](../README.md) / ArrayFieldProps
 
-# Interface: ArrayFieldProps<T, K\>
+# Interface: ArrayFieldProps\<T, K\>
 
 The props of the [ArrayField](../README.md#arrayfield) component.
 
@@ -9,7 +9,7 @@ The props of the [ArrayField](../README.md#arrayfield) component.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `T` | extends [`Struct`](../README.md#struct) | struct type of the form values |
-| `K` | extends [`Path`](../README.md#path)<`T`, `unknown`[]\> | the path type of the array field |
+| `K` | extends [`Path`](../README.md#path)\<`T`, `unknown`[]\> | the path type of the array field |
 
 ## Table of contents
 
@@ -23,7 +23,7 @@ The props of the [ArrayField](../README.md#arrayfield) component.
 
 ### children
 
-• **children**: (`props`: [`UseArrayField`](UseArrayField.md)<[`ArrayValue`](../README.md#arrayvalue)<`T`, `K`\>\>) => `ReactNode`
+• **children**: (`props`: [`UseArrayField`](UseArrayField.md)\<[`ArrayValue`](../README.md#arrayvalue)\<`T`, `K`\>\>) => `ReactNode`
 
 #### Type declaration
 
@@ -36,7 +36,7 @@ hook in the first argument and returns a React.js node.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `props` | [`UseArrayField`](UseArrayField.md)<[`ArrayValue`](../README.md#arrayvalue)<`T`, `K`\>\> | render props same as the `useArrayField` hook result |
+| `props` | [`UseArrayField`](UseArrayField.md)\<[`ArrayValue`](../README.md#arrayvalue)\<`T`, `K`\>\> | render props same as the `useArrayField` hook result |
 
 ##### Returns
 

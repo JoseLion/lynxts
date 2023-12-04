@@ -1,4 +1,4 @@
-import { expect } from "@stackbuilders/assertive-ts";
+import { expect } from "@assertive-ts/core";
 import { renderHook } from "@testing-library/react";
 
 import { useForm, useFormSelector } from "../../../src/lib/Form.context";

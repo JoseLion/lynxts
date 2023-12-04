@@ -31,7 +31,7 @@
 
 ### InputOf
 
-Ƭ **InputOf**<`T`\>: (`props`: [`InputProps`](interfaces/InputProps.md)<`T`\>) => `ReactElement`
+Ƭ **InputOf**\<`T`\>: (`props`: [`InputProps`](interfaces/InputProps.md)\<`T`\>) => `ReactElement`
 
 #### Type parameters
 
@@ -49,7 +49,7 @@ Helper type to describe an [Input](README.md#input) component of an specific str
 
 | Name | Type |
 | :------ | :------ |
-| `props` | [`InputProps`](interfaces/InputProps.md)<`T`\> |
+| `props` | [`InputProps`](interfaces/InputProps.md)\<`T`\> |
 
 ##### Returns
 
@@ -63,7 +63,7 @@ ___
 
 ### SelectOf
 
-Ƭ **SelectOf**<`T`\>: <K\>(`props`: [`SelectProps`](interfaces/SelectProps.md)<`T`, `K`\>) => `ReactElement`
+Ƭ **SelectOf**\<`T`\>: \<K\>(`props`: [`SelectProps`](interfaces/SelectProps.md)\<`T`, `K`\>) => `ReactElement`
 
 #### Type parameters
 
@@ -73,7 +73,7 @@ ___
 
 #### Type declaration
 
-▸ <`K`\>(`props`): `ReactElement`
+▸ \<`K`\>(`props`): `ReactElement`
 
 Helper type to describe a [Select](README.md#select) component of an specific struct `T`.
 
@@ -81,13 +81,13 @@ Helper type to describe a [Select](README.md#select) component of an specific st
 
 | Name | Type |
 | :------ | :------ |
-| `K` | extends `Path`<`T`\> |
+| `K` | extends `Path`\<`T`\> |
 
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `props` | [`SelectProps`](interfaces/SelectProps.md)<`T`, `K`\> |
+| `props` | [`SelectProps`](interfaces/SelectProps.md)\<`T`, `K`\> |
 
 ##### Returns
 
@@ -101,7 +101,7 @@ ___
 
 ### TextareaOf
 
-Ƭ **TextareaOf**<`T`\>: (`props`: [`TextareaProps`](interfaces/TextareaProps.md)<`T`\>) => `ReactElement`
+Ƭ **TextareaOf**\<`T`\>: (`props`: [`TextareaProps`](interfaces/TextareaProps.md)\<`T`\>) => `ReactElement`
 
 #### Type parameters
 
@@ -120,7 +120,7 @@ Helper type to describe a [Textarea](README.md#textarea) component of an specifi
 
 | Name | Type |
 | :------ | :------ |
-| `props` | [`TextareaProps`](interfaces/TextareaProps.md)<`T`\> |
+| `props` | [`TextareaProps`](interfaces/TextareaProps.md)\<`T`\> |
 
 ##### Returns
 
@@ -134,7 +134,7 @@ Helper type to describe a [Textarea](README.md#textarea) component of an specifi
 
 ### Form
 
-▸ **Form**<`T`\>(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **Form**\<`T`\>(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 The Form component is just like the FormProvider but its children
 are wrapped around a `<form>` HTML element. This means you can simply use a
@@ -154,11 +154,11 @@ defualt value of the `noValidate` prop of the `<form>` is set to `true`.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `props` | [`FormProps`](interfaces/FormProps.md)<`T`\> | the FromProvider props plus the HTMLFormElement props |
+| `props` | [`FormProps`](interfaces/FormProps.md)\<`T`\> | the FromProvider props plus the HTMLFormElement props |
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -168,7 +168,7 @@ ___
 
 ### Input
 
-▸ **Input**<`T`\>(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **Input**\<`T`\>(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 Helper component to work with `<input>` elements within a `FormProvider<T>`.
 I.e., it implements the useField and useFieldValidation
@@ -185,11 +185,11 @@ of the box.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `props` | [`InputProps`](interfaces/InputProps.md)<`T`\> | the InputProps plus the HTMLInputElement attributes |
+| `props` | [`InputProps`](interfaces/InputProps.md)\<`T`\> | the InputProps plus the HTMLInputElement attributes |
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -199,7 +199,7 @@ ___
 
 ### Select
 
-▸ **Select**<`T`, `K`\>(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **Select**\<`T`, `K`\>(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 Helper component to work with `<select>` elements within a `FormProvider<T>`.
 I.e., it implements the useField and useFieldValidation
@@ -217,11 +217,11 @@ of the box.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `props` | [`SelectProps`](interfaces/SelectProps.md)<`T`, `K`\> | the SelectProps plus the HTMLSelectElement attributes |
+| `props` | [`SelectProps`](interfaces/SelectProps.md)\<`T`, `K`\> | the SelectProps plus the HTMLSelectElement attributes |
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -231,7 +231,7 @@ ___
 
 ### Textarea
 
-▸ **Textarea**<`T`\>(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **Textarea**\<`T`\>(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 Helper component to work with `<textarea>` elements within a
 `FormProvider<T>`. I.e., it implements the useField and
@@ -248,11 +248,11 @@ validation helpers right out of the box.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `props` | [`TextareaProps`](interfaces/TextareaProps.md)<`T`\> | the TextareaProps plus the HTMLTextAreaElement attributes |
+| `props` | [`TextareaProps`](interfaces/TextareaProps.md)\<`T`\> | the TextareaProps plus the HTMLTextAreaElement attributes |
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -262,7 +262,7 @@ ___
 
 ### inputOf
 
-▸ **inputOf**<`T`\>(): [`InputOf`](README.md#inputof)<`T`\>
+▸ **inputOf**\<`T`\>(): [`InputOf`](README.md#inputof)\<`T`\>
 
 Utility function which helps you create an [Input](README.md#input) component of an
 specific struct type. Once you have this, the possible values for the `name`
@@ -276,7 +276,7 @@ prop can be inferred based on the struct type.
 
 #### Returns
 
-[`InputOf`](README.md#inputof)<`T`\>
+[`InputOf`](README.md#inputof)\<`T`\>
 
 an Input of the specified struct type
 
@@ -302,7 +302,7 @@ ___
 
 ### selectOf
 
-▸ **selectOf**<`T`\>(): [`SelectOf`](README.md#selectof)<`T`\>
+▸ **selectOf**\<`T`\>(): [`SelectOf`](README.md#selectof)\<`T`\>
 
 Utility function which helps you create a [Select](README.md#select) component of an
 specific struct type. Once you have this, the possible values for the `name`
@@ -317,7 +317,7 @@ infered from the resulting `Path<T>` of `name`.
 
 #### Returns
 
-[`SelectOf`](README.md#selectof)<`T`\>
+[`SelectOf`](README.md#selectof)\<`T`\>
 
 a Select of the specified struct type
 
@@ -349,7 +349,7 @@ ___
 
 ### textareaOf
 
-▸ **textareaOf**<`T`\>(): [`TextareaOf`](README.md#textareaof)<`T`\>
+▸ **textareaOf**\<`T`\>(): [`TextareaOf`](README.md#textareaof)\<`T`\>
 
 Utility function which helps you create a [Textarea](README.md#textarea) component of an
 specific struct type. Once you have this, the possible values for the `name`
@@ -363,7 +363,7 @@ prop can be inferred based on the struct type.
 
 #### Returns
 
-[`TextareaOf`](README.md#textareaof)<`T`\>
+[`TextareaOf`](README.md#textareaof)\<`T`\>
 
 a Textarea of the specified struct type
 

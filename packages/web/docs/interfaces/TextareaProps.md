@@ -1,6 +1,6 @@
 [@lynxts/web](../README.md) / TextareaProps
 
-# Interface: TextareaProps<T\>
+# Interface: TextareaProps\<T\>
 
 The [Textarea](../README.md#textarea) component props which extends from the
 HTMLTextAreaElement attributes.
@@ -13,7 +13,7 @@ HTMLTextAreaElement attributes.
 
 ## Hierarchy
 
-- `TextareaHTMLAttributes`<`HTMLTextAreaElement`\>
+- `TextareaHTMLAttributes`\<`HTMLTextAreaElement`\>
 
   ↳ **`TextareaProps`**
 
@@ -316,7 +316,7 @@ TextareaHTMLAttributes.about
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1953
+node_modules/@types/react/index.d.ts:1990
 
 ___
 
@@ -330,7 +330,7 @@ TextareaHTMLAttributes.accessKey
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1927
+node_modules/@types/react/index.d.ts:1964
 
 ___
 
@@ -346,7 +346,7 @@ TextareaHTMLAttributes.aria-activedescendant
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1636
+node_modules/@types/react/index.d.ts:1662
 
 ___
 
@@ -362,7 +362,7 @@ TextareaHTMLAttributes.aria-atomic
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1638
+node_modules/@types/react/index.d.ts:1664
 
 ___
 
@@ -379,7 +379,7 @@ TextareaHTMLAttributes.aria-autocomplete
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1643
+node_modules/@types/react/index.d.ts:1669
 
 ___
 
@@ -399,7 +399,7 @@ TextareaHTMLAttributes.aria-braillelabel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1649
+node_modules/@types/react/index.d.ts:1675
 
 ___
 
@@ -419,7 +419,7 @@ TextareaHTMLAttributes.aria-brailleroledescription
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1654
+node_modules/@types/react/index.d.ts:1680
 
 ___
 
@@ -433,7 +433,7 @@ TextareaHTMLAttributes.aria-busy
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1655
+node_modules/@types/react/index.d.ts:1681
 
 ___
 
@@ -454,7 +454,7 @@ TextareaHTMLAttributes.aria-checked
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1660
+node_modules/@types/react/index.d.ts:1686
 
 ___
 
@@ -474,7 +474,7 @@ TextareaHTMLAttributes.aria-colcount
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1665
+node_modules/@types/react/index.d.ts:1691
 
 ___
 
@@ -495,7 +495,7 @@ TextareaHTMLAttributes.aria-colindex
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1670
+node_modules/@types/react/index.d.ts:1696
 
 ___
 
@@ -515,7 +515,7 @@ TextareaHTMLAttributes.aria-colindextext
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1675
+node_modules/@types/react/index.d.ts:1701
 
 ___
 
@@ -536,7 +536,7 @@ TextareaHTMLAttributes.aria-colspan
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1680
+node_modules/@types/react/index.d.ts:1706
 
 ___
 
@@ -556,7 +556,7 @@ TextareaHTMLAttributes.aria-controls
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1685
+node_modules/@types/react/index.d.ts:1711
 
 ___
 
@@ -572,7 +572,7 @@ TextareaHTMLAttributes.aria-current
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1687
+node_modules/@types/react/index.d.ts:1713
 
 ___
 
@@ -592,7 +592,7 @@ TextareaHTMLAttributes.aria-describedby
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1692
+node_modules/@types/react/index.d.ts:1718
 
 ___
 
@@ -612,7 +612,7 @@ TextareaHTMLAttributes.aria-description
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1697
+node_modules/@types/react/index.d.ts:1723
 
 ___
 
@@ -632,7 +632,7 @@ TextareaHTMLAttributes.aria-details
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1702
+node_modules/@types/react/index.d.ts:1728
 
 ___
 
@@ -653,7 +653,7 @@ TextareaHTMLAttributes.aria-disabled
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1707
+node_modules/@types/react/index.d.ts:1733
 
 ___
 
@@ -673,7 +673,7 @@ TextareaHTMLAttributes.aria-dropeffect
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1712
+node_modules/@types/react/index.d.ts:1738
 
 ___
 
@@ -694,7 +694,7 @@ TextareaHTMLAttributes.aria-errormessage
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1717
+node_modules/@types/react/index.d.ts:1743
 
 ___
 
@@ -710,7 +710,7 @@ TextareaHTMLAttributes.aria-expanded
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1719
+node_modules/@types/react/index.d.ts:1745
 
 ___
 
@@ -727,7 +727,7 @@ TextareaHTMLAttributes.aria-flowto
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1724
+node_modules/@types/react/index.d.ts:1750
 
 ___
 
@@ -747,7 +747,7 @@ TextareaHTMLAttributes.aria-grabbed
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1729
+node_modules/@types/react/index.d.ts:1755
 
 ___
 
@@ -763,7 +763,7 @@ TextareaHTMLAttributes.aria-haspopup
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1731
+node_modules/@types/react/index.d.ts:1757
 
 ___
 
@@ -783,7 +783,7 @@ TextareaHTMLAttributes.aria-hidden
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1736
+node_modules/@types/react/index.d.ts:1762
 
 ___
 
@@ -803,7 +803,7 @@ TextareaHTMLAttributes.aria-invalid
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1741
+node_modules/@types/react/index.d.ts:1767
 
 ___
 
@@ -819,7 +819,7 @@ TextareaHTMLAttributes.aria-keyshortcuts
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1743
+node_modules/@types/react/index.d.ts:1769
 
 ___
 
@@ -839,7 +839,7 @@ TextareaHTMLAttributes.aria-label
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1748
+node_modules/@types/react/index.d.ts:1774
 
 ___
 
@@ -859,7 +859,7 @@ TextareaHTMLAttributes.aria-labelledby
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1753
+node_modules/@types/react/index.d.ts:1779
 
 ___
 
@@ -875,7 +875,7 @@ TextareaHTMLAttributes.aria-level
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1755
+node_modules/@types/react/index.d.ts:1781
 
 ___
 
@@ -891,7 +891,7 @@ TextareaHTMLAttributes.aria-live
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1757
+node_modules/@types/react/index.d.ts:1783
 
 ___
 
@@ -907,7 +907,7 @@ TextareaHTMLAttributes.aria-modal
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1759
+node_modules/@types/react/index.d.ts:1785
 
 ___
 
@@ -923,7 +923,7 @@ TextareaHTMLAttributes.aria-multiline
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1761
+node_modules/@types/react/index.d.ts:1787
 
 ___
 
@@ -939,7 +939,7 @@ TextareaHTMLAttributes.aria-multiselectable
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1763
+node_modules/@types/react/index.d.ts:1789
 
 ___
 
@@ -955,7 +955,7 @@ TextareaHTMLAttributes.aria-orientation
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1765
+node_modules/@types/react/index.d.ts:1791
 
 ___
 
@@ -976,7 +976,7 @@ TextareaHTMLAttributes.aria-owns
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1771
+node_modules/@types/react/index.d.ts:1797
 
 ___
 
@@ -993,7 +993,7 @@ TextareaHTMLAttributes.aria-placeholder
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1776
+node_modules/@types/react/index.d.ts:1802
 
 ___
 
@@ -1013,7 +1013,7 @@ TextareaHTMLAttributes.aria-posinset
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1781
+node_modules/@types/react/index.d.ts:1807
 
 ___
 
@@ -1034,7 +1034,7 @@ TextareaHTMLAttributes.aria-pressed
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1786
+node_modules/@types/react/index.d.ts:1812
 
 ___
 
@@ -1054,7 +1054,7 @@ TextareaHTMLAttributes.aria-readonly
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1791
+node_modules/@types/react/index.d.ts:1817
 
 ___
 
@@ -1074,7 +1074,7 @@ TextareaHTMLAttributes.aria-relevant
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1796
+node_modules/@types/react/index.d.ts:1822
 
 ___
 
@@ -1090,7 +1090,7 @@ TextareaHTMLAttributes.aria-required
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1798
+node_modules/@types/react/index.d.ts:1835
 
 ___
 
@@ -1106,7 +1106,7 @@ TextareaHTMLAttributes.aria-roledescription
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1800
+node_modules/@types/react/index.d.ts:1837
 
 ___
 
@@ -1126,7 +1126,7 @@ TextareaHTMLAttributes.aria-rowcount
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1805
+node_modules/@types/react/index.d.ts:1842
 
 ___
 
@@ -1147,7 +1147,7 @@ TextareaHTMLAttributes.aria-rowindex
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1810
+node_modules/@types/react/index.d.ts:1847
 
 ___
 
@@ -1167,7 +1167,7 @@ TextareaHTMLAttributes.aria-rowindextext
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1815
+node_modules/@types/react/index.d.ts:1852
 
 ___
 
@@ -1188,7 +1188,7 @@ TextareaHTMLAttributes.aria-rowspan
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1820
+node_modules/@types/react/index.d.ts:1857
 
 ___
 
@@ -1209,7 +1209,7 @@ TextareaHTMLAttributes.aria-selected
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1825
+node_modules/@types/react/index.d.ts:1862
 
 ___
 
@@ -1229,7 +1229,7 @@ TextareaHTMLAttributes.aria-setsize
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1830
+node_modules/@types/react/index.d.ts:1867
 
 ___
 
@@ -1245,7 +1245,7 @@ TextareaHTMLAttributes.aria-sort
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1832
+node_modules/@types/react/index.d.ts:1869
 
 ___
 
@@ -1261,7 +1261,7 @@ TextareaHTMLAttributes.aria-valuemax
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1834
+node_modules/@types/react/index.d.ts:1871
 
 ___
 
@@ -1277,7 +1277,7 @@ TextareaHTMLAttributes.aria-valuemin
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1836
+node_modules/@types/react/index.d.ts:1873
 
 ___
 
@@ -1297,7 +1297,7 @@ TextareaHTMLAttributes.aria-valuenow
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1841
+node_modules/@types/react/index.d.ts:1878
 
 ___
 
@@ -1313,7 +1313,7 @@ TextareaHTMLAttributes.aria-valuetext
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1843
+node_modules/@types/react/index.d.ts:1880
 
 ___
 
@@ -1327,7 +1327,7 @@ TextareaHTMLAttributes.autoCapitalize
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1966
+node_modules/@types/react/index.d.ts:2003
 
 ___
 
@@ -1341,7 +1341,7 @@ TextareaHTMLAttributes.autoComplete
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2532
+node_modules/@types/react/index.d.ts:2578
 
 ___
 
@@ -1355,7 +1355,7 @@ TextareaHTMLAttributes.autoCorrect
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1967
+node_modules/@types/react/index.d.ts:2004
 
 ___
 
@@ -1369,7 +1369,7 @@ TextareaHTMLAttributes.autoFocus
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1928
+node_modules/@types/react/index.d.ts:1965
 
 ___
 
@@ -1383,7 +1383,7 @@ TextareaHTMLAttributes.autoSave
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1968
+node_modules/@types/react/index.d.ts:2005
 
 ___
 
@@ -1397,7 +1397,7 @@ TextareaHTMLAttributes.children
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1420
+node_modules/@types/react/index.d.ts:1446
 
 ___
 
@@ -1411,7 +1411,7 @@ TextareaHTMLAttributes.className
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1929
+node_modules/@types/react/index.d.ts:1966
 
 ___
 
@@ -1425,7 +1425,7 @@ TextareaHTMLAttributes.color
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1969
+node_modules/@types/react/index.d.ts:2006
 
 ___
 
@@ -1439,7 +1439,7 @@ TextareaHTMLAttributes.cols
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2533
+node_modules/@types/react/index.d.ts:2579
 
 ___
 
@@ -1453,13 +1453,13 @@ TextareaHTMLAttributes.content
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1954
+node_modules/@types/react/index.d.ts:1991
 
 ___
 
 ### contentEditable
 
-• `Optional` **contentEditable**: `Booleanish` \| ``"inherit"``
+• `Optional` **contentEditable**: `Booleanish` \| ``"inherit"`` \| ``"plaintext-only"``
 
 #### Inherited from
 
@@ -1467,7 +1467,7 @@ TextareaHTMLAttributes.contentEditable
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1930
+node_modules/@types/react/index.d.ts:1967
 
 ___
 
@@ -1481,7 +1481,7 @@ TextareaHTMLAttributes.contextMenu
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1931
+node_modules/@types/react/index.d.ts:1968
 
 ___
 
@@ -1501,7 +1501,7 @@ TextareaHTMLAttributes.dangerouslySetInnerHTML
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1421
+node_modules/@types/react/index.d.ts:1447
 
 ___
 
@@ -1515,7 +1515,7 @@ TextareaHTMLAttributes.datatype
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1955
+node_modules/@types/react/index.d.ts:1992
 
 ___
 
@@ -1529,7 +1529,7 @@ TextareaHTMLAttributes.defaultChecked
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1921
+node_modules/@types/react/index.d.ts:1958
 
 ___
 
@@ -1543,7 +1543,7 @@ TextareaHTMLAttributes.defaultValue
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1922
+node_modules/@types/react/index.d.ts:1959
 
 ___
 
@@ -1557,7 +1557,7 @@ TextareaHTMLAttributes.dir
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1932
+node_modules/@types/react/index.d.ts:1969
 
 ___
 
@@ -1571,7 +1571,7 @@ TextareaHTMLAttributes.dirName
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2534
+node_modules/@types/react/index.d.ts:2580
 
 ___
 
@@ -1585,7 +1585,7 @@ TextareaHTMLAttributes.disabled
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2535
+node_modules/@types/react/index.d.ts:2581
 
 ___
 
@@ -1599,7 +1599,7 @@ TextareaHTMLAttributes.draggable
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1933
+node_modules/@types/react/index.d.ts:1970
 
 ___
 
@@ -1613,7 +1613,7 @@ TextareaHTMLAttributes.form
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2536
+node_modules/@types/react/index.d.ts:2582
 
 ___
 
@@ -1627,7 +1627,7 @@ TextareaHTMLAttributes.hidden
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1934
+node_modules/@types/react/index.d.ts:1971
 
 ___
 
@@ -1641,7 +1641,7 @@ TextareaHTMLAttributes.id
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1935
+node_modules/@types/react/index.d.ts:1972
 
 ___
 
@@ -1674,7 +1674,7 @@ TextareaHTMLAttributes.inlist
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1956
+node_modules/@types/react/index.d.ts:1993
 
 ___
 
@@ -1694,7 +1694,7 @@ TextareaHTMLAttributes.inputMode
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1984
+node_modules/@types/react/index.d.ts:2021
 
 ___
 
@@ -1714,7 +1714,7 @@ TextareaHTMLAttributes.is
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1989
+node_modules/@types/react/index.d.ts:2026
 
 ___
 
@@ -1728,7 +1728,7 @@ TextareaHTMLAttributes.itemID
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1973
+node_modules/@types/react/index.d.ts:2010
 
 ___
 
@@ -1742,7 +1742,7 @@ TextareaHTMLAttributes.itemProp
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1970
+node_modules/@types/react/index.d.ts:2007
 
 ___
 
@@ -1756,7 +1756,7 @@ TextareaHTMLAttributes.itemRef
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1974
+node_modules/@types/react/index.d.ts:2011
 
 ___
 
@@ -1770,7 +1770,7 @@ TextareaHTMLAttributes.itemScope
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1971
+node_modules/@types/react/index.d.ts:2008
 
 ___
 
@@ -1784,7 +1784,7 @@ TextareaHTMLAttributes.itemType
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1972
+node_modules/@types/react/index.d.ts:2009
 
 ___
 
@@ -1811,7 +1811,7 @@ TextareaHTMLAttributes.lang
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1936
+node_modules/@types/react/index.d.ts:1973
 
 ___
 
@@ -1825,7 +1825,7 @@ TextareaHTMLAttributes.maxLength
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2537
+node_modules/@types/react/index.d.ts:2583
 
 ___
 
@@ -1839,13 +1839,13 @@ TextareaHTMLAttributes.minLength
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2538
+node_modules/@types/react/index.d.ts:2584
 
 ___
 
 ### name
 
-• **name**: `GetPath`<`T`, `string`, `T`\>
+• **name**: `GetPath`\<`T`, `string`, `T`\>
 
 The name of the field as a Path|Path\<T, string\>.
 
@@ -1869,13 +1869,13 @@ TextareaHTMLAttributes.nonce
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1937
+node_modules/@types/react/index.d.ts:1974
 
 ___
 
 ### onAbort
 
-• `Optional` **onAbort**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onAbort**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -1883,13 +1883,13 @@ TextareaHTMLAttributes.onAbort
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1480
+node_modules/@types/react/index.d.ts:1506
 
 ___
 
 ### onAbortCapture
 
-• `Optional` **onAbortCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onAbortCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -1897,13 +1897,13 @@ TextareaHTMLAttributes.onAbortCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1481
+node_modules/@types/react/index.d.ts:1507
 
 ___
 
 ### onAnimationEnd
 
-• `Optional` **onAnimationEnd**: `AnimationEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onAnimationEnd**: `AnimationEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -1911,13 +1911,13 @@ TextareaHTMLAttributes.onAnimationEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1612
+node_modules/@types/react/index.d.ts:1638
 
 ___
 
 ### onAnimationEndCapture
 
-• `Optional` **onAnimationEndCapture**: `AnimationEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onAnimationEndCapture**: `AnimationEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -1925,13 +1925,13 @@ TextareaHTMLAttributes.onAnimationEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1613
+node_modules/@types/react/index.d.ts:1639
 
 ___
 
 ### onAnimationIteration
 
-• `Optional` **onAnimationIteration**: `AnimationEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onAnimationIteration**: `AnimationEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -1939,13 +1939,13 @@ TextareaHTMLAttributes.onAnimationIteration
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1614
+node_modules/@types/react/index.d.ts:1640
 
 ___
 
 ### onAnimationIterationCapture
 
-• `Optional` **onAnimationIterationCapture**: `AnimationEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onAnimationIterationCapture**: `AnimationEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -1953,13 +1953,13 @@ TextareaHTMLAttributes.onAnimationIterationCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1615
+node_modules/@types/react/index.d.ts:1641
 
 ___
 
 ### onAnimationStart
 
-• `Optional` **onAnimationStart**: `AnimationEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onAnimationStart**: `AnimationEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -1967,13 +1967,13 @@ TextareaHTMLAttributes.onAnimationStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1610
+node_modules/@types/react/index.d.ts:1636
 
 ___
 
 ### onAnimationStartCapture
 
-• `Optional` **onAnimationStartCapture**: `AnimationEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onAnimationStartCapture**: `AnimationEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -1981,13 +1981,13 @@ TextareaHTMLAttributes.onAnimationStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1611
+node_modules/@types/react/index.d.ts:1637
 
 ___
 
 ### onAuxClick
 
-• `Optional` **onAuxClick**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onAuxClick**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -1995,13 +1995,13 @@ TextareaHTMLAttributes.onAuxClick
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1528
+node_modules/@types/react/index.d.ts:1554
 
 ___
 
 ### onAuxClickCapture
 
-• `Optional` **onAuxClickCapture**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onAuxClickCapture**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2009,13 +2009,13 @@ TextareaHTMLAttributes.onAuxClickCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1529
+node_modules/@types/react/index.d.ts:1555
 
 ___
 
 ### onBeforeInput
 
-• `Optional` **onBeforeInput**: `FormEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onBeforeInput**: `FormEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2023,13 +2023,13 @@ TextareaHTMLAttributes.onBeforeInput
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1452
+node_modules/@types/react/index.d.ts:1478
 
 ___
 
 ### onBeforeInputCapture
 
-• `Optional` **onBeforeInputCapture**: `FormEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onBeforeInputCapture**: `FormEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2037,13 +2037,13 @@ TextareaHTMLAttributes.onBeforeInputCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1453
+node_modules/@types/react/index.d.ts:1479
 
 ___
 
 ### onBlur
 
-• `Optional` **onBlur**: `FocusEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onBlur**: `FocusEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2051,13 +2051,13 @@ TextareaHTMLAttributes.onBlur
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1446
+node_modules/@types/react/index.d.ts:1472
 
 ___
 
 ### onBlurCapture
 
-• `Optional` **onBlurCapture**: `FocusEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onBlurCapture**: `FocusEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2065,13 +2065,13 @@ TextareaHTMLAttributes.onBlurCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1447
+node_modules/@types/react/index.d.ts:1473
 
 ___
 
 ### onCanPlay
 
-• `Optional` **onCanPlay**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCanPlay**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2079,13 +2079,13 @@ TextareaHTMLAttributes.onCanPlay
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1482
+node_modules/@types/react/index.d.ts:1508
 
 ___
 
 ### onCanPlayCapture
 
-• `Optional` **onCanPlayCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCanPlayCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2093,13 +2093,13 @@ TextareaHTMLAttributes.onCanPlayCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1483
+node_modules/@types/react/index.d.ts:1509
 
 ___
 
 ### onCanPlayThrough
 
-• `Optional` **onCanPlayThrough**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCanPlayThrough**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2107,13 +2107,13 @@ TextareaHTMLAttributes.onCanPlayThrough
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1484
+node_modules/@types/react/index.d.ts:1510
 
 ___
 
 ### onCanPlayThroughCapture
 
-• `Optional` **onCanPlayThroughCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCanPlayThroughCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2121,13 +2121,13 @@ TextareaHTMLAttributes.onCanPlayThroughCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1485
+node_modules/@types/react/index.d.ts:1511
 
 ___
 
 ### onChange
 
-• `Optional` **onChange**: `ChangeEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onChange**: `ChangeEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2135,13 +2135,13 @@ TextareaHTMLAttributes.onChange
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2547
+node_modules/@types/react/index.d.ts:2593
 
 ___
 
 ### onChangeCapture
 
-• `Optional` **onChangeCapture**: `FormEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onChangeCapture**: `FormEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2149,13 +2149,13 @@ TextareaHTMLAttributes.onChangeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1451
+node_modules/@types/react/index.d.ts:1477
 
 ___
 
 ### onClick
 
-• `Optional` **onClick**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onClick**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2163,13 +2163,13 @@ TextareaHTMLAttributes.onClick
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1530
+node_modules/@types/react/index.d.ts:1556
 
 ___
 
 ### onClickCapture
 
-• `Optional` **onClickCapture**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onClickCapture**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2177,13 +2177,13 @@ TextareaHTMLAttributes.onClickCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1531
+node_modules/@types/react/index.d.ts:1557
 
 ___
 
 ### onCompositionEnd
 
-• `Optional` **onCompositionEnd**: `CompositionEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCompositionEnd**: `CompositionEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2191,13 +2191,13 @@ TextareaHTMLAttributes.onCompositionEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1436
+node_modules/@types/react/index.d.ts:1462
 
 ___
 
 ### onCompositionEndCapture
 
-• `Optional` **onCompositionEndCapture**: `CompositionEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCompositionEndCapture**: `CompositionEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2205,13 +2205,13 @@ TextareaHTMLAttributes.onCompositionEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1437
+node_modules/@types/react/index.d.ts:1463
 
 ___
 
 ### onCompositionStart
 
-• `Optional` **onCompositionStart**: `CompositionEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCompositionStart**: `CompositionEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2219,13 +2219,13 @@ TextareaHTMLAttributes.onCompositionStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1438
+node_modules/@types/react/index.d.ts:1464
 
 ___
 
 ### onCompositionStartCapture
 
-• `Optional` **onCompositionStartCapture**: `CompositionEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCompositionStartCapture**: `CompositionEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2233,13 +2233,13 @@ TextareaHTMLAttributes.onCompositionStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1439
+node_modules/@types/react/index.d.ts:1465
 
 ___
 
 ### onCompositionUpdate
 
-• `Optional` **onCompositionUpdate**: `CompositionEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCompositionUpdate**: `CompositionEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2247,13 +2247,13 @@ TextareaHTMLAttributes.onCompositionUpdate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1440
+node_modules/@types/react/index.d.ts:1466
 
 ___
 
 ### onCompositionUpdateCapture
 
-• `Optional` **onCompositionUpdateCapture**: `CompositionEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCompositionUpdateCapture**: `CompositionEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2261,13 +2261,13 @@ TextareaHTMLAttributes.onCompositionUpdateCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1441
+node_modules/@types/react/index.d.ts:1467
 
 ___
 
 ### onContextMenu
 
-• `Optional` **onContextMenu**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onContextMenu**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2275,13 +2275,13 @@ TextareaHTMLAttributes.onContextMenu
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1532
+node_modules/@types/react/index.d.ts:1558
 
 ___
 
 ### onContextMenuCapture
 
-• `Optional` **onContextMenuCapture**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onContextMenuCapture**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2289,13 +2289,13 @@ TextareaHTMLAttributes.onContextMenuCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1533
+node_modules/@types/react/index.d.ts:1559
 
 ___
 
 ### onCopy
 
-• `Optional` **onCopy**: `ClipboardEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCopy**: `ClipboardEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2303,13 +2303,13 @@ TextareaHTMLAttributes.onCopy
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1428
+node_modules/@types/react/index.d.ts:1454
 
 ___
 
 ### onCopyCapture
 
-• `Optional` **onCopyCapture**: `ClipboardEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCopyCapture**: `ClipboardEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2317,13 +2317,13 @@ TextareaHTMLAttributes.onCopyCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1429
+node_modules/@types/react/index.d.ts:1455
 
 ___
 
 ### onCut
 
-• `Optional` **onCut**: `ClipboardEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCut**: `ClipboardEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2331,13 +2331,13 @@ TextareaHTMLAttributes.onCut
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1430
+node_modules/@types/react/index.d.ts:1456
 
 ___
 
 ### onCutCapture
 
-• `Optional` **onCutCapture**: `ClipboardEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onCutCapture**: `ClipboardEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2345,13 +2345,13 @@ TextareaHTMLAttributes.onCutCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1431
+node_modules/@types/react/index.d.ts:1457
 
 ___
 
 ### onDoubleClick
 
-• `Optional` **onDoubleClick**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDoubleClick**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2359,13 +2359,13 @@ TextareaHTMLAttributes.onDoubleClick
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1534
+node_modules/@types/react/index.d.ts:1560
 
 ___
 
 ### onDoubleClickCapture
 
-• `Optional` **onDoubleClickCapture**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDoubleClickCapture**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2373,13 +2373,13 @@ TextareaHTMLAttributes.onDoubleClickCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1535
+node_modules/@types/react/index.d.ts:1561
 
 ___
 
 ### onDrag
 
-• `Optional` **onDrag**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDrag**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2387,13 +2387,13 @@ TextareaHTMLAttributes.onDrag
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1536
+node_modules/@types/react/index.d.ts:1562
 
 ___
 
 ### onDragCapture
 
-• `Optional` **onDragCapture**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragCapture**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2401,13 +2401,13 @@ TextareaHTMLAttributes.onDragCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1537
+node_modules/@types/react/index.d.ts:1563
 
 ___
 
 ### onDragEnd
 
-• `Optional` **onDragEnd**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragEnd**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2415,13 +2415,13 @@ TextareaHTMLAttributes.onDragEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1538
+node_modules/@types/react/index.d.ts:1564
 
 ___
 
 ### onDragEndCapture
 
-• `Optional` **onDragEndCapture**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragEndCapture**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2429,13 +2429,13 @@ TextareaHTMLAttributes.onDragEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1539
+node_modules/@types/react/index.d.ts:1565
 
 ___
 
 ### onDragEnter
 
-• `Optional` **onDragEnter**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragEnter**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2443,13 +2443,13 @@ TextareaHTMLAttributes.onDragEnter
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1540
+node_modules/@types/react/index.d.ts:1566
 
 ___
 
 ### onDragEnterCapture
 
-• `Optional` **onDragEnterCapture**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragEnterCapture**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2457,13 +2457,13 @@ TextareaHTMLAttributes.onDragEnterCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1541
+node_modules/@types/react/index.d.ts:1567
 
 ___
 
 ### onDragExit
 
-• `Optional` **onDragExit**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragExit**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2471,13 +2471,13 @@ TextareaHTMLAttributes.onDragExit
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1542
+node_modules/@types/react/index.d.ts:1568
 
 ___
 
 ### onDragExitCapture
 
-• `Optional` **onDragExitCapture**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragExitCapture**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2485,13 +2485,13 @@ TextareaHTMLAttributes.onDragExitCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1543
+node_modules/@types/react/index.d.ts:1569
 
 ___
 
 ### onDragLeave
 
-• `Optional` **onDragLeave**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragLeave**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2499,13 +2499,13 @@ TextareaHTMLAttributes.onDragLeave
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1544
+node_modules/@types/react/index.d.ts:1570
 
 ___
 
 ### onDragLeaveCapture
 
-• `Optional` **onDragLeaveCapture**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragLeaveCapture**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2513,13 +2513,13 @@ TextareaHTMLAttributes.onDragLeaveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1545
+node_modules/@types/react/index.d.ts:1571
 
 ___
 
 ### onDragOver
 
-• `Optional` **onDragOver**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragOver**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2527,13 +2527,13 @@ TextareaHTMLAttributes.onDragOver
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1546
+node_modules/@types/react/index.d.ts:1572
 
 ___
 
 ### onDragOverCapture
 
-• `Optional` **onDragOverCapture**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragOverCapture**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2541,13 +2541,13 @@ TextareaHTMLAttributes.onDragOverCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1547
+node_modules/@types/react/index.d.ts:1573
 
 ___
 
 ### onDragStart
 
-• `Optional` **onDragStart**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragStart**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2555,13 +2555,13 @@ TextareaHTMLAttributes.onDragStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1548
+node_modules/@types/react/index.d.ts:1574
 
 ___
 
 ### onDragStartCapture
 
-• `Optional` **onDragStartCapture**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDragStartCapture**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2569,13 +2569,13 @@ TextareaHTMLAttributes.onDragStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1549
+node_modules/@types/react/index.d.ts:1575
 
 ___
 
 ### onDrop
 
-• `Optional` **onDrop**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDrop**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2583,13 +2583,13 @@ TextareaHTMLAttributes.onDrop
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1550
+node_modules/@types/react/index.d.ts:1576
 
 ___
 
 ### onDropCapture
 
-• `Optional` **onDropCapture**: `DragEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDropCapture**: `DragEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2597,13 +2597,13 @@ TextareaHTMLAttributes.onDropCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1551
+node_modules/@types/react/index.d.ts:1577
 
 ___
 
 ### onDurationChange
 
-• `Optional` **onDurationChange**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDurationChange**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2611,13 +2611,13 @@ TextareaHTMLAttributes.onDurationChange
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1486
+node_modules/@types/react/index.d.ts:1512
 
 ___
 
 ### onDurationChangeCapture
 
-• `Optional` **onDurationChangeCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onDurationChangeCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2625,13 +2625,13 @@ TextareaHTMLAttributes.onDurationChangeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1487
+node_modules/@types/react/index.d.ts:1513
 
 ___
 
 ### onEmptied
 
-• `Optional` **onEmptied**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onEmptied**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2639,13 +2639,13 @@ TextareaHTMLAttributes.onEmptied
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1488
+node_modules/@types/react/index.d.ts:1514
 
 ___
 
 ### onEmptiedCapture
 
-• `Optional` **onEmptiedCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onEmptiedCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2653,13 +2653,13 @@ TextareaHTMLAttributes.onEmptiedCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1489
+node_modules/@types/react/index.d.ts:1515
 
 ___
 
 ### onEncrypted
 
-• `Optional` **onEncrypted**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onEncrypted**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2667,13 +2667,13 @@ TextareaHTMLAttributes.onEncrypted
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1490
+node_modules/@types/react/index.d.ts:1516
 
 ___
 
 ### onEncryptedCapture
 
-• `Optional` **onEncryptedCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onEncryptedCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2681,13 +2681,13 @@ TextareaHTMLAttributes.onEncryptedCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1491
+node_modules/@types/react/index.d.ts:1517
 
 ___
 
 ### onEnded
 
-• `Optional` **onEnded**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onEnded**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2695,13 +2695,13 @@ TextareaHTMLAttributes.onEnded
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1492
+node_modules/@types/react/index.d.ts:1518
 
 ___
 
 ### onEndedCapture
 
-• `Optional` **onEndedCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onEndedCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2709,13 +2709,13 @@ TextareaHTMLAttributes.onEndedCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1493
+node_modules/@types/react/index.d.ts:1519
 
 ___
 
 ### onError
 
-• `Optional` **onError**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onError**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2723,13 +2723,13 @@ TextareaHTMLAttributes.onError
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1466
+node_modules/@types/react/index.d.ts:1492
 
 ___
 
 ### onErrorCapture
 
-• `Optional` **onErrorCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onErrorCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2737,13 +2737,13 @@ TextareaHTMLAttributes.onErrorCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1467
+node_modules/@types/react/index.d.ts:1493
 
 ___
 
 ### onFocus
 
-• `Optional` **onFocus**: `FocusEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onFocus**: `FocusEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2751,13 +2751,13 @@ TextareaHTMLAttributes.onFocus
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1444
+node_modules/@types/react/index.d.ts:1470
 
 ___
 
 ### onFocusCapture
 
-• `Optional` **onFocusCapture**: `FocusEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onFocusCapture**: `FocusEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2765,13 +2765,13 @@ TextareaHTMLAttributes.onFocusCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1445
+node_modules/@types/react/index.d.ts:1471
 
 ___
 
 ### onGotPointerCapture
 
-• `Optional` **onGotPointerCapture**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onGotPointerCapture**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2779,13 +2779,13 @@ TextareaHTMLAttributes.onGotPointerCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1596
+node_modules/@types/react/index.d.ts:1622
 
 ___
 
 ### onGotPointerCaptureCapture
 
-• `Optional` **onGotPointerCaptureCapture**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onGotPointerCaptureCapture**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2793,13 +2793,13 @@ TextareaHTMLAttributes.onGotPointerCaptureCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1597
+node_modules/@types/react/index.d.ts:1623
 
 ___
 
 ### onInput
 
-• `Optional` **onInput**: `FormEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onInput**: `FormEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2807,13 +2807,13 @@ TextareaHTMLAttributes.onInput
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1454
+node_modules/@types/react/index.d.ts:1480
 
 ___
 
 ### onInputCapture
 
-• `Optional` **onInputCapture**: `FormEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onInputCapture**: `FormEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2821,13 +2821,13 @@ TextareaHTMLAttributes.onInputCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1455
+node_modules/@types/react/index.d.ts:1481
 
 ___
 
 ### onInvalid
 
-• `Optional` **onInvalid**: `FormEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onInvalid**: `FormEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2835,13 +2835,13 @@ TextareaHTMLAttributes.onInvalid
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1460
+node_modules/@types/react/index.d.ts:1486
 
 ___
 
 ### onInvalidCapture
 
-• `Optional` **onInvalidCapture**: `FormEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onInvalidCapture**: `FormEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2849,13 +2849,13 @@ TextareaHTMLAttributes.onInvalidCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1461
+node_modules/@types/react/index.d.ts:1487
 
 ___
 
 ### onKeyDown
 
-• `Optional` **onKeyDown**: `KeyboardEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onKeyDown**: `KeyboardEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2863,13 +2863,13 @@ TextareaHTMLAttributes.onKeyDown
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1470
+node_modules/@types/react/index.d.ts:1496
 
 ___
 
 ### onKeyDownCapture
 
-• `Optional` **onKeyDownCapture**: `KeyboardEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onKeyDownCapture**: `KeyboardEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2877,13 +2877,13 @@ TextareaHTMLAttributes.onKeyDownCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1471
+node_modules/@types/react/index.d.ts:1497
 
 ___
 
 ### onKeyPress
 
-• `Optional` **onKeyPress**: `KeyboardEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onKeyPress**: `KeyboardEventHandler`\<`HTMLTextAreaElement`\>
 
 **`Deprecated`**
 
@@ -2893,13 +2893,13 @@ TextareaHTMLAttributes.onKeyPress
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1473
+node_modules/@types/react/index.d.ts:1499
 
 ___
 
 ### onKeyPressCapture
 
-• `Optional` **onKeyPressCapture**: `KeyboardEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onKeyPressCapture**: `KeyboardEventHandler`\<`HTMLTextAreaElement`\>
 
 **`Deprecated`**
 
@@ -2909,13 +2909,13 @@ TextareaHTMLAttributes.onKeyPressCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1475
+node_modules/@types/react/index.d.ts:1501
 
 ___
 
 ### onKeyUp
 
-• `Optional` **onKeyUp**: `KeyboardEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onKeyUp**: `KeyboardEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2923,13 +2923,13 @@ TextareaHTMLAttributes.onKeyUp
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1476
+node_modules/@types/react/index.d.ts:1502
 
 ___
 
 ### onKeyUpCapture
 
-• `Optional` **onKeyUpCapture**: `KeyboardEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onKeyUpCapture**: `KeyboardEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2937,13 +2937,13 @@ TextareaHTMLAttributes.onKeyUpCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1477
+node_modules/@types/react/index.d.ts:1503
 
 ___
 
 ### onLoad
 
-• `Optional` **onLoad**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onLoad**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2951,13 +2951,13 @@ TextareaHTMLAttributes.onLoad
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1464
+node_modules/@types/react/index.d.ts:1490
 
 ___
 
 ### onLoadCapture
 
-• `Optional` **onLoadCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onLoadCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2965,13 +2965,13 @@ TextareaHTMLAttributes.onLoadCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1465
+node_modules/@types/react/index.d.ts:1491
 
 ___
 
 ### onLoadStart
 
-• `Optional` **onLoadStart**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onLoadStart**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2979,13 +2979,13 @@ TextareaHTMLAttributes.onLoadStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1498
+node_modules/@types/react/index.d.ts:1524
 
 ___
 
 ### onLoadStartCapture
 
-• `Optional` **onLoadStartCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onLoadStartCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -2993,13 +2993,13 @@ TextareaHTMLAttributes.onLoadStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1499
+node_modules/@types/react/index.d.ts:1525
 
 ___
 
 ### onLoadedData
 
-• `Optional` **onLoadedData**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onLoadedData**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3007,13 +3007,13 @@ TextareaHTMLAttributes.onLoadedData
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1494
+node_modules/@types/react/index.d.ts:1520
 
 ___
 
 ### onLoadedDataCapture
 
-• `Optional` **onLoadedDataCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onLoadedDataCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3021,13 +3021,13 @@ TextareaHTMLAttributes.onLoadedDataCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1495
+node_modules/@types/react/index.d.ts:1521
 
 ___
 
 ### onLoadedMetadata
 
-• `Optional` **onLoadedMetadata**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onLoadedMetadata**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3035,13 +3035,13 @@ TextareaHTMLAttributes.onLoadedMetadata
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1496
+node_modules/@types/react/index.d.ts:1522
 
 ___
 
 ### onLoadedMetadataCapture
 
-• `Optional` **onLoadedMetadataCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onLoadedMetadataCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3049,13 +3049,13 @@ TextareaHTMLAttributes.onLoadedMetadataCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1497
+node_modules/@types/react/index.d.ts:1523
 
 ___
 
 ### onLostPointerCapture
 
-• `Optional` **onLostPointerCapture**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onLostPointerCapture**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3063,13 +3063,13 @@ TextareaHTMLAttributes.onLostPointerCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1598
+node_modules/@types/react/index.d.ts:1624
 
 ___
 
 ### onLostPointerCaptureCapture
 
-• `Optional` **onLostPointerCaptureCapture**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onLostPointerCaptureCapture**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3077,13 +3077,13 @@ TextareaHTMLAttributes.onLostPointerCaptureCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1599
+node_modules/@types/react/index.d.ts:1625
 
 ___
 
 ### onMouseDown
 
-• `Optional` **onMouseDown**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onMouseDown**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3091,13 +3091,13 @@ TextareaHTMLAttributes.onMouseDown
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1552
+node_modules/@types/react/index.d.ts:1578
 
 ___
 
 ### onMouseDownCapture
 
-• `Optional` **onMouseDownCapture**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onMouseDownCapture**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3105,13 +3105,13 @@ TextareaHTMLAttributes.onMouseDownCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1553
+node_modules/@types/react/index.d.ts:1579
 
 ___
 
 ### onMouseEnter
 
-• `Optional` **onMouseEnter**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onMouseEnter**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3119,13 +3119,13 @@ TextareaHTMLAttributes.onMouseEnter
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1554
+node_modules/@types/react/index.d.ts:1580
 
 ___
 
 ### onMouseLeave
 
-• `Optional` **onMouseLeave**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onMouseLeave**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3133,13 +3133,13 @@ TextareaHTMLAttributes.onMouseLeave
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1555
+node_modules/@types/react/index.d.ts:1581
 
 ___
 
 ### onMouseMove
 
-• `Optional` **onMouseMove**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onMouseMove**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3147,13 +3147,13 @@ TextareaHTMLAttributes.onMouseMove
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1556
+node_modules/@types/react/index.d.ts:1582
 
 ___
 
 ### onMouseMoveCapture
 
-• `Optional` **onMouseMoveCapture**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onMouseMoveCapture**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3161,13 +3161,13 @@ TextareaHTMLAttributes.onMouseMoveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1557
+node_modules/@types/react/index.d.ts:1583
 
 ___
 
 ### onMouseOut
 
-• `Optional` **onMouseOut**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onMouseOut**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3175,13 +3175,13 @@ TextareaHTMLAttributes.onMouseOut
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1558
+node_modules/@types/react/index.d.ts:1584
 
 ___
 
 ### onMouseOutCapture
 
-• `Optional` **onMouseOutCapture**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onMouseOutCapture**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3189,13 +3189,13 @@ TextareaHTMLAttributes.onMouseOutCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1559
+node_modules/@types/react/index.d.ts:1585
 
 ___
 
 ### onMouseOver
 
-• `Optional` **onMouseOver**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onMouseOver**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3203,13 +3203,13 @@ TextareaHTMLAttributes.onMouseOver
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1560
+node_modules/@types/react/index.d.ts:1586
 
 ___
 
 ### onMouseOverCapture
 
-• `Optional` **onMouseOverCapture**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onMouseOverCapture**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3217,13 +3217,13 @@ TextareaHTMLAttributes.onMouseOverCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1561
+node_modules/@types/react/index.d.ts:1587
 
 ___
 
 ### onMouseUp
 
-• `Optional` **onMouseUp**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onMouseUp**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3231,13 +3231,13 @@ TextareaHTMLAttributes.onMouseUp
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1562
+node_modules/@types/react/index.d.ts:1588
 
 ___
 
 ### onMouseUpCapture
 
-• `Optional` **onMouseUpCapture**: `MouseEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onMouseUpCapture**: `MouseEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3245,13 +3245,13 @@ TextareaHTMLAttributes.onMouseUpCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1563
+node_modules/@types/react/index.d.ts:1589
 
 ___
 
 ### onPaste
 
-• `Optional` **onPaste**: `ClipboardEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPaste**: `ClipboardEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3259,13 +3259,13 @@ TextareaHTMLAttributes.onPaste
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1432
+node_modules/@types/react/index.d.ts:1458
 
 ___
 
 ### onPasteCapture
 
-• `Optional` **onPasteCapture**: `ClipboardEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPasteCapture**: `ClipboardEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3273,13 +3273,13 @@ TextareaHTMLAttributes.onPasteCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1433
+node_modules/@types/react/index.d.ts:1459
 
 ___
 
 ### onPause
 
-• `Optional` **onPause**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPause**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3287,13 +3287,13 @@ TextareaHTMLAttributes.onPause
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1500
+node_modules/@types/react/index.d.ts:1526
 
 ___
 
 ### onPauseCapture
 
-• `Optional` **onPauseCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPauseCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3301,13 +3301,13 @@ TextareaHTMLAttributes.onPauseCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1501
+node_modules/@types/react/index.d.ts:1527
 
 ___
 
 ### onPlay
 
-• `Optional` **onPlay**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPlay**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3315,13 +3315,13 @@ TextareaHTMLAttributes.onPlay
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1502
+node_modules/@types/react/index.d.ts:1528
 
 ___
 
 ### onPlayCapture
 
-• `Optional` **onPlayCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPlayCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3329,13 +3329,13 @@ TextareaHTMLAttributes.onPlayCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1503
+node_modules/@types/react/index.d.ts:1529
 
 ___
 
 ### onPlaying
 
-• `Optional` **onPlaying**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPlaying**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3343,13 +3343,13 @@ TextareaHTMLAttributes.onPlaying
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1504
+node_modules/@types/react/index.d.ts:1530
 
 ___
 
 ### onPlayingCapture
 
-• `Optional` **onPlayingCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPlayingCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3357,13 +3357,13 @@ TextareaHTMLAttributes.onPlayingCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1505
+node_modules/@types/react/index.d.ts:1531
 
 ___
 
 ### onPointerCancel
 
-• `Optional` **onPointerCancel**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerCancel**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3371,13 +3371,13 @@ TextareaHTMLAttributes.onPointerCancel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1586
+node_modules/@types/react/index.d.ts:1612
 
 ___
 
 ### onPointerCancelCapture
 
-• `Optional` **onPointerCancelCapture**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerCancelCapture**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3385,13 +3385,13 @@ TextareaHTMLAttributes.onPointerCancelCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1587
+node_modules/@types/react/index.d.ts:1613
 
 ___
 
 ### onPointerDown
 
-• `Optional` **onPointerDown**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerDown**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3399,13 +3399,13 @@ TextareaHTMLAttributes.onPointerDown
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1580
+node_modules/@types/react/index.d.ts:1606
 
 ___
 
 ### onPointerDownCapture
 
-• `Optional` **onPointerDownCapture**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerDownCapture**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3413,13 +3413,13 @@ TextareaHTMLAttributes.onPointerDownCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1581
+node_modules/@types/react/index.d.ts:1607
 
 ___
 
 ### onPointerEnter
 
-• `Optional` **onPointerEnter**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerEnter**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3427,13 +3427,13 @@ TextareaHTMLAttributes.onPointerEnter
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1588
+node_modules/@types/react/index.d.ts:1614
 
 ___
 
 ### onPointerEnterCapture
 
-• `Optional` **onPointerEnterCapture**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerEnterCapture**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3441,13 +3441,13 @@ TextareaHTMLAttributes.onPointerEnterCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1589
+node_modules/@types/react/index.d.ts:1615
 
 ___
 
 ### onPointerLeave
 
-• `Optional` **onPointerLeave**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerLeave**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3455,13 +3455,13 @@ TextareaHTMLAttributes.onPointerLeave
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1590
+node_modules/@types/react/index.d.ts:1616
 
 ___
 
 ### onPointerLeaveCapture
 
-• `Optional` **onPointerLeaveCapture**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerLeaveCapture**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3469,13 +3469,13 @@ TextareaHTMLAttributes.onPointerLeaveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1591
+node_modules/@types/react/index.d.ts:1617
 
 ___
 
 ### onPointerMove
 
-• `Optional` **onPointerMove**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerMove**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3483,13 +3483,13 @@ TextareaHTMLAttributes.onPointerMove
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1582
+node_modules/@types/react/index.d.ts:1608
 
 ___
 
 ### onPointerMoveCapture
 
-• `Optional` **onPointerMoveCapture**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerMoveCapture**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3497,13 +3497,13 @@ TextareaHTMLAttributes.onPointerMoveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1583
+node_modules/@types/react/index.d.ts:1609
 
 ___
 
 ### onPointerOut
 
-• `Optional` **onPointerOut**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerOut**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3511,13 +3511,13 @@ TextareaHTMLAttributes.onPointerOut
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1594
+node_modules/@types/react/index.d.ts:1620
 
 ___
 
 ### onPointerOutCapture
 
-• `Optional` **onPointerOutCapture**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerOutCapture**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3525,13 +3525,13 @@ TextareaHTMLAttributes.onPointerOutCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1595
+node_modules/@types/react/index.d.ts:1621
 
 ___
 
 ### onPointerOver
 
-• `Optional` **onPointerOver**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerOver**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3539,13 +3539,13 @@ TextareaHTMLAttributes.onPointerOver
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1592
+node_modules/@types/react/index.d.ts:1618
 
 ___
 
 ### onPointerOverCapture
 
-• `Optional` **onPointerOverCapture**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerOverCapture**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3553,13 +3553,13 @@ TextareaHTMLAttributes.onPointerOverCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1593
+node_modules/@types/react/index.d.ts:1619
 
 ___
 
 ### onPointerUp
 
-• `Optional` **onPointerUp**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerUp**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3567,13 +3567,13 @@ TextareaHTMLAttributes.onPointerUp
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1584
+node_modules/@types/react/index.d.ts:1610
 
 ___
 
 ### onPointerUpCapture
 
-• `Optional` **onPointerUpCapture**: `PointerEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onPointerUpCapture**: `PointerEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3581,13 +3581,13 @@ TextareaHTMLAttributes.onPointerUpCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1585
+node_modules/@types/react/index.d.ts:1611
 
 ___
 
 ### onProgress
 
-• `Optional` **onProgress**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onProgress**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3595,13 +3595,13 @@ TextareaHTMLAttributes.onProgress
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1506
+node_modules/@types/react/index.d.ts:1532
 
 ___
 
 ### onProgressCapture
 
-• `Optional` **onProgressCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onProgressCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3609,13 +3609,13 @@ TextareaHTMLAttributes.onProgressCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1507
+node_modules/@types/react/index.d.ts:1533
 
 ___
 
 ### onRateChange
 
-• `Optional` **onRateChange**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onRateChange**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3623,13 +3623,13 @@ TextareaHTMLAttributes.onRateChange
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1508
+node_modules/@types/react/index.d.ts:1534
 
 ___
 
 ### onRateChangeCapture
 
-• `Optional` **onRateChangeCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onRateChangeCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3637,13 +3637,13 @@ TextareaHTMLAttributes.onRateChangeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1509
+node_modules/@types/react/index.d.ts:1535
 
 ___
 
 ### onReset
 
-• `Optional` **onReset**: `FormEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onReset**: `FormEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3651,13 +3651,13 @@ TextareaHTMLAttributes.onReset
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1456
+node_modules/@types/react/index.d.ts:1482
 
 ___
 
 ### onResetCapture
 
-• `Optional` **onResetCapture**: `FormEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onResetCapture**: `FormEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3665,13 +3665,13 @@ TextareaHTMLAttributes.onResetCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1457
+node_modules/@types/react/index.d.ts:1483
 
 ___
 
 ### onResize
 
-• `Optional` **onResize**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onResize**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3679,13 +3679,13 @@ TextareaHTMLAttributes.onResize
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1510
+node_modules/@types/react/index.d.ts:1536
 
 ___
 
 ### onResizeCapture
 
-• `Optional` **onResizeCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onResizeCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3693,13 +3693,13 @@ TextareaHTMLAttributes.onResizeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1511
+node_modules/@types/react/index.d.ts:1537
 
 ___
 
 ### onScroll
 
-• `Optional` **onScroll**: `UIEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onScroll**: `UIEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3707,13 +3707,13 @@ TextareaHTMLAttributes.onScroll
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1602
+node_modules/@types/react/index.d.ts:1628
 
 ___
 
 ### onScrollCapture
 
-• `Optional` **onScrollCapture**: `UIEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onScrollCapture**: `UIEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3721,13 +3721,13 @@ TextareaHTMLAttributes.onScrollCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1603
+node_modules/@types/react/index.d.ts:1629
 
 ___
 
 ### onSeeked
 
-• `Optional` **onSeeked**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onSeeked**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3735,13 +3735,13 @@ TextareaHTMLAttributes.onSeeked
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1512
+node_modules/@types/react/index.d.ts:1538
 
 ___
 
 ### onSeekedCapture
 
-• `Optional` **onSeekedCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onSeekedCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3749,13 +3749,13 @@ TextareaHTMLAttributes.onSeekedCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1513
+node_modules/@types/react/index.d.ts:1539
 
 ___
 
 ### onSeeking
 
-• `Optional` **onSeeking**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onSeeking**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3763,13 +3763,13 @@ TextareaHTMLAttributes.onSeeking
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1514
+node_modules/@types/react/index.d.ts:1540
 
 ___
 
 ### onSeekingCapture
 
-• `Optional` **onSeekingCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onSeekingCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3777,13 +3777,13 @@ TextareaHTMLAttributes.onSeekingCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1515
+node_modules/@types/react/index.d.ts:1541
 
 ___
 
 ### onSelect
 
-• `Optional` **onSelect**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onSelect**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3791,13 +3791,13 @@ TextareaHTMLAttributes.onSelect
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1566
+node_modules/@types/react/index.d.ts:1592
 
 ___
 
 ### onSelectCapture
 
-• `Optional` **onSelectCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onSelectCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3805,13 +3805,13 @@ TextareaHTMLAttributes.onSelectCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1567
+node_modules/@types/react/index.d.ts:1593
 
 ___
 
 ### onStalled
 
-• `Optional` **onStalled**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onStalled**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3819,13 +3819,13 @@ TextareaHTMLAttributes.onStalled
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1516
+node_modules/@types/react/index.d.ts:1542
 
 ___
 
 ### onStalledCapture
 
-• `Optional` **onStalledCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onStalledCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3833,13 +3833,13 @@ TextareaHTMLAttributes.onStalledCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1517
+node_modules/@types/react/index.d.ts:1543
 
 ___
 
 ### onSubmit
 
-• `Optional` **onSubmit**: `FormEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onSubmit**: `FormEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3847,13 +3847,13 @@ TextareaHTMLAttributes.onSubmit
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1458
+node_modules/@types/react/index.d.ts:1484
 
 ___
 
 ### onSubmitCapture
 
-• `Optional` **onSubmitCapture**: `FormEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onSubmitCapture**: `FormEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3861,13 +3861,13 @@ TextareaHTMLAttributes.onSubmitCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1459
+node_modules/@types/react/index.d.ts:1485
 
 ___
 
 ### onSuspend
 
-• `Optional` **onSuspend**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onSuspend**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3875,13 +3875,13 @@ TextareaHTMLAttributes.onSuspend
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1518
+node_modules/@types/react/index.d.ts:1544
 
 ___
 
 ### onSuspendCapture
 
-• `Optional` **onSuspendCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onSuspendCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3889,13 +3889,13 @@ TextareaHTMLAttributes.onSuspendCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1519
+node_modules/@types/react/index.d.ts:1545
 
 ___
 
 ### onTimeUpdate
 
-• `Optional` **onTimeUpdate**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onTimeUpdate**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3903,13 +3903,13 @@ TextareaHTMLAttributes.onTimeUpdate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1520
+node_modules/@types/react/index.d.ts:1546
 
 ___
 
 ### onTimeUpdateCapture
 
-• `Optional` **onTimeUpdateCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onTimeUpdateCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3917,13 +3917,13 @@ TextareaHTMLAttributes.onTimeUpdateCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1521
+node_modules/@types/react/index.d.ts:1547
 
 ___
 
 ### onTouchCancel
 
-• `Optional` **onTouchCancel**: `TouchEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onTouchCancel**: `TouchEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3931,13 +3931,13 @@ TextareaHTMLAttributes.onTouchCancel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1570
+node_modules/@types/react/index.d.ts:1596
 
 ___
 
 ### onTouchCancelCapture
 
-• `Optional` **onTouchCancelCapture**: `TouchEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onTouchCancelCapture**: `TouchEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3945,13 +3945,13 @@ TextareaHTMLAttributes.onTouchCancelCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1571
+node_modules/@types/react/index.d.ts:1597
 
 ___
 
 ### onTouchEnd
 
-• `Optional` **onTouchEnd**: `TouchEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onTouchEnd**: `TouchEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3959,13 +3959,13 @@ TextareaHTMLAttributes.onTouchEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1572
+node_modules/@types/react/index.d.ts:1598
 
 ___
 
 ### onTouchEndCapture
 
-• `Optional` **onTouchEndCapture**: `TouchEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onTouchEndCapture**: `TouchEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3973,13 +3973,13 @@ TextareaHTMLAttributes.onTouchEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1573
+node_modules/@types/react/index.d.ts:1599
 
 ___
 
 ### onTouchMove
 
-• `Optional` **onTouchMove**: `TouchEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onTouchMove**: `TouchEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -3987,13 +3987,13 @@ TextareaHTMLAttributes.onTouchMove
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1574
+node_modules/@types/react/index.d.ts:1600
 
 ___
 
 ### onTouchMoveCapture
 
-• `Optional` **onTouchMoveCapture**: `TouchEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onTouchMoveCapture**: `TouchEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -4001,13 +4001,13 @@ TextareaHTMLAttributes.onTouchMoveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1575
+node_modules/@types/react/index.d.ts:1601
 
 ___
 
 ### onTouchStart
 
-• `Optional` **onTouchStart**: `TouchEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onTouchStart**: `TouchEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -4015,13 +4015,13 @@ TextareaHTMLAttributes.onTouchStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1576
+node_modules/@types/react/index.d.ts:1602
 
 ___
 
 ### onTouchStartCapture
 
-• `Optional` **onTouchStartCapture**: `TouchEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onTouchStartCapture**: `TouchEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -4029,13 +4029,13 @@ TextareaHTMLAttributes.onTouchStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1577
+node_modules/@types/react/index.d.ts:1603
 
 ___
 
 ### onTransitionEnd
 
-• `Optional` **onTransitionEnd**: `TransitionEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onTransitionEnd**: `TransitionEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -4043,13 +4043,13 @@ TextareaHTMLAttributes.onTransitionEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1618
+node_modules/@types/react/index.d.ts:1644
 
 ___
 
 ### onTransitionEndCapture
 
-• `Optional` **onTransitionEndCapture**: `TransitionEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onTransitionEndCapture**: `TransitionEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -4057,13 +4057,13 @@ TextareaHTMLAttributes.onTransitionEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1619
+node_modules/@types/react/index.d.ts:1645
 
 ___
 
 ### onVolumeChange
 
-• `Optional` **onVolumeChange**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onVolumeChange**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -4071,13 +4071,13 @@ TextareaHTMLAttributes.onVolumeChange
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1522
+node_modules/@types/react/index.d.ts:1548
 
 ___
 
 ### onVolumeChangeCapture
 
-• `Optional` **onVolumeChangeCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onVolumeChangeCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -4085,13 +4085,13 @@ TextareaHTMLAttributes.onVolumeChangeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1523
+node_modules/@types/react/index.d.ts:1549
 
 ___
 
 ### onWaiting
 
-• `Optional` **onWaiting**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onWaiting**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -4099,13 +4099,13 @@ TextareaHTMLAttributes.onWaiting
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1524
+node_modules/@types/react/index.d.ts:1550
 
 ___
 
 ### onWaitingCapture
 
-• `Optional` **onWaitingCapture**: `ReactEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onWaitingCapture**: `ReactEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -4113,13 +4113,13 @@ TextareaHTMLAttributes.onWaitingCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1525
+node_modules/@types/react/index.d.ts:1551
 
 ___
 
 ### onWheel
 
-• `Optional` **onWheel**: `WheelEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onWheel**: `WheelEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -4127,13 +4127,13 @@ TextareaHTMLAttributes.onWheel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1606
+node_modules/@types/react/index.d.ts:1632
 
 ___
 
 ### onWheelCapture
 
-• `Optional` **onWheelCapture**: `WheelEventHandler`<`HTMLTextAreaElement`\>
+• `Optional` **onWheelCapture**: `WheelEventHandler`\<`HTMLTextAreaElement`\>
 
 #### Inherited from
 
@@ -4141,7 +4141,7 @@ TextareaHTMLAttributes.onWheelCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1607
+node_modules/@types/react/index.d.ts:1633
 
 ___
 
@@ -4155,7 +4155,7 @@ TextareaHTMLAttributes.placeholder
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2540
+node_modules/@types/react/index.d.ts:2586
 
 ___
 
@@ -4169,7 +4169,7 @@ TextareaHTMLAttributes.prefix
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1957
+node_modules/@types/react/index.d.ts:1994
 
 ___
 
@@ -4183,7 +4183,7 @@ TextareaHTMLAttributes.property
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1958
+node_modules/@types/react/index.d.ts:1995
 
 ___
 
@@ -4197,7 +4197,7 @@ TextareaHTMLAttributes.radioGroup
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1947
+node_modules/@types/react/index.d.ts:1984
 
 ___
 
@@ -4211,7 +4211,7 @@ TextareaHTMLAttributes.readOnly
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2541
+node_modules/@types/react/index.d.ts:2587
 
 ___
 
@@ -4225,7 +4225,7 @@ TextareaHTMLAttributes.rel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1959
+node_modules/@types/react/index.d.ts:1996
 
 ___
 
@@ -4239,7 +4239,7 @@ TextareaHTMLAttributes.required
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2542
+node_modules/@types/react/index.d.ts:2588
 
 ___
 
@@ -4271,7 +4271,7 @@ TextareaHTMLAttributes.resource
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1960
+node_modules/@types/react/index.d.ts:1997
 
 ___
 
@@ -4285,7 +4285,7 @@ TextareaHTMLAttributes.results
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1975
+node_modules/@types/react/index.d.ts:2012
 
 ___
 
@@ -4299,7 +4299,7 @@ TextareaHTMLAttributes.rev
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1961
+node_modules/@types/react/index.d.ts:1998
 
 ___
 
@@ -4313,7 +4313,7 @@ TextareaHTMLAttributes.role
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1950
+node_modules/@types/react/index.d.ts:1987
 
 ___
 
@@ -4327,7 +4327,7 @@ TextareaHTMLAttributes.rows
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2543
+node_modules/@types/react/index.d.ts:2589
 
 ___
 
@@ -4341,7 +4341,7 @@ TextareaHTMLAttributes.security
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1976
+node_modules/@types/react/index.d.ts:2013
 
 ___
 
@@ -4355,7 +4355,7 @@ TextareaHTMLAttributes.slot
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1939
+node_modules/@types/react/index.d.ts:1976
 
 ___
 
@@ -4369,7 +4369,7 @@ TextareaHTMLAttributes.spellCheck
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1940
+node_modules/@types/react/index.d.ts:1977
 
 ___
 
@@ -4383,7 +4383,7 @@ TextareaHTMLAttributes.style
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1941
+node_modules/@types/react/index.d.ts:1978
 
 ___
 
@@ -4397,7 +4397,7 @@ TextareaHTMLAttributes.suppressContentEditableWarning
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1923
+node_modules/@types/react/index.d.ts:1960
 
 ___
 
@@ -4411,7 +4411,7 @@ TextareaHTMLAttributes.suppressHydrationWarning
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1924
+node_modules/@types/react/index.d.ts:1961
 
 ___
 
@@ -4425,7 +4425,7 @@ TextareaHTMLAttributes.tabIndex
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1942
+node_modules/@types/react/index.d.ts:1979
 
 ___
 
@@ -4439,7 +4439,7 @@ TextareaHTMLAttributes.title
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1943
+node_modules/@types/react/index.d.ts:1980
 
 ___
 
@@ -4453,7 +4453,7 @@ TextareaHTMLAttributes.translate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1944
+node_modules/@types/react/index.d.ts:1981
 
 ___
 
@@ -4467,7 +4467,7 @@ TextareaHTMLAttributes.typeof
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1962
+node_modules/@types/react/index.d.ts:1999
 
 ___
 
@@ -4481,7 +4481,7 @@ TextareaHTMLAttributes.unselectable
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1977
+node_modules/@types/react/index.d.ts:2014
 
 ___
 
@@ -4495,7 +4495,7 @@ TextareaHTMLAttributes.value
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2544
+node_modules/@types/react/index.d.ts:2590
 
 ___
 
@@ -4509,7 +4509,7 @@ TextareaHTMLAttributes.vocab
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1963
+node_modules/@types/react/index.d.ts:2000
 
 ___
 
@@ -4523,4 +4523,4 @@ TextareaHTMLAttributes.wrap
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2545
+node_modules/@types/react/index.d.ts:2591

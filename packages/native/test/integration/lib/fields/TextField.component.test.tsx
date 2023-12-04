@@ -1,5 +1,5 @@
+import { expect } from "@assertive-ts/core";
 import { FormProvider } from "@lynxts/core";
-import { expect } from "@stackbuilders/assertive-ts";
 import { fireEvent, render, waitFor } from "@testing-library/react-native";
 import { ReactElement, useCallback, useState } from "react";
 import { Button } from "react-native";

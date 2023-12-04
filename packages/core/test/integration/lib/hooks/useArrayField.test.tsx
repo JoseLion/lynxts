@@ -1,4 +1,4 @@
-import { expect } from "@stackbuilders/assertive-ts";
+import { expect } from "@assertive-ts/core";
 import { RenderHookResult, renderHook } from "@testing-library/react";
 import Sinon from "sinon";
 import { ObjectSchema, array, object, string } from "yup";

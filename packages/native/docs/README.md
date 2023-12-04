@@ -26,7 +26,7 @@
 
 ### TextFieldOf
 
-Ƭ **TextFieldOf**<`T`\>: (`props`: [`TextFiedProps`](interfaces/TextFiedProps.md)<`T`\>) => `ReactElement`
+Ƭ **TextFieldOf**\<`T`\>: (`props`: [`TextFiedProps`](interfaces/TextFiedProps.md)\<`T`\>) => `ReactElement`
 
 #### Type parameters
 
@@ -45,7 +45,7 @@ Helper type to describe a [TextField](README.md#textfield) component of an speci
 
 | Name | Type |
 | :------ | :------ |
-| `props` | [`TextFiedProps`](interfaces/TextFiedProps.md)<`T`\> |
+| `props` | [`TextFiedProps`](interfaces/TextFiedProps.md)\<`T`\> |
 
 ##### Returns
 
@@ -59,7 +59,7 @@ Helper type to describe a [TextField](README.md#textfield) component of an speci
 
 ### SubmitButton
 
-▸ **SubmitButton**(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **SubmitButton**(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 Helper component based on Button which calls `submit()` from the
 Form context upon press.
@@ -72,7 +72,7 @@ Form context upon press.
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -82,7 +82,7 @@ ___
 
 ### SubmitHighlight
 
-▸ **SubmitHighlight**(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **SubmitHighlight**(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 Helper component based on TouchableHighlight which calls `submit()`
 from the Form context upon press.
@@ -95,7 +95,7 @@ from the Form context upon press.
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -105,7 +105,7 @@ ___
 
 ### SubmitNativeFeedback
 
-▸ **SubmitNativeFeedback**(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **SubmitNativeFeedback**(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 Helper component based on TouchableNativeFeedback which calls
 `submit()` from the Form context upon press.
@@ -118,7 +118,7 @@ Helper component based on TouchableNativeFeedback which calls
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -128,7 +128,7 @@ ___
 
 ### SubmitOpacity
 
-▸ **SubmitOpacity**(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **SubmitOpacity**(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 Helper component based on TouchableOpacity which calls `submit()`
 from the Form context upon press.
@@ -141,7 +141,7 @@ from the Form context upon press.
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -151,7 +151,7 @@ ___
 
 ### SubmitWithoutFeedback
 
-▸ **SubmitWithoutFeedback**(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **SubmitWithoutFeedback**(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 Helper component based on TouchableWithoutFeedback which calls
 `submit()` from the Form context upon press.
@@ -164,7 +164,7 @@ Helper component based on TouchableWithoutFeedback which calls
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -174,7 +174,7 @@ ___
 
 ### TextField
 
-▸ **TextField**<`T`\>(`props`): `ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+▸ **TextField**\<`T`\>(`props`): `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 Helper component to work with TextInput core component within a
 `FormProvider<T>`. I.e., it implements the useField and
@@ -191,11 +191,11 @@ validation helpers right out of the box.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `props` | [`TextFiedProps`](interfaces/TextFiedProps.md)<`T`\> | the TextFiedProps plus the TextInput props |
+| `props` | [`TextFiedProps`](interfaces/TextFiedProps.md)\<`T`\> | the TextFiedProps plus the TextInput props |
 
 #### Returns
 
-`ReactElement`<`any`, `string` \| `JSXElementConstructor`<`any`\>\>
+`ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
 #### Defined in
 
@@ -205,7 +205,7 @@ ___
 
 ### textFieldOf
 
-▸ **textFieldOf**<`T`\>(): [`TextFieldOf`](README.md#textfieldof)<`T`\>
+▸ **textFieldOf**\<`T`\>(): [`TextFieldOf`](README.md#textfieldof)\<`T`\>
 
 Utility function which helps you create a [TextField](README.md#textfield) component of an
 specific struct type. Once you have this, the possible values for the `name`
@@ -219,7 +219,7 @@ prop can be inferred based on the struct type.
 
 #### Returns
 
-[`TextFieldOf`](README.md#textfieldof)<`T`\>
+[`TextFieldOf`](README.md#textfieldof)\<`T`\>
 
 an Input of the specified struct type
 

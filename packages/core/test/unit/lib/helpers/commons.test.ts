@@ -1,4 +1,4 @@
-import { expect } from "@stackbuilders/assertive-ts";
+import { expect } from "@assertive-ts/core";
 
 import { isFunctionAction, noop } from "../../../../src/lib/helpers/commons";
 

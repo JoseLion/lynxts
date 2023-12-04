@@ -1,6 +1,6 @@
 [@lynxts/core](../README.md) / FieldRenderProps
 
-# Interface: FieldRenderProps<T, K, D\>
+# Interface: FieldRenderProps\<T, K, D\>
 
 The result of the [useField](../README.md#usefield) hook
 
@@ -9,12 +9,12 @@ The result of the [useField](../README.md#usefield) hook
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `T` | extends [`Struct`](../README.md#struct) | the type of the value of the field |
-| `K` | extends [`Path`](../README.md#path)<`T`, [`ValueByPath`](../README.md#valuebypath)<`T`, `K`\>\> | the type of the default value of the field |
-| `D` | extends [`Optional`](../README.md#optional)<[`ValueByPath`](../README.md#valuebypath)<`T`, `K`\>\> | - |
+| `K` | extends [`Path`](../README.md#path)\<`T`, [`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> | the type of the default value of the field |
+| `D` | extends [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> | - |
 
 ## Hierarchy
 
-- [`UseField`](UseField.md)<[`ValueByPath`](../README.md#valuebypath)<`T`, `K`\>, `D`\>
+- [`UseField`](UseField.md)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>, `D`\>
 
 - [`UseFieldValidation`](UseFieldValidation.md)
 
@@ -35,7 +35,7 @@ The result of the [useField](../README.md#usefield) hook
 
 ### error
 
-• **error**: [`Optional`](../README.md#optional)<`string`\>
+• **error**: [`Optional`](../README.md#optional)\<`string`\>
 
 The error message of the field (if any).
 
@@ -51,11 +51,11 @@ ___
 
 ### handleChange
 
-• **handleChange**: <A\>(`mapper`: (...`args`: `A`) => [`ValueByPath`](../README.md#valuebypath)<`T`, `K`\> \| `D`) => (...`args`: `A`) => `void`
+• **handleChange**: \<A\>(`mapper`: (...`args`: `A`) => [`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\> \| `D`) => (...`args`: `A`) => `void`
 
 #### Type declaration
 
-▸ <`A`\>(`mapper`): (...`args`: `A`) => `void`
+▸ \<`A`\>(`mapper`): (...`args`: `A`) => `void`
 
 Helper function that creates a handler function which runs the field
 setter with the value obtaioed by the `mapper`.
@@ -70,7 +70,7 @@ setter with the value obtaioed by the `mapper`.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `mapper` | (...`args`: `A`) => [`ValueByPath`](../README.md#valuebypath)<`T`, `K`\> \| `D` | a function to map the callback arguments to the next value |
+| `mapper` | (...`args`: `A`) => [`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\> \| `D` | a function to map the callback arguments to the next value |
 
 ##### Returns
 
@@ -138,7 +138,7 @@ ___
 
 ### setValue
 
-• **setValue**: `Dispatch`<`SetStateAction`<[`ValueByPath`](../README.md#valuebypath)<`T`, `K`\> \| `D`\>\>
+• **setValue**: `Dispatch`\<`SetStateAction`\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\> \| `D`\>\>
 
 Changes the value of the field.
 
@@ -154,7 +154,7 @@ ___
 
 ### value
 
-• **value**: [`ValueByPath`](../README.md#valuebypath)<`T`, `K`\> \| `D`
+• **value**: [`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\> \| `D`
 
 The actual value of the field.
 
