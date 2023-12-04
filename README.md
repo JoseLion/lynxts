@@ -1,4 +1,5 @@
 [![CI](https://github.com/JoseLion/lynxts/actions/workflows/ci.yml/badge.svg)](https://github.com/JoseLion/lynxts/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/JoseLion/lynxts/actions/workflows/codeql.yml/badge.svg)](https://github.com/JoseLion/lynxts/actions/workflows/codeql.yml)
 [![Release](https://github.com/JoseLion/lynxts/actions/workflows/release.yml/badge.svg)](https://github.com/JoseLion/lynxts/actions/workflows/release.yml)
 [![NPM Core version](https://img.shields.io/npm/v/@lynxts/core?logo=npm&label=core)](https://www.npmjs.com/package/@lynxts/core)
 [![NPM Native version](https://img.shields.io/npm/v/@lynxts/native?logo=npm&label=native)](https://www.npmjs.com/package/@lynxts/native)
