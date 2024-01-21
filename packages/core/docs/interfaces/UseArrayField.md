@@ -30,6 +30,12 @@ The result of the [useArrayField](../README.md#usearrayfield) hook.
 
 • **append**: (`item`: `Partial`\<`V`\>) => `void`
 
+Appends a new item to the end of the array.
+
+**`Param`**
+
+the item to append
+
 #### Type declaration
 
 ▸ (`item`): `void`
@@ -56,6 +62,8 @@ ___
 
 • **clear**: () => `void`
 
+Clears the array by setting it's value to `undefined`.
+
 #### Type declaration
 
 ▸ (): `void`
@@ -75,6 +83,23 @@ ___
 ### handle
 
 • **handle**: \<F\>(`action`: `F`, ...`args`: `Parameters`\<`F`\>) => () => `void`
+
+Helper function that creates a handler function which runs the given
+action with the given parameters.
+
+**`Example`**
+
+```
+<button onClick={handle(append, { })}>{"Add Item"}</button>
+```
+
+**`Param`**
+
+the action to make the handle of
+
+**`Param`**
+
+the parameters of the action
 
 #### Type declaration
 
@@ -124,6 +149,21 @@ ___
 
 • **insert**: (`item`: `Partial`\<`V`\>, `at`: `number`) => `void`
 
+Insert a new item at an specific index of the array. To encourage type
+safety, this function follows these rules upon index outbounds:
+- If the index is greater than the array size, the item is added to the
+end of the array.
+- A negative index is treated as an offset, so -2 refers to the second to
+last element of the array.
+
+**`Param`**
+
+the item to insert
+
+**`Param`**
+
+the index to insert the item at
+
 #### Type declaration
 
 ▸ (`item`, `at`): `void`
@@ -169,6 +209,22 @@ ___
 
 • **keygen**: \<S\>(`index`: `number`, `key?`: `string` \| `S`) => `string`
 
+Helper function to retrieve an auto-generated key string which is memoized
+for each index. The second parameter serves as a prefferd unique key
+override to use instead of the auto-generated one.
+
+You should pass the second parameter whenever it's possible because the
+auto-generated key is index-based, so it may cause additional renders upon
+reordering the array.
+
+**`Param`**
+
+the current index of the array
+
+**`Param`**
+
+the preferred key value to use
+
 #### Type declaration
 
 ▸ \<`S`\>(`index`, `key?`): `string`
@@ -210,6 +266,12 @@ ___
 
 • **prepend**: (`item`: `Partial`\<`V`\>) => `void`
 
+Prepends a new item to the start of the array.
+
+**`Param`**
+
+the item to prepend
+
 #### Type declaration
 
 ▸ (`item`): `void`
@@ -236,6 +298,12 @@ ___
 
 • **remove**: (`at`: `number`) => `void`
 
+Removes the item at the specified index.
+
+**`Param`**
+
+the index of the item
+
 #### Type declaration
 
 ▸ (`at`): `void`
@@ -261,6 +329,22 @@ ___
 ### replace
 
 • **replace**: (`item`: `Partial`\<`V`\>, `at`: `number`) => `void`
+
+Replaces an item at an specific index of the array with another. To
+encourage type safety, this function follows these rules upon index
+outbounds:
+- If the index is greater than the array size, the item is added to the
+end of the array.
+- A negative index is treated as an offset, so -2 refers to the second to
+last element of the array.
+
+**`Param`**
+
+the item to replace another
+
+**`Param`**
+
+the index that should be replaced
 
 #### Type declaration
 

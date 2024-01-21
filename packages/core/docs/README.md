@@ -51,6 +51,9 @@
 
 Ƭ **ArrayFieldOf**\<`T`\>: \<K\>(`props`: [`ArrayFieldProps`](interfaces/ArrayFieldProps.md)\<`T`, `K`\>) => `ReactNode`
 
+Helper type to describe an [ArrayField](README.md#arrayfield) component of an specific
+struct `T`.
+
 #### Type parameters
 
 | Name | Type | Description |
@@ -60,9 +63,6 @@
 #### Type declaration
 
 ▸ \<`K`\>(`props`): `ReactNode`
-
-Helper type to describe an [ArrayField](README.md#arrayfield) component of an specific
-struct `T`.
 
 ##### Type parameters
 
@@ -109,6 +109,9 @@ ___
 
 Ƭ **ChangeCallback**\<`T`, `K`, `A`\>: (...`args`: `A`) => [`Optional`](README.md#optional)\<[`ValueByPath`](README.md#valuebypath)\<`T`, `K`\>\>
 
+Generic callback function. Infers the arguments types and the return type is
+resolved from the path type.
+
 #### Type parameters
 
 | Name | Type | Description |
@@ -120,9 +123,6 @@ ___
 #### Type declaration
 
 ▸ (`...args`): [`Optional`](README.md#optional)\<[`ValueByPath`](README.md#valuebypath)\<`T`, `K`\>\>
-
-Generic callback function. Infers the arguments types and the return type is
-resolved from the path type.
 
 ##### Parameters
 
@@ -163,6 +163,8 @@ ___
 
 Ƭ **FieldOf**\<`T`\>: \<K, D\>(`props`: [`FieldProps`](interfaces/FieldProps.md)\<`T`, `K`, `D`\>) => `ReactNode`
 
+Helper type to describe a [Field](README.md#field) component of an specific struct `T`.
+
 #### Type parameters
 
 | Name | Type | Description |
@@ -172,8 +174,6 @@ ___
 #### Type declaration
 
 ▸ \<`K`, `D`\>(`props`): `ReactNode`
-
-Helper type to describe a [Field](README.md#field) component of an specific struct `T`.
 
 ##### Type parameters
 
@@ -259,6 +259,8 @@ ___
 
 Ƭ **SetValue**\<`V`\>: (`action`: `SetStateAction`\<[`Optional`](README.md#optional)\<`V`\>\>) => `void`
 
+Function that receives an action to set a value of `V` and retunrs void.
+
 #### Type parameters
 
 | Name | Description |
@@ -268,8 +270,6 @@ ___
 #### Type declaration
 
 ▸ (`action`): `void`
-
-Function that receives an action to set a value of `V` and retunrs void.
 
 ##### Parameters
 

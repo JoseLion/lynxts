@@ -25,6 +25,14 @@ form validations and their hooks.
 
 • **required**: (`path`: [`Path`](../README.md#path)\<`T`\>) => `boolean`
 
+Should return `true` if the field in the `path` is required in the
+validation schema. I.e., whenever the field cannot be `null`,
+`undefined`, non-empty, etc.
+
+**`Param`**
+
+the path to check if it's requried
+
 #### Type declaration
 
 ▸ (`path`): `boolean`
@@ -54,6 +62,17 @@ ___
 ### validate
 
 • **validate**: (`values`: `Partial`\<`T`\>) => `Promise`\<[`Result`](../README.md#result)\<`T`, `Map`\<[`Path`](../README.md#path)\<`T`\>, `string`\>\>\>
+
+Should return a promise containing the `Result<S, E>` of the validation.
+Where `S` represents the success and `E` the error.
+
+If the validation success, the promise should resolve to the form values.
+Otherwise, if the validation fails, the promise should resolve to a
+`Map<Path<T>, string>` of the path/message for the invalid fields.
+
+**`Param`**
+
+the form values to validate
 
 #### Type declaration
 
@@ -87,6 +106,21 @@ ___
 ### validateAt
 
 • **validateAt**: \<K\>(`path`: `K`, `value`: [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\>) => `Promise`\<[`Result`](../README.md#result)\<``true``, `string`\>\>
+
+Should return a promise containing the `Result<S, E>` of the field
+validation. Where `S` represents the success and `E` the error.
+
+If the validation success, the promise should resolve to a simple `true`.
+Otherwise, if the validation fails, the promise should resolve to a
+`Map<Path<T>, string>` of the path/message for the invalid fields.
+
+**`Param`**
+
+the path on the schema to validate
+
+**`Param`**
+
+the value to validate against
 
 #### Type declaration
 
