@@ -27,6 +27,14 @@ The props of the [ArrayField](../README.md#arrayfield) component.
 
 • **children**: (`props`: [`FieldRenderProps`](FieldRenderProps.md)\<`T`, `K`, `D`\>) => `ReactNode`
 
+The children is a function which takes the result of [useField](../README.md#usefield) and
+[useFieldValidation](../README.md#usefieldvalidation) hooks in the first argument and returns a
+React.js node.
+
+**`Param`**
+
+the render props same as `useField` result
+
 #### Type declaration
 
 ▸ (`props`): `ReactNode`

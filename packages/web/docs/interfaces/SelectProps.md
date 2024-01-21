@@ -272,7 +272,6 @@ HTMLSelectElement attributes.
 - [onWheel](SelectProps.md#onwheel)
 - [onWheelCapture](SelectProps.md#onwheelcapture)
 - [options](SelectProps.md#options)
-- [placeholder](SelectProps.md#placeholder)
 - [prefix](SelectProps.md#prefix)
 - [property](SelectProps.md#property)
 - [radioGroup](SelectProps.md#radiogroup)
@@ -309,7 +308,7 @@ HTMLAttributes.about
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1990
+node_modules/@types/react/index.d.ts:1994
 
 ___
 
@@ -323,7 +322,7 @@ HTMLAttributes.accessKey
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1964
+node_modules/@types/react/index.d.ts:1969
 
 ___
 
@@ -339,7 +338,7 @@ HTMLAttributes.aria-activedescendant
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1662
+node_modules/@types/react/index.d.ts:1667
 
 ___
 
@@ -355,7 +354,7 @@ HTMLAttributes.aria-atomic
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1664
+node_modules/@types/react/index.d.ts:1669
 
 ___
 
@@ -372,7 +371,7 @@ HTMLAttributes.aria-autocomplete
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1669
+node_modules/@types/react/index.d.ts:1674
 
 ___
 
@@ -392,7 +391,7 @@ HTMLAttributes.aria-braillelabel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1675
+node_modules/@types/react/index.d.ts:1680
 
 ___
 
@@ -412,7 +411,7 @@ HTMLAttributes.aria-brailleroledescription
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1680
+node_modules/@types/react/index.d.ts:1685
 
 ___
 
@@ -426,7 +425,7 @@ HTMLAttributes.aria-busy
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1681
+node_modules/@types/react/index.d.ts:1686
 
 ___
 
@@ -447,7 +446,7 @@ HTMLAttributes.aria-checked
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1686
+node_modules/@types/react/index.d.ts:1691
 
 ___
 
@@ -467,7 +466,7 @@ HTMLAttributes.aria-colcount
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1691
+node_modules/@types/react/index.d.ts:1696
 
 ___
 
@@ -488,7 +487,7 @@ HTMLAttributes.aria-colindex
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1696
+node_modules/@types/react/index.d.ts:1701
 
 ___
 
@@ -508,7 +507,7 @@ HTMLAttributes.aria-colindextext
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1701
+node_modules/@types/react/index.d.ts:1706
 
 ___
 
@@ -529,7 +528,7 @@ HTMLAttributes.aria-colspan
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1706
+node_modules/@types/react/index.d.ts:1711
 
 ___
 
@@ -549,7 +548,7 @@ HTMLAttributes.aria-controls
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1711
+node_modules/@types/react/index.d.ts:1716
 
 ___
 
@@ -565,7 +564,7 @@ HTMLAttributes.aria-current
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1713
+node_modules/@types/react/index.d.ts:1718
 
 ___
 
@@ -585,7 +584,7 @@ HTMLAttributes.aria-describedby
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1718
+node_modules/@types/react/index.d.ts:1723
 
 ___
 
@@ -605,7 +604,7 @@ HTMLAttributes.aria-description
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1723
+node_modules/@types/react/index.d.ts:1728
 
 ___
 
@@ -625,7 +624,7 @@ HTMLAttributes.aria-details
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1728
+node_modules/@types/react/index.d.ts:1733
 
 ___
 
@@ -646,7 +645,7 @@ HTMLAttributes.aria-disabled
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1733
+node_modules/@types/react/index.d.ts:1738
 
 ___
 
@@ -666,7 +665,7 @@ HTMLAttributes.aria-dropeffect
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1738
+node_modules/@types/react/index.d.ts:1743
 
 ___
 
@@ -687,7 +686,7 @@ HTMLAttributes.aria-errormessage
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1743
+node_modules/@types/react/index.d.ts:1748
 
 ___
 
@@ -703,7 +702,7 @@ HTMLAttributes.aria-expanded
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1745
+node_modules/@types/react/index.d.ts:1750
 
 ___
 
@@ -720,7 +719,7 @@ HTMLAttributes.aria-flowto
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1750
+node_modules/@types/react/index.d.ts:1755
 
 ___
 
@@ -740,7 +739,7 @@ HTMLAttributes.aria-grabbed
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1755
+node_modules/@types/react/index.d.ts:1760
 
 ___
 
@@ -756,7 +755,7 @@ HTMLAttributes.aria-haspopup
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1757
+node_modules/@types/react/index.d.ts:1762
 
 ___
 
@@ -776,7 +775,7 @@ HTMLAttributes.aria-hidden
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1762
+node_modules/@types/react/index.d.ts:1767
 
 ___
 
@@ -796,7 +795,7 @@ HTMLAttributes.aria-invalid
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1767
+node_modules/@types/react/index.d.ts:1772
 
 ___
 
@@ -812,7 +811,7 @@ HTMLAttributes.aria-keyshortcuts
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1769
+node_modules/@types/react/index.d.ts:1774
 
 ___
 
@@ -832,7 +831,7 @@ HTMLAttributes.aria-label
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1774
+node_modules/@types/react/index.d.ts:1779
 
 ___
 
@@ -852,7 +851,7 @@ HTMLAttributes.aria-labelledby
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1779
+node_modules/@types/react/index.d.ts:1784
 
 ___
 
@@ -868,7 +867,7 @@ HTMLAttributes.aria-level
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1781
+node_modules/@types/react/index.d.ts:1786
 
 ___
 
@@ -884,7 +883,7 @@ HTMLAttributes.aria-live
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1783
+node_modules/@types/react/index.d.ts:1788
 
 ___
 
@@ -900,7 +899,7 @@ HTMLAttributes.aria-modal
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1785
+node_modules/@types/react/index.d.ts:1790
 
 ___
 
@@ -916,7 +915,7 @@ HTMLAttributes.aria-multiline
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1787
+node_modules/@types/react/index.d.ts:1792
 
 ___
 
@@ -932,7 +931,7 @@ HTMLAttributes.aria-multiselectable
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1789
+node_modules/@types/react/index.d.ts:1794
 
 ___
 
@@ -948,7 +947,7 @@ HTMLAttributes.aria-orientation
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1791
+node_modules/@types/react/index.d.ts:1796
 
 ___
 
@@ -969,7 +968,7 @@ HTMLAttributes.aria-owns
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1797
+node_modules/@types/react/index.d.ts:1802
 
 ___
 
@@ -986,7 +985,7 @@ HTMLAttributes.aria-placeholder
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1802
+node_modules/@types/react/index.d.ts:1807
 
 ___
 
@@ -1006,7 +1005,7 @@ HTMLAttributes.aria-posinset
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1807
+node_modules/@types/react/index.d.ts:1812
 
 ___
 
@@ -1027,7 +1026,7 @@ HTMLAttributes.aria-pressed
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1812
+node_modules/@types/react/index.d.ts:1817
 
 ___
 
@@ -1047,7 +1046,7 @@ HTMLAttributes.aria-readonly
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1817
+node_modules/@types/react/index.d.ts:1822
 
 ___
 
@@ -1067,7 +1066,7 @@ HTMLAttributes.aria-relevant
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1822
+node_modules/@types/react/index.d.ts:1827
 
 ___
 
@@ -1083,7 +1082,7 @@ HTMLAttributes.aria-required
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1835
+node_modules/@types/react/index.d.ts:1840
 
 ___
 
@@ -1099,7 +1098,7 @@ HTMLAttributes.aria-roledescription
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1837
+node_modules/@types/react/index.d.ts:1842
 
 ___
 
@@ -1119,7 +1118,7 @@ HTMLAttributes.aria-rowcount
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1842
+node_modules/@types/react/index.d.ts:1847
 
 ___
 
@@ -1140,7 +1139,7 @@ HTMLAttributes.aria-rowindex
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1847
+node_modules/@types/react/index.d.ts:1852
 
 ___
 
@@ -1160,7 +1159,7 @@ HTMLAttributes.aria-rowindextext
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1852
+node_modules/@types/react/index.d.ts:1857
 
 ___
 
@@ -1181,7 +1180,7 @@ HTMLAttributes.aria-rowspan
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1857
+node_modules/@types/react/index.d.ts:1862
 
 ___
 
@@ -1202,7 +1201,7 @@ HTMLAttributes.aria-selected
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1862
+node_modules/@types/react/index.d.ts:1867
 
 ___
 
@@ -1222,7 +1221,7 @@ HTMLAttributes.aria-setsize
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1867
+node_modules/@types/react/index.d.ts:1872
 
 ___
 
@@ -1238,7 +1237,7 @@ HTMLAttributes.aria-sort
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1869
+node_modules/@types/react/index.d.ts:1874
 
 ___
 
@@ -1254,7 +1253,7 @@ HTMLAttributes.aria-valuemax
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1871
+node_modules/@types/react/index.d.ts:1876
 
 ___
 
@@ -1270,7 +1269,7 @@ HTMLAttributes.aria-valuemin
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1873
+node_modules/@types/react/index.d.ts:1878
 
 ___
 
@@ -1290,7 +1289,7 @@ HTMLAttributes.aria-valuenow
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1878
+node_modules/@types/react/index.d.ts:1883
 
 ___
 
@@ -1306,7 +1305,7 @@ HTMLAttributes.aria-valuetext
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1880
+node_modules/@types/react/index.d.ts:1885
 
 ___
 
@@ -1320,7 +1319,7 @@ HTMLAttributes.autoCapitalize
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2003
+node_modules/@types/react/index.d.ts:2007
 
 ___
 
@@ -1334,7 +1333,7 @@ HTMLAttributes.autoCorrect
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2004
+node_modules/@types/react/index.d.ts:2008
 
 ___
 
@@ -1348,7 +1347,7 @@ HTMLAttributes.autoFocus
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1965
+node_modules/@types/react/index.d.ts:1970
 
 ___
 
@@ -1362,7 +1361,7 @@ HTMLAttributes.autoSave
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2005
+node_modules/@types/react/index.d.ts:2009
 
 ___
 
@@ -1376,7 +1375,7 @@ HTMLAttributes.children
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1446
+node_modules/@types/react/index.d.ts:1451
 
 ___
 
@@ -1390,7 +1389,7 @@ HTMLAttributes.className
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1966
+node_modules/@types/react/index.d.ts:1971
 
 ___
 
@@ -1404,7 +1403,7 @@ HTMLAttributes.color
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2006
+node_modules/@types/react/index.d.ts:2010
 
 ___
 
@@ -1418,7 +1417,7 @@ HTMLAttributes.content
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1991
+node_modules/@types/react/index.d.ts:1995
 
 ___
 
@@ -1432,7 +1431,7 @@ HTMLAttributes.contentEditable
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1967
+node_modules/@types/react/index.d.ts:1972
 
 ___
 
@@ -1446,7 +1445,7 @@ HTMLAttributes.contextMenu
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1968
+node_modules/@types/react/index.d.ts:1973
 
 ___
 
@@ -1466,7 +1465,7 @@ HTMLAttributes.dangerouslySetInnerHTML
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1447
+node_modules/@types/react/index.d.ts:1452
 
 ___
 
@@ -1480,7 +1479,7 @@ HTMLAttributes.datatype
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1992
+node_modules/@types/react/index.d.ts:1996
 
 ___
 
@@ -1494,7 +1493,7 @@ HTMLAttributes.defaultChecked
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1958
+node_modules/@types/react/index.d.ts:1963
 
 ___
 
@@ -1508,7 +1507,7 @@ HTMLAttributes.defaultValue
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1959
+node_modules/@types/react/index.d.ts:1964
 
 ___
 
@@ -1522,7 +1521,7 @@ HTMLAttributes.dir
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1969
+node_modules/@types/react/index.d.ts:1974
 
 ___
 
@@ -1536,7 +1535,7 @@ HTMLAttributes.draggable
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1970
+node_modules/@types/react/index.d.ts:1975
 
 ___
 
@@ -1550,7 +1549,7 @@ HTMLAttributes.hidden
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1971
+node_modules/@types/react/index.d.ts:1976
 
 ___
 
@@ -1564,7 +1563,7 @@ HTMLAttributes.id
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1972
+node_modules/@types/react/index.d.ts:1977
 
 ___
 
@@ -1597,7 +1596,7 @@ HTMLAttributes.inlist
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1993
+node_modules/@types/react/index.d.ts:1997
 
 ___
 
@@ -1617,7 +1616,7 @@ HTMLAttributes.inputMode
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2021
+node_modules/@types/react/index.d.ts:2025
 
 ___
 
@@ -1637,7 +1636,7 @@ HTMLAttributes.is
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2026
+node_modules/@types/react/index.d.ts:2030
 
 ___
 
@@ -1651,7 +1650,7 @@ HTMLAttributes.itemID
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2010
+node_modules/@types/react/index.d.ts:2014
 
 ___
 
@@ -1665,7 +1664,7 @@ HTMLAttributes.itemProp
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2007
+node_modules/@types/react/index.d.ts:2011
 
 ___
 
@@ -1679,7 +1678,7 @@ HTMLAttributes.itemRef
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2011
+node_modules/@types/react/index.d.ts:2015
 
 ___
 
@@ -1693,7 +1692,7 @@ HTMLAttributes.itemScope
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2008
+node_modules/@types/react/index.d.ts:2012
 
 ___
 
@@ -1707,7 +1706,7 @@ HTMLAttributes.itemType
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2009
+node_modules/@types/react/index.d.ts:2013
 
 ___
 
@@ -1734,7 +1733,7 @@ HTMLAttributes.lang
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1973
+node_modules/@types/react/index.d.ts:1978
 
 ___
 
@@ -1778,7 +1777,7 @@ HTMLAttributes.nonce
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1974
+node_modules/@types/react/index.d.ts:1979
 
 ___
 
@@ -1792,7 +1791,7 @@ HTMLAttributes.onAbort
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1506
+node_modules/@types/react/index.d.ts:1511
 
 ___
 
@@ -1806,7 +1805,7 @@ HTMLAttributes.onAbortCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1507
+node_modules/@types/react/index.d.ts:1512
 
 ___
 
@@ -1820,7 +1819,7 @@ HTMLAttributes.onAnimationEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1638
+node_modules/@types/react/index.d.ts:1643
 
 ___
 
@@ -1834,7 +1833,7 @@ HTMLAttributes.onAnimationEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1639
+node_modules/@types/react/index.d.ts:1644
 
 ___
 
@@ -1848,7 +1847,7 @@ HTMLAttributes.onAnimationIteration
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1640
+node_modules/@types/react/index.d.ts:1645
 
 ___
 
@@ -1862,7 +1861,7 @@ HTMLAttributes.onAnimationIterationCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1641
+node_modules/@types/react/index.d.ts:1646
 
 ___
 
@@ -1876,7 +1875,7 @@ HTMLAttributes.onAnimationStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1636
+node_modules/@types/react/index.d.ts:1641
 
 ___
 
@@ -1890,7 +1889,7 @@ HTMLAttributes.onAnimationStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1637
+node_modules/@types/react/index.d.ts:1642
 
 ___
 
@@ -1904,7 +1903,7 @@ HTMLAttributes.onAuxClick
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1554
+node_modules/@types/react/index.d.ts:1559
 
 ___
 
@@ -1918,7 +1917,7 @@ HTMLAttributes.onAuxClickCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1555
+node_modules/@types/react/index.d.ts:1560
 
 ___
 
@@ -1932,7 +1931,7 @@ HTMLAttributes.onBeforeInput
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1478
+node_modules/@types/react/index.d.ts:1483
 
 ___
 
@@ -1946,7 +1945,7 @@ HTMLAttributes.onBeforeInputCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1479
+node_modules/@types/react/index.d.ts:1484
 
 ___
 
@@ -1960,7 +1959,7 @@ HTMLAttributes.onBlur
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1472
+node_modules/@types/react/index.d.ts:1477
 
 ___
 
@@ -1974,7 +1973,7 @@ HTMLAttributes.onBlurCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1473
+node_modules/@types/react/index.d.ts:1478
 
 ___
 
@@ -1988,7 +1987,7 @@ HTMLAttributes.onCanPlay
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1508
+node_modules/@types/react/index.d.ts:1513
 
 ___
 
@@ -2002,7 +2001,7 @@ HTMLAttributes.onCanPlayCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1509
+node_modules/@types/react/index.d.ts:1514
 
 ___
 
@@ -2016,7 +2015,7 @@ HTMLAttributes.onCanPlayThrough
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1510
+node_modules/@types/react/index.d.ts:1515
 
 ___
 
@@ -2030,7 +2029,7 @@ HTMLAttributes.onCanPlayThroughCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1511
+node_modules/@types/react/index.d.ts:1516
 
 ___
 
@@ -2044,7 +2043,7 @@ HTMLAttributes.onChange
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1476
+node_modules/@types/react/index.d.ts:1481
 
 ___
 
@@ -2058,7 +2057,7 @@ HTMLAttributes.onChangeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1477
+node_modules/@types/react/index.d.ts:1482
 
 ___
 
@@ -2072,7 +2071,7 @@ HTMLAttributes.onClick
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1556
+node_modules/@types/react/index.d.ts:1561
 
 ___
 
@@ -2086,7 +2085,7 @@ HTMLAttributes.onClickCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1557
+node_modules/@types/react/index.d.ts:1562
 
 ___
 
@@ -2100,7 +2099,7 @@ HTMLAttributes.onCompositionEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1462
+node_modules/@types/react/index.d.ts:1467
 
 ___
 
@@ -2114,7 +2113,7 @@ HTMLAttributes.onCompositionEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1463
+node_modules/@types/react/index.d.ts:1468
 
 ___
 
@@ -2128,7 +2127,7 @@ HTMLAttributes.onCompositionStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1464
+node_modules/@types/react/index.d.ts:1469
 
 ___
 
@@ -2142,7 +2141,7 @@ HTMLAttributes.onCompositionStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1465
+node_modules/@types/react/index.d.ts:1470
 
 ___
 
@@ -2156,7 +2155,7 @@ HTMLAttributes.onCompositionUpdate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1466
+node_modules/@types/react/index.d.ts:1471
 
 ___
 
@@ -2170,7 +2169,7 @@ HTMLAttributes.onCompositionUpdateCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1467
+node_modules/@types/react/index.d.ts:1472
 
 ___
 
@@ -2184,7 +2183,7 @@ HTMLAttributes.onContextMenu
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1558
+node_modules/@types/react/index.d.ts:1563
 
 ___
 
@@ -2198,7 +2197,7 @@ HTMLAttributes.onContextMenuCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1559
+node_modules/@types/react/index.d.ts:1564
 
 ___
 
@@ -2212,7 +2211,7 @@ HTMLAttributes.onCopy
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1454
+node_modules/@types/react/index.d.ts:1459
 
 ___
 
@@ -2226,7 +2225,7 @@ HTMLAttributes.onCopyCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1455
+node_modules/@types/react/index.d.ts:1460
 
 ___
 
@@ -2240,7 +2239,7 @@ HTMLAttributes.onCut
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1456
+node_modules/@types/react/index.d.ts:1461
 
 ___
 
@@ -2254,7 +2253,7 @@ HTMLAttributes.onCutCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1457
+node_modules/@types/react/index.d.ts:1462
 
 ___
 
@@ -2268,7 +2267,7 @@ HTMLAttributes.onDoubleClick
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1560
+node_modules/@types/react/index.d.ts:1565
 
 ___
 
@@ -2282,7 +2281,7 @@ HTMLAttributes.onDoubleClickCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1561
+node_modules/@types/react/index.d.ts:1566
 
 ___
 
@@ -2296,7 +2295,7 @@ HTMLAttributes.onDrag
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1562
+node_modules/@types/react/index.d.ts:1567
 
 ___
 
@@ -2310,7 +2309,7 @@ HTMLAttributes.onDragCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1563
+node_modules/@types/react/index.d.ts:1568
 
 ___
 
@@ -2324,7 +2323,7 @@ HTMLAttributes.onDragEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1564
+node_modules/@types/react/index.d.ts:1569
 
 ___
 
@@ -2338,7 +2337,7 @@ HTMLAttributes.onDragEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1565
+node_modules/@types/react/index.d.ts:1570
 
 ___
 
@@ -2352,7 +2351,7 @@ HTMLAttributes.onDragEnter
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1566
+node_modules/@types/react/index.d.ts:1571
 
 ___
 
@@ -2366,7 +2365,7 @@ HTMLAttributes.onDragEnterCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1567
+node_modules/@types/react/index.d.ts:1572
 
 ___
 
@@ -2380,7 +2379,7 @@ HTMLAttributes.onDragExit
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1568
+node_modules/@types/react/index.d.ts:1573
 
 ___
 
@@ -2394,7 +2393,7 @@ HTMLAttributes.onDragExitCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1569
+node_modules/@types/react/index.d.ts:1574
 
 ___
 
@@ -2408,7 +2407,7 @@ HTMLAttributes.onDragLeave
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1570
+node_modules/@types/react/index.d.ts:1575
 
 ___
 
@@ -2422,7 +2421,7 @@ HTMLAttributes.onDragLeaveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1571
+node_modules/@types/react/index.d.ts:1576
 
 ___
 
@@ -2436,7 +2435,7 @@ HTMLAttributes.onDragOver
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1572
+node_modules/@types/react/index.d.ts:1577
 
 ___
 
@@ -2450,7 +2449,7 @@ HTMLAttributes.onDragOverCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1573
+node_modules/@types/react/index.d.ts:1578
 
 ___
 
@@ -2464,7 +2463,7 @@ HTMLAttributes.onDragStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1574
+node_modules/@types/react/index.d.ts:1579
 
 ___
 
@@ -2478,7 +2477,7 @@ HTMLAttributes.onDragStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1575
+node_modules/@types/react/index.d.ts:1580
 
 ___
 
@@ -2492,7 +2491,7 @@ HTMLAttributes.onDrop
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1576
+node_modules/@types/react/index.d.ts:1581
 
 ___
 
@@ -2506,7 +2505,7 @@ HTMLAttributes.onDropCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1577
+node_modules/@types/react/index.d.ts:1582
 
 ___
 
@@ -2520,7 +2519,7 @@ HTMLAttributes.onDurationChange
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1512
+node_modules/@types/react/index.d.ts:1517
 
 ___
 
@@ -2534,7 +2533,7 @@ HTMLAttributes.onDurationChangeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1513
+node_modules/@types/react/index.d.ts:1518
 
 ___
 
@@ -2548,7 +2547,7 @@ HTMLAttributes.onEmptied
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1514
+node_modules/@types/react/index.d.ts:1519
 
 ___
 
@@ -2562,7 +2561,7 @@ HTMLAttributes.onEmptiedCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1515
+node_modules/@types/react/index.d.ts:1520
 
 ___
 
@@ -2576,7 +2575,7 @@ HTMLAttributes.onEncrypted
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1516
+node_modules/@types/react/index.d.ts:1521
 
 ___
 
@@ -2590,7 +2589,7 @@ HTMLAttributes.onEncryptedCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1517
+node_modules/@types/react/index.d.ts:1522
 
 ___
 
@@ -2604,7 +2603,7 @@ HTMLAttributes.onEnded
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1518
+node_modules/@types/react/index.d.ts:1523
 
 ___
 
@@ -2618,7 +2617,7 @@ HTMLAttributes.onEndedCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1519
+node_modules/@types/react/index.d.ts:1524
 
 ___
 
@@ -2632,7 +2631,7 @@ HTMLAttributes.onError
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1492
+node_modules/@types/react/index.d.ts:1497
 
 ___
 
@@ -2646,7 +2645,7 @@ HTMLAttributes.onErrorCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1493
+node_modules/@types/react/index.d.ts:1498
 
 ___
 
@@ -2660,7 +2659,7 @@ HTMLAttributes.onFocus
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1470
+node_modules/@types/react/index.d.ts:1475
 
 ___
 
@@ -2674,7 +2673,7 @@ HTMLAttributes.onFocusCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1471
+node_modules/@types/react/index.d.ts:1476
 
 ___
 
@@ -2688,7 +2687,7 @@ HTMLAttributes.onGotPointerCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1622
+node_modules/@types/react/index.d.ts:1627
 
 ___
 
@@ -2702,7 +2701,7 @@ HTMLAttributes.onGotPointerCaptureCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1623
+node_modules/@types/react/index.d.ts:1628
 
 ___
 
@@ -2716,7 +2715,7 @@ HTMLAttributes.onInput
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1480
+node_modules/@types/react/index.d.ts:1485
 
 ___
 
@@ -2730,7 +2729,7 @@ HTMLAttributes.onInputCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1481
+node_modules/@types/react/index.d.ts:1486
 
 ___
 
@@ -2744,7 +2743,7 @@ HTMLAttributes.onInvalid
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1486
+node_modules/@types/react/index.d.ts:1491
 
 ___
 
@@ -2758,7 +2757,7 @@ HTMLAttributes.onInvalidCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1487
+node_modules/@types/react/index.d.ts:1492
 
 ___
 
@@ -2772,7 +2771,7 @@ HTMLAttributes.onKeyDown
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1496
+node_modules/@types/react/index.d.ts:1501
 
 ___
 
@@ -2786,7 +2785,7 @@ HTMLAttributes.onKeyDownCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1497
+node_modules/@types/react/index.d.ts:1502
 
 ___
 
@@ -2802,7 +2801,7 @@ HTMLAttributes.onKeyPress
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1499
+node_modules/@types/react/index.d.ts:1504
 
 ___
 
@@ -2818,7 +2817,7 @@ HTMLAttributes.onKeyPressCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1501
+node_modules/@types/react/index.d.ts:1506
 
 ___
 
@@ -2832,7 +2831,7 @@ HTMLAttributes.onKeyUp
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1502
+node_modules/@types/react/index.d.ts:1507
 
 ___
 
@@ -2846,7 +2845,7 @@ HTMLAttributes.onKeyUpCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1503
+node_modules/@types/react/index.d.ts:1508
 
 ___
 
@@ -2860,7 +2859,7 @@ HTMLAttributes.onLoad
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1490
+node_modules/@types/react/index.d.ts:1495
 
 ___
 
@@ -2874,7 +2873,7 @@ HTMLAttributes.onLoadCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1491
+node_modules/@types/react/index.d.ts:1496
 
 ___
 
@@ -2888,7 +2887,7 @@ HTMLAttributes.onLoadStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1524
+node_modules/@types/react/index.d.ts:1529
 
 ___
 
@@ -2902,7 +2901,7 @@ HTMLAttributes.onLoadStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1525
+node_modules/@types/react/index.d.ts:1530
 
 ___
 
@@ -2916,7 +2915,7 @@ HTMLAttributes.onLoadedData
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1520
+node_modules/@types/react/index.d.ts:1525
 
 ___
 
@@ -2930,7 +2929,7 @@ HTMLAttributes.onLoadedDataCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1521
+node_modules/@types/react/index.d.ts:1526
 
 ___
 
@@ -2944,7 +2943,7 @@ HTMLAttributes.onLoadedMetadata
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1522
+node_modules/@types/react/index.d.ts:1527
 
 ___
 
@@ -2958,7 +2957,7 @@ HTMLAttributes.onLoadedMetadataCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1523
+node_modules/@types/react/index.d.ts:1528
 
 ___
 
@@ -2972,7 +2971,7 @@ HTMLAttributes.onLostPointerCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1624
+node_modules/@types/react/index.d.ts:1629
 
 ___
 
@@ -2986,7 +2985,7 @@ HTMLAttributes.onLostPointerCaptureCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1625
+node_modules/@types/react/index.d.ts:1630
 
 ___
 
@@ -3000,7 +2999,7 @@ HTMLAttributes.onMouseDown
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1578
+node_modules/@types/react/index.d.ts:1583
 
 ___
 
@@ -3014,7 +3013,7 @@ HTMLAttributes.onMouseDownCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1579
+node_modules/@types/react/index.d.ts:1584
 
 ___
 
@@ -3028,7 +3027,7 @@ HTMLAttributes.onMouseEnter
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1580
+node_modules/@types/react/index.d.ts:1585
 
 ___
 
@@ -3042,7 +3041,7 @@ HTMLAttributes.onMouseLeave
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1581
+node_modules/@types/react/index.d.ts:1586
 
 ___
 
@@ -3056,7 +3055,7 @@ HTMLAttributes.onMouseMove
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1582
+node_modules/@types/react/index.d.ts:1587
 
 ___
 
@@ -3070,7 +3069,7 @@ HTMLAttributes.onMouseMoveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1583
+node_modules/@types/react/index.d.ts:1588
 
 ___
 
@@ -3084,7 +3083,7 @@ HTMLAttributes.onMouseOut
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1584
+node_modules/@types/react/index.d.ts:1589
 
 ___
 
@@ -3098,7 +3097,7 @@ HTMLAttributes.onMouseOutCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1585
+node_modules/@types/react/index.d.ts:1590
 
 ___
 
@@ -3112,7 +3111,7 @@ HTMLAttributes.onMouseOver
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1586
+node_modules/@types/react/index.d.ts:1591
 
 ___
 
@@ -3126,7 +3125,7 @@ HTMLAttributes.onMouseOverCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1587
+node_modules/@types/react/index.d.ts:1592
 
 ___
 
@@ -3140,7 +3139,7 @@ HTMLAttributes.onMouseUp
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1588
+node_modules/@types/react/index.d.ts:1593
 
 ___
 
@@ -3154,7 +3153,7 @@ HTMLAttributes.onMouseUpCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1589
+node_modules/@types/react/index.d.ts:1594
 
 ___
 
@@ -3168,7 +3167,7 @@ HTMLAttributes.onPaste
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1458
+node_modules/@types/react/index.d.ts:1463
 
 ___
 
@@ -3182,7 +3181,7 @@ HTMLAttributes.onPasteCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1459
+node_modules/@types/react/index.d.ts:1464
 
 ___
 
@@ -3196,7 +3195,7 @@ HTMLAttributes.onPause
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1526
+node_modules/@types/react/index.d.ts:1531
 
 ___
 
@@ -3210,7 +3209,7 @@ HTMLAttributes.onPauseCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1527
+node_modules/@types/react/index.d.ts:1532
 
 ___
 
@@ -3224,7 +3223,7 @@ HTMLAttributes.onPlay
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1528
+node_modules/@types/react/index.d.ts:1533
 
 ___
 
@@ -3238,7 +3237,7 @@ HTMLAttributes.onPlayCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1529
+node_modules/@types/react/index.d.ts:1534
 
 ___
 
@@ -3252,7 +3251,7 @@ HTMLAttributes.onPlaying
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1530
+node_modules/@types/react/index.d.ts:1535
 
 ___
 
@@ -3266,7 +3265,7 @@ HTMLAttributes.onPlayingCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1531
+node_modules/@types/react/index.d.ts:1536
 
 ___
 
@@ -3280,7 +3279,7 @@ HTMLAttributes.onPointerCancel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1612
+node_modules/@types/react/index.d.ts:1617
 
 ___
 
@@ -3294,7 +3293,7 @@ HTMLAttributes.onPointerCancelCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1613
+node_modules/@types/react/index.d.ts:1618
 
 ___
 
@@ -3308,7 +3307,7 @@ HTMLAttributes.onPointerDown
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1606
+node_modules/@types/react/index.d.ts:1611
 
 ___
 
@@ -3322,7 +3321,7 @@ HTMLAttributes.onPointerDownCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1607
+node_modules/@types/react/index.d.ts:1612
 
 ___
 
@@ -3336,7 +3335,7 @@ HTMLAttributes.onPointerEnter
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1614
+node_modules/@types/react/index.d.ts:1619
 
 ___
 
@@ -3350,7 +3349,7 @@ HTMLAttributes.onPointerEnterCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1615
+node_modules/@types/react/index.d.ts:1620
 
 ___
 
@@ -3364,7 +3363,7 @@ HTMLAttributes.onPointerLeave
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1616
+node_modules/@types/react/index.d.ts:1621
 
 ___
 
@@ -3378,7 +3377,7 @@ HTMLAttributes.onPointerLeaveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1617
+node_modules/@types/react/index.d.ts:1622
 
 ___
 
@@ -3392,7 +3391,7 @@ HTMLAttributes.onPointerMove
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1608
+node_modules/@types/react/index.d.ts:1613
 
 ___
 
@@ -3406,7 +3405,7 @@ HTMLAttributes.onPointerMoveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1609
+node_modules/@types/react/index.d.ts:1614
 
 ___
 
@@ -3420,7 +3419,7 @@ HTMLAttributes.onPointerOut
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1620
+node_modules/@types/react/index.d.ts:1625
 
 ___
 
@@ -3434,7 +3433,7 @@ HTMLAttributes.onPointerOutCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1621
+node_modules/@types/react/index.d.ts:1626
 
 ___
 
@@ -3448,7 +3447,7 @@ HTMLAttributes.onPointerOver
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1618
+node_modules/@types/react/index.d.ts:1623
 
 ___
 
@@ -3462,7 +3461,7 @@ HTMLAttributes.onPointerOverCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1619
+node_modules/@types/react/index.d.ts:1624
 
 ___
 
@@ -3476,7 +3475,7 @@ HTMLAttributes.onPointerUp
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1610
+node_modules/@types/react/index.d.ts:1615
 
 ___
 
@@ -3490,7 +3489,7 @@ HTMLAttributes.onPointerUpCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1611
+node_modules/@types/react/index.d.ts:1616
 
 ___
 
@@ -3504,7 +3503,7 @@ HTMLAttributes.onProgress
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1532
+node_modules/@types/react/index.d.ts:1537
 
 ___
 
@@ -3518,7 +3517,7 @@ HTMLAttributes.onProgressCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1533
+node_modules/@types/react/index.d.ts:1538
 
 ___
 
@@ -3532,7 +3531,7 @@ HTMLAttributes.onRateChange
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1534
+node_modules/@types/react/index.d.ts:1539
 
 ___
 
@@ -3546,7 +3545,7 @@ HTMLAttributes.onRateChangeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1535
+node_modules/@types/react/index.d.ts:1540
 
 ___
 
@@ -3560,7 +3559,7 @@ HTMLAttributes.onReset
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1482
+node_modules/@types/react/index.d.ts:1487
 
 ___
 
@@ -3574,7 +3573,7 @@ HTMLAttributes.onResetCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1483
+node_modules/@types/react/index.d.ts:1488
 
 ___
 
@@ -3588,7 +3587,7 @@ HTMLAttributes.onResize
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1536
+node_modules/@types/react/index.d.ts:1541
 
 ___
 
@@ -3602,7 +3601,7 @@ HTMLAttributes.onResizeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1537
+node_modules/@types/react/index.d.ts:1542
 
 ___
 
@@ -3616,7 +3615,7 @@ HTMLAttributes.onScroll
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1628
+node_modules/@types/react/index.d.ts:1633
 
 ___
 
@@ -3630,7 +3629,7 @@ HTMLAttributes.onScrollCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1629
+node_modules/@types/react/index.d.ts:1634
 
 ___
 
@@ -3644,7 +3643,7 @@ HTMLAttributes.onSeeked
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1538
+node_modules/@types/react/index.d.ts:1543
 
 ___
 
@@ -3658,7 +3657,7 @@ HTMLAttributes.onSeekedCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1539
+node_modules/@types/react/index.d.ts:1544
 
 ___
 
@@ -3672,7 +3671,7 @@ HTMLAttributes.onSeeking
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1540
+node_modules/@types/react/index.d.ts:1545
 
 ___
 
@@ -3686,7 +3685,7 @@ HTMLAttributes.onSeekingCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1541
+node_modules/@types/react/index.d.ts:1546
 
 ___
 
@@ -3700,7 +3699,7 @@ HTMLAttributes.onSelect
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1592
+node_modules/@types/react/index.d.ts:1597
 
 ___
 
@@ -3714,7 +3713,7 @@ HTMLAttributes.onSelectCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1593
+node_modules/@types/react/index.d.ts:1598
 
 ___
 
@@ -3728,7 +3727,7 @@ HTMLAttributes.onStalled
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1542
+node_modules/@types/react/index.d.ts:1547
 
 ___
 
@@ -3742,7 +3741,7 @@ HTMLAttributes.onStalledCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1543
+node_modules/@types/react/index.d.ts:1548
 
 ___
 
@@ -3756,7 +3755,7 @@ HTMLAttributes.onSubmit
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1484
+node_modules/@types/react/index.d.ts:1489
 
 ___
 
@@ -3770,7 +3769,7 @@ HTMLAttributes.onSubmitCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1485
+node_modules/@types/react/index.d.ts:1490
 
 ___
 
@@ -3784,7 +3783,7 @@ HTMLAttributes.onSuspend
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1544
+node_modules/@types/react/index.d.ts:1549
 
 ___
 
@@ -3798,7 +3797,7 @@ HTMLAttributes.onSuspendCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1545
+node_modules/@types/react/index.d.ts:1550
 
 ___
 
@@ -3812,7 +3811,7 @@ HTMLAttributes.onTimeUpdate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1546
+node_modules/@types/react/index.d.ts:1551
 
 ___
 
@@ -3826,7 +3825,7 @@ HTMLAttributes.onTimeUpdateCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1547
+node_modules/@types/react/index.d.ts:1552
 
 ___
 
@@ -3840,7 +3839,7 @@ HTMLAttributes.onTouchCancel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1596
+node_modules/@types/react/index.d.ts:1601
 
 ___
 
@@ -3854,7 +3853,7 @@ HTMLAttributes.onTouchCancelCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1597
+node_modules/@types/react/index.d.ts:1602
 
 ___
 
@@ -3868,7 +3867,7 @@ HTMLAttributes.onTouchEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1598
+node_modules/@types/react/index.d.ts:1603
 
 ___
 
@@ -3882,7 +3881,7 @@ HTMLAttributes.onTouchEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1599
+node_modules/@types/react/index.d.ts:1604
 
 ___
 
@@ -3896,7 +3895,7 @@ HTMLAttributes.onTouchMove
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1600
+node_modules/@types/react/index.d.ts:1605
 
 ___
 
@@ -3910,7 +3909,7 @@ HTMLAttributes.onTouchMoveCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1601
+node_modules/@types/react/index.d.ts:1606
 
 ___
 
@@ -3924,7 +3923,7 @@ HTMLAttributes.onTouchStart
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1602
+node_modules/@types/react/index.d.ts:1607
 
 ___
 
@@ -3938,7 +3937,7 @@ HTMLAttributes.onTouchStartCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1603
+node_modules/@types/react/index.d.ts:1608
 
 ___
 
@@ -3952,7 +3951,7 @@ HTMLAttributes.onTransitionEnd
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1644
+node_modules/@types/react/index.d.ts:1649
 
 ___
 
@@ -3966,7 +3965,7 @@ HTMLAttributes.onTransitionEndCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1645
+node_modules/@types/react/index.d.ts:1650
 
 ___
 
@@ -3980,7 +3979,7 @@ HTMLAttributes.onVolumeChange
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1548
+node_modules/@types/react/index.d.ts:1553
 
 ___
 
@@ -3994,7 +3993,7 @@ HTMLAttributes.onVolumeChangeCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1549
+node_modules/@types/react/index.d.ts:1554
 
 ___
 
@@ -4008,7 +4007,7 @@ HTMLAttributes.onWaiting
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1550
+node_modules/@types/react/index.d.ts:1555
 
 ___
 
@@ -4022,7 +4021,7 @@ HTMLAttributes.onWaitingCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1551
+node_modules/@types/react/index.d.ts:1556
 
 ___
 
@@ -4036,7 +4035,7 @@ HTMLAttributes.onWheel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1632
+node_modules/@types/react/index.d.ts:1637
 
 ___
 
@@ -4050,7 +4049,7 @@ HTMLAttributes.onWheelCapture
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1633
+node_modules/@types/react/index.d.ts:1638
 
 ___
 
@@ -4066,20 +4065,6 @@ An array of values which will be used to create the `<option>` elements.
 
 ___
 
-### placeholder
-
-• `Optional` **placeholder**: `string`
-
-#### Inherited from
-
-HTMLAttributes.placeholder
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1975
-
-___
-
 ### prefix
 
 • `Optional` **prefix**: `string`
@@ -4090,7 +4075,7 @@ HTMLAttributes.prefix
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1994
+node_modules/@types/react/index.d.ts:1998
 
 ___
 
@@ -4104,7 +4089,7 @@ HTMLAttributes.property
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1995
+node_modules/@types/react/index.d.ts:1999
 
 ___
 
@@ -4118,7 +4103,7 @@ HTMLAttributes.radioGroup
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1984
+node_modules/@types/react/index.d.ts:1988
 
 ___
 
@@ -4132,7 +4117,7 @@ HTMLAttributes.rel
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1996
+node_modules/@types/react/index.d.ts:2000
 
 ___
 
@@ -4164,7 +4149,7 @@ HTMLAttributes.resource
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1997
+node_modules/@types/react/index.d.ts:2001
 
 ___
 
@@ -4178,7 +4163,7 @@ HTMLAttributes.results
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2012
+node_modules/@types/react/index.d.ts:2016
 
 ___
 
@@ -4192,7 +4177,7 @@ HTMLAttributes.rev
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1998
+node_modules/@types/react/index.d.ts:2002
 
 ___
 
@@ -4206,7 +4191,7 @@ HTMLAttributes.role
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1987
+node_modules/@types/react/index.d.ts:1991
 
 ___
 
@@ -4220,7 +4205,7 @@ HTMLAttributes.security
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2013
+node_modules/@types/react/index.d.ts:2017
 
 ___
 
@@ -4234,7 +4219,7 @@ HTMLAttributes.slot
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1976
+node_modules/@types/react/index.d.ts:1980
 
 ___
 
@@ -4248,7 +4233,7 @@ HTMLAttributes.spellCheck
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1977
+node_modules/@types/react/index.d.ts:1981
 
 ___
 
@@ -4262,7 +4247,7 @@ HTMLAttributes.style
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1978
+node_modules/@types/react/index.d.ts:1982
 
 ___
 
@@ -4276,7 +4261,7 @@ HTMLAttributes.suppressContentEditableWarning
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1960
+node_modules/@types/react/index.d.ts:1965
 
 ___
 
@@ -4290,7 +4275,7 @@ HTMLAttributes.suppressHydrationWarning
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1961
+node_modules/@types/react/index.d.ts:1966
 
 ___
 
@@ -4304,7 +4289,7 @@ HTMLAttributes.tabIndex
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1979
+node_modules/@types/react/index.d.ts:1983
 
 ___
 
@@ -4318,13 +4303,26 @@ HTMLAttributes.title
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1980
+node_modules/@types/react/index.d.ts:1984
 
 ___
 
 ### toText
 
 • `Optional` **toText**: (`option`: `ValueByPath`\<`T`, `K`\>) => `string`
+
+Mapper function that allows you to map each option value to its text
+representation. Each mapped values should be unique.
+
+**`Param`**
+
+each option to be mapped
+
+**`Default`**
+
+```ts
+option => String(option)
+```
 
 #### Type declaration
 
@@ -4367,7 +4365,7 @@ HTMLAttributes.translate
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1981
+node_modules/@types/react/index.d.ts:1985
 
 ___
 
@@ -4381,7 +4379,7 @@ HTMLAttributes.typeof
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:1999
+node_modules/@types/react/index.d.ts:2003
 
 ___
 
@@ -4395,7 +4393,7 @@ HTMLAttributes.unselectable
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2014
+node_modules/@types/react/index.d.ts:2018
 
 ___
 
@@ -4427,4 +4425,4 @@ HTMLAttributes.vocab
 
 #### Defined in
 
-node_modules/@types/react/index.d.ts:2000
+node_modules/@types/react/index.d.ts:2004

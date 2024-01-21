@@ -33,6 +33,8 @@
 
 Ƭ **InputOf**\<`T`\>: (`props`: [`InputProps`](interfaces/InputProps.md)\<`T`\>) => `ReactElement`
 
+Helper type to describe an [Input](README.md#input) component of an specific struct `T`.
+
 #### Type parameters
 
 | Name | Type | Description |
@@ -42,8 +44,6 @@
 #### Type declaration
 
 ▸ (`props`): `ReactElement`
-
-Helper type to describe an [Input](README.md#input) component of an specific struct `T`.
 
 ##### Parameters
 
@@ -65,6 +65,8 @@ ___
 
 Ƭ **SelectOf**\<`T`\>: \<K\>(`props`: [`SelectProps`](interfaces/SelectProps.md)\<`T`, `K`\>) => `ReactElement`
 
+Helper type to describe a [Select](README.md#select) component of an specific struct `T`.
+
 #### Type parameters
 
 | Name | Type | Description |
@@ -74,8 +76,6 @@ ___
 #### Type declaration
 
 ▸ \<`K`\>(`props`): `ReactElement`
-
-Helper type to describe a [Select](README.md#select) component of an specific struct `T`.
 
 ##### Type parameters
 
@@ -103,6 +103,9 @@ ___
 
 Ƭ **TextareaOf**\<`T`\>: (`props`: [`TextareaProps`](interfaces/TextareaProps.md)\<`T`\>) => `ReactElement`
 
+Helper type to describe a [Textarea](README.md#textarea) component of an specific struct
+`T`.
+
 #### Type parameters
 
 | Name | Type | Description |
@@ -112,9 +115,6 @@ ___
 #### Type declaration
 
 ▸ (`props`): `ReactElement`
-
-Helper type to describe a [Textarea](README.md#textarea) component of an specific struct
-`T`.
 
 ##### Parameters
 

@@ -39,6 +39,12 @@ ___
 
 • **onSubmit**: (`values`: `T`) => `void`
 
+The function to be called uppon form submision.
+
+**`Param`**
+
+the validated values `T` of the form
+
 #### Type declaration
 
 ▸ (`values`): `void`

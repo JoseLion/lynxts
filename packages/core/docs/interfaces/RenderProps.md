@@ -25,6 +25,28 @@ The renders props when the children of [FormProvider](../README.md#formprovider)
 
 • **handleChange**: \<K, A\>(`path`: `K`, `valueOrCallback`: [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> \| [`ChangeCallback`](../README.md#changecallback)\<`T`, `K`, `A`\>) => (...`args`: `A`) => `void`
 
+Helper function which creates a handler to use on callback props and
+change form values. It infers the arguments of the callback so they can be
+used dreing the change callback.
+
+**`Example`**
+
+```
+<Input<Foo>
+  name="foo"
+  onChange={handleChange("foo", event => event.target.value)}
+  value={values.foo}
+/>
+```
+
+**`Param`**
+
+the path to change the value
+
+**`Param`**
+
+either a value or a callback to change it
+
 #### Type declaration
 
 ▸ \<`K`, `A`\>(`path`, `valueOrCallback`): (...`args`: `A`) => `void`
@@ -86,6 +108,25 @@ ___
 
 • **setValue**: \<K\>(`path`: `K`) => [`SetValue`](../README.md#setvalue)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\>
 
+Helper function which creates a setter function for the specified path.
+
+**`Example`**
+
+```
+<Input<Foo>
+  name="foo"
+  onChange={event => {
+    const setFoo = setValue("foo");
+    setFoo(event.target.value);
+  }}
+  value={values.foo}
+/>
+```
+
+**`Param`**
+
+the path to change the value
+
 #### Type declaration
 
 ▸ \<`K`\>(`path`): [`SetValue`](../README.md#setvalue)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\>
@@ -132,6 +173,8 @@ ___
 ### submit
 
 • **submit**: () => `void`
+
+Helper function that triggers the form submit on demand.
 
 #### Type declaration
 

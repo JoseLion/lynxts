@@ -80,6 +80,8 @@ ___
 
 • **submit**: () => `void`
 
+Submits the form when called.
+
 #### Type declaration
 
 ▸ (): `void`

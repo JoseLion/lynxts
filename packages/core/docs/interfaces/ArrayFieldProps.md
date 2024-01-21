@@ -25,6 +25,13 @@ The props of the [ArrayField](../README.md#arrayfield) component.
 
 • **children**: (`props`: [`UseArrayField`](UseArrayField.md)\<[`ArrayValue`](../README.md#arrayvalue)\<`T`, `K`\>\>) => `ReactNode`
 
+The children is a function which takes the result of [useArrayField](../README.md#usearrayfield)
+hook in the first argument and returns a React.js node.
+
+**`Param`**
+
+render props same as the `useArrayField` hook result
+
 #### Type declaration
 
 ▸ (`props`): `ReactNode`

@@ -38,7 +38,7 @@ jobs:
           cache: yarn
       - run: yarn install --immutable
       - run: yarn docs
-      - uses: tj-actions/verify-changed-files@v16
+      - uses: tj-actions/verify-changed-files@v17
         id: verify-changed-files
         with:
           files: |

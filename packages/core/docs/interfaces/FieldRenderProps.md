@@ -53,6 +53,13 @@ ___
 
 • **handleChange**: \<A\>(`mapper`: (...`args`: `A`) => [`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\> \| `D`) => (...`args`: `A`) => `void`
 
+Helper function that creates a handler function which runs the field
+setter with the value obtaioed by the `mapper`.
+
+**`Param`**
+
+a function to map the callback arguments to the next value
+
 #### Type declaration
 
 ▸ \<`A`\>(`mapper`): (...`args`: `A`) => `void`
@@ -115,6 +122,8 @@ ___
 ### setTouched
 
 • **setTouched**: () => `void`
+
+Changes the touched state of the field to `true`
 
 #### Type declaration
 

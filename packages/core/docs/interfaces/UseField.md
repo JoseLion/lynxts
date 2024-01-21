@@ -31,6 +31,8 @@ The result of the [useField](../README.md#usefield) hook
 
 • **setTouched**: () => `void`
 
+Changes the touched state of the field to `true`
+
 #### Type declaration
 
 ▸ (): `void`

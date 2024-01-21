@@ -28,6 +28,9 @@
 
 Ƭ **TextFieldOf**\<`T`\>: (`props`: [`TextFiedProps`](interfaces/TextFiedProps.md)\<`T`\>) => `ReactElement`
 
+Helper type to describe a [TextField](README.md#textfield) component of an specific struct
+`T`.
+
 #### Type parameters
 
 | Name | Type | Description |
@@ -37,9 +40,6 @@
 #### Type declaration
 
 ▸ (`props`): `ReactElement`
-
-Helper type to describe a [TextField](README.md#textfield) component of an specific struct
-`T`.
 
 ##### Parameters
 

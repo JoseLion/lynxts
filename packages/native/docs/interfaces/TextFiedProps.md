@@ -142,6 +142,7 @@ TextInputProps.
 - [placeholder](TextFiedProps.md#placeholder)
 - [placeholderTextColor](TextFiedProps.md#placeholdertextcolor)
 - [pointerEvents](TextFiedProps.md#pointerevents)
+- [readOnly](TextFiedProps.md#readonly)
 - [rejectResponderTermination](TextFiedProps.md#rejectrespondertermination)
 - [removeClippedSubviews](TextFiedProps.md#removeclippedsubviews)
 - [renderToHardwareTextureAndroid](TextFiedProps.md#rendertohardwaretextureandroid)
@@ -157,6 +158,7 @@ TextInputProps.
 - [selectionState](TextFiedProps.md#selectionstate)
 - [shouldRasterizeIOS](TextFiedProps.md#shouldrasterizeios)
 - [showSoftInputOnFocus](TextFiedProps.md#showsoftinputonfocus)
+- [smartInsertDelete](TextFiedProps.md#smartinsertdelete)
 - [spellCheck](TextFiedProps.md#spellcheck)
 - [style](TextFiedProps.md#style)
 - [supStyle](TextFiedProps.md#supstyle)
@@ -428,7 +430,7 @@ Omit.allowFontScaling
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:471
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:498
 
 ___
 
@@ -662,13 +664,13 @@ Omit.autoCapitalize
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:482
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:509
 
 ___
 
 ### autoComplete
 
-• `Optional` **autoComplete**: ``"off"`` \| ``"name"`` \| ``"additional-name"`` \| ``"address-line1"`` \| ``"address-line2"`` \| ``"birthdate-day"`` \| ``"birthdate-full"`` \| ``"birthdate-month"`` \| ``"birthdate-year"`` \| ``"cc-csc"`` \| ``"cc-exp"`` \| ``"cc-exp-day"`` \| ``"cc-exp-month"`` \| ``"cc-exp-year"`` \| ``"cc-number"`` \| ``"country"`` \| ``"current-password"`` \| ``"email"`` \| ``"family-name"`` \| ``"gender"`` \| ``"given-name"`` \| ``"honorific-prefix"`` \| ``"honorific-suffix"`` \| ``"name-family"`` \| ``"name-given"`` \| ``"name-middle"`` \| ``"name-middle-initial"`` \| ``"name-prefix"`` \| ``"name-suffix"`` \| ``"new-password"`` \| ``"nickname"`` \| ``"one-time-code"`` \| ``"organization"`` \| ``"organization-title"`` \| ``"password"`` \| ``"password-new"`` \| ``"postal-address"`` \| ``"postal-address-country"`` \| ``"postal-address-extended"`` \| ``"postal-address-extended-postal-code"`` \| ``"postal-address-locality"`` \| ``"postal-address-region"`` \| ``"postal-code"`` \| ``"street-address"`` \| ``"sms-otp"`` \| ``"tel"`` \| ``"tel-country-code"`` \| ``"tel-national"`` \| ``"tel-device"`` \| ``"url"`` \| ``"username"`` \| ``"username-new"``
+• `Optional` **autoComplete**: ``"off"`` \| ``"name"`` \| ``"additional-name"`` \| ``"address-line1"`` \| ``"address-line2"`` \| ``"birthdate-day"`` \| ``"birthdate-full"`` \| ``"birthdate-month"`` \| ``"birthdate-year"`` \| ``"cc-csc"`` \| ``"cc-exp"`` \| ``"cc-exp-day"`` \| ``"cc-exp-month"`` \| ``"cc-exp-year"`` \| ``"cc-number"`` \| ``"cc-name"`` \| ``"cc-given-name"`` \| ``"cc-middle-name"`` \| ``"cc-family-name"`` \| ``"cc-type"`` \| ``"country"`` \| ``"current-password"`` \| ``"email"`` \| ``"family-name"`` \| ``"gender"`` \| ``"given-name"`` \| ``"honorific-prefix"`` \| ``"honorific-suffix"`` \| ``"name-family"`` \| ``"name-given"`` \| ``"name-middle"`` \| ``"name-middle-initial"`` \| ``"name-prefix"`` \| ``"name-suffix"`` \| ``"new-password"`` \| ``"nickname"`` \| ``"one-time-code"`` \| ``"organization"`` \| ``"organization-title"`` \| ``"password"`` \| ``"password-new"`` \| ``"postal-address"`` \| ``"postal-address-country"`` \| ``"postal-address-extended"`` \| ``"postal-address-extended-postal-code"`` \| ``"postal-address-locality"`` \| ``"postal-address-region"`` \| ``"postal-code"`` \| ``"street-address"`` \| ``"sms-otp"`` \| ``"tel"`` \| ``"tel-country-code"`` \| ``"tel-national"`` \| ``"tel-device"`` \| ``"url"`` \| ``"username"`` \| ``"username-new"``
 
 Specifies autocomplete hints for the system, so it can provide autofill.
 On Android, the system will always attempt to offer autofill by using heuristics to identify the type of content.
@@ -741,7 +743,7 @@ Omit.autoComplete
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:550
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:577
 
 ___
 
@@ -758,7 +760,7 @@ Omit.autoCorrect
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:609
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:641
 
 ___
 
@@ -775,7 +777,7 @@ Omit.autoFocus
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:615
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:647
 
 ___
 
@@ -792,7 +794,7 @@ Omit.blurOnSubmit
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:621
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:653
 
 ___
 
@@ -808,7 +810,7 @@ Omit.caretHidden
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:626
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:658
 
 ___
 
@@ -889,7 +891,7 @@ Omit.contextMenuHidden
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:631
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:663
 
 ___
 
@@ -911,7 +913,7 @@ Omit.cursorColor
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:307
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:334
 
 ___
 
@@ -958,7 +960,7 @@ Omit.defaultValue
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:638
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:670
 
 ___
 
@@ -977,7 +979,7 @@ Omit.disableFullscreenUI
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:338
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:365
 
 ___
 
@@ -993,7 +995,7 @@ Omit.editable
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:643
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:675
 
 ___
 
@@ -1027,7 +1029,7 @@ Omit.enterKeyHint
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:795
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:832
 
 ___
 
@@ -1158,7 +1160,7 @@ Omit.importantForAutofill
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:324
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:351
 
 ___
 
@@ -1174,7 +1176,7 @@ Omit.inlineImageLeft
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:343
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:370
 
 ___
 
@@ -1190,7 +1192,7 @@ Omit.inlineImagePadding
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:348
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:375
 
 ___
 
@@ -1208,7 +1210,7 @@ Omit.inputAccessoryViewID
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:839
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:876
 
 ___
 
@@ -1224,7 +1226,7 @@ Omit.inputMode
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:658
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:690
 
 ___
 
@@ -1282,7 +1284,7 @@ Omit.keyboardType
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:653
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:685
 
 ___
 
@@ -1324,7 +1326,7 @@ Omit.lineBreakStrategyIOS
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:288
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:307
 
 ___
 
@@ -1343,7 +1345,7 @@ Omit.maxFontSizeMultiplier
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:856
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:893
 
 ___
 
@@ -1360,7 +1362,7 @@ Omit.maxLength
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:664
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:696
 
 ___
 
@@ -1376,7 +1378,7 @@ Omit.multiline
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:669
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:701
 
 ___
 
@@ -1448,13 +1450,15 @@ Omit.numberOfLines
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:354
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:381
 
 ___
 
 ### onAccessibilityAction
 
 • `Optional` **onAccessibilityAction**: (`event`: `AccessibilityActionEvent`) => `void`
+
+When `accessible` is true, the system will try to invoke this function when the user performs an accessibility custom action.
 
 #### Type declaration
 
@@ -1486,6 +1490,12 @@ ___
 
 • `Optional` **onAccessibilityEscape**: () => `void`
 
+When accessible is true, the system will invoke this function when the user performs the escape gesture (scrub with two fingers).
+
+**`Platform`**
+
+ios
+
 #### Type declaration
 
 ▸ (): `void`
@@ -1513,6 +1523,12 @@ ___
 ### onAccessibilityTap
 
 • `Optional` **onAccessibilityTap**: () => `void`
+
+When `accessible` is true, the system will try to invoke this function when the user performs accessibility tap gesture.
+
+**`Platform`**
+
+ios
 
 #### Type declaration
 
@@ -1542,6 +1558,8 @@ ___
 
 • `Optional` **onBlur**: (`e`: `NativeSyntheticEvent`\<`TextInputFocusEventData`\>) => `void`
 
+Callback that is called when the text input is blurred
+
 #### Type declaration
 
 ▸ (`e`): `void`
@@ -1564,13 +1582,15 @@ Omit.onBlur
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:674
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:706
 
 ___
 
 ### onChange
 
 • `Optional` **onChange**: (`e`: `NativeSyntheticEvent`\<`TextInputChangeEventData`\>) => `void`
+
+Callback that is called when the text input's text changes.
 
 #### Type declaration
 
@@ -1594,13 +1614,16 @@ Omit.onChange
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:681
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:713
 
 ___
 
 ### onChangeText
 
 • `Optional` **onChangeText**: (`text`: `string`) => `void`
+
+Callback that is called when the text input's text changes.
+Changed text is passed as an argument to the callback handler.
 
 #### Type declaration
 
@@ -1625,13 +1648,19 @@ Omit.onChangeText
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:689
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:721
 
 ___
 
 ### onContentSizeChange
 
 • `Optional` **onContentSizeChange**: (`e`: `NativeSyntheticEvent`\<`TextInputContentSizeChangeEventData`\>) => `void`
+
+Callback that is called when the text input's content size changes.
+This will be called with
+`{ nativeEvent: { contentSize: { width, height } } }`.
+
+Only called for multiline text inputs.
 
 #### Type declaration
 
@@ -1659,13 +1688,15 @@ Omit.onContentSizeChange
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:698
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:730
 
 ___
 
 ### onEndEditing
 
 • `Optional` **onEndEditing**: (`e`: `NativeSyntheticEvent`\<`TextInputEndEditingEventData`\>) => `void`
+
+Callback that is called when text input ends.
 
 #### Type declaration
 
@@ -1689,13 +1720,15 @@ Omit.onEndEditing
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:705
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:737
 
 ___
 
 ### onFocus
 
 • `Optional` **onFocus**: (`e`: `NativeSyntheticEvent`\<`TextInputFocusEventData`\>) => `void`
+
+Callback that is called when the text input is focused
 
 #### Type declaration
 
@@ -1719,13 +1752,21 @@ Omit.onFocus
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:724
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:756
 
 ___
 
 ### onKeyPress
 
 • `Optional` **onKeyPress**: (`e`: `NativeSyntheticEvent`\<`TextInputKeyPressEventData`\>) => `void`
+
+Callback that is called when a key is pressed.
+This will be called with
+ `{ nativeEvent: { key: keyValue } }`
+where keyValue is 'Enter' or 'Backspace' for respective keys and the typed-in character otherwise including ' ' for space.
+
+Fires before onChange callbacks.
+Note: on Android only the inputs from soft keyboard are handled, not the hardware keyboard inputs.
 
 #### Type declaration
 
@@ -1755,13 +1796,17 @@ Omit.onKeyPress
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:771
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:803
 
 ___
 
 ### onLayout
 
 • `Optional` **onLayout**: (`event`: `LayoutChangeEvent`) => `void`
+
+Invoked on mount and layout changes with
+
+{nativeEvent: { layout: {x, y, width, height}}}.
 
 #### Type declaration
 
@@ -1795,6 +1840,12 @@ ___
 
 • `Optional` **onMagicTap**: () => `void`
 
+When accessible is true, the system will invoke this function when the user performs the magic tap gesture.
+
+**`Platform`**
+
+ios
+
 #### Type declaration
 
 ▸ (): `void`
@@ -1822,6 +1873,8 @@ ___
 ### onMoveShouldSetResponder
 
 • `Optional` **onMoveShouldSetResponder**: (`event`: `GestureResponderEvent`) => `boolean`
+
+Called for every touch move on the View when it is not the responder: does this view want to "claim" touch responsiveness?
 
 #### Type declaration
 
@@ -1852,6 +1905,18 @@ ___
 ### onMoveShouldSetResponderCapture
 
 • `Optional` **onMoveShouldSetResponderCapture**: (`event`: `GestureResponderEvent`) => `boolean`
+
+onStartShouldSetResponder and onMoveShouldSetResponder are called with a bubbling pattern,
+where the deepest node is called first.
+That means that the deepest component will become responder when multiple Views return true for *ShouldSetResponder handlers.
+This is desirable in most cases, because it makes sure all controls and buttons are usable.
+
+However, sometimes a parent will want to make sure that it becomes responder.
+This can be handled by using the capture phase.
+Before the responder system bubbles up from the deepest component,
+it will do a capture phase, firing on*ShouldSetResponderCapture.
+So if a parent View wants to prevent the child from becoming responder on a touch start,
+it should have a onStartShouldSetResponderCapture handler which returns true.
 
 #### Type declaration
 
@@ -1913,7 +1978,7 @@ Omit.onPointerCancel
 
 #### Defined in
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:257
+node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:260
 
 ___
 
@@ -1941,7 +2006,7 @@ Omit.onPointerCancelCapture
 
 #### Defined in
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:258
+node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:261
 
 ___
 
@@ -1969,7 +2034,7 @@ Omit.onPointerDown
 
 #### Defined in
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:259
+node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:262
 
 ___
 
@@ -1997,7 +2062,7 @@ Omit.onPointerDownCapture
 
 #### Defined in
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:260
+node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:263
 
 ___
 
@@ -2025,7 +2090,7 @@ Omit.onPointerEnter
 
 #### Defined in
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:251
+node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:254
 
 ___
 
@@ -2053,7 +2118,7 @@ Omit.onPointerEnterCapture
 
 #### Defined in
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:252
+node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:255
 
 ___
 
@@ -2081,7 +2146,7 @@ Omit.onPointerLeave
 
 #### Defined in
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:253
+node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:256
 
 ___
 
@@ -2109,7 +2174,7 @@ Omit.onPointerLeaveCapture
 
 #### Defined in
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:254
+node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:257
 
 ___
 
@@ -2137,7 +2202,7 @@ Omit.onPointerMove
 
 #### Defined in
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:255
+node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:258
 
 ___
 
@@ -2165,7 +2230,7 @@ Omit.onPointerMoveCapture
 
 #### Defined in
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:256
+node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:259
 
 ___
 
@@ -2193,7 +2258,7 @@ Omit.onPointerUp
 
 #### Defined in
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:261
+node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:264
 
 ___
 
@@ -2221,13 +2286,15 @@ Omit.onPointerUpCapture
 
 #### Defined in
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:262
+node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:265
 
 ___
 
 ### onPressIn
 
 • `Optional` **onPressIn**: (`e`: `NativeSyntheticEvent`\<`NativeTouchEvent`\>) => `void`
+
+Callback that is called when a touch is engaged.
 
 #### Type declaration
 
@@ -2251,13 +2318,15 @@ Omit.onPressIn
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:712
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:744
 
 ___
 
 ### onPressOut
 
 • `Optional` **onPressOut**: (`e`: `NativeSyntheticEvent`\<`NativeTouchEvent`\>) => `void`
+
+Callback that is called when a touch is released.
 
 #### Type declaration
 
@@ -2281,13 +2350,15 @@ Omit.onPressOut
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:717
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:749
 
 ___
 
 ### onResponderEnd
 
 • `Optional` **onResponderEnd**: (`event`: `GestureResponderEvent`) => `void`
+
+If the View returns true and attempts to become the responder, one of the following will happen:
 
 #### Type declaration
 
@@ -2318,6 +2389,9 @@ ___
 ### onResponderGrant
 
 • `Optional` **onResponderGrant**: (`event`: `GestureResponderEvent`) => `void`
+
+The View is now responding for touch events.
+This is the time to highlight and show the user what is happening
 
 #### Type declaration
 
@@ -2350,6 +2424,8 @@ ___
 
 • `Optional` **onResponderMove**: (`event`: `GestureResponderEvent`) => `void`
 
+The user is moving their finger
+
 #### Type declaration
 
 ▸ (`event`): `void`
@@ -2380,6 +2456,8 @@ ___
 
 • `Optional` **onResponderReject**: (`event`: `GestureResponderEvent`) => `void`
 
+Something else is the responder right now and will not release it
+
 #### Type declaration
 
 ▸ (`event`): `void`
@@ -2409,6 +2487,8 @@ ___
 ### onResponderRelease
 
 • `Optional` **onResponderRelease**: (`event`: `GestureResponderEvent`) => `void`
+
+Fired at the end of the touch, ie "touchUp"
 
 #### Type declaration
 
@@ -2468,6 +2548,10 @@ ___
 
 • `Optional` **onResponderTerminate**: (`event`: `GestureResponderEvent`) => `void`
 
+The responder has been taken from the View.
+Might be taken by other views after a call to onResponderTerminationRequest,
+or might be taken by the OS without asking (happens with control center/ notification center on iOS)
+
 #### Type declaration
 
 ▸ (`event`): `void`
@@ -2500,6 +2584,9 @@ ___
 
 • `Optional` **onResponderTerminationRequest**: (`event`: `GestureResponderEvent`) => `boolean`
 
+Something else wants to become responder.
+ Should this view release the responder? Returning true allows release
+
 #### Type declaration
 
 ▸ (`event`): `boolean`
@@ -2531,6 +2618,11 @@ ___
 
 • `Optional` **onScroll**: (`e`: `NativeSyntheticEvent`\<`TextInputScrollEventData`\>) => `void`
 
+Invoked on content scroll with
+ `{ nativeEvent: { contentOffset: { x, y } } }`.
+
+May also contain other properties from ScrollEvent but on Android contentSize is not provided for performance reasons.
+
 #### Type declaration
 
 ▸ (`e`): `void`
@@ -2556,13 +2648,15 @@ Omit.onScroll
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:758
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:790
 
 ___
 
 ### onSelectionChange
 
 • `Optional` **onSelectionChange**: (`e`: `NativeSyntheticEvent`\<`TextInputSelectionChangeEventData`\>) => `void`
+
+Callback that is called when the text input selection is changed.
 
 #### Type declaration
 
@@ -2586,13 +2680,15 @@ Omit.onSelectionChange
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:731
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:763
 
 ___
 
 ### onStartShouldSetResponder
 
 • `Optional` **onStartShouldSetResponder**: (`event`: `GestureResponderEvent`) => `boolean`
+
+Does this view want to become responder on the start of a touch?
 
 #### Type declaration
 
@@ -2623,6 +2719,18 @@ ___
 ### onStartShouldSetResponderCapture
 
 • `Optional` **onStartShouldSetResponderCapture**: (`event`: `GestureResponderEvent`) => `boolean`
+
+onStartShouldSetResponder and onMoveShouldSetResponder are called with a bubbling pattern,
+where the deepest node is called first.
+That means that the deepest component will become responder when multiple Views return true for *ShouldSetResponder handlers.
+This is desirable in most cases, because it makes sure all controls and buttons are usable.
+
+However, sometimes a parent will want to make sure that it becomes responder.
+This can be handled by using the capture phase.
+Before the responder system bubbles up from the deepest component,
+it will do a capture phase, firing on*ShouldSetResponderCapture.
+So if a parent View wants to prevent the child from becoming responder on a touch start,
+it should have a onStartShouldSetResponderCapture handler which returns true.
 
 #### Type declaration
 
@@ -2664,6 +2772,8 @@ ___
 
 • `Optional` **onSubmitEditing**: (`e`: `NativeSyntheticEvent`\<`TextInputSubmitEditingEventData`\>) => `void`
 
+Callback that is called when the text input's submit button is pressed.
+
 #### Type declaration
 
 ▸ (`e`): `void`
@@ -2686,13 +2796,18 @@ Omit.onSubmitEditing
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:738
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:770
 
 ___
 
 ### onTextInput
 
 • `Optional` **onTextInput**: (`e`: `NativeSyntheticEvent`\<`TextInputTextInputEventData`\>) => `void`
+
+Callback that is called on new text input with the argument
+ `{ nativeEvent: { text, previousText, range: { start, end } } }`.
+
+This prop requires multiline={true} to be set.
 
 #### Type declaration
 
@@ -2719,7 +2834,7 @@ Omit.onTextInput
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:748
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:780
 
 ___
 
@@ -2893,7 +3008,7 @@ Omit.placeholder
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:778
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:810
 
 ___
 
@@ -2909,7 +3024,7 @@ Omit.placeholderTextColor
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:783
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:815
 
 ___
 
@@ -2945,6 +3060,22 @@ Omit.pointerEvents
 #### Defined in
 
 node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:224
+
+___
+
+### readOnly
+
+• `Optional` **readOnly**: `boolean`
+
+If `true`, text is not editable. The default value is `false`.
+
+#### Inherited from
+
+Omit.readOnly
+
+#### Defined in
+
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:820
 
 ___
 
@@ -3039,7 +3170,7 @@ Omit.returnKeyLabel
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:360
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:387
 
 ___
 
@@ -3056,7 +3187,7 @@ Omit.returnKeyType
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:789
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:826
 
 ___
 
@@ -3088,7 +3219,7 @@ Omit.scrollEnabled
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:283
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:302
 
 ___
 
@@ -3105,7 +3236,7 @@ Omit.secureTextEntry
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:801
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:838
 
 ___
 
@@ -3121,7 +3252,7 @@ Omit.selectTextOnFocus
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:806
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:843
 
 ___
 
@@ -3145,7 +3276,7 @@ Omit.selection
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:812
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:849
 
 ___
 
@@ -3161,7 +3292,7 @@ Omit.selectionColor
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:817
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:854
 
 ___
 
@@ -3216,7 +3347,26 @@ Omit.showSoftInputOnFocus
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:381
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:408
+
+___
+
+### smartInsertDelete
+
+• `Optional` **smartInsertDelete**: `boolean`
+
+If `false`, the iOS system will not insert an extra space after a paste operation
+neither delete one or two spaces after a cut or delete operation.
+
+The default value is `true`.
+
+#### Inherited from
+
+Omit.smartInsertDelete
+
+#### Defined in
+
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:320
 
 ___
 
@@ -3276,7 +3426,7 @@ Omit.testID
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:832
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:869
 
 ___
 
@@ -3292,13 +3442,13 @@ Omit.textAlign
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:827
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:864
 
 ___
 
 ### textAlignVertical
 
-• `Optional` **textAlignVertical**: ``"center"`` \| ``"auto"`` \| ``"bottom"`` \| ``"top"``
+• `Optional` **textAlignVertical**: ``"center"`` \| ``"auto"`` \| ``"top"`` \| ``"bottom"``
 
 Vertically align text when `multiline` is set to true
 
@@ -3308,7 +3458,7 @@ Omit.textAlignVertical
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:376
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:403
 
 ___
 
@@ -3325,23 +3475,16 @@ Omit.textBreakStrategy
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:366
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:393
 
 ___
 
 ### textContentType
 
-• `Optional` **textContentType**: ``"none"`` \| ``"name"`` \| ``"nickname"`` \| ``"password"`` \| ``"username"`` \| ``"URL"`` \| ``"addressCity"`` \| ``"addressCityAndState"`` \| ``"addressState"`` \| ``"countryName"`` \| ``"creditCardNumber"`` \| ``"emailAddress"`` \| ``"familyName"`` \| ``"fullStreetAddress"`` \| ``"givenName"`` \| ``"jobTitle"`` \| ``"location"`` \| ``"middleName"`` \| ``"namePrefix"`` \| ``"nameSuffix"`` \| ``"organizationName"`` \| ``"postalCode"`` \| ``"streetAddressLine1"`` \| ``"streetAddressLine2"`` \| ``"sublocality"`` \| ``"telephoneNumber"`` \| ``"newPassword"`` \| ``"oneTimeCode"``
+• `Optional` **textContentType**: ``"none"`` \| ``"name"`` \| ``"nickname"`` \| ``"password"`` \| ``"username"`` \| ``"URL"`` \| ``"addressCity"`` \| ``"addressCityAndState"`` \| ``"addressState"`` \| ``"countryName"`` \| ``"creditCardNumber"`` \| ``"creditCardExpiration"`` \| ``"creditCardExpirationMonth"`` \| ``"creditCardExpirationYear"`` \| ``"creditCardSecurityCode"`` \| ``"creditCardType"`` \| ``"creditCardName"`` \| ``"creditCardGivenName"`` \| ``"creditCardMiddleName"`` \| ``"creditCardFamilyName"`` \| ``"emailAddress"`` \| ``"familyName"`` \| ``"fullStreetAddress"`` \| ``"givenName"`` \| ``"jobTitle"`` \| ``"location"`` \| ``"middleName"`` \| ``"namePrefix"`` \| ``"nameSuffix"`` \| ``"organizationName"`` \| ``"postalCode"`` \| ``"streetAddressLine1"`` \| ``"streetAddressLine2"`` \| ``"sublocality"`` \| ``"telephoneNumber"`` \| ``"newPassword"`` \| ``"oneTimeCode"`` \| ``"birthdate"`` \| ``"birthdateDay"`` \| ``"birthdateMonth"`` \| ``"birthdateYear"``
 
 Give the keyboard and the system information about the expected
 semantic meaning for the content that users enter.
-
-For iOS 11+ you can set `textContentType` to `username` or `password` to
-enable autofill of login details from the device keychain.
-
-For iOS 12+ `newPassword` can be used to indicate a new password input the
-user may want to save in the keychain, and `oneTimeCode` can be used to indicate
-that a field can be autofilled by a code arriving in an SMS.
 
 To disable autofill, set textContentType to `none`.
 
@@ -3354,6 +3497,15 @@ Possible values for `textContentType` are:
  - `'addressState'`
  - `'countryName'`
  - `'creditCardNumber'`
+ - `'creditCardExpiration'` (iOS 17+)
+ - `'creditCardExpirationMonth'` (iOS 17+)
+ - `'creditCardExpirationYear'` (iOS 17+)
+ - `'creditCardSecurityCode'` (iOS 17+)
+ - `'creditCardType'` (iOS 17+)
+ - `'creditCardName'` (iOS 17+)
+ - `'creditCardGivenName'` (iOS 17+)
+ - `'creditCardMiddleName'` (iOS 17+)
+ - `'creditCardFamilyName'` (iOS 17+)
  - `'emailAddress'`
  - `'familyName'`
  - `'fullStreetAddress'`
@@ -3375,6 +3527,10 @@ Possible values for `textContentType` are:
  - `'password'`
  - `'newPassword'`
  - `'oneTimeCode'`
+ - `'birthdate'` (iOS 17+)
+ - `'birthdateDay'` (iOS 17+)
+ - `'birthdateMonth'` (iOS 17+)
+ - `'birthdateYear'` (iOS 17+)
 
 #### Inherited from
 
@@ -3382,7 +3538,7 @@ Omit.textContentType
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:249
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:255
 
 ___
 
@@ -3510,13 +3666,13 @@ Omit.underlineColorAndroid
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:371
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:398
 
 ___
 
 ### verticalAlign
 
-• `Optional` **verticalAlign**: ``"auto"`` \| ``"bottom"`` \| ``"top"`` \| ``"middle"``
+• `Optional` **verticalAlign**: ``"auto"`` \| ``"top"`` \| ``"bottom"`` \| ``"middle"``
 
 Vertically align text when `multiline` is set to true
 
@@ -3526,4 +3682,4 @@ Omit.verticalAlign
 
 #### Defined in
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:386
+node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:413
