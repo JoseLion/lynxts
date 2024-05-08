@@ -1,1419 +1,1137 @@
+[**@lynxts/web**](../README.md) • **Docs**
+
+***
+
 [@lynxts/web](../README.md) / FormProps
 
 # Interface: FormProps\<T\>
 
 From component props
 
+## Extends
+
+- `FormProviderProps`\<`T`\>.`HTMLFormProps`
+
 ## Type parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `T` | extends `Struct` | struct type of the form values |
+• **T** *extends* `Struct`
 
-## Hierarchy
-
-- `FormProviderProps`\<`T`\>
-
-- `HTMLFormProps`
-
-  ↳ **`FormProps`**
-
-## Table of contents
-
-### Properties
-
-- [about](FormProps.md#about)
-- [acceptCharset](FormProps.md#acceptcharset)
-- [accessKey](FormProps.md#accesskey)
-- [action](FormProps.md#action)
-- [aria-activedescendant](FormProps.md#aria-activedescendant)
-- [aria-atomic](FormProps.md#aria-atomic)
-- [aria-autocomplete](FormProps.md#aria-autocomplete)
-- [aria-braillelabel](FormProps.md#aria-braillelabel)
-- [aria-brailleroledescription](FormProps.md#aria-brailleroledescription)
-- [aria-busy](FormProps.md#aria-busy)
-- [aria-checked](FormProps.md#aria-checked)
-- [aria-colcount](FormProps.md#aria-colcount)
-- [aria-colindex](FormProps.md#aria-colindex)
-- [aria-colindextext](FormProps.md#aria-colindextext)
-- [aria-colspan](FormProps.md#aria-colspan)
-- [aria-controls](FormProps.md#aria-controls)
-- [aria-current](FormProps.md#aria-current)
-- [aria-describedby](FormProps.md#aria-describedby)
-- [aria-description](FormProps.md#aria-description)
-- [aria-details](FormProps.md#aria-details)
-- [aria-disabled](FormProps.md#aria-disabled)
-- [aria-dropeffect](FormProps.md#aria-dropeffect)
-- [aria-errormessage](FormProps.md#aria-errormessage)
-- [aria-expanded](FormProps.md#aria-expanded)
-- [aria-flowto](FormProps.md#aria-flowto)
-- [aria-grabbed](FormProps.md#aria-grabbed)
-- [aria-haspopup](FormProps.md#aria-haspopup)
-- [aria-hidden](FormProps.md#aria-hidden)
-- [aria-invalid](FormProps.md#aria-invalid)
-- [aria-keyshortcuts](FormProps.md#aria-keyshortcuts)
-- [aria-label](FormProps.md#aria-label)
-- [aria-labelledby](FormProps.md#aria-labelledby)
-- [aria-level](FormProps.md#aria-level)
-- [aria-live](FormProps.md#aria-live)
-- [aria-modal](FormProps.md#aria-modal)
-- [aria-multiline](FormProps.md#aria-multiline)
-- [aria-multiselectable](FormProps.md#aria-multiselectable)
-- [aria-orientation](FormProps.md#aria-orientation)
-- [aria-owns](FormProps.md#aria-owns)
-- [aria-placeholder](FormProps.md#aria-placeholder)
-- [aria-posinset](FormProps.md#aria-posinset)
-- [aria-pressed](FormProps.md#aria-pressed)
-- [aria-readonly](FormProps.md#aria-readonly)
-- [aria-relevant](FormProps.md#aria-relevant)
-- [aria-required](FormProps.md#aria-required)
-- [aria-roledescription](FormProps.md#aria-roledescription)
-- [aria-rowcount](FormProps.md#aria-rowcount)
-- [aria-rowindex](FormProps.md#aria-rowindex)
-- [aria-rowindextext](FormProps.md#aria-rowindextext)
-- [aria-rowspan](FormProps.md#aria-rowspan)
-- [aria-selected](FormProps.md#aria-selected)
-- [aria-setsize](FormProps.md#aria-setsize)
-- [aria-sort](FormProps.md#aria-sort)
-- [aria-valuemax](FormProps.md#aria-valuemax)
-- [aria-valuemin](FormProps.md#aria-valuemin)
-- [aria-valuenow](FormProps.md#aria-valuenow)
-- [aria-valuetext](FormProps.md#aria-valuetext)
-- [autoCapitalize](FormProps.md#autocapitalize)
-- [autoComplete](FormProps.md#autocomplete)
-- [autoCorrect](FormProps.md#autocorrect)
-- [autoFocus](FormProps.md#autofocus)
-- [autoSave](FormProps.md#autosave)
-- [children](FormProps.md#children)
-- [className](FormProps.md#classname)
-- [color](FormProps.md#color)
-- [content](FormProps.md#content)
-- [contentEditable](FormProps.md#contenteditable)
-- [contextMenu](FormProps.md#contextmenu)
-- [dangerouslySetInnerHTML](FormProps.md#dangerouslysetinnerhtml)
-- [datatype](FormProps.md#datatype)
-- [defaultChecked](FormProps.md#defaultchecked)
-- [defaultValue](FormProps.md#defaultvalue)
-- [dir](FormProps.md#dir)
-- [draggable](FormProps.md#draggable)
-- [encType](FormProps.md#enctype)
-- [hidden](FormProps.md#hidden)
-- [id](FormProps.md#id)
-- [inlist](FormProps.md#inlist)
-- [inputMode](FormProps.md#inputmode)
-- [is](FormProps.md#is)
-- [itemID](FormProps.md#itemid)
-- [itemProp](FormProps.md#itemprop)
-- [itemRef](FormProps.md#itemref)
-- [itemScope](FormProps.md#itemscope)
-- [itemType](FormProps.md#itemtype)
-- [key](FormProps.md#key)
-- [lang](FormProps.md#lang)
-- [method](FormProps.md#method)
-- [name](FormProps.md#name)
-- [noValidate](FormProps.md#novalidate)
-- [nonce](FormProps.md#nonce)
-- [onAbort](FormProps.md#onabort)
-- [onAbortCapture](FormProps.md#onabortcapture)
-- [onAnimationEnd](FormProps.md#onanimationend)
-- [onAnimationEndCapture](FormProps.md#onanimationendcapture)
-- [onAnimationIteration](FormProps.md#onanimationiteration)
-- [onAnimationIterationCapture](FormProps.md#onanimationiterationcapture)
-- [onAnimationStart](FormProps.md#onanimationstart)
-- [onAnimationStartCapture](FormProps.md#onanimationstartcapture)
-- [onAuxClick](FormProps.md#onauxclick)
-- [onAuxClickCapture](FormProps.md#onauxclickcapture)
-- [onBeforeInput](FormProps.md#onbeforeinput)
-- [onBeforeInputCapture](FormProps.md#onbeforeinputcapture)
-- [onBlur](FormProps.md#onblur)
-- [onBlurCapture](FormProps.md#onblurcapture)
-- [onCanPlay](FormProps.md#oncanplay)
-- [onCanPlayCapture](FormProps.md#oncanplaycapture)
-- [onCanPlayThrough](FormProps.md#oncanplaythrough)
-- [onCanPlayThroughCapture](FormProps.md#oncanplaythroughcapture)
-- [onChange](FormProps.md#onchange)
-- [onChangeCapture](FormProps.md#onchangecapture)
-- [onClick](FormProps.md#onclick)
-- [onClickCapture](FormProps.md#onclickcapture)
-- [onCompositionEnd](FormProps.md#oncompositionend)
-- [onCompositionEndCapture](FormProps.md#oncompositionendcapture)
-- [onCompositionStart](FormProps.md#oncompositionstart)
-- [onCompositionStartCapture](FormProps.md#oncompositionstartcapture)
-- [onCompositionUpdate](FormProps.md#oncompositionupdate)
-- [onCompositionUpdateCapture](FormProps.md#oncompositionupdatecapture)
-- [onContextMenu](FormProps.md#oncontextmenu)
-- [onContextMenuCapture](FormProps.md#oncontextmenucapture)
-- [onCopy](FormProps.md#oncopy)
-- [onCopyCapture](FormProps.md#oncopycapture)
-- [onCut](FormProps.md#oncut)
-- [onCutCapture](FormProps.md#oncutcapture)
-- [onDoubleClick](FormProps.md#ondoubleclick)
-- [onDoubleClickCapture](FormProps.md#ondoubleclickcapture)
-- [onDrag](FormProps.md#ondrag)
-- [onDragCapture](FormProps.md#ondragcapture)
-- [onDragEnd](FormProps.md#ondragend)
-- [onDragEndCapture](FormProps.md#ondragendcapture)
-- [onDragEnter](FormProps.md#ondragenter)
-- [onDragEnterCapture](FormProps.md#ondragentercapture)
-- [onDragExit](FormProps.md#ondragexit)
-- [onDragExitCapture](FormProps.md#ondragexitcapture)
-- [onDragLeave](FormProps.md#ondragleave)
-- [onDragLeaveCapture](FormProps.md#ondragleavecapture)
-- [onDragOver](FormProps.md#ondragover)
-- [onDragOverCapture](FormProps.md#ondragovercapture)
-- [onDragStart](FormProps.md#ondragstart)
-- [onDragStartCapture](FormProps.md#ondragstartcapture)
-- [onDrop](FormProps.md#ondrop)
-- [onDropCapture](FormProps.md#ondropcapture)
-- [onDurationChange](FormProps.md#ondurationchange)
-- [onDurationChangeCapture](FormProps.md#ondurationchangecapture)
-- [onEmptied](FormProps.md#onemptied)
-- [onEmptiedCapture](FormProps.md#onemptiedcapture)
-- [onEncrypted](FormProps.md#onencrypted)
-- [onEncryptedCapture](FormProps.md#onencryptedcapture)
-- [onEnded](FormProps.md#onended)
-- [onEndedCapture](FormProps.md#onendedcapture)
-- [onError](FormProps.md#onerror)
-- [onErrorCapture](FormProps.md#onerrorcapture)
-- [onFocus](FormProps.md#onfocus)
-- [onFocusCapture](FormProps.md#onfocuscapture)
-- [onGotPointerCapture](FormProps.md#ongotpointercapture)
-- [onGotPointerCaptureCapture](FormProps.md#ongotpointercapturecapture)
-- [onInput](FormProps.md#oninput)
-- [onInputCapture](FormProps.md#oninputcapture)
-- [onInvalid](FormProps.md#oninvalid)
-- [onInvalidCapture](FormProps.md#oninvalidcapture)
-- [onKeyDown](FormProps.md#onkeydown)
-- [onKeyDownCapture](FormProps.md#onkeydowncapture)
-- [onKeyPress](FormProps.md#onkeypress)
-- [onKeyPressCapture](FormProps.md#onkeypresscapture)
-- [onKeyUp](FormProps.md#onkeyup)
-- [onKeyUpCapture](FormProps.md#onkeyupcapture)
-- [onLoad](FormProps.md#onload)
-- [onLoadCapture](FormProps.md#onloadcapture)
-- [onLoadStart](FormProps.md#onloadstart)
-- [onLoadStartCapture](FormProps.md#onloadstartcapture)
-- [onLoadedData](FormProps.md#onloadeddata)
-- [onLoadedDataCapture](FormProps.md#onloadeddatacapture)
-- [onLoadedMetadata](FormProps.md#onloadedmetadata)
-- [onLoadedMetadataCapture](FormProps.md#onloadedmetadatacapture)
-- [onLostPointerCapture](FormProps.md#onlostpointercapture)
-- [onLostPointerCaptureCapture](FormProps.md#onlostpointercapturecapture)
-- [onMouseDown](FormProps.md#onmousedown)
-- [onMouseDownCapture](FormProps.md#onmousedowncapture)
-- [onMouseEnter](FormProps.md#onmouseenter)
-- [onMouseLeave](FormProps.md#onmouseleave)
-- [onMouseMove](FormProps.md#onmousemove)
-- [onMouseMoveCapture](FormProps.md#onmousemovecapture)
-- [onMouseOut](FormProps.md#onmouseout)
-- [onMouseOutCapture](FormProps.md#onmouseoutcapture)
-- [onMouseOver](FormProps.md#onmouseover)
-- [onMouseOverCapture](FormProps.md#onmouseovercapture)
-- [onMouseUp](FormProps.md#onmouseup)
-- [onMouseUpCapture](FormProps.md#onmouseupcapture)
-- [onPaste](FormProps.md#onpaste)
-- [onPasteCapture](FormProps.md#onpastecapture)
-- [onPause](FormProps.md#onpause)
-- [onPauseCapture](FormProps.md#onpausecapture)
-- [onPlay](FormProps.md#onplay)
-- [onPlayCapture](FormProps.md#onplaycapture)
-- [onPlaying](FormProps.md#onplaying)
-- [onPlayingCapture](FormProps.md#onplayingcapture)
-- [onPointerCancel](FormProps.md#onpointercancel)
-- [onPointerCancelCapture](FormProps.md#onpointercancelcapture)
-- [onPointerDown](FormProps.md#onpointerdown)
-- [onPointerDownCapture](FormProps.md#onpointerdowncapture)
-- [onPointerEnter](FormProps.md#onpointerenter)
-- [onPointerEnterCapture](FormProps.md#onpointerentercapture)
-- [onPointerLeave](FormProps.md#onpointerleave)
-- [onPointerLeaveCapture](FormProps.md#onpointerleavecapture)
-- [onPointerMove](FormProps.md#onpointermove)
-- [onPointerMoveCapture](FormProps.md#onpointermovecapture)
-- [onPointerOut](FormProps.md#onpointerout)
-- [onPointerOutCapture](FormProps.md#onpointeroutcapture)
-- [onPointerOver](FormProps.md#onpointerover)
-- [onPointerOverCapture](FormProps.md#onpointerovercapture)
-- [onPointerUp](FormProps.md#onpointerup)
-- [onPointerUpCapture](FormProps.md#onpointerupcapture)
-- [onProgress](FormProps.md#onprogress)
-- [onProgressCapture](FormProps.md#onprogresscapture)
-- [onRateChange](FormProps.md#onratechange)
-- [onRateChangeCapture](FormProps.md#onratechangecapture)
-- [onReset](FormProps.md#onreset)
-- [onResetCapture](FormProps.md#onresetcapture)
-- [onResize](FormProps.md#onresize)
-- [onResizeCapture](FormProps.md#onresizecapture)
-- [onScroll](FormProps.md#onscroll)
-- [onScrollCapture](FormProps.md#onscrollcapture)
-- [onSeeked](FormProps.md#onseeked)
-- [onSeekedCapture](FormProps.md#onseekedcapture)
-- [onSeeking](FormProps.md#onseeking)
-- [onSeekingCapture](FormProps.md#onseekingcapture)
-- [onSelect](FormProps.md#onselect)
-- [onSelectCapture](FormProps.md#onselectcapture)
-- [onStalled](FormProps.md#onstalled)
-- [onStalledCapture](FormProps.md#onstalledcapture)
-- [onSubmit](FormProps.md#onsubmit)
-- [onSubmitCapture](FormProps.md#onsubmitcapture)
-- [onSuspend](FormProps.md#onsuspend)
-- [onSuspendCapture](FormProps.md#onsuspendcapture)
-- [onTimeUpdate](FormProps.md#ontimeupdate)
-- [onTimeUpdateCapture](FormProps.md#ontimeupdatecapture)
-- [onTouchCancel](FormProps.md#ontouchcancel)
-- [onTouchCancelCapture](FormProps.md#ontouchcancelcapture)
-- [onTouchEnd](FormProps.md#ontouchend)
-- [onTouchEndCapture](FormProps.md#ontouchendcapture)
-- [onTouchMove](FormProps.md#ontouchmove)
-- [onTouchMoveCapture](FormProps.md#ontouchmovecapture)
-- [onTouchStart](FormProps.md#ontouchstart)
-- [onTouchStartCapture](FormProps.md#ontouchstartcapture)
-- [onTransitionEnd](FormProps.md#ontransitionend)
-- [onTransitionEndCapture](FormProps.md#ontransitionendcapture)
-- [onVolumeChange](FormProps.md#onvolumechange)
-- [onVolumeChangeCapture](FormProps.md#onvolumechangecapture)
-- [onWaiting](FormProps.md#onwaiting)
-- [onWaitingCapture](FormProps.md#onwaitingcapture)
-- [onWheel](FormProps.md#onwheel)
-- [onWheelCapture](FormProps.md#onwheelcapture)
-- [prefix](FormProps.md#prefix)
-- [property](FormProps.md#property)
-- [radioGroup](FormProps.md#radiogroup)
-- [ref](FormProps.md#ref)
-- [rel](FormProps.md#rel)
-- [resource](FormProps.md#resource)
-- [results](FormProps.md#results)
-- [rev](FormProps.md#rev)
-- [role](FormProps.md#role)
-- [security](FormProps.md#security)
-- [slot](FormProps.md#slot)
-- [spellCheck](FormProps.md#spellcheck)
-- [style](FormProps.md#style)
-- [suppressContentEditableWarning](FormProps.md#suppresscontenteditablewarning)
-- [suppressHydrationWarning](FormProps.md#suppresshydrationwarning)
-- [tabIndex](FormProps.md#tabindex)
-- [target](FormProps.md#target)
-- [title](FormProps.md#title)
-- [translate](FormProps.md#translate)
-- [typeof](FormProps.md#typeof)
-- [unselectable](FormProps.md#unselectable)
-- [validation](FormProps.md#validation)
-- [values](FormProps.md#values)
-- [vocab](FormProps.md#vocab)
+struct type of the form values
 
 ## Properties
 
-### about
+### about?
 
-• `Optional` **about**: `string`
-
-#### Inherited from
-
-HTMLFormProps.about
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1994
-
-___
-
-### acceptCharset
-
-• `Optional` **acceptCharset**: `string`
+> `optional` **about**: `string`
 
 #### Inherited from
 
-HTMLFormProps.acceptCharset
+`HTMLFormProps.about`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2275
+node\_modules/@types/react/index.d.ts:2920
 
-___
+***
 
-### accessKey
+### acceptCharset?
 
-• `Optional` **accessKey**: `string`
-
-#### Inherited from
-
-HTMLFormProps.accessKey
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1969
-
-___
-
-### action
-
-• `Optional` **action**: `string`
+> `optional` **acceptCharset**: `string`
 
 #### Inherited from
 
-HTMLFormProps.action
+`HTMLFormProps.acceptCharset`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2276
+node\_modules/@types/react/index.d.ts:3201
 
-___
+***
 
-### aria-activedescendant
+### accessKey?
 
-• `Optional` **aria-activedescendant**: `string`
+> `optional` **accessKey**: `string`
+
+#### Inherited from
+
+`HTMLFormProps.accessKey`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2895
+
+***
+
+### action?
+
+> `optional` **action**: `string`
+
+#### Inherited from
+
+`HTMLFormProps.action`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:3202
+
+***
+
+### aria-activedescendant?
+
+> `optional` **aria-activedescendant**: `string`
 
 Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application.
 
 #### Inherited from
 
-HTMLFormProps.aria-activedescendant
+`HTMLFormProps.aria-activedescendant`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1667
+node\_modules/@types/react/index.d.ts:2593
 
-___
+***
 
-### aria-atomic
+### aria-atomic?
 
-• `Optional` **aria-atomic**: `Booleanish`
+> `optional` **aria-atomic**: `Booleanish`
 
 Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute.
 
 #### Inherited from
 
-HTMLFormProps.aria-atomic
+`HTMLFormProps.aria-atomic`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1669
+node\_modules/@types/react/index.d.ts:2595
 
-___
+***
 
-### aria-autocomplete
+### aria-autocomplete?
 
-• `Optional` **aria-autocomplete**: ``"list"`` \| ``"none"`` \| ``"inline"`` \| ``"both"``
+> `optional` **aria-autocomplete**: `"list"` \| `"none"` \| `"inline"` \| `"both"`
 
 Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
 presented if they are made.
 
 #### Inherited from
 
-HTMLFormProps.aria-autocomplete
+`HTMLFormProps.aria-autocomplete`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1674
+node\_modules/@types/react/index.d.ts:2600
 
-___
+***
 
-### aria-braillelabel
+### aria-braillelabel?
 
-• `Optional` **aria-braillelabel**: `string`
+> `optional` **aria-braillelabel**: `string`
 
 Defines a string value that labels the current element, which is intended to be converted into Braille.
 
-**`See`**
+#### See
 
 aria-label.
 
 #### Inherited from
 
-HTMLFormProps.aria-braillelabel
+`HTMLFormProps.aria-braillelabel`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1680
+node\_modules/@types/react/index.d.ts:2606
 
-___
+***
 
-### aria-brailleroledescription
+### aria-brailleroledescription?
 
-• `Optional` **aria-brailleroledescription**: `string`
+> `optional` **aria-brailleroledescription**: `string`
 
 Defines a human-readable, author-localized abbreviated description for the role of an element, which is intended to be converted into Braille.
 
-**`See`**
+#### See
 
 aria-roledescription.
 
 #### Inherited from
 
-HTMLFormProps.aria-brailleroledescription
+`HTMLFormProps.aria-brailleroledescription`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1685
+node\_modules/@types/react/index.d.ts:2611
 
-___
+***
 
-### aria-busy
+### aria-busy?
 
-• `Optional` **aria-busy**: `Booleanish`
+> `optional` **aria-busy**: `Booleanish`
 
 #### Inherited from
 
-HTMLFormProps.aria-busy
+`HTMLFormProps.aria-busy`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1686
+node\_modules/@types/react/index.d.ts:2612
 
-___
+***
 
-### aria-checked
+### aria-checked?
 
-• `Optional` **aria-checked**: `boolean` \| ``"true"`` \| ``"false"`` \| ``"mixed"``
+> `optional` **aria-checked**: `boolean` \| `"true"` \| `"false"` \| `"mixed"`
 
 Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
 
-**`See`**
+#### See
 
  - aria-pressed
  - aria-selected.
 
 #### Inherited from
 
-HTMLFormProps.aria-checked
+`HTMLFormProps.aria-checked`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1691
+node\_modules/@types/react/index.d.ts:2617
 
-___
+***
 
-### aria-colcount
+### aria-colcount?
 
-• `Optional` **aria-colcount**: `number`
+> `optional` **aria-colcount**: `number`
 
 Defines the total number of columns in a table, grid, or treegrid.
 
-**`See`**
+#### See
 
 aria-colindex.
 
 #### Inherited from
 
-HTMLFormProps.aria-colcount
+`HTMLFormProps.aria-colcount`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1696
+node\_modules/@types/react/index.d.ts:2622
 
-___
+***
 
-### aria-colindex
+### aria-colindex?
 
-• `Optional` **aria-colindex**: `number`
+> `optional` **aria-colindex**: `number`
 
 Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.
 
-**`See`**
+#### See
 
  - aria-colcount
  - aria-colspan.
 
 #### Inherited from
 
-HTMLFormProps.aria-colindex
+`HTMLFormProps.aria-colindex`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1701
+node\_modules/@types/react/index.d.ts:2627
 
-___
+***
 
-### aria-colindextext
+### aria-colindextext?
 
-• `Optional` **aria-colindextext**: `string`
+> `optional` **aria-colindextext**: `string`
 
 Defines a human readable text alternative of aria-colindex.
 
-**`See`**
+#### See
 
 aria-rowindextext.
 
 #### Inherited from
 
-HTMLFormProps.aria-colindextext
+`HTMLFormProps.aria-colindextext`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1706
+node\_modules/@types/react/index.d.ts:2632
 
-___
+***
 
-### aria-colspan
+### aria-colspan?
 
-• `Optional` **aria-colspan**: `number`
+> `optional` **aria-colspan**: `number`
 
 Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.
 
-**`See`**
+#### See
 
  - aria-colindex
  - aria-rowspan.
 
 #### Inherited from
 
-HTMLFormProps.aria-colspan
+`HTMLFormProps.aria-colspan`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1711
+node\_modules/@types/react/index.d.ts:2637
 
-___
+***
 
-### aria-controls
+### aria-controls?
 
-• `Optional` **aria-controls**: `string`
+> `optional` **aria-controls**: `string`
 
 Identifies the element (or elements) whose contents or presence are controlled by the current element.
 
-**`See`**
+#### See
 
 aria-owns.
 
 #### Inherited from
 
-HTMLFormProps.aria-controls
+`HTMLFormProps.aria-controls`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1716
+node\_modules/@types/react/index.d.ts:2642
 
-___
+***
 
-### aria-current
+### aria-current?
 
-• `Optional` **aria-current**: `boolean` \| ``"time"`` \| ``"true"`` \| ``"false"`` \| ``"page"`` \| ``"step"`` \| ``"location"`` \| ``"date"``
+> `optional` **aria-current**: `boolean` \| `"time"` \| `"true"` \| `"false"` \| `"page"` \| `"step"` \| `"location"` \| `"date"`
 
 Indicates the element that represents the current item within a container or set of related elements.
 
 #### Inherited from
 
-HTMLFormProps.aria-current
+`HTMLFormProps.aria-current`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1718
+node\_modules/@types/react/index.d.ts:2644
 
-___
+***
 
-### aria-describedby
+### aria-describedby?
 
-• `Optional` **aria-describedby**: `string`
+> `optional` **aria-describedby**: `string`
 
 Identifies the element (or elements) that describes the object.
 
-**`See`**
+#### See
 
 aria-labelledby
 
 #### Inherited from
 
-HTMLFormProps.aria-describedby
+`HTMLFormProps.aria-describedby`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1723
+node\_modules/@types/react/index.d.ts:2649
 
-___
+***
 
-### aria-description
+### aria-description?
 
-• `Optional` **aria-description**: `string`
+> `optional` **aria-description**: `string`
 
 Defines a string value that describes or annotates the current element.
 
-**`See`**
+#### See
 
 related aria-describedby.
 
 #### Inherited from
 
-HTMLFormProps.aria-description
+`HTMLFormProps.aria-description`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1728
+node\_modules/@types/react/index.d.ts:2654
 
-___
+***
 
-### aria-details
+### aria-details?
 
-• `Optional` **aria-details**: `string`
+> `optional` **aria-details**: `string`
 
 Identifies the element that provides a detailed, extended description for the object.
 
-**`See`**
+#### See
 
 aria-describedby.
 
 #### Inherited from
 
-HTMLFormProps.aria-details
+`HTMLFormProps.aria-details`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1733
+node\_modules/@types/react/index.d.ts:2659
 
-___
+***
 
-### aria-disabled
+### aria-disabled?
 
-• `Optional` **aria-disabled**: `Booleanish`
+> `optional` **aria-disabled**: `Booleanish`
 
 Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
 
-**`See`**
+#### See
 
  - aria-hidden
  - aria-readonly.
 
 #### Inherited from
 
-HTMLFormProps.aria-disabled
+`HTMLFormProps.aria-disabled`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1738
+node\_modules/@types/react/index.d.ts:2664
 
-___
+***
 
-### aria-dropeffect
+### ~~aria-dropeffect?~~
 
-• `Optional` **aria-dropeffect**: ``"link"`` \| ``"none"`` \| ``"copy"`` \| ``"execute"`` \| ``"move"`` \| ``"popup"``
+> `optional` **aria-dropeffect**: `"link"` \| `"none"` \| `"copy"` \| `"execute"` \| `"move"` \| `"popup"`
 
 Indicates what functions can be performed when a dragged object is released on the drop target.
 
-**`Deprecated`**
+#### Deprecated
 
 in ARIA 1.1
 
 #### Inherited from
 
-HTMLFormProps.aria-dropeffect
+`HTMLFormProps.aria-dropeffect`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1743
+node\_modules/@types/react/index.d.ts:2669
 
-___
+***
 
-### aria-errormessage
+### aria-errormessage?
 
-• `Optional` **aria-errormessage**: `string`
+> `optional` **aria-errormessage**: `string`
 
 Identifies the element that provides an error message for the object.
 
-**`See`**
+#### See
 
  - aria-invalid
  - aria-describedby.
 
 #### Inherited from
 
-HTMLFormProps.aria-errormessage
+`HTMLFormProps.aria-errormessage`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1748
+node\_modules/@types/react/index.d.ts:2674
 
-___
+***
 
-### aria-expanded
+### aria-expanded?
 
-• `Optional` **aria-expanded**: `Booleanish`
+> `optional` **aria-expanded**: `Booleanish`
 
 Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.
 
 #### Inherited from
 
-HTMLFormProps.aria-expanded
+`HTMLFormProps.aria-expanded`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1750
+node\_modules/@types/react/index.d.ts:2676
 
-___
+***
 
-### aria-flowto
+### aria-flowto?
 
-• `Optional` **aria-flowto**: `string`
+> `optional` **aria-flowto**: `string`
 
 Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
 allows assistive technology to override the general default of reading in document source order.
 
 #### Inherited from
 
-HTMLFormProps.aria-flowto
+`HTMLFormProps.aria-flowto`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1755
+node\_modules/@types/react/index.d.ts:2681
 
-___
+***
 
-### aria-grabbed
+### ~~aria-grabbed?~~
 
-• `Optional` **aria-grabbed**: `Booleanish`
+> `optional` **aria-grabbed**: `Booleanish`
 
 Indicates an element's "grabbed" state in a drag-and-drop operation.
 
-**`Deprecated`**
+#### Deprecated
 
 in ARIA 1.1
 
 #### Inherited from
 
-HTMLFormProps.aria-grabbed
+`HTMLFormProps.aria-grabbed`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1760
+node\_modules/@types/react/index.d.ts:2686
 
-___
+***
 
-### aria-haspopup
+### aria-haspopup?
 
-• `Optional` **aria-haspopup**: `boolean` \| ``"dialog"`` \| ``"menu"`` \| ``"true"`` \| ``"false"`` \| ``"grid"`` \| ``"listbox"`` \| ``"tree"``
+> `optional` **aria-haspopup**: `boolean` \| `"dialog"` \| `"menu"` \| `"true"` \| `"false"` \| `"grid"` \| `"listbox"` \| `"tree"`
 
 Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element.
 
 #### Inherited from
 
-HTMLFormProps.aria-haspopup
+`HTMLFormProps.aria-haspopup`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1762
+node\_modules/@types/react/index.d.ts:2688
 
-___
+***
 
-### aria-hidden
+### aria-hidden?
 
-• `Optional` **aria-hidden**: `Booleanish`
+> `optional` **aria-hidden**: `Booleanish`
 
 Indicates whether the element is exposed to an accessibility API.
 
-**`See`**
+#### See
 
 aria-disabled.
 
 #### Inherited from
 
-HTMLFormProps.aria-hidden
+`HTMLFormProps.aria-hidden`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1767
+node\_modules/@types/react/index.d.ts:2693
 
-___
+***
 
-### aria-invalid
+### aria-invalid?
 
-• `Optional` **aria-invalid**: `boolean` \| ``"true"`` \| ``"false"`` \| ``"grammar"`` \| ``"spelling"``
+> `optional` **aria-invalid**: `boolean` \| `"true"` \| `"false"` \| `"grammar"` \| `"spelling"`
 
 Indicates the entered value does not conform to the format expected by the application.
 
-**`See`**
+#### See
 
 aria-errormessage.
 
 #### Inherited from
 
-HTMLFormProps.aria-invalid
+`HTMLFormProps.aria-invalid`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1772
+node\_modules/@types/react/index.d.ts:2698
 
-___
+***
 
-### aria-keyshortcuts
+### aria-keyshortcuts?
 
-• `Optional` **aria-keyshortcuts**: `string`
+> `optional` **aria-keyshortcuts**: `string`
 
 Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element.
 
 #### Inherited from
 
-HTMLFormProps.aria-keyshortcuts
+`HTMLFormProps.aria-keyshortcuts`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1774
+node\_modules/@types/react/index.d.ts:2700
 
-___
+***
 
-### aria-label
+### aria-label?
 
-• `Optional` **aria-label**: `string`
+> `optional` **aria-label**: `string`
 
 Defines a string value that labels the current element.
 
-**`See`**
+#### See
 
 aria-labelledby.
 
 #### Inherited from
 
-HTMLFormProps.aria-label
+`HTMLFormProps.aria-label`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1779
+node\_modules/@types/react/index.d.ts:2705
 
-___
+***
 
-### aria-labelledby
+### aria-labelledby?
 
-• `Optional` **aria-labelledby**: `string`
+> `optional` **aria-labelledby**: `string`
 
 Identifies the element (or elements) that labels the current element.
 
-**`See`**
+#### See
 
 aria-describedby.
 
 #### Inherited from
 
-HTMLFormProps.aria-labelledby
+`HTMLFormProps.aria-labelledby`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1784
+node\_modules/@types/react/index.d.ts:2710
 
-___
+***
 
-### aria-level
+### aria-level?
 
-• `Optional` **aria-level**: `number`
+> `optional` **aria-level**: `number`
 
 Defines the hierarchical level of an element within a structure.
 
 #### Inherited from
 
-HTMLFormProps.aria-level
+`HTMLFormProps.aria-level`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1786
+node\_modules/@types/react/index.d.ts:2712
 
-___
+***
 
-### aria-live
+### aria-live?
 
-• `Optional` **aria-live**: ``"off"`` \| ``"assertive"`` \| ``"polite"``
+> `optional` **aria-live**: `"off"` \| `"assertive"` \| `"polite"`
 
 Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.
 
 #### Inherited from
 
-HTMLFormProps.aria-live
+`HTMLFormProps.aria-live`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1788
+node\_modules/@types/react/index.d.ts:2714
 
-___
+***
 
-### aria-modal
+### aria-modal?
 
-• `Optional` **aria-modal**: `Booleanish`
+> `optional` **aria-modal**: `Booleanish`
 
 Indicates whether an element is modal when displayed.
 
 #### Inherited from
 
-HTMLFormProps.aria-modal
+`HTMLFormProps.aria-modal`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1790
+node\_modules/@types/react/index.d.ts:2716
 
-___
+***
 
-### aria-multiline
+### aria-multiline?
 
-• `Optional` **aria-multiline**: `Booleanish`
+> `optional` **aria-multiline**: `Booleanish`
 
 Indicates whether a text box accepts multiple lines of input or only a single line.
 
 #### Inherited from
 
-HTMLFormProps.aria-multiline
+`HTMLFormProps.aria-multiline`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1792
+node\_modules/@types/react/index.d.ts:2718
 
-___
+***
 
-### aria-multiselectable
+### aria-multiselectable?
 
-• `Optional` **aria-multiselectable**: `Booleanish`
+> `optional` **aria-multiselectable**: `Booleanish`
 
 Indicates that the user may select more than one item from the current selectable descendants.
 
 #### Inherited from
 
-HTMLFormProps.aria-multiselectable
+`HTMLFormProps.aria-multiselectable`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1794
+node\_modules/@types/react/index.d.ts:2720
 
-___
+***
 
-### aria-orientation
+### aria-orientation?
 
-• `Optional` **aria-orientation**: ``"horizontal"`` \| ``"vertical"``
+> `optional` **aria-orientation**: `"horizontal"` \| `"vertical"`
 
 Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous.
 
 #### Inherited from
 
-HTMLFormProps.aria-orientation
+`HTMLFormProps.aria-orientation`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1796
+node\_modules/@types/react/index.d.ts:2722
 
-___
+***
 
-### aria-owns
+### aria-owns?
 
-• `Optional` **aria-owns**: `string`
+> `optional` **aria-owns**: `string`
 
 Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
 between DOM elements where the DOM hierarchy cannot be used to represent the relationship.
 
-**`See`**
+#### See
 
 aria-controls.
 
 #### Inherited from
 
-HTMLFormProps.aria-owns
+`HTMLFormProps.aria-owns`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1802
+node\_modules/@types/react/index.d.ts:2728
 
-___
+***
 
-### aria-placeholder
+### aria-placeholder?
 
-• `Optional` **aria-placeholder**: `string`
+> `optional` **aria-placeholder**: `string`
 
 Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.
 A hint could be a sample value or a brief description of the expected format.
 
 #### Inherited from
 
-HTMLFormProps.aria-placeholder
+`HTMLFormProps.aria-placeholder`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1807
+node\_modules/@types/react/index.d.ts:2733
 
-___
+***
 
-### aria-posinset
+### aria-posinset?
 
-• `Optional` **aria-posinset**: `number`
+> `optional` **aria-posinset**: `number`
 
 Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
 
-**`See`**
+#### See
 
 aria-setsize.
 
 #### Inherited from
 
-HTMLFormProps.aria-posinset
+`HTMLFormProps.aria-posinset`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1812
+node\_modules/@types/react/index.d.ts:2738
 
-___
+***
 
-### aria-pressed
+### aria-pressed?
 
-• `Optional` **aria-pressed**: `boolean` \| ``"true"`` \| ``"false"`` \| ``"mixed"``
+> `optional` **aria-pressed**: `boolean` \| `"true"` \| `"false"` \| `"mixed"`
 
 Indicates the current "pressed" state of toggle buttons.
 
-**`See`**
+#### See
 
  - aria-checked
  - aria-selected.
 
 #### Inherited from
 
-HTMLFormProps.aria-pressed
+`HTMLFormProps.aria-pressed`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1817
+node\_modules/@types/react/index.d.ts:2743
 
-___
+***
 
-### aria-readonly
+### aria-readonly?
 
-• `Optional` **aria-readonly**: `Booleanish`
+> `optional` **aria-readonly**: `Booleanish`
 
 Indicates that the element is not editable, but is otherwise operable.
 
-**`See`**
+#### See
 
 aria-disabled.
 
 #### Inherited from
 
-HTMLFormProps.aria-readonly
+`HTMLFormProps.aria-readonly`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1822
+node\_modules/@types/react/index.d.ts:2748
 
-___
+***
 
-### aria-relevant
+### aria-relevant?
 
-• `Optional` **aria-relevant**: ``"text"`` \| ``"additions"`` \| ``"additions removals"`` \| ``"additions text"`` \| ``"all"`` \| ``"removals"`` \| ``"removals additions"`` \| ``"removals text"`` \| ``"text additions"`` \| ``"text removals"``
+> `optional` **aria-relevant**: `"text"` \| `"additions"` \| `"additions removals"` \| `"additions text"` \| `"all"` \| `"removals"` \| `"removals additions"` \| `"removals text"` \| `"text additions"` \| `"text removals"`
 
 Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
 
-**`See`**
+#### See
 
 aria-atomic.
 
 #### Inherited from
 
-HTMLFormProps.aria-relevant
+`HTMLFormProps.aria-relevant`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1827
+node\_modules/@types/react/index.d.ts:2753
 
-___
+***
 
-### aria-required
+### aria-required?
 
-• `Optional` **aria-required**: `Booleanish`
+> `optional` **aria-required**: `Booleanish`
 
 Indicates that user input is required on the element before a form may be submitted.
 
 #### Inherited from
 
-HTMLFormProps.aria-required
+`HTMLFormProps.aria-required`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1840
+node\_modules/@types/react/index.d.ts:2766
 
-___
+***
 
-### aria-roledescription
+### aria-roledescription?
 
-• `Optional` **aria-roledescription**: `string`
+> `optional` **aria-roledescription**: `string`
 
 Defines a human-readable, author-localized description for the role of an element.
 
 #### Inherited from
 
-HTMLFormProps.aria-roledescription
+`HTMLFormProps.aria-roledescription`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1842
+node\_modules/@types/react/index.d.ts:2768
 
-___
+***
 
-### aria-rowcount
+### aria-rowcount?
 
-• `Optional` **aria-rowcount**: `number`
+> `optional` **aria-rowcount**: `number`
 
 Defines the total number of rows in a table, grid, or treegrid.
 
-**`See`**
+#### See
 
 aria-rowindex.
 
 #### Inherited from
 
-HTMLFormProps.aria-rowcount
+`HTMLFormProps.aria-rowcount`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1847
+node\_modules/@types/react/index.d.ts:2773
 
-___
+***
 
-### aria-rowindex
+### aria-rowindex?
 
-• `Optional` **aria-rowindex**: `number`
+> `optional` **aria-rowindex**: `number`
 
 Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.
 
-**`See`**
+#### See
 
  - aria-rowcount
  - aria-rowspan.
 
 #### Inherited from
 
-HTMLFormProps.aria-rowindex
+`HTMLFormProps.aria-rowindex`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1852
+node\_modules/@types/react/index.d.ts:2778
 
-___
+***
 
-### aria-rowindextext
+### aria-rowindextext?
 
-• `Optional` **aria-rowindextext**: `string`
+> `optional` **aria-rowindextext**: `string`
 
 Defines a human readable text alternative of aria-rowindex.
 
-**`See`**
+#### See
 
 aria-colindextext.
 
 #### Inherited from
 
-HTMLFormProps.aria-rowindextext
+`HTMLFormProps.aria-rowindextext`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1857
+node\_modules/@types/react/index.d.ts:2783
 
-___
+***
 
-### aria-rowspan
+### aria-rowspan?
 
-• `Optional` **aria-rowspan**: `number`
+> `optional` **aria-rowspan**: `number`
 
 Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.
 
-**`See`**
+#### See
 
  - aria-rowindex
  - aria-colspan.
 
 #### Inherited from
 
-HTMLFormProps.aria-rowspan
+`HTMLFormProps.aria-rowspan`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1862
+node\_modules/@types/react/index.d.ts:2788
 
-___
+***
 
-### aria-selected
+### aria-selected?
 
-• `Optional` **aria-selected**: `Booleanish`
+> `optional` **aria-selected**: `Booleanish`
 
 Indicates the current "selected" state of various widgets.
 
-**`See`**
+#### See
 
  - aria-checked
  - aria-pressed.
 
 #### Inherited from
 
-HTMLFormProps.aria-selected
+`HTMLFormProps.aria-selected`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1867
+node\_modules/@types/react/index.d.ts:2793
 
-___
+***
 
-### aria-setsize
+### aria-setsize?
 
-• `Optional` **aria-setsize**: `number`
+> `optional` **aria-setsize**: `number`
 
 Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
 
-**`See`**
+#### See
 
 aria-posinset.
 
 #### Inherited from
 
-HTMLFormProps.aria-setsize
+`HTMLFormProps.aria-setsize`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1872
+node\_modules/@types/react/index.d.ts:2798
 
-___
+***
 
-### aria-sort
+### aria-sort?
 
-• `Optional` **aria-sort**: ``"none"`` \| ``"ascending"`` \| ``"descending"`` \| ``"other"``
+> `optional` **aria-sort**: `"none"` \| `"ascending"` \| `"descending"` \| `"other"`
 
 Indicates if items in a table or grid are sorted in ascending or descending order.
 
 #### Inherited from
 
-HTMLFormProps.aria-sort
+`HTMLFormProps.aria-sort`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1874
+node\_modules/@types/react/index.d.ts:2800
 
-___
+***
 
-### aria-valuemax
+### aria-valuemax?
 
-• `Optional` **aria-valuemax**: `number`
+> `optional` **aria-valuemax**: `number`
 
 Defines the maximum allowed value for a range widget.
 
 #### Inherited from
 
-HTMLFormProps.aria-valuemax
+`HTMLFormProps.aria-valuemax`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1876
+node\_modules/@types/react/index.d.ts:2802
 
-___
+***
 
-### aria-valuemin
+### aria-valuemin?
 
-• `Optional` **aria-valuemin**: `number`
+> `optional` **aria-valuemin**: `number`
 
 Defines the minimum allowed value for a range widget.
 
 #### Inherited from
 
-HTMLFormProps.aria-valuemin
+`HTMLFormProps.aria-valuemin`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1878
+node\_modules/@types/react/index.d.ts:2804
 
-___
+***
 
-### aria-valuenow
+### aria-valuenow?
 
-• `Optional` **aria-valuenow**: `number`
+> `optional` **aria-valuenow**: `number`
 
 Defines the current value for a range widget.
 
-**`See`**
+#### See
 
 aria-valuetext.
 
 #### Inherited from
 
-HTMLFormProps.aria-valuenow
+`HTMLFormProps.aria-valuenow`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1883
+node\_modules/@types/react/index.d.ts:2809
 
-___
+***
 
-### aria-valuetext
+### aria-valuetext?
 
-• `Optional` **aria-valuetext**: `string`
+> `optional` **aria-valuetext**: `string`
 
 Defines the human readable text alternative of aria-valuenow for a range widget.
 
 #### Inherited from
 
-HTMLFormProps.aria-valuetext
+`HTMLFormProps.aria-valuetext`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1885
+node\_modules/@types/react/index.d.ts:2811
 
-___
+***
 
-### autoCapitalize
+### autoCapitalize?
 
-• `Optional` **autoCapitalize**: `string`
-
-#### Inherited from
-
-HTMLFormProps.autoCapitalize
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:2007
-
-___
-
-### autoComplete
-
-• `Optional` **autoComplete**: `string`
+> `optional` **autoCapitalize**: `string`
 
 #### Inherited from
 
-HTMLFormProps.autoComplete
+`HTMLFormProps.autoCapitalize`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2282
+node\_modules/@types/react/index.d.ts:2933
 
-___
+***
 
-### autoCorrect
+### autoComplete?
 
-• `Optional` **autoCorrect**: `string`
-
-#### Inherited from
-
-HTMLFormProps.autoCorrect
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:2008
-
-___
-
-### autoFocus
-
-• `Optional` **autoFocus**: `boolean`
+> `optional` **autoComplete**: `string`
 
 #### Inherited from
 
-HTMLFormProps.autoFocus
+`HTMLFormProps.autoComplete`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1970
+node\_modules/@types/react/index.d.ts:3208
 
-___
+***
 
-### autoSave
+### autoCorrect?
 
-• `Optional` **autoSave**: `string`
+> `optional` **autoCorrect**: `string`
 
 #### Inherited from
 
-HTMLFormProps.autoSave
+`HTMLFormProps.autoCorrect`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2009
+node\_modules/@types/react/index.d.ts:2934
 
-___
+***
+
+### autoFocus?
+
+> `optional` **autoFocus**: `boolean`
+
+#### Inherited from
+
+`HTMLFormProps.autoFocus`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2896
+
+***
+
+### autoSave?
+
+> `optional` **autoSave**: `string`
+
+#### Inherited from
+
+`HTMLFormProps.autoSave`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2935
+
+***
 
 ### children
 
-• **children**: `ReactNode` \| `ReactNode`[] \| (`props`: `RenderProps`\<`T`\>) => `ReactNode`
+> **children**: `ReactNode` \| `ReactNode`[] \| (`props`) => `ReactNode`
 
 The children of the provider may rather be any kind of React.js node(s),
 or a function which takes RenderProps<T>|RenderProps\<T\> and
@@ -1421,3022 +1139,2983 @@ returns a React.js node.
 
 #### Inherited from
 
-FormProviderProps.children
+`FormProviderProps.children`
 
-#### Defined in
+#### Source
 
 packages/core/dist/lib/Form.provider.d.ts:87
 
-___
+***
 
-### className
+### className?
 
-• `Optional` **className**: `string`
-
-#### Inherited from
-
-HTMLFormProps.className
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1971
-
-___
-
-### color
-
-• `Optional` **color**: `string`
+> `optional` **className**: `string`
 
 #### Inherited from
 
-HTMLFormProps.color
+`HTMLFormProps.className`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2010
+node\_modules/@types/react/index.d.ts:2897
 
-___
+***
 
-### content
+### color?
 
-• `Optional` **content**: `string`
-
-#### Inherited from
-
-HTMLFormProps.content
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1995
-
-___
-
-### contentEditable
-
-• `Optional` **contentEditable**: `Booleanish` \| ``"inherit"`` \| ``"plaintext-only"``
+> `optional` **color**: `string`
 
 #### Inherited from
 
-HTMLFormProps.contentEditable
+`HTMLFormProps.color`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1972
+node\_modules/@types/react/index.d.ts:2936
 
-___
+***
 
-### contextMenu
+### content?
 
-• `Optional` **contextMenu**: `string`
-
-#### Inherited from
-
-HTMLFormProps.contextMenu
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1973
-
-___
-
-### dangerouslySetInnerHTML
-
-• `Optional` **dangerouslySetInnerHTML**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `__html` | `string` \| `TrustedHTML` |
+> `optional` **content**: `string`
 
 #### Inherited from
 
-HTMLFormProps.dangerouslySetInnerHTML
+`HTMLFormProps.content`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1452
+node\_modules/@types/react/index.d.ts:2921
 
-___
+***
 
-### datatype
+### contentEditable?
 
-• `Optional` **datatype**: `string`
-
-#### Inherited from
-
-HTMLFormProps.datatype
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1996
-
-___
-
-### defaultChecked
-
-• `Optional` **defaultChecked**: `boolean`
+> `optional` **contentEditable**: `Booleanish` \| `"inherit"` \| `"plaintext-only"`
 
 #### Inherited from
 
-HTMLFormProps.defaultChecked
+`HTMLFormProps.contentEditable`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1963
+node\_modules/@types/react/index.d.ts:2898
 
-___
+***
 
-### defaultValue
+### contextMenu?
 
-• `Optional` **defaultValue**: `string` \| `number` \| readonly `string`[]
-
-#### Inherited from
-
-HTMLFormProps.defaultValue
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1964
-
-___
-
-### dir
-
-• `Optional` **dir**: `string`
+> `optional` **contextMenu**: `string`
 
 #### Inherited from
 
-HTMLFormProps.dir
+`HTMLFormProps.contextMenu`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1974
+node\_modules/@types/react/index.d.ts:2899
 
-___
+***
 
-### draggable
+### dangerouslySetInnerHTML?
 
-• `Optional` **draggable**: `Booleanish`
+> `optional` **dangerouslySetInnerHTML**: `object`
 
-#### Inherited from
+#### \_\_html
 
-HTMLFormProps.draggable
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1975
-
-___
-
-### encType
-
-• `Optional` **encType**: `string`
+> **\_\_html**: `string` \| `TrustedHTML`
 
 #### Inherited from
 
-HTMLFormProps.encType
+`HTMLFormProps.dangerouslySetInnerHTML`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2283
+node\_modules/@types/react/index.d.ts:2380
 
-___
+***
 
-### hidden
+### datatype?
 
-• `Optional` **hidden**: `boolean`
-
-#### Inherited from
-
-HTMLFormProps.hidden
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1976
-
-___
-
-### id
-
-• `Optional` **id**: `string`
+> `optional` **datatype**: `string`
 
 #### Inherited from
 
-HTMLFormProps.id
+`HTMLFormProps.datatype`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1977
+node\_modules/@types/react/index.d.ts:2922
 
-___
+***
 
-### inlist
+### defaultChecked?
 
-• `Optional` **inlist**: `any`
+> `optional` **defaultChecked**: `boolean`
 
 #### Inherited from
 
-HTMLFormProps.inlist
+`HTMLFormProps.defaultChecked`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1997
+node\_modules/@types/react/index.d.ts:2889
 
-___
+***
 
-### inputMode
+### defaultValue?
 
-• `Optional` **inputMode**: ``"search"`` \| ``"text"`` \| ``"none"`` \| ``"tel"`` \| ``"url"`` \| ``"email"`` \| ``"numeric"`` \| ``"decimal"``
+> `optional` **defaultValue**: `string` \| `number` \| readonly `string`[]
+
+#### Inherited from
+
+`HTMLFormProps.defaultValue`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2890
+
+***
+
+### dir?
+
+> `optional` **dir**: `string`
+
+#### Inherited from
+
+`HTMLFormProps.dir`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2900
+
+***
+
+### draggable?
+
+> `optional` **draggable**: `Booleanish`
+
+#### Inherited from
+
+`HTMLFormProps.draggable`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2901
+
+***
+
+### encType?
+
+> `optional` **encType**: `string`
+
+#### Inherited from
+
+`HTMLFormProps.encType`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:3209
+
+***
+
+### hidden?
+
+> `optional` **hidden**: `boolean`
+
+#### Inherited from
+
+`HTMLFormProps.hidden`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2902
+
+***
+
+### id?
+
+> `optional` **id**: `string`
+
+#### Inherited from
+
+`HTMLFormProps.id`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2903
+
+***
+
+### inlist?
+
+> `optional` **inlist**: `any`
+
+#### Inherited from
+
+`HTMLFormProps.inlist`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2923
+
+***
+
+### inputMode?
+
+> `optional` **inputMode**: `"search"` \| `"text"` \| `"none"` \| `"tel"` \| `"url"` \| `"email"` \| `"numeric"` \| `"decimal"`
 
 Hints at the type of data that might be entered by the user while editing the element or its contents
 
-**`See`**
+#### See
 
-https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
+[https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute](https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute)
 
 #### Inherited from
 
-HTMLFormProps.inputMode
+`HTMLFormProps.inputMode`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2025
+node\_modules/@types/react/index.d.ts:2951
 
-___
+***
 
-### is
+### is?
 
-• `Optional` **is**: `string`
+> `optional` **is**: `string`
 
 Specify that a standard HTML element should behave like a defined custom built-in element
 
-**`See`**
+#### See
 
-https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
+[https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is](https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is)
 
 #### Inherited from
 
-HTMLFormProps.is
+`HTMLFormProps.is`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2030
+node\_modules/@types/react/index.d.ts:2956
 
-___
+***
 
-### itemID
+### itemID?
 
-• `Optional` **itemID**: `string`
+> `optional` **itemID**: `string`
 
 #### Inherited from
 
-HTMLFormProps.itemID
+`HTMLFormProps.itemID`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2014
+node\_modules/@types/react/index.d.ts:2940
 
-___
+***
 
-### itemProp
+### itemProp?
 
-• `Optional` **itemProp**: `string`
+> `optional` **itemProp**: `string`
 
 #### Inherited from
 
-HTMLFormProps.itemProp
+`HTMLFormProps.itemProp`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2011
+node\_modules/@types/react/index.d.ts:2937
 
-___
+***
 
-### itemRef
+### itemRef?
 
-• `Optional` **itemRef**: `string`
+> `optional` **itemRef**: `string`
 
 #### Inherited from
 
-HTMLFormProps.itemRef
+`HTMLFormProps.itemRef`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2015
+node\_modules/@types/react/index.d.ts:2941
 
-___
+***
 
-### itemScope
+### itemScope?
 
-• `Optional` **itemScope**: `boolean`
+> `optional` **itemScope**: `boolean`
 
 #### Inherited from
 
-HTMLFormProps.itemScope
+`HTMLFormProps.itemScope`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2012
+node\_modules/@types/react/index.d.ts:2938
 
-___
+***
 
-### itemType
+### itemType?
 
-• `Optional` **itemType**: `string`
+> `optional` **itemType**: `string`
 
 #### Inherited from
 
-HTMLFormProps.itemType
+`HTMLFormProps.itemType`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2013
+node\_modules/@types/react/index.d.ts:2939
 
-___
+***
 
-### key
+### key?
 
-• `Optional` **key**: ``null`` \| `Key`
+> `optional` **key**: `null` \| `Key`
 
 #### Inherited from
 
-HTMLFormProps.key
+`HTMLFormProps.key`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:109
+node\_modules/@types/react/index.d.ts:261
 
-___
+***
 
-### lang
+### lang?
 
-• `Optional` **lang**: `string`
+> `optional` **lang**: `string`
 
 #### Inherited from
 
-HTMLFormProps.lang
+`HTMLFormProps.lang`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1978
+node\_modules/@types/react/index.d.ts:2904
 
-___
+***
 
-### method
+### method?
 
-• `Optional` **method**: `string`
+> `optional` **method**: `string`
 
 #### Inherited from
 
-HTMLFormProps.method
+`HTMLFormProps.method`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2284
+node\_modules/@types/react/index.d.ts:3210
 
-___
+***
 
-### name
+### name?
 
-• `Optional` **name**: `string`
+> `optional` **name**: `string`
 
 #### Inherited from
 
-HTMLFormProps.name
+`HTMLFormProps.name`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2285
+node\_modules/@types/react/index.d.ts:3211
 
-___
+***
 
-### noValidate
+### noValidate?
 
-• `Optional` **noValidate**: `boolean`
+> `optional` **noValidate**: `boolean`
 
 #### Inherited from
 
-HTMLFormProps.noValidate
+`HTMLFormProps.noValidate`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2286
+node\_modules/@types/react/index.d.ts:3212
 
-___
+***
 
-### nonce
+### nonce?
 
-• `Optional` **nonce**: `string`
+> `optional` **nonce**: `string`
 
 #### Inherited from
 
-HTMLFormProps.nonce
+`HTMLFormProps.nonce`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1979
+node\_modules/@types/react/index.d.ts:2905
 
-___
+***
 
-### onAbort
+### onAbort?
 
-• `Optional` **onAbort**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onAbort**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onAbort
+`HTMLFormProps.onAbort`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1511
+node\_modules/@types/react/index.d.ts:2439
 
-___
+***
 
-### onAbortCapture
+### onAbortCapture?
 
-• `Optional` **onAbortCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onAbortCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onAbortCapture
+`HTMLFormProps.onAbortCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1512
+node\_modules/@types/react/index.d.ts:2440
 
-___
+***
 
-### onAnimationEnd
+### onAnimationEnd?
 
-• `Optional` **onAnimationEnd**: `AnimationEventHandler`\<`HTMLFormElement`\>
+> `optional` **onAnimationEnd**: `AnimationEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onAnimationEnd
+`HTMLFormProps.onAnimationEnd`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1643
+node\_modules/@types/react/index.d.ts:2569
 
-___
+***
 
-### onAnimationEndCapture
+### onAnimationEndCapture?
 
-• `Optional` **onAnimationEndCapture**: `AnimationEventHandler`\<`HTMLFormElement`\>
+> `optional` **onAnimationEndCapture**: `AnimationEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onAnimationEndCapture
+`HTMLFormProps.onAnimationEndCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1644
+node\_modules/@types/react/index.d.ts:2570
 
-___
+***
 
-### onAnimationIteration
+### onAnimationIteration?
 
-• `Optional` **onAnimationIteration**: `AnimationEventHandler`\<`HTMLFormElement`\>
+> `optional` **onAnimationIteration**: `AnimationEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onAnimationIteration
+`HTMLFormProps.onAnimationIteration`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1645
+node\_modules/@types/react/index.d.ts:2571
 
-___
+***
 
-### onAnimationIterationCapture
+### onAnimationIterationCapture?
 
-• `Optional` **onAnimationIterationCapture**: `AnimationEventHandler`\<`HTMLFormElement`\>
+> `optional` **onAnimationIterationCapture**: `AnimationEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onAnimationIterationCapture
+`HTMLFormProps.onAnimationIterationCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1646
+node\_modules/@types/react/index.d.ts:2572
 
-___
+***
 
-### onAnimationStart
+### onAnimationStart?
 
-• `Optional` **onAnimationStart**: `AnimationEventHandler`\<`HTMLFormElement`\>
+> `optional` **onAnimationStart**: `AnimationEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onAnimationStart
+`HTMLFormProps.onAnimationStart`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1641
+node\_modules/@types/react/index.d.ts:2567
 
-___
+***
 
-### onAnimationStartCapture
+### onAnimationStartCapture?
 
-• `Optional` **onAnimationStartCapture**: `AnimationEventHandler`\<`HTMLFormElement`\>
+> `optional` **onAnimationStartCapture**: `AnimationEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onAnimationStartCapture
+`HTMLFormProps.onAnimationStartCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1642
+node\_modules/@types/react/index.d.ts:2568
 
-___
+***
 
-### onAuxClick
+### onAuxClick?
 
-• `Optional` **onAuxClick**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onAuxClick**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onAuxClick
+`HTMLFormProps.onAuxClick`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1559
+node\_modules/@types/react/index.d.ts:2487
 
-___
+***
 
-### onAuxClickCapture
+### onAuxClickCapture?
 
-• `Optional` **onAuxClickCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onAuxClickCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onAuxClickCapture
+`HTMLFormProps.onAuxClickCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1560
+node\_modules/@types/react/index.d.ts:2488
 
-___
+***
 
-### onBeforeInput
+### onBeforeInput?
 
-• `Optional` **onBeforeInput**: `FormEventHandler`\<`HTMLFormElement`\>
+> `optional` **onBeforeInput**: `FormEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onBeforeInput
+`HTMLFormProps.onBeforeInput`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1483
+node\_modules/@types/react/index.d.ts:2411
 
-___
+***
 
-### onBeforeInputCapture
+### onBeforeInputCapture?
 
-• `Optional` **onBeforeInputCapture**: `FormEventHandler`\<`HTMLFormElement`\>
+> `optional` **onBeforeInputCapture**: `FormEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onBeforeInputCapture
+`HTMLFormProps.onBeforeInputCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1484
+node\_modules/@types/react/index.d.ts:2412
 
-___
+***
 
-### onBlur
+### onBlur?
 
-• `Optional` **onBlur**: `FocusEventHandler`\<`HTMLFormElement`\>
+> `optional` **onBlur**: `FocusEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onBlur
+`HTMLFormProps.onBlur`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1477
+node\_modules/@types/react/index.d.ts:2405
 
-___
+***
 
-### onBlurCapture
+### onBlurCapture?
 
-• `Optional` **onBlurCapture**: `FocusEventHandler`\<`HTMLFormElement`\>
+> `optional` **onBlurCapture**: `FocusEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onBlurCapture
+`HTMLFormProps.onBlurCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1478
+node\_modules/@types/react/index.d.ts:2406
 
-___
+***
 
-### onCanPlay
+### onCanPlay?
 
-• `Optional` **onCanPlay**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCanPlay**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCanPlay
+`HTMLFormProps.onCanPlay`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1513
+node\_modules/@types/react/index.d.ts:2441
 
-___
+***
 
-### onCanPlayCapture
+### onCanPlayCapture?
 
-• `Optional` **onCanPlayCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCanPlayCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCanPlayCapture
+`HTMLFormProps.onCanPlayCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1514
+node\_modules/@types/react/index.d.ts:2442
 
-___
+***
 
-### onCanPlayThrough
+### onCanPlayThrough?
 
-• `Optional` **onCanPlayThrough**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCanPlayThrough**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCanPlayThrough
+`HTMLFormProps.onCanPlayThrough`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1515
+node\_modules/@types/react/index.d.ts:2443
 
-___
+***
 
-### onCanPlayThroughCapture
+### onCanPlayThroughCapture?
 
-• `Optional` **onCanPlayThroughCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCanPlayThroughCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCanPlayThroughCapture
+`HTMLFormProps.onCanPlayThroughCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1516
+node\_modules/@types/react/index.d.ts:2444
 
-___
+***
 
-### onChange
+### onChange?
 
-• `Optional` **onChange**: `FormEventHandler`\<`HTMLFormElement`\>
+> `optional` **onChange**: `FormEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onChange
+`HTMLFormProps.onChange`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1481
+node\_modules/@types/react/index.d.ts:2409
 
-___
+***
 
-### onChangeCapture
+### onChangeCapture?
 
-• `Optional` **onChangeCapture**: `FormEventHandler`\<`HTMLFormElement`\>
+> `optional` **onChangeCapture**: `FormEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onChangeCapture
+`HTMLFormProps.onChangeCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1482
+node\_modules/@types/react/index.d.ts:2410
 
-___
+***
 
-### onClick
+### onClick?
 
-• `Optional` **onClick**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onClick**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onClick
+`HTMLFormProps.onClick`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1561
+node\_modules/@types/react/index.d.ts:2489
 
-___
+***
 
-### onClickCapture
+### onClickCapture?
 
-• `Optional` **onClickCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onClickCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onClickCapture
+`HTMLFormProps.onClickCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1562
+node\_modules/@types/react/index.d.ts:2490
 
-___
+***
 
-### onCompositionEnd
+### onCompositionEnd?
 
-• `Optional` **onCompositionEnd**: `CompositionEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCompositionEnd**: `CompositionEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCompositionEnd
+`HTMLFormProps.onCompositionEnd`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1467
+node\_modules/@types/react/index.d.ts:2395
 
-___
+***
 
-### onCompositionEndCapture
+### onCompositionEndCapture?
 
-• `Optional` **onCompositionEndCapture**: `CompositionEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCompositionEndCapture**: `CompositionEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCompositionEndCapture
+`HTMLFormProps.onCompositionEndCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1468
+node\_modules/@types/react/index.d.ts:2396
 
-___
+***
 
-### onCompositionStart
+### onCompositionStart?
 
-• `Optional` **onCompositionStart**: `CompositionEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCompositionStart**: `CompositionEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCompositionStart
+`HTMLFormProps.onCompositionStart`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1469
+node\_modules/@types/react/index.d.ts:2397
 
-___
+***
 
-### onCompositionStartCapture
+### onCompositionStartCapture?
 
-• `Optional` **onCompositionStartCapture**: `CompositionEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCompositionStartCapture**: `CompositionEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCompositionStartCapture
+`HTMLFormProps.onCompositionStartCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1470
+node\_modules/@types/react/index.d.ts:2398
 
-___
+***
 
-### onCompositionUpdate
+### onCompositionUpdate?
 
-• `Optional` **onCompositionUpdate**: `CompositionEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCompositionUpdate**: `CompositionEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCompositionUpdate
+`HTMLFormProps.onCompositionUpdate`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1471
+node\_modules/@types/react/index.d.ts:2399
 
-___
+***
 
-### onCompositionUpdateCapture
+### onCompositionUpdateCapture?
 
-• `Optional` **onCompositionUpdateCapture**: `CompositionEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCompositionUpdateCapture**: `CompositionEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCompositionUpdateCapture
+`HTMLFormProps.onCompositionUpdateCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1472
+node\_modules/@types/react/index.d.ts:2400
 
-___
+***
 
-### onContextMenu
+### onContextMenu?
 
-• `Optional` **onContextMenu**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onContextMenu**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onContextMenu
+`HTMLFormProps.onContextMenu`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1563
+node\_modules/@types/react/index.d.ts:2491
 
-___
+***
 
-### onContextMenuCapture
+### onContextMenuCapture?
 
-• `Optional` **onContextMenuCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onContextMenuCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onContextMenuCapture
+`HTMLFormProps.onContextMenuCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1564
+node\_modules/@types/react/index.d.ts:2492
 
-___
+***
 
-### onCopy
+### onCopy?
 
-• `Optional` **onCopy**: `ClipboardEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCopy**: `ClipboardEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCopy
+`HTMLFormProps.onCopy`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1459
+node\_modules/@types/react/index.d.ts:2387
 
-___
+***
 
-### onCopyCapture
+### onCopyCapture?
 
-• `Optional` **onCopyCapture**: `ClipboardEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCopyCapture**: `ClipboardEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCopyCapture
+`HTMLFormProps.onCopyCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1460
+node\_modules/@types/react/index.d.ts:2388
 
-___
+***
 
-### onCut
+### onCut?
 
-• `Optional` **onCut**: `ClipboardEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCut**: `ClipboardEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCut
+`HTMLFormProps.onCut`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1461
+node\_modules/@types/react/index.d.ts:2389
 
-___
+***
 
-### onCutCapture
+### onCutCapture?
 
-• `Optional` **onCutCapture**: `ClipboardEventHandler`\<`HTMLFormElement`\>
+> `optional` **onCutCapture**: `ClipboardEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onCutCapture
+`HTMLFormProps.onCutCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1462
+node\_modules/@types/react/index.d.ts:2390
 
-___
+***
 
-### onDoubleClick
+### onDoubleClick?
 
-• `Optional` **onDoubleClick**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDoubleClick**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDoubleClick
+`HTMLFormProps.onDoubleClick`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1565
+node\_modules/@types/react/index.d.ts:2493
 
-___
+***
 
-### onDoubleClickCapture
+### onDoubleClickCapture?
 
-• `Optional` **onDoubleClickCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDoubleClickCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDoubleClickCapture
+`HTMLFormProps.onDoubleClickCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1566
+node\_modules/@types/react/index.d.ts:2494
 
-___
+***
 
-### onDrag
+### onDrag?
 
-• `Optional` **onDrag**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDrag**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDrag
+`HTMLFormProps.onDrag`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1567
+node\_modules/@types/react/index.d.ts:2495
 
-___
+***
 
-### onDragCapture
+### onDragCapture?
 
-• `Optional` **onDragCapture**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragCapture**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragCapture
+`HTMLFormProps.onDragCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1568
+node\_modules/@types/react/index.d.ts:2496
 
-___
+***
 
-### onDragEnd
+### onDragEnd?
 
-• `Optional` **onDragEnd**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragEnd**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragEnd
+`HTMLFormProps.onDragEnd`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1569
+node\_modules/@types/react/index.d.ts:2497
 
-___
+***
 
-### onDragEndCapture
+### onDragEndCapture?
 
-• `Optional` **onDragEndCapture**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragEndCapture**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragEndCapture
+`HTMLFormProps.onDragEndCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1570
+node\_modules/@types/react/index.d.ts:2498
 
-___
+***
 
-### onDragEnter
+### onDragEnter?
 
-• `Optional` **onDragEnter**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragEnter**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragEnter
+`HTMLFormProps.onDragEnter`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1571
+node\_modules/@types/react/index.d.ts:2499
 
-___
+***
 
-### onDragEnterCapture
+### onDragEnterCapture?
 
-• `Optional` **onDragEnterCapture**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragEnterCapture**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragEnterCapture
+`HTMLFormProps.onDragEnterCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1572
+node\_modules/@types/react/index.d.ts:2500
 
-___
+***
 
-### onDragExit
+### onDragExit?
 
-• `Optional` **onDragExit**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragExit**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragExit
+`HTMLFormProps.onDragExit`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1573
+node\_modules/@types/react/index.d.ts:2501
 
-___
+***
 
-### onDragExitCapture
+### onDragExitCapture?
 
-• `Optional` **onDragExitCapture**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragExitCapture**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragExitCapture
+`HTMLFormProps.onDragExitCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1574
+node\_modules/@types/react/index.d.ts:2502
 
-___
+***
 
-### onDragLeave
+### onDragLeave?
 
-• `Optional` **onDragLeave**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragLeave**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragLeave
+`HTMLFormProps.onDragLeave`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1575
+node\_modules/@types/react/index.d.ts:2503
 
-___
+***
 
-### onDragLeaveCapture
+### onDragLeaveCapture?
 
-• `Optional` **onDragLeaveCapture**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragLeaveCapture**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragLeaveCapture
+`HTMLFormProps.onDragLeaveCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1576
+node\_modules/@types/react/index.d.ts:2504
 
-___
+***
 
-### onDragOver
+### onDragOver?
 
-• `Optional` **onDragOver**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragOver**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragOver
+`HTMLFormProps.onDragOver`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1577
+node\_modules/@types/react/index.d.ts:2505
 
-___
+***
 
-### onDragOverCapture
+### onDragOverCapture?
 
-• `Optional` **onDragOverCapture**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragOverCapture**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragOverCapture
+`HTMLFormProps.onDragOverCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1578
+node\_modules/@types/react/index.d.ts:2506
 
-___
+***
 
-### onDragStart
+### onDragStart?
 
-• `Optional` **onDragStart**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragStart**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragStart
+`HTMLFormProps.onDragStart`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1579
+node\_modules/@types/react/index.d.ts:2507
 
-___
+***
 
-### onDragStartCapture
+### onDragStartCapture?
 
-• `Optional` **onDragStartCapture**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDragStartCapture**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDragStartCapture
+`HTMLFormProps.onDragStartCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1580
+node\_modules/@types/react/index.d.ts:2508
 
-___
+***
 
-### onDrop
+### onDrop?
 
-• `Optional` **onDrop**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDrop**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDrop
+`HTMLFormProps.onDrop`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1581
+node\_modules/@types/react/index.d.ts:2509
 
-___
+***
 
-### onDropCapture
+### onDropCapture?
 
-• `Optional` **onDropCapture**: `DragEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDropCapture**: `DragEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDropCapture
+`HTMLFormProps.onDropCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1582
+node\_modules/@types/react/index.d.ts:2510
 
-___
+***
 
-### onDurationChange
+### onDurationChange?
 
-• `Optional` **onDurationChange**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDurationChange**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDurationChange
+`HTMLFormProps.onDurationChange`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1517
+node\_modules/@types/react/index.d.ts:2445
 
-___
+***
 
-### onDurationChangeCapture
+### onDurationChangeCapture?
 
-• `Optional` **onDurationChangeCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onDurationChangeCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onDurationChangeCapture
+`HTMLFormProps.onDurationChangeCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1518
+node\_modules/@types/react/index.d.ts:2446
 
-___
+***
 
-### onEmptied
+### onEmptied?
 
-• `Optional` **onEmptied**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onEmptied**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onEmptied
+`HTMLFormProps.onEmptied`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1519
+node\_modules/@types/react/index.d.ts:2447
 
-___
+***
 
-### onEmptiedCapture
+### onEmptiedCapture?
 
-• `Optional` **onEmptiedCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onEmptiedCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onEmptiedCapture
+`HTMLFormProps.onEmptiedCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1520
+node\_modules/@types/react/index.d.ts:2448
 
-___
+***
 
-### onEncrypted
+### onEncrypted?
 
-• `Optional` **onEncrypted**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onEncrypted**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onEncrypted
+`HTMLFormProps.onEncrypted`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1521
+node\_modules/@types/react/index.d.ts:2449
 
-___
+***
 
-### onEncryptedCapture
+### onEncryptedCapture?
 
-• `Optional` **onEncryptedCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onEncryptedCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onEncryptedCapture
+`HTMLFormProps.onEncryptedCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1522
+node\_modules/@types/react/index.d.ts:2450
 
-___
+***
 
-### onEnded
+### onEnded?
 
-• `Optional` **onEnded**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onEnded**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onEnded
+`HTMLFormProps.onEnded`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1523
+node\_modules/@types/react/index.d.ts:2451
 
-___
+***
 
-### onEndedCapture
+### onEndedCapture?
 
-• `Optional` **onEndedCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onEndedCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onEndedCapture
+`HTMLFormProps.onEndedCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1524
+node\_modules/@types/react/index.d.ts:2452
 
-___
+***
 
-### onError
+### onError?
 
-• `Optional` **onError**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onError**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onError
+`HTMLFormProps.onError`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1497
+node\_modules/@types/react/index.d.ts:2425
 
-___
+***
 
-### onErrorCapture
+### onErrorCapture?
 
-• `Optional` **onErrorCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onErrorCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onErrorCapture
+`HTMLFormProps.onErrorCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1498
+node\_modules/@types/react/index.d.ts:2426
 
-___
+***
 
-### onFocus
+### onFocus?
 
-• `Optional` **onFocus**: `FocusEventHandler`\<`HTMLFormElement`\>
+> `optional` **onFocus**: `FocusEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onFocus
+`HTMLFormProps.onFocus`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1475
+node\_modules/@types/react/index.d.ts:2403
 
-___
+***
 
-### onFocusCapture
+### onFocusCapture?
 
-• `Optional` **onFocusCapture**: `FocusEventHandler`\<`HTMLFormElement`\>
+> `optional` **onFocusCapture**: `FocusEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onFocusCapture
+`HTMLFormProps.onFocusCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1476
+node\_modules/@types/react/index.d.ts:2404
 
-___
+***
 
-### onGotPointerCapture
+### onGotPointerCapture?
 
-• `Optional` **onGotPointerCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onGotPointerCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onGotPointerCapture
+`HTMLFormProps.onGotPointerCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1627
+node\_modules/@types/react/index.d.ts:2553
 
-___
+***
 
-### onGotPointerCaptureCapture
+### onGotPointerCaptureCapture?
 
-• `Optional` **onGotPointerCaptureCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onGotPointerCaptureCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onGotPointerCaptureCapture
+`HTMLFormProps.onGotPointerCaptureCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1628
+node\_modules/@types/react/index.d.ts:2554
 
-___
+***
 
-### onInput
+### onInput?
 
-• `Optional` **onInput**: `FormEventHandler`\<`HTMLFormElement`\>
+> `optional` **onInput**: `FormEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onInput
+`HTMLFormProps.onInput`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1485
+node\_modules/@types/react/index.d.ts:2413
 
-___
+***
 
-### onInputCapture
+### onInputCapture?
 
-• `Optional` **onInputCapture**: `FormEventHandler`\<`HTMLFormElement`\>
+> `optional` **onInputCapture**: `FormEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onInputCapture
+`HTMLFormProps.onInputCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1486
+node\_modules/@types/react/index.d.ts:2414
 
-___
+***
 
-### onInvalid
+### onInvalid?
 
-• `Optional` **onInvalid**: `FormEventHandler`\<`HTMLFormElement`\>
+> `optional` **onInvalid**: `FormEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onInvalid
+`HTMLFormProps.onInvalid`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1491
+node\_modules/@types/react/index.d.ts:2419
 
-___
+***
 
-### onInvalidCapture
+### onInvalidCapture?
 
-• `Optional` **onInvalidCapture**: `FormEventHandler`\<`HTMLFormElement`\>
+> `optional` **onInvalidCapture**: `FormEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onInvalidCapture
+`HTMLFormProps.onInvalidCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1492
+node\_modules/@types/react/index.d.ts:2420
 
-___
+***
 
-### onKeyDown
+### onKeyDown?
 
-• `Optional` **onKeyDown**: `KeyboardEventHandler`\<`HTMLFormElement`\>
+> `optional` **onKeyDown**: `KeyboardEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onKeyDown
+`HTMLFormProps.onKeyDown`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1501
+node\_modules/@types/react/index.d.ts:2429
 
-___
+***
 
-### onKeyDownCapture
+### onKeyDownCapture?
 
-• `Optional` **onKeyDownCapture**: `KeyboardEventHandler`\<`HTMLFormElement`\>
+> `optional` **onKeyDownCapture**: `KeyboardEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onKeyDownCapture
+`HTMLFormProps.onKeyDownCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1502
+node\_modules/@types/react/index.d.ts:2430
 
-___
+***
 
-### onKeyPress
+### ~~onKeyPress?~~
 
-• `Optional` **onKeyPress**: `KeyboardEventHandler`\<`HTMLFormElement`\>
+> `optional` **onKeyPress**: `KeyboardEventHandler`\<`HTMLFormElement`\>
 
-**`Deprecated`**
+#### Deprecated
 
 #### Inherited from
 
-HTMLFormProps.onKeyPress
+`HTMLFormProps.onKeyPress`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1504
+node\_modules/@types/react/index.d.ts:2432
 
-___
+***
 
-### onKeyPressCapture
+### ~~onKeyPressCapture?~~
 
-• `Optional` **onKeyPressCapture**: `KeyboardEventHandler`\<`HTMLFormElement`\>
+> `optional` **onKeyPressCapture**: `KeyboardEventHandler`\<`HTMLFormElement`\>
 
-**`Deprecated`**
+#### Deprecated
 
 #### Inherited from
 
-HTMLFormProps.onKeyPressCapture
+`HTMLFormProps.onKeyPressCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1506
+node\_modules/@types/react/index.d.ts:2434
 
-___
+***
 
-### onKeyUp
+### onKeyUp?
 
-• `Optional` **onKeyUp**: `KeyboardEventHandler`\<`HTMLFormElement`\>
+> `optional` **onKeyUp**: `KeyboardEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onKeyUp
+`HTMLFormProps.onKeyUp`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1507
+node\_modules/@types/react/index.d.ts:2435
 
-___
+***
 
-### onKeyUpCapture
+### onKeyUpCapture?
 
-• `Optional` **onKeyUpCapture**: `KeyboardEventHandler`\<`HTMLFormElement`\>
+> `optional` **onKeyUpCapture**: `KeyboardEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onKeyUpCapture
+`HTMLFormProps.onKeyUpCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1508
+node\_modules/@types/react/index.d.ts:2436
 
-___
+***
 
-### onLoad
+### onLoad?
 
-• `Optional` **onLoad**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onLoad**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onLoad
+`HTMLFormProps.onLoad`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1495
+node\_modules/@types/react/index.d.ts:2423
 
-___
+***
 
-### onLoadCapture
+### onLoadCapture?
 
-• `Optional` **onLoadCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onLoadCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onLoadCapture
+`HTMLFormProps.onLoadCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1496
+node\_modules/@types/react/index.d.ts:2424
 
-___
+***
 
-### onLoadStart
+### onLoadStart?
 
-• `Optional` **onLoadStart**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onLoadStart**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onLoadStart
+`HTMLFormProps.onLoadStart`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1529
+node\_modules/@types/react/index.d.ts:2457
 
-___
+***
 
-### onLoadStartCapture
+### onLoadStartCapture?
 
-• `Optional` **onLoadStartCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onLoadStartCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onLoadStartCapture
+`HTMLFormProps.onLoadStartCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1530
+node\_modules/@types/react/index.d.ts:2458
 
-___
+***
 
-### onLoadedData
+### onLoadedData?
 
-• `Optional` **onLoadedData**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onLoadedData**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onLoadedData
+`HTMLFormProps.onLoadedData`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1525
+node\_modules/@types/react/index.d.ts:2453
 
-___
+***
 
-### onLoadedDataCapture
+### onLoadedDataCapture?
 
-• `Optional` **onLoadedDataCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onLoadedDataCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onLoadedDataCapture
+`HTMLFormProps.onLoadedDataCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1526
+node\_modules/@types/react/index.d.ts:2454
 
-___
+***
 
-### onLoadedMetadata
+### onLoadedMetadata?
 
-• `Optional` **onLoadedMetadata**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onLoadedMetadata**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onLoadedMetadata
+`HTMLFormProps.onLoadedMetadata`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1527
+node\_modules/@types/react/index.d.ts:2455
 
-___
+***
 
-### onLoadedMetadataCapture
+### onLoadedMetadataCapture?
 
-• `Optional` **onLoadedMetadataCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onLoadedMetadataCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onLoadedMetadataCapture
+`HTMLFormProps.onLoadedMetadataCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1528
+node\_modules/@types/react/index.d.ts:2456
 
-___
+***
 
-### onLostPointerCapture
+### onLostPointerCapture?
 
-• `Optional` **onLostPointerCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onLostPointerCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onLostPointerCapture
+`HTMLFormProps.onLostPointerCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1629
+node\_modules/@types/react/index.d.ts:2555
 
-___
+***
 
-### onLostPointerCaptureCapture
+### onLostPointerCaptureCapture?
 
-• `Optional` **onLostPointerCaptureCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onLostPointerCaptureCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onLostPointerCaptureCapture
+`HTMLFormProps.onLostPointerCaptureCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1630
+node\_modules/@types/react/index.d.ts:2556
 
-___
+***
 
-### onMouseDown
+### onMouseDown?
 
-• `Optional` **onMouseDown**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onMouseDown**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onMouseDown
+`HTMLFormProps.onMouseDown`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1583
+node\_modules/@types/react/index.d.ts:2511
 
-___
+***
 
-### onMouseDownCapture
+### onMouseDownCapture?
 
-• `Optional` **onMouseDownCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onMouseDownCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onMouseDownCapture
+`HTMLFormProps.onMouseDownCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1584
+node\_modules/@types/react/index.d.ts:2512
 
-___
+***
 
-### onMouseEnter
+### onMouseEnter?
 
-• `Optional` **onMouseEnter**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onMouseEnter**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onMouseEnter
+`HTMLFormProps.onMouseEnter`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1585
+node\_modules/@types/react/index.d.ts:2513
 
-___
+***
 
-### onMouseLeave
+### onMouseLeave?
 
-• `Optional` **onMouseLeave**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onMouseLeave**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onMouseLeave
+`HTMLFormProps.onMouseLeave`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1586
+node\_modules/@types/react/index.d.ts:2514
 
-___
+***
 
-### onMouseMove
+### onMouseMove?
 
-• `Optional` **onMouseMove**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onMouseMove**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onMouseMove
+`HTMLFormProps.onMouseMove`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1587
+node\_modules/@types/react/index.d.ts:2515
 
-___
+***
 
-### onMouseMoveCapture
+### onMouseMoveCapture?
 
-• `Optional` **onMouseMoveCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onMouseMoveCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onMouseMoveCapture
+`HTMLFormProps.onMouseMoveCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1588
+node\_modules/@types/react/index.d.ts:2516
 
-___
+***
 
-### onMouseOut
+### onMouseOut?
 
-• `Optional` **onMouseOut**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onMouseOut**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onMouseOut
+`HTMLFormProps.onMouseOut`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1589
+node\_modules/@types/react/index.d.ts:2517
 
-___
+***
 
-### onMouseOutCapture
+### onMouseOutCapture?
 
-• `Optional` **onMouseOutCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onMouseOutCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onMouseOutCapture
+`HTMLFormProps.onMouseOutCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1590
+node\_modules/@types/react/index.d.ts:2518
 
-___
+***
 
-### onMouseOver
+### onMouseOver?
 
-• `Optional` **onMouseOver**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onMouseOver**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onMouseOver
+`HTMLFormProps.onMouseOver`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1591
+node\_modules/@types/react/index.d.ts:2519
 
-___
+***
 
-### onMouseOverCapture
+### onMouseOverCapture?
 
-• `Optional` **onMouseOverCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onMouseOverCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onMouseOverCapture
+`HTMLFormProps.onMouseOverCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1592
+node\_modules/@types/react/index.d.ts:2520
 
-___
+***
 
-### onMouseUp
+### onMouseUp?
 
-• `Optional` **onMouseUp**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onMouseUp**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onMouseUp
+`HTMLFormProps.onMouseUp`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1593
+node\_modules/@types/react/index.d.ts:2521
 
-___
+***
 
-### onMouseUpCapture
+### onMouseUpCapture?
 
-• `Optional` **onMouseUpCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
+> `optional` **onMouseUpCapture**: `MouseEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onMouseUpCapture
+`HTMLFormProps.onMouseUpCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1594
+node\_modules/@types/react/index.d.ts:2522
 
-___
+***
 
-### onPaste
+### onPaste?
 
-• `Optional` **onPaste**: `ClipboardEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPaste**: `ClipboardEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPaste
+`HTMLFormProps.onPaste`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1463
+node\_modules/@types/react/index.d.ts:2391
 
-___
+***
 
-### onPasteCapture
+### onPasteCapture?
 
-• `Optional` **onPasteCapture**: `ClipboardEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPasteCapture**: `ClipboardEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPasteCapture
+`HTMLFormProps.onPasteCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1464
+node\_modules/@types/react/index.d.ts:2392
 
-___
+***
 
-### onPause
+### onPause?
 
-• `Optional` **onPause**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPause**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPause
+`HTMLFormProps.onPause`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1531
+node\_modules/@types/react/index.d.ts:2459
 
-___
+***
 
-### onPauseCapture
+### onPauseCapture?
 
-• `Optional` **onPauseCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPauseCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPauseCapture
+`HTMLFormProps.onPauseCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1532
+node\_modules/@types/react/index.d.ts:2460
 
-___
+***
 
-### onPlay
+### onPlay?
 
-• `Optional` **onPlay**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPlay**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPlay
+`HTMLFormProps.onPlay`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1533
+node\_modules/@types/react/index.d.ts:2461
 
-___
+***
 
-### onPlayCapture
+### onPlayCapture?
 
-• `Optional` **onPlayCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPlayCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPlayCapture
+`HTMLFormProps.onPlayCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1534
+node\_modules/@types/react/index.d.ts:2462
 
-___
+***
 
-### onPlaying
+### onPlaying?
 
-• `Optional` **onPlaying**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPlaying**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPlaying
+`HTMLFormProps.onPlaying`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1535
+node\_modules/@types/react/index.d.ts:2463
 
-___
+***
 
-### onPlayingCapture
+### onPlayingCapture?
 
-• `Optional` **onPlayingCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPlayingCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPlayingCapture
+`HTMLFormProps.onPlayingCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1536
+node\_modules/@types/react/index.d.ts:2464
 
-___
+***
 
-### onPointerCancel
+### onPointerCancel?
 
-• `Optional` **onPointerCancel**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerCancel**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerCancel
+`HTMLFormProps.onPointerCancel`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1617
+node\_modules/@types/react/index.d.ts:2545
 
-___
+***
 
-### onPointerCancelCapture
+### onPointerCancelCapture?
 
-• `Optional` **onPointerCancelCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerCancelCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerCancelCapture
+`HTMLFormProps.onPointerCancelCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1618
+node\_modules/@types/react/index.d.ts:2546
 
-___
+***
 
-### onPointerDown
+### onPointerDown?
 
-• `Optional` **onPointerDown**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerDown**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerDown
+`HTMLFormProps.onPointerDown`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1611
+node\_modules/@types/react/index.d.ts:2539
 
-___
+***
 
-### onPointerDownCapture
+### onPointerDownCapture?
 
-• `Optional` **onPointerDownCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerDownCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerDownCapture
+`HTMLFormProps.onPointerDownCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1612
+node\_modules/@types/react/index.d.ts:2540
 
-___
+***
 
-### onPointerEnter
+### onPointerEnter?
 
-• `Optional` **onPointerEnter**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerEnter**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerEnter
+`HTMLFormProps.onPointerEnter`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1619
+node\_modules/@types/react/index.d.ts:2547
 
-___
+***
 
-### onPointerEnterCapture
+### onPointerLeave?
 
-• `Optional` **onPointerEnterCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerLeave**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerEnterCapture
+`HTMLFormProps.onPointerLeave`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1620
+node\_modules/@types/react/index.d.ts:2548
 
-___
+***
 
-### onPointerLeave
+### onPointerMove?
 
-• `Optional` **onPointerLeave**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerMove**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerLeave
+`HTMLFormProps.onPointerMove`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1621
+node\_modules/@types/react/index.d.ts:2541
 
-___
+***
 
-### onPointerLeaveCapture
+### onPointerMoveCapture?
 
-• `Optional` **onPointerLeaveCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerMoveCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerLeaveCapture
+`HTMLFormProps.onPointerMoveCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1622
+node\_modules/@types/react/index.d.ts:2542
 
-___
+***
 
-### onPointerMove
+### onPointerOut?
 
-• `Optional` **onPointerMove**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerOut**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerMove
+`HTMLFormProps.onPointerOut`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1613
+node\_modules/@types/react/index.d.ts:2551
 
-___
+***
 
-### onPointerMoveCapture
+### onPointerOutCapture?
 
-• `Optional` **onPointerMoveCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerOutCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerMoveCapture
+`HTMLFormProps.onPointerOutCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1614
+node\_modules/@types/react/index.d.ts:2552
 
-___
+***
 
-### onPointerOut
+### onPointerOver?
 
-• `Optional` **onPointerOut**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerOver**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerOut
+`HTMLFormProps.onPointerOver`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1625
+node\_modules/@types/react/index.d.ts:2549
 
-___
+***
 
-### onPointerOutCapture
+### onPointerOverCapture?
 
-• `Optional` **onPointerOutCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerOverCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerOutCapture
+`HTMLFormProps.onPointerOverCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1626
+node\_modules/@types/react/index.d.ts:2550
 
-___
+***
 
-### onPointerOver
+### onPointerUp?
 
-• `Optional` **onPointerOver**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerUp**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerOver
+`HTMLFormProps.onPointerUp`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1623
+node\_modules/@types/react/index.d.ts:2543
 
-___
+***
 
-### onPointerOverCapture
+### onPointerUpCapture?
 
-• `Optional` **onPointerOverCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onPointerUpCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerOverCapture
+`HTMLFormProps.onPointerUpCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1624
+node\_modules/@types/react/index.d.ts:2544
 
-___
+***
 
-### onPointerUp
+### onProgress?
 
-• `Optional` **onPointerUp**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onProgress**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerUp
+`HTMLFormProps.onProgress`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1615
+node\_modules/@types/react/index.d.ts:2465
 
-___
+***
 
-### onPointerUpCapture
+### onProgressCapture?
 
-• `Optional` **onPointerUpCapture**: `PointerEventHandler`\<`HTMLFormElement`\>
+> `optional` **onProgressCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onPointerUpCapture
+`HTMLFormProps.onProgressCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1616
+node\_modules/@types/react/index.d.ts:2466
 
-___
+***
 
-### onProgress
+### onRateChange?
 
-• `Optional` **onProgress**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onRateChange**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onProgress
+`HTMLFormProps.onRateChange`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1537
+node\_modules/@types/react/index.d.ts:2467
 
-___
+***
 
-### onProgressCapture
+### onRateChangeCapture?
 
-• `Optional` **onProgressCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onRateChangeCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onProgressCapture
+`HTMLFormProps.onRateChangeCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1538
+node\_modules/@types/react/index.d.ts:2468
 
-___
+***
 
-### onRateChange
+### onReset?
 
-• `Optional` **onRateChange**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onReset**: `FormEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onRateChange
+`HTMLFormProps.onReset`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1539
+node\_modules/@types/react/index.d.ts:2415
 
-___
+***
 
-### onRateChangeCapture
+### onResetCapture?
 
-• `Optional` **onRateChangeCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onResetCapture**: `FormEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onRateChangeCapture
+`HTMLFormProps.onResetCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1540
+node\_modules/@types/react/index.d.ts:2416
 
-___
+***
 
-### onReset
+### onResize?
 
-• `Optional` **onReset**: `FormEventHandler`\<`HTMLFormElement`\>
+> `optional` **onResize**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onReset
+`HTMLFormProps.onResize`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1487
+node\_modules/@types/react/index.d.ts:2469
 
-___
+***
 
-### onResetCapture
+### onResizeCapture?
 
-• `Optional` **onResetCapture**: `FormEventHandler`\<`HTMLFormElement`\>
+> `optional` **onResizeCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onResetCapture
+`HTMLFormProps.onResizeCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1488
+node\_modules/@types/react/index.d.ts:2470
 
-___
+***
 
-### onResize
+### onScroll?
 
-• `Optional` **onResize**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onScroll**: `UIEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onResize
+`HTMLFormProps.onScroll`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1541
+node\_modules/@types/react/index.d.ts:2559
 
-___
+***
 
-### onResizeCapture
+### onScrollCapture?
 
-• `Optional` **onResizeCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onScrollCapture**: `UIEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onResizeCapture
+`HTMLFormProps.onScrollCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1542
+node\_modules/@types/react/index.d.ts:2560
 
-___
+***
 
-### onScroll
+### onSeeked?
 
-• `Optional` **onScroll**: `UIEventHandler`\<`HTMLFormElement`\>
+> `optional` **onSeeked**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onScroll
+`HTMLFormProps.onSeeked`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1633
+node\_modules/@types/react/index.d.ts:2471
 
-___
+***
 
-### onScrollCapture
+### onSeekedCapture?
 
-• `Optional` **onScrollCapture**: `UIEventHandler`\<`HTMLFormElement`\>
+> `optional` **onSeekedCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onScrollCapture
+`HTMLFormProps.onSeekedCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1634
+node\_modules/@types/react/index.d.ts:2472
 
-___
+***
 
-### onSeeked
+### onSeeking?
 
-• `Optional` **onSeeked**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onSeeking**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onSeeked
+`HTMLFormProps.onSeeking`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1543
+node\_modules/@types/react/index.d.ts:2473
 
-___
+***
 
-### onSeekedCapture
+### onSeekingCapture?
 
-• `Optional` **onSeekedCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onSeekingCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onSeekedCapture
+`HTMLFormProps.onSeekingCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1544
+node\_modules/@types/react/index.d.ts:2474
 
-___
+***
 
-### onSeeking
+### onSelect?
 
-• `Optional` **onSeeking**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onSelect**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onSeeking
+`HTMLFormProps.onSelect`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1545
+node\_modules/@types/react/index.d.ts:2525
 
-___
+***
 
-### onSeekingCapture
+### onSelectCapture?
 
-• `Optional` **onSeekingCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onSelectCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onSeekingCapture
+`HTMLFormProps.onSelectCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1546
+node\_modules/@types/react/index.d.ts:2526
 
-___
+***
 
-### onSelect
+### onStalled?
 
-• `Optional` **onSelect**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onStalled**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onSelect
+`HTMLFormProps.onStalled`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1597
+node\_modules/@types/react/index.d.ts:2475
 
-___
+***
 
-### onSelectCapture
+### onStalledCapture?
 
-• `Optional` **onSelectCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onStalledCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onSelectCapture
+`HTMLFormProps.onStalledCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1598
+node\_modules/@types/react/index.d.ts:2476
 
-___
+***
 
-### onStalled
+### onSubmit()
 
-• `Optional` **onStalled**: `ReactEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onStalled
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1547
-
-___
-
-### onStalledCapture
-
-• `Optional` **onStalledCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onStalledCapture
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1548
-
-___
-
-### onSubmit
-
-• **onSubmit**: (`values`: `T`) => `void`
+> **onSubmit**: (`values`) => `void`
 
 The function to be called uppon form submision.
 
-**`Param`**
+#### Parameters
+
+• **values**: `T`
 
 the validated values `T` of the form
 
-#### Type declaration
-
-▸ (`values`): `void`
-
-The function to be called uppon form submision.
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `values` | `T` | the validated values `T` of the form |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-FormProviderProps.onSubmit
+`FormProviderProps.onSubmit`
 
-#### Defined in
+#### Source
 
 packages/core/dist/lib/Form.provider.d.ts:93
 
-___
+***
 
-### onSubmitCapture
+### onSubmitCapture?
 
-• `Optional` **onSubmitCapture**: `FormEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onSubmitCapture
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1490
-
-___
-
-### onSuspend
-
-• `Optional` **onSuspend**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onSubmitCapture**: `FormEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onSuspend
+`HTMLFormProps.onSubmitCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1549
+node\_modules/@types/react/index.d.ts:2418
 
-___
+***
 
-### onSuspendCapture
+### onSuspend?
 
-• `Optional` **onSuspendCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onSuspendCapture
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1550
-
-___
-
-### onTimeUpdate
-
-• `Optional` **onTimeUpdate**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onSuspend**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onTimeUpdate
+`HTMLFormProps.onSuspend`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1551
+node\_modules/@types/react/index.d.ts:2477
 
-___
+***
 
-### onTimeUpdateCapture
+### onSuspendCapture?
 
-• `Optional` **onTimeUpdateCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onTimeUpdateCapture
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1552
-
-___
-
-### onTouchCancel
-
-• `Optional` **onTouchCancel**: `TouchEventHandler`\<`HTMLFormElement`\>
+> `optional` **onSuspendCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onTouchCancel
+`HTMLFormProps.onSuspendCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1601
+node\_modules/@types/react/index.d.ts:2478
 
-___
+***
 
-### onTouchCancelCapture
+### onTimeUpdate?
 
-• `Optional` **onTouchCancelCapture**: `TouchEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onTouchCancelCapture
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1602
-
-___
-
-### onTouchEnd
-
-• `Optional` **onTouchEnd**: `TouchEventHandler`\<`HTMLFormElement`\>
+> `optional` **onTimeUpdate**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onTouchEnd
+`HTMLFormProps.onTimeUpdate`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1603
+node\_modules/@types/react/index.d.ts:2479
 
-___
+***
 
-### onTouchEndCapture
+### onTimeUpdateCapture?
 
-• `Optional` **onTouchEndCapture**: `TouchEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onTouchEndCapture
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1604
-
-___
-
-### onTouchMove
-
-• `Optional` **onTouchMove**: `TouchEventHandler`\<`HTMLFormElement`\>
+> `optional` **onTimeUpdateCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onTouchMove
+`HTMLFormProps.onTimeUpdateCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1605
+node\_modules/@types/react/index.d.ts:2480
 
-___
+***
 
-### onTouchMoveCapture
+### onTouchCancel?
 
-• `Optional` **onTouchMoveCapture**: `TouchEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onTouchMoveCapture
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1606
-
-___
-
-### onTouchStart
-
-• `Optional` **onTouchStart**: `TouchEventHandler`\<`HTMLFormElement`\>
+> `optional` **onTouchCancel**: `TouchEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onTouchStart
+`HTMLFormProps.onTouchCancel`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1607
+node\_modules/@types/react/index.d.ts:2529
 
-___
+***
 
-### onTouchStartCapture
+### onTouchCancelCapture?
 
-• `Optional` **onTouchStartCapture**: `TouchEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onTouchStartCapture
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1608
-
-___
-
-### onTransitionEnd
-
-• `Optional` **onTransitionEnd**: `TransitionEventHandler`\<`HTMLFormElement`\>
+> `optional` **onTouchCancelCapture**: `TouchEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onTransitionEnd
+`HTMLFormProps.onTouchCancelCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1649
+node\_modules/@types/react/index.d.ts:2530
 
-___
+***
 
-### onTransitionEndCapture
+### onTouchEnd?
 
-• `Optional` **onTransitionEndCapture**: `TransitionEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onTransitionEndCapture
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1650
-
-___
-
-### onVolumeChange
-
-• `Optional` **onVolumeChange**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onTouchEnd**: `TouchEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onVolumeChange
+`HTMLFormProps.onTouchEnd`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1553
+node\_modules/@types/react/index.d.ts:2531
 
-___
+***
 
-### onVolumeChangeCapture
+### onTouchEndCapture?
 
-• `Optional` **onVolumeChangeCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onVolumeChangeCapture
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1554
-
-___
-
-### onWaiting
-
-• `Optional` **onWaiting**: `ReactEventHandler`\<`HTMLFormElement`\>
+> `optional` **onTouchEndCapture**: `TouchEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onWaiting
+`HTMLFormProps.onTouchEndCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1555
+node\_modules/@types/react/index.d.ts:2532
 
-___
+***
 
-### onWaitingCapture
+### onTouchMove?
 
-• `Optional` **onWaitingCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onWaitingCapture
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1556
-
-___
-
-### onWheel
-
-• `Optional` **onWheel**: `WheelEventHandler`\<`HTMLFormElement`\>
+> `optional` **onTouchMove**: `TouchEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.onWheel
+`HTMLFormProps.onTouchMove`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1637
+node\_modules/@types/react/index.d.ts:2533
 
-___
+***
 
-### onWheelCapture
+### onTouchMoveCapture?
 
-• `Optional` **onWheelCapture**: `WheelEventHandler`\<`HTMLFormElement`\>
-
-#### Inherited from
-
-HTMLFormProps.onWheelCapture
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1638
-
-___
-
-### prefix
-
-• `Optional` **prefix**: `string`
+> `optional` **onTouchMoveCapture**: `TouchEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.prefix
+`HTMLFormProps.onTouchMoveCapture`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1998
+node\_modules/@types/react/index.d.ts:2534
 
-___
+***
 
-### property
+### onTouchStart?
 
-• `Optional` **property**: `string`
-
-#### Inherited from
-
-HTMLFormProps.property
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1999
-
-___
-
-### radioGroup
-
-• `Optional` **radioGroup**: `string`
+> `optional` **onTouchStart**: `TouchEventHandler`\<`HTMLFormElement`\>
 
 #### Inherited from
 
-HTMLFormProps.radioGroup
+`HTMLFormProps.onTouchStart`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1988
+node\_modules/@types/react/index.d.ts:2535
 
-___
+***
 
-### ref
+### onTouchStartCapture?
 
-• `Optional` **ref**: `LegacyRef`\<`HTMLFormElement`\>
+> `optional` **onTouchStartCapture**: `TouchEventHandler`\<`HTMLFormElement`\>
+
+#### Inherited from
+
+`HTMLFormProps.onTouchStartCapture`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2536
+
+***
+
+### onTransitionEnd?
+
+> `optional` **onTransitionEnd**: `TransitionEventHandler`\<`HTMLFormElement`\>
+
+#### Inherited from
+
+`HTMLFormProps.onTransitionEnd`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2575
+
+***
+
+### onTransitionEndCapture?
+
+> `optional` **onTransitionEndCapture**: `TransitionEventHandler`\<`HTMLFormElement`\>
+
+#### Inherited from
+
+`HTMLFormProps.onTransitionEndCapture`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2576
+
+***
+
+### onVolumeChange?
+
+> `optional` **onVolumeChange**: `ReactEventHandler`\<`HTMLFormElement`\>
+
+#### Inherited from
+
+`HTMLFormProps.onVolumeChange`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2481
+
+***
+
+### onVolumeChangeCapture?
+
+> `optional` **onVolumeChangeCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+
+#### Inherited from
+
+`HTMLFormProps.onVolumeChangeCapture`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2482
+
+***
+
+### onWaiting?
+
+> `optional` **onWaiting**: `ReactEventHandler`\<`HTMLFormElement`\>
+
+#### Inherited from
+
+`HTMLFormProps.onWaiting`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2483
+
+***
+
+### onWaitingCapture?
+
+> `optional` **onWaitingCapture**: `ReactEventHandler`\<`HTMLFormElement`\>
+
+#### Inherited from
+
+`HTMLFormProps.onWaitingCapture`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2484
+
+***
+
+### onWheel?
+
+> `optional` **onWheel**: `WheelEventHandler`\<`HTMLFormElement`\>
+
+#### Inherited from
+
+`HTMLFormProps.onWheel`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2563
+
+***
+
+### onWheelCapture?
+
+> `optional` **onWheelCapture**: `WheelEventHandler`\<`HTMLFormElement`\>
+
+#### Inherited from
+
+`HTMLFormProps.onWheelCapture`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2564
+
+***
+
+### prefix?
+
+> `optional` **prefix**: `string`
+
+#### Inherited from
+
+`HTMLFormProps.prefix`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2924
+
+***
+
+### property?
+
+> `optional` **property**: `string`
+
+#### Inherited from
+
+`HTMLFormProps.property`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2925
+
+***
+
+### radioGroup?
+
+> `optional` **radioGroup**: `string`
+
+#### Inherited from
+
+`HTMLFormProps.radioGroup`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2914
+
+***
+
+### ref?
+
+> `optional` **ref**: `LegacyRef`\<`HTMLFormElement`\>
 
 Allows getting a ref to the component instance.
-Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+Once the component unmounts, React will set `ref.current` to `null`
+(or call the ref with `null` if you passed a callback ref).
 
-**`See`**
+#### See
 
-https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
-
-#### Inherited from
-
-HTMLFormProps.ref
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:125
-
-___
-
-### rel
-
-• `Optional` **rel**: `string`
+[React Docs](https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom)
 
 #### Inherited from
 
-HTMLFormProps.rel
+`HTMLFormProps.ref`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2000
+node\_modules/@types/react/index.d.ts:303
 
-___
+***
 
-### resource
+### rel?
 
-• `Optional` **resource**: `string`
-
-#### Inherited from
-
-HTMLFormProps.resource
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:2001
-
-___
-
-### results
-
-• `Optional` **results**: `number`
+> `optional` **rel**: `string`
 
 #### Inherited from
 
-HTMLFormProps.results
+`HTMLFormProps.rel`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2016
+node\_modules/@types/react/index.d.ts:2926
 
-___
+***
 
-### rev
+### resource?
 
-• `Optional` **rev**: `string`
-
-#### Inherited from
-
-HTMLFormProps.rev
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:2002
-
-___
-
-### role
-
-• `Optional` **role**: `AriaRole`
+> `optional` **resource**: `string`
 
 #### Inherited from
 
-HTMLFormProps.role
+`HTMLFormProps.resource`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1991
+node\_modules/@types/react/index.d.ts:2927
 
-___
+***
 
-### security
+### results?
 
-• `Optional` **security**: `string`
-
-#### Inherited from
-
-HTMLFormProps.security
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:2017
-
-___
-
-### slot
-
-• `Optional` **slot**: `string`
+> `optional` **results**: `number`
 
 #### Inherited from
 
-HTMLFormProps.slot
+`HTMLFormProps.results`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1980
+node\_modules/@types/react/index.d.ts:2942
 
-___
+***
 
-### spellCheck
+### rev?
 
-• `Optional` **spellCheck**: `Booleanish`
-
-#### Inherited from
-
-HTMLFormProps.spellCheck
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1981
-
-___
-
-### style
-
-• `Optional` **style**: `CSSProperties`
+> `optional` **rev**: `string`
 
 #### Inherited from
 
-HTMLFormProps.style
+`HTMLFormProps.rev`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1982
+node\_modules/@types/react/index.d.ts:2928
 
-___
+***
 
-### suppressContentEditableWarning
+### role?
 
-• `Optional` **suppressContentEditableWarning**: `boolean`
-
-#### Inherited from
-
-HTMLFormProps.suppressContentEditableWarning
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1965
-
-___
-
-### suppressHydrationWarning
-
-• `Optional` **suppressHydrationWarning**: `boolean`
+> `optional` **role**: `AriaRole`
 
 #### Inherited from
 
-HTMLFormProps.suppressHydrationWarning
+`HTMLFormProps.role`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1966
+node\_modules/@types/react/index.d.ts:2917
 
-___
+***
 
-### tabIndex
+### security?
 
-• `Optional` **tabIndex**: `number`
-
-#### Inherited from
-
-HTMLFormProps.tabIndex
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1983
-
-___
-
-### target
-
-• `Optional` **target**: `string`
+> `optional` **security**: `string`
 
 #### Inherited from
 
-HTMLFormProps.target
+`HTMLFormProps.security`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2287
+node\_modules/@types/react/index.d.ts:2943
 
-___
+***
 
-### title
+### slot?
 
-• `Optional` **title**: `string`
-
-#### Inherited from
-
-HTMLFormProps.title
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:1984
-
-___
-
-### translate
-
-• `Optional` **translate**: ``"yes"`` \| ``"no"``
+> `optional` **slot**: `string`
 
 #### Inherited from
 
-HTMLFormProps.translate
+`HTMLFormProps.slot`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:1985
+node\_modules/@types/react/index.d.ts:2906
 
-___
+***
 
-### typeof
+### spellCheck?
 
-• `Optional` **typeof**: `string`
-
-#### Inherited from
-
-HTMLFormProps.typeof
-
-#### Defined in
-
-node_modules/@types/react/index.d.ts:2003
-
-___
-
-### unselectable
-
-• `Optional` **unselectable**: ``"on"`` \| ``"off"``
+> `optional` **spellCheck**: `Booleanish`
 
 #### Inherited from
 
-HTMLFormProps.unselectable
+`HTMLFormProps.spellCheck`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2018
+node\_modules/@types/react/index.d.ts:2907
 
-___
+***
+
+### style?
+
+> `optional` **style**: `CSSProperties`
+
+#### Inherited from
+
+`HTMLFormProps.style`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2908
+
+***
+
+### suppressContentEditableWarning?
+
+> `optional` **suppressContentEditableWarning**: `boolean`
+
+#### Inherited from
+
+`HTMLFormProps.suppressContentEditableWarning`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2891
+
+***
+
+### suppressHydrationWarning?
+
+> `optional` **suppressHydrationWarning**: `boolean`
+
+#### Inherited from
+
+`HTMLFormProps.suppressHydrationWarning`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2892
+
+***
+
+### tabIndex?
+
+> `optional` **tabIndex**: `number`
+
+#### Inherited from
+
+`HTMLFormProps.tabIndex`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2909
+
+***
+
+### target?
+
+> `optional` **target**: `string`
+
+#### Inherited from
+
+`HTMLFormProps.target`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:3213
+
+***
+
+### title?
+
+> `optional` **title**: `string`
+
+#### Inherited from
+
+`HTMLFormProps.title`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2910
+
+***
+
+### translate?
+
+> `optional` **translate**: `"yes"` \| `"no"`
+
+#### Inherited from
+
+`HTMLFormProps.translate`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2911
+
+***
+
+### typeof?
+
+> `optional` **typeof**: `string`
+
+#### Inherited from
+
+`HTMLFormProps.typeof`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2929
+
+***
+
+### unselectable?
+
+> `optional` **unselectable**: `"on"` \| `"off"`
+
+#### Inherited from
+
+`HTMLFormProps.unselectable`
+
+#### Source
+
+node\_modules/@types/react/index.d.ts:2944
+
+***
 
 ### validation
 
-• **validation**: `ObjectSchema`\<`T`, `AnyObject`, `any`, ``""``\> \| `ZodType`\<`T`, `ZodTypeDef`, `T`\> \| `Adapter`\<`T`\>
+> **validation**: `ObjectSchema`\<`T`, `AnyObject`, `any`, `""`\> \| `ZodType`\<`T`, `ZodTypeDef`, `T`\> \| `Adapter`\<`T`\>
 
 A validation schema of `T` used to validate the form fields. Both Yup and
 Zod schemas are supported out-of-the-box.
@@ -4447,39 +4126,39 @@ tells the form and the hooks how to handle the validation.
 
 #### Inherited from
 
-FormProviderProps.validation
+`FormProviderProps.validation`
 
-#### Defined in
+#### Source
 
 packages/core/dist/lib/Form.provider.d.ts:102
 
-___
+***
 
-### values
+### values?
 
-• `Optional` **values**: `DeepPartial`\<`T`\>
+> `optional` **values**: `DeepPartial`\<`T`\>
 
 The values `T` of the form. Changing this prop with a state will change
 the field values as well.
 
 #### Inherited from
 
-FormProviderProps.values
+`FormProviderProps.values`
 
-#### Defined in
+#### Source
 
 packages/core/dist/lib/Form.provider.d.ts:107
 
-___
+***
 
-### vocab
+### vocab?
 
-• `Optional` **vocab**: `string`
+> `optional` **vocab**: `string`
 
 #### Inherited from
 
-HTMLFormProps.vocab
+`HTMLFormProps.vocab`
 
-#### Defined in
+#### Source
 
-node_modules/@types/react/index.d.ts:2004
+node\_modules/@types/react/index.d.ts:2930

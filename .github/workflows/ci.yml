@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        nodejs: [18, 19, 20, 21]
+        nodejs: [18, 19, 20, 21, 22]
 
     steps:
       - uses: actions/checkout@v4
@@ -38,7 +38,7 @@ jobs:
           cache: yarn
       - run: yarn install --immutable
       - run: yarn docs
-      - uses: tj-actions/verify-changed-files@v17
+      - uses: tj-actions/verify-changed-files@v20
         id: verify-changed-files
         with:
           files: |

@@ -4,7 +4,6 @@ import { useContextSelector } from "use-context-selector";
 
 import { Optional, Path, Struct, ValueByPath, safeFormContext } from "../Form.context";
 import { getAdapter, handleResult } from "../helpers/adapters";
-import { isFunctionAction } from "../helpers/commons";
 
 /**
  * The result of the {@link useField} hook
@@ -61,7 +60,7 @@ export function useField<
   const handleChange = useCallback<UseField<V, D>["setValue"]>(action => {
     setValues(prev => {
       const prevValue: V | D = get(prev, path);
-      const nextValue = isFunctionAction(action)
+      const nextValue = action instanceof Function
         ? action(prevValue)
         : action;
 

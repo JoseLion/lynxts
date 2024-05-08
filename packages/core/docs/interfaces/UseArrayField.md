@@ -1,153 +1,103 @@
+[**@lynxts/core**](../README.md) • **Docs**
+
+***
+
 [@lynxts/core](../README.md) / UseArrayField
 
 # Interface: UseArrayField\<V\>
 
-The result of the [useArrayField](../README.md#usearrayfield) hook.
+The result of the [useArrayField](../functions/useArrayField.md) hook.
 
 ## Type parameters
 
-| Name | Description |
-| :------ | :------ |
-| `V` | the type of the array value |
+• **V**
 
-## Table of contents
-
-### Properties
-
-- [append](UseArrayField.md#append)
-- [clear](UseArrayField.md#clear)
-- [handle](UseArrayField.md#handle)
-- [insert](UseArrayField.md#insert)
-- [items](UseArrayField.md#items)
-- [keygen](UseArrayField.md#keygen)
-- [prepend](UseArrayField.md#prepend)
-- [remove](UseArrayField.md#remove)
-- [replace](UseArrayField.md#replace)
+the type of the array value
 
 ## Properties
 
-### append
+### append()
 
-• **append**: (`item`: `Partial`\<`V`\>) => `void`
+> **append**: (`item`) => `void`
 
 Appends a new item to the end of the array.
 
-**`Param`**
+#### Parameters
+
+• **item**: `Partial`\<`V`\>
 
 the item to append
 
-#### Type declaration
-
-▸ (`item`): `void`
-
-Appends a new item to the end of the array.
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `item` | `Partial`\<`V`\> | the item to append |
-
-##### Returns
+#### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
 [lib/hooks/useArrayField.ts:19](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L19)
 
-___
+***
 
-### clear
+### clear()
 
-• **clear**: () => `void`
-
-Clears the array by setting it's value to `undefined`.
-
-#### Type declaration
-
-▸ (): `void`
+> **clear**: () => `void`
 
 Clears the array by setting it's value to `undefined`.
 
-##### Returns
+#### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
 [lib/hooks/useArrayField.ts:23](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L23)
 
-___
+***
 
-### handle
+### handle()
 
-• **handle**: \<F\>(`action`: `F`, ...`args`: `Parameters`\<`F`\>) => () => `void`
+> **handle**: \<`F`\>(`action`, ...`args`) => () => `void`
 
 Helper function that creates a handler function which runs the given
 action with the given parameters.
 
-**`Example`**
+#### Example
 
 ```
 <button onClick={handle(append, { })}>{"Add Item"}</button>
 ```
 
-**`Param`**
+#### Type parameters
+
+• **F** *extends* (...`args`) => `void`
+
+#### Parameters
+
+• **action**: `F`
 
 the action to make the handle of
 
-**`Param`**
+• ...**args**: `Parameters`\<`F`\>
 
 the parameters of the action
 
-#### Type declaration
+#### Returns
 
-▸ \<`F`\>(`action`, `...args`): () => `void`
-
-Helper function that creates a handler function which runs the given
-action with the given parameters.
-
-##### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `F` | extends (...`args`: `any`[]) => `void` |
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `action` | `F` | the action to make the handle of |
-| `...args` | `Parameters`\<`F`\> | the parameters of the action |
-
-##### Returns
-
-`fn`
-
-a handle function that runs the action with the given parameters
-
-▸ (): `void`
+`Function`
 
 ##### Returns
 
 `void`
 
-**`Example`**
-
-```
-<button onClick={handle(append, { })}>{"Add Item"}</button>
-```
-
-#### Defined in
+#### Source
 
 [lib/hooks/useArrayField.ts:37](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L37)
 
-___
+***
 
-### insert
+### insert()
 
-• **insert**: (`item`: `Partial`\<`V`\>, `at`: `number`) => `void`
+> **insert**: (`item`, `at`) => `void`
 
 Insert a new item at an specific index of the array. To encourage type
 safety, this function follows these rules upon index outbounds:
@@ -156,58 +106,42 @@ end of the array.
 - A negative index is treated as an offset, so -2 refers to the second to
 last element of the array.
 
-**`Param`**
+#### Parameters
+
+• **item**: `Partial`\<`V`\>
 
 the item to insert
 
-**`Param`**
+• **at**: `number`
 
 the index to insert the item at
 
-#### Type declaration
-
-▸ (`item`, `at`): `void`
-
-Insert a new item at an specific index of the array. To encourage type
-safety, this function follows these rules upon index outbounds:
-- If the index is greater than the array size, the item is added to the
-end of the array.
-- A negative index is treated as an offset, so -2 refers to the second to
-last element of the array.
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `item` | `Partial`\<`V`\> | the item to insert |
-| `at` | `number` | the index to insert the item at |
-
-##### Returns
+#### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
 [lib/hooks/useArrayField.ts:49](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L49)
 
-___
+***
 
 ### items
 
-• **items**: `Partial`\<`V`\>[]
+> **items**: `Partial`\<`V`\>[]
 
 The currret items `Partial<V>[]` of the array. These values are partial
 because they might not be present or changed by the user yet.
 
-#### Defined in
+#### Source
 
 [lib/hooks/useArrayField.ts:54](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L54)
 
-___
+***
 
-### keygen
+### keygen()
 
-• **keygen**: \<S\>(`index`: `number`, `key?`: `string` \| `S`) => `string`
+> **keygen**: \<`S`\>(`index`, `key`?) => `string`
 
 Helper function to retrieve an auto-generated key string which is memoized
 for each index. The second parameter serves as a prefferd unique key
@@ -217,118 +151,77 @@ You should pass the second parameter whenever it's possible because the
 auto-generated key is index-based, so it may cause additional renders upon
 reordering the array.
 
-**`Param`**
+#### Type parameters
+
+• **S** *extends* `object`
+
+#### Parameters
+
+• **index**: `number`
 
 the current index of the array
 
-**`Param`**
+• **key?**: `string` \| `S`
 
 the preferred key value to use
 
-#### Type declaration
-
-▸ \<`S`\>(`index`, `key?`): `string`
-
-Helper function to retrieve an auto-generated key string which is memoized
-for each index. The second parameter serves as a prefferd unique key
-override to use instead of the auto-generated one.
-
-You should pass the second parameter whenever it's possible because the
-auto-generated key is index-based, so it may cause additional renders upon
-reordering the array.
-
-##### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `S` | extends `Object` |
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | the current index of the array |
-| `key?` | `string` \| `S` | the preferred key value to use |
-
-##### Returns
+#### Returns
 
 `string`
 
-a key value to use on React.js `key` prop
-
-#### Defined in
+#### Source
 
 [lib/hooks/useArrayField.ts:68](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L68)
 
-___
+***
 
-### prepend
+### prepend()
 
-• **prepend**: (`item`: `Partial`\<`V`\>) => `void`
+> **prepend**: (`item`) => `void`
 
 Prepends a new item to the start of the array.
 
-**`Param`**
+#### Parameters
+
+• **item**: `Partial`\<`V`\>
 
 the item to prepend
 
-#### Type declaration
-
-▸ (`item`): `void`
-
-Prepends a new item to the start of the array.
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `item` | `Partial`\<`V`\> | the item to prepend |
-
-##### Returns
+#### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
 [lib/hooks/useArrayField.ts:74](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L74)
 
-___
+***
 
-### remove
+### remove()
 
-• **remove**: (`at`: `number`) => `void`
+> **remove**: (`at`) => `void`
 
 Removes the item at the specified index.
 
-**`Param`**
+#### Parameters
+
+• **at**: `number`
 
 the index of the item
 
-#### Type declaration
-
-▸ (`at`): `void`
-
-Removes the item at the specified index.
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `at` | `number` | the index of the item |
-
-##### Returns
+#### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
 [lib/hooks/useArrayField.ts:80](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L80)
 
-___
+***
 
-### replace
+### replace()
 
-• **replace**: (`item`: `Partial`\<`V`\>, `at`: `number`) => `void`
+> **replace**: (`item`, `at`) => `void`
 
 Replaces an item at an specific index of the array with another. To
 encourage type safety, this function follows these rules upon index
@@ -338,37 +231,20 @@ end of the array.
 - A negative index is treated as an offset, so -2 refers to the second to
 last element of the array.
 
-**`Param`**
+#### Parameters
+
+• **item**: `Partial`\<`V`\>
 
 the item to replace another
 
-**`Param`**
+• **at**: `number`
 
 the index that should be replaced
 
-#### Type declaration
-
-▸ (`item`, `at`): `void`
-
-Replaces an item at an specific index of the array with another. To
-encourage type safety, this function follows these rules upon index
-outbounds:
-- If the index is greater than the array size, the item is added to the
-end of the array.
-- A negative index is treated as an offset, so -2 refers to the second to
-last element of the array.
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `item` | `Partial`\<`V`\> | the item to replace another |
-| `at` | `number` | the index that should be replaced |
-
-##### Returns
+#### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
 [lib/hooks/useArrayField.ts:93](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L93)

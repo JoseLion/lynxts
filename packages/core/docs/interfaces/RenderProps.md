@@ -1,35 +1,30 @@
+[**@lynxts/core**](../README.md) • **Docs**
+
+***
+
 [@lynxts/core](../README.md) / RenderProps
 
 # Interface: RenderProps\<T\>
 
-The renders props when the children of [FormProvider](../README.md#formprovider) is a function.
+The renders props when the children of [FormProvider](../functions/FormProvider.md) is a function.
 
 ## Type parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `T` | extends [`Struct`](../README.md#struct) | struct type of the form values |
+• **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
-## Table of contents
-
-### Properties
-
-- [handleChange](RenderProps.md#handlechange)
-- [setValue](RenderProps.md#setvalue)
-- [submit](RenderProps.md#submit)
-- [values](RenderProps.md#values)
+struct type of the form values
 
 ## Properties
 
-### handleChange
+### handleChange()
 
-• **handleChange**: \<K, A\>(`path`: `K`, `valueOrCallback`: [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> \| [`ChangeCallback`](../README.md#changecallback)\<`T`, `K`, `A`\>) => (...`args`: `A`) => `void`
+> **handleChange**: \<`K`, `A`\>(`path`, `valueOrCallback`) => (...`args`) => `void`
 
 Helper function which creates a handler to use on callback props and
 change form values. It infers the arguments of the callback so they can be
 used dreing the change callback.
 
-**`Example`**
+#### Example
 
 ```
 <Input<Foo>
@@ -39,78 +34,47 @@ used dreing the change callback.
 />
 ```
 
-**`Param`**
+#### Type parameters
+
+• **K** *extends* `string`
+
+• **A** *extends* `unknown`[]
+
+#### Parameters
+
+• **path**: `K`
 
 the path to change the value
 
-**`Param`**
+• **valueOrCallback**: [`Optional`](../type-aliases/Optional.md)\<[`ValueByPath`](../type-aliases/ValueByPath.md)\<`T`, `K`\>\> \| [`ChangeCallback`](../type-aliases/ChangeCallback.md)\<`T`, `K`, `A`\>
 
 either a value or a callback to change it
 
-#### Type declaration
+#### Returns
 
-▸ \<`K`, `A`\>(`path`, `valueOrCallback`): (...`args`: `A`) => `void`
-
-Helper function which creates a handler to use on callback props and
-change form values. It infers the arguments of the callback so they can be
-used dreing the change callback.
-
-##### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `K` | extends `string` |
-| `A` | extends `unknown`[] |
+`Function`
 
 ##### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `path` | `K` | the path to change the value |
-| `valueOrCallback` | [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> \| [`ChangeCallback`](../README.md#changecallback)\<`T`, `K`, `A`\> | either a value or a callback to change it |
-
-##### Returns
-
-`fn`
-
-a function which infers the arguments of a callback where applied
-         and returns void
-
-▸ (`...args`): `void`
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `...args` | `A` |
+• ...**args**: `A`
 
 ##### Returns
 
 `void`
 
-**`Example`**
+#### Source
 
-```
-<Input<Foo>
-  name="foo"
-  onChange={handleChange("foo", event => event.target.value)}
-  value={values.foo}
-/>
-```
+[lib/Form.provider.tsx:65](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L65)
 
-#### Defined in
+***
 
-[lib/Form.provider.tsx:66](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L66)
+### setValue()
 
-___
-
-### setValue
-
-• **setValue**: \<K\>(`path`: `K`) => [`SetValue`](../README.md#setvalue)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\>
+> **setValue**: \<`K`\>(`path`) => [`SetValue`](../type-aliases/SetValue.md)\<[`ValueByPath`](../type-aliases/ValueByPath.md)\<`T`, `K`\>\>
 
 Helper function which creates a setter function for the specified path.
 
-**`Example`**
+#### Example
 
 ```
 <Input<Foo>
@@ -123,82 +87,49 @@ Helper function which creates a setter function for the specified path.
 />
 ```
 
-**`Param`**
+#### Type parameters
+
+• **K** *extends* `string`
+
+#### Parameters
+
+• **path**: `K`
 
 the path to change the value
 
-#### Type declaration
+#### Returns
 
-▸ \<`K`\>(`path`): [`SetValue`](../README.md#setvalue)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\>
+[`SetValue`](../type-aliases/SetValue.md)\<[`ValueByPath`](../type-aliases/ValueByPath.md)\<`T`, `K`\>\>
 
-Helper function which creates a setter function for the specified path.
+#### Source
 
-##### Type parameters
+[lib/Form.provider.tsx:87](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L87)
 
-| Name | Type |
-| :------ | :------ |
-| `K` | extends `string` |
+***
 
-##### Parameters
+### submit()
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `path` | `K` | the path to change the value |
-
-##### Returns
-
-[`SetValue`](../README.md#setvalue)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\>
-
-a value setter function
-
-**`Example`**
-
-```
-<Input<Foo>
-  name="foo"
-  onChange={event => {
-    const setFoo = setValue("foo");
-    setFoo(event.target.value);
-  }}
-  value={values.foo}
-/>
-```
-
-#### Defined in
-
-[lib/Form.provider.tsx:88](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L88)
-
-___
-
-### submit
-
-• **submit**: () => `void`
+> **submit**: () => `void`
 
 Helper function that triggers the form submit on demand.
 
-#### Type declaration
-
-▸ (): `void`
-
-Helper function that triggers the form submit on demand.
-
-##### Returns
+#### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[lib/Form.provider.tsx:92](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L92)
+[lib/Form.provider.tsx:91](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L91)
 
-___
+***
 
 ### values
 
-• **values**: `Partial`\<`T`\>
+> **values**: `Partial`\<`T`\>
 
 The curretn values `Partial<T>` of the form. These values are partial
 because they might not be present or changed by the user yet.
 
-#### Defined in
+#### Source
 
-[lib/Form.provider.tsx:97](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L97)
+[lib/Form.provider.tsx:96](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L96)

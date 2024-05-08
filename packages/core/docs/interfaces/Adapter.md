@@ -1,3 +1,7 @@
+[**@lynxts/core**](../README.md) • **Docs**
+
+***
+
 [@lynxts/core](../README.md) / Adapter
 
 # Interface: Adapter\<T\>
@@ -7,61 +11,39 @@ form validations and their hooks.
 
 ## Type parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `T` | extends [`Struct`](../README.md#struct) | struct type of the form values |
+• **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
-## Table of contents
-
-### Properties
-
-- [required](Adapter.md#required)
-- [validate](Adapter.md#validate)
-- [validateAt](Adapter.md#validateat)
+struct type of the form values
 
 ## Properties
 
-### required
+### required()
 
-• **required**: (`path`: [`Path`](../README.md#path)\<`T`\>) => `boolean`
+> **required**: (`path`) => `boolean`
 
 Should return `true` if the field in the `path` is required in the
 validation schema. I.e., whenever the field cannot be `null`,
 `undefined`, non-empty, etc.
 
-**`Param`**
+#### Parameters
+
+• **path**: [`Path`](../type-aliases/Path.md)\<`T`\>
 
 the path to check if it's requried
 
-#### Type declaration
-
-▸ (`path`): `boolean`
-
-Should return `true` if the field in the `path` is required in the
-validation schema. I.e., whenever the field cannot be `null`,
-`undefined`, non-empty, etc.
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `path` | [`Path`](../README.md#path)\<`T`\> | the path to check if it's requried |
-
-##### Returns
+#### Returns
 
 `boolean`
 
-wether a path is required or not
-
-#### Defined in
+#### Source
 
 [lib/helpers/adapters.ts:30](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/helpers/adapters.ts#L30)
 
-___
+***
 
-### validate
+### validate()
 
-• **validate**: (`values`: `Partial`\<`T`\>) => `Promise`\<[`Result`](../README.md#result)\<`T`, `Map`\<[`Path`](../README.md#path)\<`T`\>, `string`\>\>\>
+> **validate**: (`values`) => `Promise`\<[`Result`](../type-aliases/Result.md)\<`T`, `Map`\<[`Path`](../type-aliases/Path.md)\<`T`\>, `string`\>\>\>
 
 Should return a promise containing the `Result<S, E>` of the validation.
 Where `S` represents the success and `E` the error.
@@ -70,42 +52,25 @@ If the validation success, the promise should resolve to the form values.
 Otherwise, if the validation fails, the promise should resolve to a
 `Map<Path<T>, string>` of the path/message for the invalid fields.
 
-**`Param`**
+#### Parameters
+
+• **values**: `Partial`\<`T`\>
 
 the form values to validate
 
-#### Type declaration
+#### Returns
 
-▸ (`values`): `Promise`\<[`Result`](../README.md#result)\<`T`, `Map`\<[`Path`](../README.md#path)\<`T`\>, `string`\>\>\>
+`Promise`\<[`Result`](../type-aliases/Result.md)\<`T`, `Map`\<[`Path`](../type-aliases/Path.md)\<`T`\>, `string`\>\>\>
 
-Should return a promise containing the `Result<S, E>` of the validation.
-Where `S` represents the success and `E` the error.
-
-If the validation success, the promise should resolve to the form values.
-Otherwise, if the validation fails, the promise should resolve to a
-`Map<Path<T>, string>` of the path/message for the invalid fields.
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `values` | `Partial`\<`T`\> | the form values to validate |
-
-##### Returns
-
-`Promise`\<[`Result`](../README.md#result)\<`T`, `Map`\<[`Path`](../README.md#path)\<`T`\>, `string`\>\>\>
-
-a promise with the `Result<S, E>` of the validation
-
-#### Defined in
+#### Source
 
 [lib/helpers/adapters.ts:42](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/helpers/adapters.ts#L42)
 
-___
+***
 
-### validateAt
+### validateAt()
 
-• **validateAt**: \<K\>(`path`: `K`, `value`: [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\>) => `Promise`\<[`Result`](../README.md#result)\<``true``, `string`\>\>
+> **validateAt**: \<`K`\>(`path`, `value`) => `Promise`\<[`Result`](../type-aliases/Result.md)\<`true`, `string`\>\>
 
 Should return a promise containing the `Result<S, E>` of the field
 validation. Where `S` represents the success and `E` the error.
@@ -114,44 +79,24 @@ If the validation success, the promise should resolve to a simple `true`.
 Otherwise, if the validation fails, the promise should resolve to a
 `Map<Path<T>, string>` of the path/message for the invalid fields.
 
-**`Param`**
+#### Type parameters
+
+• **K** *extends* `string`
+
+#### Parameters
+
+• **path**: `K`
 
 the path on the schema to validate
 
-**`Param`**
+• **value**: [`Optional`](../type-aliases/Optional.md)\<[`ValueByPath`](../type-aliases/ValueByPath.md)\<`T`, `K`\>\>
 
 the value to validate against
 
-#### Type declaration
+#### Returns
 
-▸ \<`K`\>(`path`, `value`): `Promise`\<[`Result`](../README.md#result)\<``true``, `string`\>\>
+`Promise`\<[`Result`](../type-aliases/Result.md)\<`true`, `string`\>\>
 
-Should return a promise containing the `Result<S, E>` of the field
-validation. Where `S` represents the success and `E` the error.
-
-If the validation success, the promise should resolve to a simple `true`.
-Otherwise, if the validation fails, the promise should resolve to a
-`Map<Path<T>, string>` of the path/message for the invalid fields.
-
-##### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `K` | extends `string` |
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `path` | `K` | the path on the schema to validate |
-| `value` | [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> | the value to validate against |
-
-##### Returns
-
-`Promise`\<[`Result`](../README.md#result)\<``true``, `string`\>\>
-
-a promise with the `Result<S, E>` of the validation
-
-#### Defined in
+#### Source
 
 [lib/helpers/adapters.ts:55](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/helpers/adapters.ts#L55)

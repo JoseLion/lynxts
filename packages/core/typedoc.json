@@ -2,7 +2,9 @@
   "$schema": "https://typedoc.org/schema.json",
   "extends": ["../../typedoc.json"],
   "entryPoints": ["src/main.ts"],
-  "indexTitle": "Lynx.ts Core API",
   "intentionallyNotExported": ["GetPath"],
-  "out": "./docs"
+  "out": "./docs",
+  "textContentMappings": {
+    "title.indexPage": "Lynx.ts Core API"
+  }
 }
