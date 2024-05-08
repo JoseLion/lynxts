@@ -1,99 +1,86 @@
+[**@lynxts/core**](../README.md) • **Docs**
+
+***
+
 [@lynxts/core](../README.md) / FieldProps
 
 # Interface: FieldProps\<T, K, D\>
 
-The props of the [ArrayField](../README.md#arrayfield) component.
+The props of the [ArrayField](../functions/ArrayField.md) component.
 
 ## Type parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `T` | extends [`Struct`](../README.md#struct) | struct type of the form values |
-| `K` | extends [`Path`](../README.md#path)\<`T`, [`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> | the path type of the field |
-| `D` | extends [`Optional`](../README.md#optional)\<[`ValueByPath`](../README.md#valuebypath)\<`T`, `K`\>\> | the default type to use in case of fallback |
+• **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
-## Table of contents
+struct type of the form values
 
-### Properties
+• **K** *extends* [`Path`](../type-aliases/Path.md)\<`T`, [`ValueByPath`](../type-aliases/ValueByPath.md)\<`T`, `K`\>\>
 
-- [children](FieldProps.md#children)
-- [deps](FieldProps.md#deps)
-- [fallback](FieldProps.md#fallback)
-- [path](FieldProps.md#path)
+the path type of the field
+
+• **D** *extends* [`Optional`](../type-aliases/Optional.md)\<[`ValueByPath`](../type-aliases/ValueByPath.md)\<`T`, `K`\>\>
+
+the default type to use in case of fallback
 
 ## Properties
 
-### children
+### children()
 
-• **children**: (`props`: [`FieldRenderProps`](FieldRenderProps.md)\<`T`, `K`, `D`\>) => `ReactNode`
+> **children**: (`props`) => `ReactNode`
 
-The children is a function which takes the result of [useField](../README.md#usefield) and
-[useFieldValidation](../README.md#usefieldvalidation) hooks in the first argument and returns a
+The children is a function which takes the result of [useField](../functions/useField.md) and
+[useFieldValidation](../functions/useFieldValidation.md) hooks in the first argument and returns a
 React.js node.
 
-**`Param`**
+#### Parameters
+
+• **props**: [`FieldRenderProps`](FieldRenderProps.md)\<`T`, `K`, `D`\>
 
 the render props same as `useField` result
 
-#### Type declaration
-
-▸ (`props`): `ReactNode`
-
-The children is a function which takes the result of [useField](../README.md#usefield) and
-[useFieldValidation](../README.md#usefieldvalidation) hooks in the first argument and returns a
-React.js node.
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `props` | [`FieldRenderProps`](FieldRenderProps.md)\<`T`, `K`, `D`\> | the render props same as `useField` result |
-
-##### Returns
+#### Returns
 
 `ReactNode`
 
-a React.js node
-
-#### Defined in
+#### Source
 
 [lib/components/Field.component.tsx:53](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L53)
 
-___
+***
 
-### deps
+### deps?
 
-• `Optional` **deps**: `DependencyList`
+> `optional` **deps**: `DependencyList`
 
 The children render result is memoized in this component and it will only
 change if the field value or its validation props changes. This prop lets
 you add an additional dependency list to that memoization, so you can add
 external state changes when required.
 
-#### Defined in
+#### Source
 
 [lib/components/Field.component.tsx:60](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L60)
 
-___
+***
 
-### fallback
+### fallback?
 
-• `Optional` **fallback**: `D`
+> `optional` **fallback**: `D`
 
 optional default value the field should take
 
-#### Defined in
+#### Source
 
 [lib/components/Field.component.tsx:64](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L64)
 
-___
+***
 
 ### path
 
-• **path**: `K`
+> **path**: `K`
 
 the path of the field in `T`
 
-#### Defined in
+#### Source
 
 [lib/components/Field.component.tsx:68](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L68)

@@ -1,75 +1,60 @@
+[**@lynxts/core**](../README.md) • **Docs**
+
+***
+
 [@lynxts/core](../README.md) / FormProviderProps
 
 # Interface: FormProviderProps\<T\>
 
-The [FormProvider](../README.md#formprovider) component props.
+The [FormProvider](../functions/FormProvider.md) component props.
 
 ## Type parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `T` | extends [`Struct`](../README.md#struct) | struct type of the form values |
+• **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
-## Table of contents
-
-### Properties
-
-- [children](FormProviderProps.md#children)
-- [onSubmit](FormProviderProps.md#onsubmit)
-- [validation](FormProviderProps.md#validation)
-- [values](FormProviderProps.md#values)
+struct type of the form values
 
 ## Properties
 
 ### children
 
-• **children**: `ReactNode` \| `ReactNode`[] \| (`props`: [`RenderProps`](RenderProps.md)\<`T`\>) => `ReactNode`
+> **children**: `ReactNode` \| `ReactNode`[] \| (`props`) => `ReactNode`
 
 The children of the provider may rather be any kind of React.js node(s),
 or a function which takes [<T>|RenderProps\<T\>](RenderProps.md) and
 returns a React.js node.
 
-#### Defined in
+#### Source
 
-[lib/Form.provider.tsx:111](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L111)
+[lib/Form.provider.tsx:110](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L110)
 
-___
+***
 
-### onSubmit
+### onSubmit()
 
-• **onSubmit**: (`values`: `T`) => `void`
+> **onSubmit**: (`values`) => `void`
 
 The function to be called uppon form submision.
 
-**`Param`**
+#### Parameters
+
+• **values**: `T`
 
 the validated values `T` of the form
 
-#### Type declaration
-
-▸ (`values`): `void`
-
-The function to be called uppon form submision.
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `values` | `T` | the validated values `T` of the form |
-
-##### Returns
+#### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[lib/Form.provider.tsx:117](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L117)
+[lib/Form.provider.tsx:116](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L116)
 
-___
+***
 
 ### validation
 
-• **validation**: `ObjectSchema`\<`T`, `AnyObject`, `any`, ``""``\> \| `ZodType`\<`T`, `ZodTypeDef`, `T`\> \| [`Adapter`](Adapter.md)\<`T`\>
+> **validation**: `ObjectSchema`\<`T`, `AnyObject`, `any`, `""`\> \| `ZodType`\<`T`, `ZodTypeDef`, `T`\> \| [`Adapter`](Adapter.md)\<`T`\>
 
 A validation schema of `T` used to validate the form fields. Both Yup and
 Zod schemas are supported out-of-the-box.
@@ -78,19 +63,19 @@ However, if you want to use another validation library, or your own
 schemas, you can also pass a validation [Adapter<T>](Adapter.md) which
 tells the form and the hooks how to handle the validation.
 
-#### Defined in
+#### Source
 
-[lib/Form.provider.tsx:126](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L126)
+[lib/Form.provider.tsx:125](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L125)
 
-___
+***
 
-### values
+### values?
 
-• `Optional` **values**: [`DeepPartial`](../README.md#deeppartial)\<`T`\>
+> `optional` **values**: [`DeepPartial`](../type-aliases/DeepPartial.md)\<`T`\>
 
 The values `T` of the form. Changing this prop with a state will change
 the field values as well.
 
-#### Defined in
+#### Source
 
-[lib/Form.provider.tsx:131](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L131)
+[lib/Form.provider.tsx:130](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L130)

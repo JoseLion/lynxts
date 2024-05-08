@@ -1,442 +1,287 @@
+[**@lynxts/native**](../README.md) • **Docs**
+
+***
+
 [@lynxts/native](../README.md) / TextFiedProps
 
 # Interface: TextFiedProps\<T\>
 
-The [TextField](../README.md#textfield) component props which extend from
+The [TextField](../functions/TextField.md) component props which extend from
 TextInputProps.
+
+## Extends
+
+- `Omit`\<`TextInputProps`, `"value"`\>
 
 ## Type parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `T` | extends `Struct` | struct type of the form values |
+• **T** *extends* `Struct`
 
-## Hierarchy
-
-- `Omit`\<`TextInputProps`, ``"value"``\>
-
-  ↳ **`TextFiedProps`**
-
-## Table of contents
-
-### Properties
-
-- [accessibilityActions](TextFiedProps.md#accessibilityactions)
-- [accessibilityElementsHidden](TextFiedProps.md#accessibilityelementshidden)
-- [accessibilityHint](TextFiedProps.md#accessibilityhint)
-- [accessibilityIgnoresInvertColors](TextFiedProps.md#accessibilityignoresinvertcolors)
-- [accessibilityLabel](TextFiedProps.md#accessibilitylabel)
-- [accessibilityLabelledBy](TextFiedProps.md#accessibilitylabelledby)
-- [accessibilityLanguage](TextFiedProps.md#accessibilitylanguage)
-- [accessibilityLiveRegion](TextFiedProps.md#accessibilityliveregion)
-- [accessibilityRole](TextFiedProps.md#accessibilityrole)
-- [accessibilityState](TextFiedProps.md#accessibilitystate)
-- [accessibilityValue](TextFiedProps.md#accessibilityvalue)
-- [accessibilityViewIsModal](TextFiedProps.md#accessibilityviewismodal)
-- [accessible](TextFiedProps.md#accessible)
-- [allowFontScaling](TextFiedProps.md#allowfontscaling)
-- [aria-busy](TextFiedProps.md#aria-busy)
-- [aria-checked](TextFiedProps.md#aria-checked)
-- [aria-disabled](TextFiedProps.md#aria-disabled)
-- [aria-expanded](TextFiedProps.md#aria-expanded)
-- [aria-hidden](TextFiedProps.md#aria-hidden)
-- [aria-label](TextFiedProps.md#aria-label)
-- [aria-labelledby](TextFiedProps.md#aria-labelledby)
-- [aria-live](TextFiedProps.md#aria-live)
-- [aria-modal](TextFiedProps.md#aria-modal)
-- [aria-selected](TextFiedProps.md#aria-selected)
-- [aria-valuemax](TextFiedProps.md#aria-valuemax)
-- [aria-valuemin](TextFiedProps.md#aria-valuemin)
-- [aria-valuenow](TextFiedProps.md#aria-valuenow)
-- [aria-valuetext](TextFiedProps.md#aria-valuetext)
-- [autoCapitalize](TextFiedProps.md#autocapitalize)
-- [autoComplete](TextFiedProps.md#autocomplete)
-- [autoCorrect](TextFiedProps.md#autocorrect)
-- [autoFocus](TextFiedProps.md#autofocus)
-- [blurOnSubmit](TextFiedProps.md#bluronsubmit)
-- [caretHidden](TextFiedProps.md#carethidden)
-- [children](TextFiedProps.md#children)
-- [clearButtonMode](TextFiedProps.md#clearbuttonmode)
-- [clearTextOnFocus](TextFiedProps.md#cleartextonfocus)
-- [collapsable](TextFiedProps.md#collapsable)
-- [contextMenuHidden](TextFiedProps.md#contextmenuhidden)
-- [cursorColor](TextFiedProps.md#cursorcolor)
-- [dataDetectorTypes](TextFiedProps.md#datadetectortypes)
-- [defaultValue](TextFiedProps.md#defaultvalue)
-- [disableFullscreenUI](TextFiedProps.md#disablefullscreenui)
-- [editable](TextFiedProps.md#editable)
-- [enablesReturnKeyAutomatically](TextFiedProps.md#enablesreturnkeyautomatically)
-- [enterKeyHint](TextFiedProps.md#enterkeyhint)
-- [errorStyle](TextFiedProps.md#errorstyle)
-- [focusable](TextFiedProps.md#focusable)
-- [hasTVPreferredFocus](TextFiedProps.md#hastvpreferredfocus)
-- [hitSlop](TextFiedProps.md#hitslop)
-- [id](TextFiedProps.md#id)
-- [importantForAccessibility](TextFiedProps.md#importantforaccessibility)
-- [importantForAutofill](TextFiedProps.md#importantforautofill)
-- [inlineImageLeft](TextFiedProps.md#inlineimageleft)
-- [inlineImagePadding](TextFiedProps.md#inlineimagepadding)
-- [inputAccessoryViewID](TextFiedProps.md#inputaccessoryviewid)
-- [inputMode](TextFiedProps.md#inputmode)
-- [isTVSelectable](TextFiedProps.md#istvselectable)
-- [keyboardAppearance](TextFiedProps.md#keyboardappearance)
-- [keyboardType](TextFiedProps.md#keyboardtype)
-- [label](TextFiedProps.md#label)
-- [labelStyle](TextFiedProps.md#labelstyle)
-- [lineBreakStrategyIOS](TextFiedProps.md#linebreakstrategyios)
-- [maxFontSizeMultiplier](TextFiedProps.md#maxfontsizemultiplier)
-- [maxLength](TextFiedProps.md#maxlength)
-- [multiline](TextFiedProps.md#multiline)
-- [name](TextFiedProps.md#name)
-- [nativeID](TextFiedProps.md#nativeid)
-- [needsOffscreenAlphaCompositing](TextFiedProps.md#needsoffscreenalphacompositing)
-- [numberOfLines](TextFiedProps.md#numberoflines)
-- [onAccessibilityAction](TextFiedProps.md#onaccessibilityaction)
-- [onAccessibilityEscape](TextFiedProps.md#onaccessibilityescape)
-- [onAccessibilityTap](TextFiedProps.md#onaccessibilitytap)
-- [onBlur](TextFiedProps.md#onblur)
-- [onChange](TextFiedProps.md#onchange)
-- [onChangeText](TextFiedProps.md#onchangetext)
-- [onContentSizeChange](TextFiedProps.md#oncontentsizechange)
-- [onEndEditing](TextFiedProps.md#onendediting)
-- [onFocus](TextFiedProps.md#onfocus)
-- [onKeyPress](TextFiedProps.md#onkeypress)
-- [onLayout](TextFiedProps.md#onlayout)
-- [onMagicTap](TextFiedProps.md#onmagictap)
-- [onMoveShouldSetResponder](TextFiedProps.md#onmoveshouldsetresponder)
-- [onMoveShouldSetResponderCapture](TextFiedProps.md#onmoveshouldsetrespondercapture)
-- [onPointerCancel](TextFiedProps.md#onpointercancel)
-- [onPointerCancelCapture](TextFiedProps.md#onpointercancelcapture)
-- [onPointerDown](TextFiedProps.md#onpointerdown)
-- [onPointerDownCapture](TextFiedProps.md#onpointerdowncapture)
-- [onPointerEnter](TextFiedProps.md#onpointerenter)
-- [onPointerEnterCapture](TextFiedProps.md#onpointerentercapture)
-- [onPointerLeave](TextFiedProps.md#onpointerleave)
-- [onPointerLeaveCapture](TextFiedProps.md#onpointerleavecapture)
-- [onPointerMove](TextFiedProps.md#onpointermove)
-- [onPointerMoveCapture](TextFiedProps.md#onpointermovecapture)
-- [onPointerUp](TextFiedProps.md#onpointerup)
-- [onPointerUpCapture](TextFiedProps.md#onpointerupcapture)
-- [onPressIn](TextFiedProps.md#onpressin)
-- [onPressOut](TextFiedProps.md#onpressout)
-- [onResponderEnd](TextFiedProps.md#onresponderend)
-- [onResponderGrant](TextFiedProps.md#onrespondergrant)
-- [onResponderMove](TextFiedProps.md#onrespondermove)
-- [onResponderReject](TextFiedProps.md#onresponderreject)
-- [onResponderRelease](TextFiedProps.md#onresponderrelease)
-- [onResponderStart](TextFiedProps.md#onresponderstart)
-- [onResponderTerminate](TextFiedProps.md#onresponderterminate)
-- [onResponderTerminationRequest](TextFiedProps.md#onresponderterminationrequest)
-- [onScroll](TextFiedProps.md#onscroll)
-- [onSelectionChange](TextFiedProps.md#onselectionchange)
-- [onStartShouldSetResponder](TextFiedProps.md#onstartshouldsetresponder)
-- [onStartShouldSetResponderCapture](TextFiedProps.md#onstartshouldsetrespondercapture)
-- [onSubmitEditing](TextFiedProps.md#onsubmitediting)
-- [onTextInput](TextFiedProps.md#ontextinput)
-- [onTouchCancel](TextFiedProps.md#ontouchcancel)
-- [onTouchEnd](TextFiedProps.md#ontouchend)
-- [onTouchEndCapture](TextFiedProps.md#ontouchendcapture)
-- [onTouchMove](TextFiedProps.md#ontouchmove)
-- [onTouchStart](TextFiedProps.md#ontouchstart)
-- [passwordRules](TextFiedProps.md#passwordrules)
-- [placeholder](TextFiedProps.md#placeholder)
-- [placeholderTextColor](TextFiedProps.md#placeholdertextcolor)
-- [pointerEvents](TextFiedProps.md#pointerevents)
-- [readOnly](TextFiedProps.md#readonly)
-- [rejectResponderTermination](TextFiedProps.md#rejectrespondertermination)
-- [removeClippedSubviews](TextFiedProps.md#removeclippedsubviews)
-- [renderToHardwareTextureAndroid](TextFiedProps.md#rendertohardwaretextureandroid)
-- [requiredText](TextFiedProps.md#requiredtext)
-- [returnKeyLabel](TextFiedProps.md#returnkeylabel)
-- [returnKeyType](TextFiedProps.md#returnkeytype)
-- [role](TextFiedProps.md#role)
-- [scrollEnabled](TextFiedProps.md#scrollenabled)
-- [secureTextEntry](TextFiedProps.md#securetextentry)
-- [selectTextOnFocus](TextFiedProps.md#selecttextonfocus)
-- [selection](TextFiedProps.md#selection)
-- [selectionColor](TextFiedProps.md#selectioncolor)
-- [selectionState](TextFiedProps.md#selectionstate)
-- [shouldRasterizeIOS](TextFiedProps.md#shouldrasterizeios)
-- [showSoftInputOnFocus](TextFiedProps.md#showsoftinputonfocus)
-- [smartInsertDelete](TextFiedProps.md#smartinsertdelete)
-- [spellCheck](TextFiedProps.md#spellcheck)
-- [style](TextFiedProps.md#style)
-- [supStyle](TextFiedProps.md#supstyle)
-- [testID](TextFiedProps.md#testid)
-- [textAlign](TextFiedProps.md#textalign)
-- [textAlignVertical](TextFiedProps.md#textalignvertical)
-- [textBreakStrategy](TextFiedProps.md#textbreakstrategy)
-- [textContentType](TextFiedProps.md#textcontenttype)
-- [textInputStyle](TextFiedProps.md#textinputstyle)
-- [tvParallaxMagnification](TextFiedProps.md#tvparallaxmagnification)
-- [tvParallaxProperties](TextFiedProps.md#tvparallaxproperties)
-- [tvParallaxShiftDistanceX](TextFiedProps.md#tvparallaxshiftdistancex)
-- [tvParallaxShiftDistanceY](TextFiedProps.md#tvparallaxshiftdistancey)
-- [tvParallaxTiltAngle](TextFiedProps.md#tvparallaxtiltangle)
-- [underlineColorAndroid](TextFiedProps.md#underlinecolorandroid)
-- [verticalAlign](TextFiedProps.md#verticalalign)
+struct type of the form values
 
 ## Properties
 
-### accessibilityActions
+### accessibilityActions?
 
-• `Optional` **accessibilityActions**: readonly `Readonly`\<\{ `label?`: `string` ; `name`: `string`  }\>[]
+> `optional` **accessibilityActions**: readonly `Readonly`\<`object`\>[]
 
 Provides an array of custom actions available for accessibility.
 
 #### Inherited from
 
-Omit.accessibilityActions
+`Omit.accessibilityActions`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:27
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:27
 
-___
+***
 
-### accessibilityElementsHidden
+### accessibilityElementsHidden?
 
-• `Optional` **accessibilityElementsHidden**: `boolean`
+> `optional` **accessibilityElementsHidden**: `boolean`
 
 A Boolean value indicating whether the accessibility elements contained within this accessibility element
 are hidden to the screen reader.
 
-**`Platform`**
+#### Platform
 
 ios
 
 #### Inherited from
 
-Omit.accessibilityElementsHidden
+`Omit.accessibilityElementsHidden`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:268
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:284
 
-___
+***
 
-### accessibilityHint
+### accessibilityHint?
 
-• `Optional` **accessibilityHint**: `string`
+> `optional` **accessibilityHint**: `string`
 
 An accessibility hint helps users understand what will happen when they perform an action on the accessibility element when that result is not obvious from the accessibility label.
 
 #### Inherited from
 
-Omit.accessibilityHint
+`Omit.accessibilityHint`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:71
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:64
 
-___
+***
 
-### accessibilityIgnoresInvertColors
+### accessibilityIgnoresInvertColors?
 
-• `Optional` **accessibilityIgnoresInvertColors**: `boolean`
+> `optional` **accessibilityIgnoresInvertColors**: `boolean`
 
 https://reactnative.dev/docs/accessibility#accessibilityignoresinvertcolorsios
 
-**`Platform`**
+#### Platform
 
 ios
 
 #### Inherited from
 
-Omit.accessibilityIgnoresInvertColors
+`Omit.accessibilityIgnoresInvertColors`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:298
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:314
 
-___
+***
 
-### accessibilityLabel
+### accessibilityLabel?
 
-• `Optional` **accessibilityLabel**: `string`
+> `optional` **accessibilityLabel**: `string`
 
 Overrides the text that's read by the screen reader when the user interacts with the element. By default, the
 label is constructed by traversing all the children and accumulating all the Text nodes separated by space.
 
 #### Inherited from
 
-Omit.accessibilityLabel
+`Omit.accessibilityLabel`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:33
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:33
 
-___
+***
 
-### accessibilityLabelledBy
+### accessibilityLabelledBy?
 
-• `Optional` **accessibilityLabelledBy**: `string` \| `string`[]
+> `optional` **accessibilityLabelledBy**: `string` \| `string`[]
 
-A reference to another element `nativeID` used to build complex forms. The value of `accessibilityLabelledBy` should match the `nativeID` of the related element.
+Identifies the element that labels the element it is applied to. When the assistive technology focuses on the component with this props,
+the text is read aloud. The value should should match the nativeID of the related element.
 
-**`Platform`**
+#### Platform
 
 android
 
 #### Inherited from
 
-Omit.accessibilityLabelledBy
+`Omit.accessibilityLabelledBy`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:259
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:227
 
-___
+***
 
-### accessibilityLanguage
+### accessibilityLanguage?
 
-• `Optional` **accessibilityLanguage**: `string`
+> `optional` **accessibilityLanguage**: `string`
 
 By using the accessibilityLanguage property, the screen reader will understand which language to use while reading the element's label, value and hint. The provided string value must follow the BCP 47 specification (https://www.rfc-editor.org/info/bcp47).
 https://reactnative.dev/docs/accessibility#accessibilitylanguage-ios
 
-**`Platform`**
+#### Platform
 
 ios
 
 #### Inherited from
 
-Omit.accessibilityLanguage
+`Omit.accessibilityLanguage`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:305
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:321
 
-___
+***
 
-### accessibilityLiveRegion
+### accessibilityLiveRegion?
 
-• `Optional` **accessibilityLiveRegion**: ``"none"`` \| ``"polite"`` \| ``"assertive"``
+> `optional` **accessibilityLiveRegion**: `"none"` \| `"polite"` \| `"assertive"`
 
-Indicates to accessibility services whether the user should be notified when this view changes.
-Works for Android API >= 19 only.
-See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
+Indicates to accessibility services whether the user should be notified
+when this view changes. Works for Android API >= 19 only.
 
-**`Platform`**
+#### Platform
 
 android
 
+See https://reactnative.dev/docs/view#accessibilityliveregion
+
 #### Inherited from
 
-Omit.accessibilityLiveRegion
+`Omit.accessibilityLiveRegion`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:235
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:245
 
-___
+***
 
-### accessibilityRole
+### accessibilityRole?
 
-• `Optional` **accessibilityRole**: `AccessibilityRole`
+> `optional` **accessibilityRole**: `AccessibilityRole`
 
 Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on Android the type of element that is focused on.
 
 #### Inherited from
 
-Omit.accessibilityRole
+`Omit.accessibilityRole`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:44
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:44
 
-___
+***
 
-### accessibilityState
+### accessibilityState?
 
-• `Optional` **accessibilityState**: `AccessibilityState`
+> `optional` **accessibilityState**: `AccessibilityState`
 
 Accessibility State tells a person using either VoiceOver on iOS or TalkBack on Android the state of the element currently focused on.
 
 #### Inherited from
 
-Omit.accessibilityState
+`Omit.accessibilityState`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:48
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:48
 
-___
+***
 
-### accessibilityValue
+### accessibilityValue?
 
-• `Optional` **accessibilityValue**: `AccessibilityValue`
+> `optional` **accessibilityValue**: `AccessibilityValue`
 
 Represents the current value of a component. It can be a textual description of a component's value, or for range-based components, such as sliders and progress bars,
 it contains range information (minimum, current, and maximum).
 
 #### Inherited from
 
-Omit.accessibilityValue
+`Omit.accessibilityValue`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:76
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:69
 
-___
+***
 
-### accessibilityViewIsModal
+### accessibilityViewIsModal?
 
-• `Optional` **accessibilityViewIsModal**: `boolean`
+> `optional` **accessibilityViewIsModal**: `boolean`
 
 A Boolean value indicating whether VoiceOver should ignore the elements within views that are siblings of the receiver.
 
-**`Platform`**
+#### Platform
 
 ios
 
 #### Inherited from
 
-Omit.accessibilityViewIsModal
+`Omit.accessibilityViewIsModal`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:274
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:290
 
-___
+***
 
-### accessible
+### accessible?
 
-• `Optional` **accessible**: `boolean`
+> `optional` **accessible**: `boolean`
 
 When true, indicates that the view is an accessibility element.
 By default, all the touchable elements are accessible.
 
 #### Inherited from
 
-Omit.accessible
+`Omit.accessible`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:22
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:22
 
-___
+***
 
-### allowFontScaling
+### allowFontScaling?
 
-• `Optional` **allowFontScaling**: `boolean`
+> `optional` **allowFontScaling**: `boolean`
 
 Specifies whether fonts should scale to respect Text Size accessibility settings.
 The default is `true`.
 
 #### Inherited from
 
-Omit.allowFontScaling
+`Omit.allowFontScaling`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:498
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:509
 
-___
+***
 
-### aria-busy
+### aria-busy?
 
-• `Optional` **aria-busy**: `boolean`
+> `optional` **aria-busy**: `boolean`
 
 alias for accessibilityState
 
@@ -444,211 +289,221 @@ see https://reactnative.dev/docs/accessibility#accessibilitystate
 
 #### Inherited from
 
-Omit.aria-busy
+`Omit.aria-busy`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:55
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:55
 
-___
+***
 
-### aria-checked
+### aria-checked?
 
-• `Optional` **aria-checked**: `boolean` \| ``"mixed"``
-
-#### Inherited from
-
-Omit.aria-checked
-
-#### Defined in
-
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:56
-
-___
-
-### aria-disabled
-
-• `Optional` **aria-disabled**: `boolean`
+> `optional` **aria-checked**: `boolean` \| `"mixed"`
 
 #### Inherited from
 
-Omit.aria-disabled
+`Omit.aria-checked`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:57
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:56
 
-___
+***
 
-### aria-expanded
+### aria-disabled?
 
-• `Optional` **aria-expanded**: `boolean`
+> `optional` **aria-disabled**: `boolean`
 
 #### Inherited from
 
-Omit.aria-expanded
+`Omit.aria-disabled`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:58
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:57
 
-___
+***
 
-### aria-hidden
+### aria-expanded?
 
-• `Optional` **aria-hidden**: `boolean`
+> `optional` **aria-expanded**: `boolean`
+
+#### Inherited from
+
+`Omit.aria-expanded`
+
+#### Source
+
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:58
+
+***
+
+### aria-hidden?
+
+> `optional` **aria-hidden**: `boolean`
 
 A value indicating whether the accessibility elements contained within
 this accessibility element are hidden.
 
 #### Inherited from
 
-Omit.aria-hidden
+`Omit.aria-hidden`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:100
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:93
 
-___
+***
 
-### aria-label
+### aria-label?
 
-• `Optional` **aria-label**: `string`
+> `optional` **aria-label**: `string`
 
 Alias for accessibilityLabel  https://reactnative.dev/docs/view#accessibilitylabel
 https://github.com/facebook/react-native/issues/34424
 
 #### Inherited from
 
-Omit.aria-label
+`Omit.aria-label`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:39
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:39
 
-___
+***
 
-### aria-labelledby
+### aria-labelledby?
 
-• `Optional` **aria-labelledby**: `string`
+> `optional` **aria-labelledby**: `string`
 
-Represents the nativeID of the associated label text. When the assistive technology focuses on the component with this props, the text is read aloud.
+Identifies the element that labels the element it is applied to. When the assistive technology focuses on the component with this props,
+the text is read aloud. The value should should match the nativeID of the related element.
 
-**`Platform`**
+#### Platform
 
 android
 
 #### Inherited from
 
-Omit.aria-labelledby
+`Omit.aria-labelledby`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:66
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:235
 
-___
+***
 
-### aria-live
+### aria-live?
 
-• `Optional` **aria-live**: ``"polite"`` \| ``"assertive"`` \| ``"off"``
+> `optional` **aria-live**: `"polite"` \| `"assertive"` \| `"off"`
 
-#### Inherited from
+Indicates to accessibility services whether the user should be notified
+when this view changes. Works for Android API >= 19 only.
 
-Omit.aria-live
+#### Platform
 
-#### Defined in
+android
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:102
-
-___
-
-### aria-modal
-
-• `Optional` **aria-modal**: `boolean`
+See https://reactnative.dev/docs/view#accessibilityliveregion
 
 #### Inherited from
 
-Omit.aria-modal
+`Omit.aria-live`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:103
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:255
 
-___
+***
 
-### aria-selected
+### aria-modal?
 
-• `Optional` **aria-selected**: `boolean`
-
-#### Inherited from
-
-Omit.aria-selected
-
-#### Defined in
-
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:59
-
-___
-
-### aria-valuemax
-
-• `Optional` **aria-valuemax**: `number`
+> `optional` **aria-modal**: `boolean`
 
 #### Inherited from
 
-Omit.aria-valuemax
+`Omit.aria-modal`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:78
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:95
 
-___
+***
 
-### aria-valuemin
+### aria-selected?
 
-• `Optional` **aria-valuemin**: `number`
-
-#### Inherited from
-
-Omit.aria-valuemin
-
-#### Defined in
-
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:79
-
-___
-
-### aria-valuenow
-
-• `Optional` **aria-valuenow**: `number`
+> `optional` **aria-selected**: `boolean`
 
 #### Inherited from
 
-Omit.aria-valuenow
+`Omit.aria-selected`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:80
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:59
 
-___
+***
 
-### aria-valuetext
+### aria-valuemax?
 
-• `Optional` **aria-valuetext**: `string`
+> `optional` **aria-valuemax**: `number`
 
 #### Inherited from
 
-Omit.aria-valuetext
+`Omit.aria-valuemax`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:81
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:71
 
-___
+***
 
-### autoCapitalize
+### aria-valuemin?
 
-• `Optional` **autoCapitalize**: ``"none"`` \| ``"sentences"`` \| ``"words"`` \| ``"characters"``
+> `optional` **aria-valuemin**: `number`
+
+#### Inherited from
+
+`Omit.aria-valuemin`
+
+#### Source
+
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:72
+
+***
+
+### aria-valuenow?
+
+> `optional` **aria-valuenow**: `number`
+
+#### Inherited from
+
+`Omit.aria-valuenow`
+
+#### Source
+
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:73
+
+***
+
+### aria-valuetext?
+
+> `optional` **aria-valuetext**: `string`
+
+#### Inherited from
+
+`Omit.aria-valuetext`
+
+#### Source
+
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:74
+
+***
+
+### autoCapitalize?
+
+> `optional` **autoCapitalize**: `"none"` \| `"sentences"` \| `"words"` \| `"characters"`
 
 Can tell TextInput to automatically capitalize certain characters.
      characters: all characters,
@@ -660,17 +515,17 @@ https://reactnative.dev/docs/textinput#autocapitalize
 
 #### Inherited from
 
-Omit.autoCapitalize
+`Omit.autoCapitalize`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:509
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:520
 
-___
+***
 
-### autoComplete
+### autoComplete?
 
-• `Optional` **autoComplete**: ``"off"`` \| ``"name"`` \| ``"additional-name"`` \| ``"address-line1"`` \| ``"address-line2"`` \| ``"birthdate-day"`` \| ``"birthdate-full"`` \| ``"birthdate-month"`` \| ``"birthdate-year"`` \| ``"cc-csc"`` \| ``"cc-exp"`` \| ``"cc-exp-day"`` \| ``"cc-exp-month"`` \| ``"cc-exp-year"`` \| ``"cc-number"`` \| ``"cc-name"`` \| ``"cc-given-name"`` \| ``"cc-middle-name"`` \| ``"cc-family-name"`` \| ``"cc-type"`` \| ``"country"`` \| ``"current-password"`` \| ``"email"`` \| ``"family-name"`` \| ``"gender"`` \| ``"given-name"`` \| ``"honorific-prefix"`` \| ``"honorific-suffix"`` \| ``"name-family"`` \| ``"name-given"`` \| ``"name-middle"`` \| ``"name-middle-initial"`` \| ``"name-prefix"`` \| ``"name-suffix"`` \| ``"new-password"`` \| ``"nickname"`` \| ``"one-time-code"`` \| ``"organization"`` \| ``"organization-title"`` \| ``"password"`` \| ``"password-new"`` \| ``"postal-address"`` \| ``"postal-address-country"`` \| ``"postal-address-extended"`` \| ``"postal-address-extended-postal-code"`` \| ``"postal-address-locality"`` \| ``"postal-address-region"`` \| ``"postal-code"`` \| ``"street-address"`` \| ``"sms-otp"`` \| ``"tel"`` \| ``"tel-country-code"`` \| ``"tel-national"`` \| ``"tel-device"`` \| ``"url"`` \| ``"username"`` \| ``"username-new"``
+> `optional` **autoComplete**: `"name"` \| `"off"` \| `"additional-name"` \| `"address-line1"` \| `"address-line2"` \| `"birthdate-day"` \| `"birthdate-full"` \| `"birthdate-month"` \| `"birthdate-year"` \| `"cc-csc"` \| `"cc-exp"` \| `"cc-exp-day"` \| `"cc-exp-month"` \| `"cc-exp-year"` \| `"cc-number"` \| `"cc-name"` \| `"cc-given-name"` \| `"cc-middle-name"` \| `"cc-family-name"` \| `"cc-type"` \| `"country"` \| `"current-password"` \| `"email"` \| `"family-name"` \| `"gender"` \| `"given-name"` \| `"honorific-prefix"` \| `"honorific-suffix"` \| `"name-family"` \| `"name-given"` \| `"name-middle"` \| `"name-middle-initial"` \| `"name-prefix"` \| `"name-suffix"` \| `"new-password"` \| `"nickname"` \| `"one-time-code"` \| `"organization"` \| `"organization-title"` \| `"password"` \| `"password-new"` \| `"postal-address"` \| `"postal-address-country"` \| `"postal-address-extended"` \| `"postal-address-extended-postal-code"` \| `"postal-address-locality"` \| `"postal-address-region"` \| `"postal-code"` \| `"street-address"` \| `"sms-otp"` \| `"tel"` \| `"tel-country-code"` \| `"tel-national"` \| `"tel-device"` \| `"url"` \| `"username"` \| `"username-new"`
 
 Specifies autocomplete hints for the system, so it can provide autofill.
 On Android, the system will always attempt to offer autofill by using heuristics to identify the type of content.
@@ -739,131 +594,131 @@ The following values work on Android only:
 
 #### Inherited from
 
-Omit.autoComplete
+`Omit.autoComplete`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:577
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:588
 
-___
+***
 
-### autoCorrect
+### autoCorrect?
 
-• `Optional` **autoCorrect**: `boolean`
+> `optional` **autoCorrect**: `boolean`
 
 If false, disables auto-correct.
 The default value is true.
 
 #### Inherited from
 
-Omit.autoCorrect
+`Omit.autoCorrect`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:641
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:652
 
-___
+***
 
-### autoFocus
+### autoFocus?
 
-• `Optional` **autoFocus**: `boolean`
+> `optional` **autoFocus**: `boolean`
 
 If true, focuses the input on componentDidMount.
 The default value is false.
 
 #### Inherited from
 
-Omit.autoFocus
+`Omit.autoFocus`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:647
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:658
 
-___
+***
 
-### blurOnSubmit
+### blurOnSubmit?
 
-• `Optional` **blurOnSubmit**: `boolean`
+> `optional` **blurOnSubmit**: `boolean`
 
 If true, the text field will blur when submitted.
 The default value is true.
 
 #### Inherited from
 
-Omit.blurOnSubmit
+`Omit.blurOnSubmit`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:653
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:664
 
-___
+***
 
-### caretHidden
+### caretHidden?
 
-• `Optional` **caretHidden**: `boolean`
+> `optional` **caretHidden**: `boolean`
 
 If true, caret is hidden. The default value is false.
 
 #### Inherited from
 
-Omit.caretHidden
+`Omit.caretHidden`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:658
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:669
 
-___
+***
 
-### children
+### children?
 
-• `Optional` **children**: `ReactNode`
+> `optional` **children**: `ReactNode`
 
 #### Inherited from
 
-Omit.children
+`Omit.children`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:176
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:171
 
-___
+***
 
-### clearButtonMode
+### clearButtonMode?
 
-• `Optional` **clearButtonMode**: ``"never"`` \| ``"while-editing"`` \| ``"unless-editing"`` \| ``"always"``
+> `optional` **clearButtonMode**: `"never"` \| `"while-editing"` \| `"unless-editing"` \| `"always"`
 
 enum('never', 'while-editing', 'unless-editing', 'always')
 When the clear button should appear on the right side of the text view
 
 #### Inherited from
 
-Omit.clearButtonMode
+`Omit.clearButtonMode`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:138
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:141
 
-___
+***
 
-### clearTextOnFocus
+### clearTextOnFocus?
 
-• `Optional` **clearTextOnFocus**: `boolean`
+> `optional` **clearTextOnFocus**: `boolean`
 
 If true, clears the text field automatically when editing begins
 
 #### Inherited from
 
-Omit.clearTextOnFocus
+`Omit.clearTextOnFocus`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:148
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:151
 
-___
+***
 
-### collapsable
+### collapsable?
 
-• `Optional` **collapsable**: `boolean`
+> `optional` **collapsable**: `boolean`
 
 Views that are only used to layout their children or otherwise don't draw anything
 may be automatically removed from the native hierarchy as an optimization.
@@ -871,55 +726,55 @@ Set this property to false to disable this optimization and ensure that this Vie
 
 #### Inherited from
 
-Omit.collapsable
+`Omit.collapsable`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:133
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:133
 
-___
+***
 
-### contextMenuHidden
+### contextMenuHidden?
 
-• `Optional` **contextMenuHidden**: `boolean`
+> `optional` **contextMenuHidden**: `boolean`
 
 If true, context menu is hidden. The default value is false.
 
 #### Inherited from
 
-Omit.contextMenuHidden
+`Omit.contextMenuHidden`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:663
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:674
 
-___
+***
 
-### cursorColor
+### cursorColor?
 
-• `Optional` **cursorColor**: ``null`` \| `ColorValue`
+> `optional` **cursorColor**: `null` \| `ColorValue`
 
 When provided it will set the color of the cursor (or "caret") in the component.
 Unlike the behavior of `selectionColor` the cursor color will be set independently
 from the color of the text selection box.
 
-**`Platform`**
+#### Platform
 
 android
 
 #### Inherited from
 
-Omit.cursorColor
+`Omit.cursorColor`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:334
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:337
 
-___
+***
 
-### dataDetectorTypes
+### dataDetectorTypes?
 
-• `Optional` **dataDetectorTypes**: `DataDetectorTypes` \| `DataDetectorTypes`[]
+> `optional` **dataDetectorTypes**: `DataDetectorTypes` \| `DataDetectorTypes`[]
 
 Determines the types of data converted to clickable URLs in the text input.
 Only valid if `multiline={true}` and `editable={false}`.
@@ -938,17 +793,17 @@ Possible values for `dataDetectorTypes` are:
 
 #### Inherited from
 
-Omit.dataDetectorTypes
+`Omit.dataDetectorTypes`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:166
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:169
 
-___
+***
 
-### defaultValue
+### defaultValue?
 
-• `Optional` **defaultValue**: `string`
+> `optional` **defaultValue**: `string`
 
 Provides an initial value that will change when the user starts typing.
 Useful for simple use-cases where you don't want to deal with listening to events
@@ -956,17 +811,17 @@ and updating the value prop to keep the controlled state in sync.
 
 #### Inherited from
 
-Omit.defaultValue
+`Omit.defaultValue`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:670
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:681
 
-___
+***
 
-### disableFullscreenUI
+### disableFullscreenUI?
 
-• `Optional` **disableFullscreenUI**: `boolean`
+> `optional` **disableFullscreenUI**: `boolean`
 
 When false, if there is a small amount of space available around a text input (e.g. landscape orientation on a phone),
   the OS may choose to have the user edit the text inside of a full screen text input mode.
@@ -975,115 +830,115 @@ Defaults to false.
 
 #### Inherited from
 
-Omit.disableFullscreenUI
+`Omit.disableFullscreenUI`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:365
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:376
 
-___
+***
 
-### editable
+### editable?
 
-• `Optional` **editable**: `boolean`
+> `optional` **editable**: `boolean`
 
 If false, text is not editable. The default value is true.
 
 #### Inherited from
 
-Omit.editable
+`Omit.editable`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:675
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:686
 
-___
+***
 
-### enablesReturnKeyAutomatically
+### enablesReturnKeyAutomatically?
 
-• `Optional` **enablesReturnKeyAutomatically**: `boolean`
+> `optional` **enablesReturnKeyAutomatically**: `boolean`
 
 If true, the keyboard disables the return key when there is no text and automatically enables it when there is text.
 The default value is false.
 
 #### Inherited from
 
-Omit.enablesReturnKeyAutomatically
+`Omit.enablesReturnKeyAutomatically`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:172
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:175
 
-___
+***
 
-### enterKeyHint
+### enterKeyHint?
 
-• `Optional` **enterKeyHint**: `EnterKeyHintTypeOptions`
+> `optional` **enterKeyHint**: `EnterKeyHintTypeOptions`
 
 Determines what text should be shown to the return key on virtual keyboards.
 Has precedence over the returnKeyType prop.
 
 #### Inherited from
 
-Omit.enterKeyHint
+`Omit.enterKeyHint`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:832
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:848
 
-___
+***
 
-### errorStyle
+### errorStyle?
 
-• `Optional` **errorStyle**: `StyleProp`\<`TextStyle`\>
+> `optional` **errorStyle**: `StyleProp`\<`TextStyle`\>
 
 The styles of the error `<Text>` component.
 
-#### Defined in
+#### Source
 
 [packages/native/src/lib/fields/TextField.component.tsx:29](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L29)
 
-___
+***
 
-### focusable
+### focusable?
 
-• `Optional` **focusable**: `boolean`
+> `optional` **focusable**: `boolean`
 
 Whether this `View` should be focusable with a non-touch input device, eg. receive focus with a hardware keyboard.
 
 #### Inherited from
 
-Omit.focusable
+`Omit.focusable`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:163
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:147
 
-___
+***
 
-### hasTVPreferredFocus
+### hasTVPreferredFocus?
 
-• `Optional` **hasTVPreferredFocus**: `boolean`
+> `optional` **hasTVPreferredFocus**: `boolean`
 
 *(Apple TV only)* May be set to true to force the Apple TV focus engine to move focus to this view.
 
-**`Platform`**
+#### Platform
 
 ios
 
 #### Inherited from
 
-Omit.hasTVPreferredFocus
+`Omit.hasTVPreferredFocus`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:75
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:75
 
-___
+***
 
-### hitSlop
+### hitSlop?
 
-• `Optional` **hitSlop**: `Insets`
+> `optional` **hitSlop**: `null` \| `number` \| `Insets`
 
 This defines how far a touch event can start away from the view.
 Typical interface guidelines recommend touch targets that are at least
@@ -1096,49 +951,49 @@ hits two overlapping views.
 
 #### Inherited from
 
-Omit.hitSlop
+`Omit.hitSlop`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:187
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:182
 
-___
+***
 
-### id
+### id?
 
-• `Optional` **id**: `string`
+> `optional` **id**: `string`
 
 Used to reference react managed views from native code.
 
 #### Inherited from
 
-Omit.id
+`Omit.id`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:192
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:187
 
-___
+***
 
-### importantForAccessibility
+### importantForAccessibility?
 
-• `Optional` **importantForAccessibility**: ``"auto"`` \| ``"yes"`` \| ``"no"`` \| ``"no-hide-descendants"``
+> `optional` **importantForAccessibility**: `"auto"` \| `"yes"` \| `"no"` \| `"no-hide-descendants"`
 
 [Android] Controlling if a view fires accessibility events and if it is reported to accessibility services.
 
 #### Inherited from
 
-Omit.importantForAccessibility
+`Omit.importantForAccessibility`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:92
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:85
 
-___
+***
 
-### importantForAutofill
+### importantForAutofill?
 
-• `Optional` **importantForAutofill**: ``"auto"`` \| ``"yes"`` \| ``"no"`` \| ``"noExcludeDescendants"`` \| ``"yesExcludeDescendants"``
+> `optional` **importantForAutofill**: `"auto"` \| `"yes"` \| `"no"` \| `"noExcludeDescendants"` \| `"yesExcludeDescendants"`
 
 Determines whether the individual fields in your app should be included in a
 view structure for autofill purposes on Android API Level 26+. Defaults to auto.
@@ -1156,49 +1011,49 @@ The following values work on Android only:
 
 #### Inherited from
 
-Omit.importantForAutofill
+`Omit.importantForAutofill`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:351
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:362
 
-___
+***
 
-### inlineImageLeft
+### inlineImageLeft?
 
-• `Optional` **inlineImageLeft**: `string`
+> `optional` **inlineImageLeft**: `string`
 
 If defined, the provided image resource will be rendered on the left.
 
 #### Inherited from
 
-Omit.inlineImageLeft
+`Omit.inlineImageLeft`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:370
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:381
 
-___
+***
 
-### inlineImagePadding
+### inlineImagePadding?
 
-• `Optional` **inlineImagePadding**: `number`
+> `optional` **inlineImagePadding**: `number`
 
 Padding between the inline image, if any, and the text input itself.
 
 #### Inherited from
 
-Omit.inlineImagePadding
+`Omit.inlineImagePadding`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:375
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:386
 
-___
+***
 
-### inputAccessoryViewID
+### inputAccessoryViewID?
 
-• `Optional` **inputAccessoryViewID**: `string`
+> `optional` **inputAccessoryViewID**: `string`
 
 Used to connect to an InputAccessoryView. Not part of react-natives documentation, but present in examples and
 code.
@@ -1206,70 +1061,70 @@ See https://reactnative.dev/docs/inputaccessoryview for more information.
 
 #### Inherited from
 
-Omit.inputAccessoryViewID
+`Omit.inputAccessoryViewID`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:876
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:892
 
-___
+***
 
-### inputMode
+### inputMode?
 
-• `Optional` **inputMode**: `InputModeOptions`
+> `optional` **inputMode**: `InputModeOptions`
 
 Works like the inputmode attribute in HTML, it determines which keyboard to open, e.g. numeric and has precedence over keyboardType.
 
 #### Inherited from
 
-Omit.inputMode
+`Omit.inputMode`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:690
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:701
 
-___
+***
 
-### isTVSelectable
+### isTVSelectable?
 
-• `Optional` **isTVSelectable**: `boolean`
+> `optional` **isTVSelectable**: `boolean`
 
 *(Apple TV only)* When set to true, this view will be focusable
 and navigable using the Apple TV remote.
 
-**`Platform`**
+#### Platform
 
 ios
 
 #### Inherited from
 
-Omit.isTVSelectable
+`Omit.isTVSelectable`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:68
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:68
 
-___
+***
 
-### keyboardAppearance
+### keyboardAppearance?
 
-• `Optional` **keyboardAppearance**: ``"default"`` \| ``"light"`` \| ``"dark"``
+> `optional` **keyboardAppearance**: `"default"` \| `"light"` \| `"dark"`
 
 Determines the color of the keyboard.
 
 #### Inherited from
 
-Omit.keyboardAppearance
+`Omit.keyboardAppearance`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:177
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:180
 
-___
+***
 
-### keyboardType
+### keyboardType?
 
-• `Optional` **keyboardType**: `KeyboardTypeOptions`
+> `optional` **keyboardType**: `KeyboardTypeOptions`
 
 enum("default", 'numeric', 'email-address', "ascii-capable", 'numbers-and-punctuation', 'url', 'number-pad', 'phone-pad', 'name-phone-pad',
 'decimal-pad', 'twitter', 'web-search', 'visible-password')
@@ -1280,59 +1135,59 @@ The following values work on Android: - visible-password
 
 #### Inherited from
 
-Omit.keyboardType
+`Omit.keyboardType`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:685
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:696
 
-___
+***
 
-### label
+### label?
 
-• `Optional` **label**: `string`
+> `optional` **label**: `string`
 
 The text to use as label on top of the field. The component does not
 render the `<Text>` component when this prop is omited, `undefined`, or an
 empty string.
 
-#### Defined in
+#### Source
 
 [packages/native/src/lib/fields/TextField.component.tsx:35](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L35)
 
-___
+***
 
-### labelStyle
+### labelStyle?
 
-• `Optional` **labelStyle**: `StyleProp`\<`TextStyle`\>
+> `optional` **labelStyle**: `StyleProp`\<`TextStyle`\>
 
 The styles of the label `<Text>` component.
 
-#### Defined in
+#### Source
 
 [packages/native/src/lib/fields/TextField.component.tsx:39](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L39)
 
-___
+***
 
-### lineBreakStrategyIOS
+### lineBreakStrategyIOS?
 
-• `Optional` **lineBreakStrategyIOS**: ``"none"`` \| ``"standard"`` \| ``"hangul-word"`` \| ``"push-out"``
+> `optional` **lineBreakStrategyIOS**: `"none"` \| `"standard"` \| `"hangul-word"` \| `"push-out"`
 
 Set line break strategy on iOS.
 
 #### Inherited from
 
-Omit.lineBreakStrategyIOS
+`Omit.lineBreakStrategyIOS`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:307
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:310
 
-___
+***
 
-### maxFontSizeMultiplier
+### maxFontSizeMultiplier?
 
-• `Optional` **maxFontSizeMultiplier**: ``null`` \| `number`
+> `optional` **maxFontSizeMultiplier**: `null` \| `number`
 
 Specifies largest possible scale a font can reach when allowFontScaling is enabled. Possible values:
 - null/undefined (default): inherit from the parent node or the global default (0)
@@ -1341,78 +1196,78 @@ Specifies largest possible scale a font can reach when allowFontScaling is enabl
 
 #### Inherited from
 
-Omit.maxFontSizeMultiplier
+`Omit.maxFontSizeMultiplier`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:893
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:909
 
-___
+***
 
-### maxLength
+### maxLength?
 
-• `Optional` **maxLength**: `number`
+> `optional` **maxLength**: `number`
 
 Limits the maximum number of characters that can be entered.
 Use this instead of implementing the logic in JS to avoid flicker.
 
 #### Inherited from
 
-Omit.maxLength
+`Omit.maxLength`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:696
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:707
 
-___
+***
 
-### multiline
+### multiline?
 
-• `Optional` **multiline**: `boolean`
+> `optional` **multiline**: `boolean`
 
 If true, the text input can be multiple lines. The default value is false.
 
 #### Inherited from
 
-Omit.multiline
+`Omit.multiline`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:701
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:712
 
-___
+***
 
 ### name
 
-• **name**: `GetPath`\<`T`, `string`, `T`\>
+> **name**: `GetPath`\<`T`, `string`, `T`\>
 
 The name of the field as a Path|Path\<T, string\>.
 
-#### Defined in
+#### Source
 
 [packages/native/src/lib/fields/TextField.component.tsx:43](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L43)
 
-___
+***
 
-### nativeID
+### nativeID?
 
-• `Optional` **nativeID**: `string`
+> `optional` **nativeID**: `string`
 
 Used to reference react managed views from native code.
 
 #### Inherited from
 
-Omit.nativeID
+`Omit.nativeID`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:244
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:255
 
-___
+***
 
-### needsOffscreenAlphaCompositing
+### needsOffscreenAlphaCompositing?
 
-• `Optional` **needsOffscreenAlphaCompositing**: `boolean`
+> `optional` **needsOffscreenAlphaCompositing**: `boolean`
 
 Whether this view needs to rendered offscreen and composited with an alpha in order to preserve 100% correct colors and blending behavior.
 The default (false) falls back to drawing the component and its children
@@ -1429,232 +1284,179 @@ saved in a hardware texture, and then composited onto the screen with an alpha e
 
 #### Inherited from
 
-Omit.needsOffscreenAlphaCompositing
+`Omit.needsOffscreenAlphaCompositing`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:149
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:203
 
-___
+***
 
-### numberOfLines
+### numberOfLines?
 
-• `Optional` **numberOfLines**: `number`
+> `optional` **numberOfLines**: `number`
 
 Sets the number of lines for a TextInput.
 Use it with multiline set to true to be able to fill the lines.
 
 #### Inherited from
 
-Omit.numberOfLines
+`Omit.numberOfLines`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:381
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:392
 
-___
+***
 
-### onAccessibilityAction
+### onAccessibilityAction()?
 
-• `Optional` **onAccessibilityAction**: (`event`: `AccessibilityActionEvent`) => `void`
-
-When `accessible` is true, the system will try to invoke this function when the user performs an accessibility custom action.
-
-#### Type declaration
-
-▸ (`event`): `void`
+> `optional` **onAccessibilityAction**: (`event`) => `void`
 
 When `accessible` is true, the system will try to invoke this function when the user performs an accessibility custom action.
 
-##### Parameters
+#### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `AccessibilityActionEvent` |
+• **event**: `AccessibilityActionEvent`
 
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onAccessibilityAction
+`Omit.onAccessibilityAction`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:85
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:78
 
-___
+***
 
-### onAccessibilityEscape
+### onAccessibilityEscape()?
 
-• `Optional` **onAccessibilityEscape**: () => `void`
+> `optional` **onAccessibilityEscape**: () => `void`
 
 When accessible is true, the system will invoke this function when the user performs the escape gesture (scrub with two fingers).
 
-**`Platform`**
+#### Platform
 
 ios
 
-#### Type declaration
-
-▸ (): `void`
-
-When accessible is true, the system will invoke this function when the user performs the escape gesture (scrub with two fingers).
-
-##### Returns
+#### Returns
 
 `void`
 
-**`Platform`**
-
-ios
-
 #### Inherited from
 
-Omit.onAccessibilityEscape
+`Omit.onAccessibilityEscape`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:280
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:296
 
-___
+***
 
-### onAccessibilityTap
+### onAccessibilityTap()?
 
-• `Optional` **onAccessibilityTap**: () => `void`
+> `optional` **onAccessibilityTap**: () => `void`
 
 When `accessible` is true, the system will try to invoke this function when the user performs accessibility tap gesture.
 
-**`Platform`**
+#### Platform
 
 ios
 
-#### Type declaration
-
-▸ (): `void`
-
-When `accessible` is true, the system will try to invoke this function when the user performs accessibility tap gesture.
-
-##### Returns
+#### Returns
 
 `void`
 
-**`Platform`**
-
-ios
-
 #### Inherited from
 
-Omit.onAccessibilityTap
+`Omit.onAccessibilityTap`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:286
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:302
 
-___
+***
 
-### onBlur
+### onBlur()?
 
-• `Optional` **onBlur**: (`e`: `NativeSyntheticEvent`\<`TextInputFocusEventData`\>) => `void`
+> `optional` **onBlur**: (`e`) => `void`
 
 Callback that is called when the text input is blurred
 
-#### Type declaration
+#### Parameters
 
-▸ (`e`): `void`
+• **e**: `NativeSyntheticEvent`\<`TextInputFocusEventData`\>
 
-Callback that is called when the text input is blurred
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `e` | `NativeSyntheticEvent`\<`TextInputFocusEventData`\> |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onBlur
+`Omit.onBlur`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:706
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:717
 
-___
+***
 
-### onChange
+### onChange()?
 
-• `Optional` **onChange**: (`e`: `NativeSyntheticEvent`\<`TextInputChangeEventData`\>) => `void`
-
-Callback that is called when the text input's text changes.
-
-#### Type declaration
-
-▸ (`e`): `void`
+> `optional` **onChange**: (`e`) => `void`
 
 Callback that is called when the text input's text changes.
 
-##### Parameters
+#### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `NativeSyntheticEvent`\<`TextInputChangeEventData`\> |
+• **e**: `NativeSyntheticEvent`\<`TextInputChangeEventData`\>
 
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onChange
+`Omit.onChange`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:713
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:724
 
-___
+***
 
-### onChangeText
+### onChangeText()?
 
-• `Optional` **onChangeText**: (`text`: `string`) => `void`
+> `optional` **onChangeText**: (`text`) => `void`
 
 Callback that is called when the text input's text changes.
 Changed text is passed as an argument to the callback handler.
 
-#### Type declaration
+#### Parameters
 
-▸ (`text`): `void`
+• **text**: `string`
 
-Callback that is called when the text input's text changes.
-Changed text is passed as an argument to the callback handler.
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `text` | `string` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onChangeText
+`Omit.onChangeText`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:721
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:732
 
-___
+***
 
-### onContentSizeChange
+### onContentSizeChange()?
 
-• `Optional` **onContentSizeChange**: (`e`: `NativeSyntheticEvent`\<`TextInputContentSizeChangeEventData`\>) => `void`
+> `optional` **onContentSizeChange**: (`e`) => `void`
 
 Callback that is called when the text input's content size changes.
 This will be called with
@@ -1662,103 +1464,75 @@ This will be called with
 
 Only called for multiline text inputs.
 
-#### Type declaration
+#### Parameters
 
-▸ (`e`): `void`
+• **e**: `NativeSyntheticEvent`\<`TextInputContentSizeChangeEventData`\>
 
-Callback that is called when the text input's content size changes.
-This will be called with
-`{ nativeEvent: { contentSize: { width, height } } }`.
-
-Only called for multiline text inputs.
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `e` | `NativeSyntheticEvent`\<`TextInputContentSizeChangeEventData`\> |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onContentSizeChange
+`Omit.onContentSizeChange`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:730
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:741
 
-___
+***
 
-### onEndEditing
+### onEndEditing()?
 
-• `Optional` **onEndEditing**: (`e`: `NativeSyntheticEvent`\<`TextInputEndEditingEventData`\>) => `void`
+> `optional` **onEndEditing**: (`e`) => `void`
 
 Callback that is called when text input ends.
 
-#### Type declaration
+#### Parameters
 
-▸ (`e`): `void`
+• **e**: `NativeSyntheticEvent`\<`TextInputEndEditingEventData`\>
 
-Callback that is called when text input ends.
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `e` | `NativeSyntheticEvent`\<`TextInputEndEditingEventData`\> |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onEndEditing
+`Omit.onEndEditing`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:737
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:748
 
-___
+***
 
-### onFocus
+### onFocus()?
 
-• `Optional` **onFocus**: (`e`: `NativeSyntheticEvent`\<`TextInputFocusEventData`\>) => `void`
-
-Callback that is called when the text input is focused
-
-#### Type declaration
-
-▸ (`e`): `void`
+> `optional` **onFocus**: (`e`) => `void`
 
 Callback that is called when the text input is focused
 
-##### Parameters
+#### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `NativeSyntheticEvent`\<`TextInputFocusEventData`\> |
+• **e**: `NativeSyntheticEvent`\<`TextInputFocusEventData`\>
 
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onFocus
+`Omit.onFocus`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:756
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:772
 
-___
+***
 
-### onKeyPress
+### onKeyPress()?
 
-• `Optional` **onKeyPress**: (`e`: `NativeSyntheticEvent`\<`TextInputKeyPressEventData`\>) => `void`
+> `optional` **onKeyPress**: (`e`) => `void`
 
 Callback that is called when a key is pressed.
 This will be called with
@@ -1768,143 +1542,101 @@ where keyValue is 'Enter' or 'Backspace' for respective keys and the typed-in ch
 Fires before onChange callbacks.
 Note: on Android only the inputs from soft keyboard are handled, not the hardware keyboard inputs.
 
-#### Type declaration
+#### Parameters
 
-▸ (`e`): `void`
+• **e**: `NativeSyntheticEvent`\<`TextInputKeyPressEventData`\>
 
-Callback that is called when a key is pressed.
-This will be called with
- `{ nativeEvent: { key: keyValue } }`
-where keyValue is 'Enter' or 'Backspace' for respective keys and the typed-in character otherwise including ' ' for space.
-
-Fires before onChange callbacks.
-Note: on Android only the inputs from soft keyboard are handled, not the hardware keyboard inputs.
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `e` | `NativeSyntheticEvent`\<`TextInputKeyPressEventData`\> |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onKeyPress
+`Omit.onKeyPress`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:803
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:819
 
-___
+***
 
-### onLayout
+### onLayout()?
 
-• `Optional` **onLayout**: (`event`: `LayoutChangeEvent`) => `void`
+> `optional` **onLayout**: (`event`) => `void`
 
 Invoked on mount and layout changes with
 
 {nativeEvent: { layout: {x, y, width, height}}}.
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `LayoutChangeEvent`
 
-Invoked on mount and layout changes with
-
-{nativeEvent: { layout: {x, y, width, height}}}.
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `LayoutChangeEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onLayout
+`Omit.onLayout`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:199
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:210
 
-___
+***
 
-### onMagicTap
+### onMagicTap()?
 
-• `Optional` **onMagicTap**: () => `void`
+> `optional` **onMagicTap**: () => `void`
 
 When accessible is true, the system will invoke this function when the user performs the magic tap gesture.
 
-**`Platform`**
+#### Platform
 
 ios
 
-#### Type declaration
-
-▸ (): `void`
-
-When accessible is true, the system will invoke this function when the user performs the magic tap gesture.
-
-##### Returns
+#### Returns
 
 `void`
 
-**`Platform`**
-
-ios
-
 #### Inherited from
 
-Omit.onMagicTap
+`Omit.onMagicTap`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:292
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:308
 
-___
+***
 
-### onMoveShouldSetResponder
+### onMoveShouldSetResponder()?
 
-• `Optional` **onMoveShouldSetResponder**: (`event`: `GestureResponderEvent`) => `boolean`
-
-Called for every touch move on the View when it is not the responder: does this view want to "claim" touch responsiveness?
-
-#### Type declaration
-
-▸ (`event`): `boolean`
+> `optional` **onMoveShouldSetResponder**: (`event`) => `boolean`
 
 Called for every touch move on the View when it is not the responder: does this view want to "claim" touch responsiveness?
 
-##### Parameters
+#### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
+• **event**: `GestureResponderEvent`
 
-##### Returns
+#### Returns
 
 `boolean`
 
 #### Inherited from
 
-Omit.onMoveShouldSetResponder
+`Omit.onMoveShouldSetResponder`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/types/public/ReactNativeRenderer.d.ts:53
+node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:53
 
-___
+***
 
-### onMoveShouldSetResponderCapture
+### onMoveShouldSetResponderCapture()?
 
-• `Optional` **onMoveShouldSetResponderCapture**: (`event`: `GestureResponderEvent`) => `boolean`
+> `optional` **onMoveShouldSetResponderCapture**: (`event`) => `boolean`
 
 onStartShouldSetResponder and onMoveShouldSetResponder are called with a bubbling pattern,
 where the deepest node is called first.
@@ -1918,807 +1650,632 @@ it will do a capture phase, firing on*ShouldSetResponderCapture.
 So if a parent View wants to prevent the child from becoming responder on a touch start,
 it should have a onStartShouldSetResponderCapture handler which returns true.
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `boolean`
+• **event**: `GestureResponderEvent`
 
-onStartShouldSetResponder and onMoveShouldSetResponder are called with a bubbling pattern,
-where the deepest node is called first.
-That means that the deepest component will become responder when multiple Views return true for *ShouldSetResponder handlers.
-This is desirable in most cases, because it makes sure all controls and buttons are usable.
-
-However, sometimes a parent will want to make sure that it becomes responder.
-This can be handled by using the capture phase.
-Before the responder system bubbles up from the deepest component,
-it will do a capture phase, firing on*ShouldSetResponderCapture.
-So if a parent View wants to prevent the child from becoming responder on a touch start,
-it should have a onStartShouldSetResponderCapture handler which returns true.
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `boolean`
 
 #### Inherited from
 
-Omit.onMoveShouldSetResponderCapture
+`Omit.onMoveShouldSetResponderCapture`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/types/public/ReactNativeRenderer.d.ts:135
+node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:135
 
-___
+***
 
-### onPointerCancel
+### onPointerCancel()?
 
-• `Optional` **onPointerCancel**: (`event`: `PointerEvent`) => `void`
+> `optional` **onPointerCancel**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `PointerEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `PointerEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPointerCancel
+`Omit.onPointerCancel`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:260
+node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:260
 
-___
+***
 
-### onPointerCancelCapture
+### onPointerCancelCapture()?
 
-• `Optional` **onPointerCancelCapture**: (`event`: `PointerEvent`) => `void`
+> `optional` **onPointerCancelCapture**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `PointerEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `PointerEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPointerCancelCapture
+`Omit.onPointerCancelCapture`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:261
+node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:261
 
-___
+***
 
-### onPointerDown
+### onPointerDown()?
 
-• `Optional` **onPointerDown**: (`event`: `PointerEvent`) => `void`
+> `optional` **onPointerDown**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `PointerEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `PointerEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPointerDown
+`Omit.onPointerDown`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:262
+node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:262
 
-___
+***
 
-### onPointerDownCapture
+### onPointerDownCapture()?
 
-• `Optional` **onPointerDownCapture**: (`event`: `PointerEvent`) => `void`
+> `optional` **onPointerDownCapture**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `PointerEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `PointerEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPointerDownCapture
+`Omit.onPointerDownCapture`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:263
+node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:263
 
-___
+***
 
-### onPointerEnter
+### onPointerEnter()?
 
-• `Optional` **onPointerEnter**: (`event`: `PointerEvent`) => `void`
+> `optional` **onPointerEnter**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `PointerEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `PointerEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPointerEnter
+`Omit.onPointerEnter`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:254
+node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:254
 
-___
+***
 
-### onPointerEnterCapture
+### onPointerEnterCapture()?
 
-• `Optional` **onPointerEnterCapture**: (`event`: `PointerEvent`) => `void`
+> `optional` **onPointerEnterCapture**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `PointerEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `PointerEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPointerEnterCapture
+`Omit.onPointerEnterCapture`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:255
+node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:255
 
-___
+***
 
-### onPointerLeave
+### onPointerLeave()?
 
-• `Optional` **onPointerLeave**: (`event`: `PointerEvent`) => `void`
+> `optional` **onPointerLeave**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `PointerEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `PointerEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPointerLeave
+`Omit.onPointerLeave`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:256
+node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:256
 
-___
+***
 
-### onPointerLeaveCapture
+### onPointerLeaveCapture()?
 
-• `Optional` **onPointerLeaveCapture**: (`event`: `PointerEvent`) => `void`
+> `optional` **onPointerLeaveCapture**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `PointerEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `PointerEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPointerLeaveCapture
+`Omit.onPointerLeaveCapture`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:257
+node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:257
 
-___
+***
 
-### onPointerMove
+### onPointerMove()?
 
-• `Optional` **onPointerMove**: (`event`: `PointerEvent`) => `void`
+> `optional` **onPointerMove**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `PointerEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `PointerEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPointerMove
+`Omit.onPointerMove`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:258
+node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:258
 
-___
+***
 
-### onPointerMoveCapture
+### onPointerMoveCapture()?
 
-• `Optional` **onPointerMoveCapture**: (`event`: `PointerEvent`) => `void`
+> `optional` **onPointerMoveCapture**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `PointerEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `PointerEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPointerMoveCapture
+`Omit.onPointerMoveCapture`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:259
+node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:259
 
-___
+***
 
-### onPointerUp
+### onPointerUp()?
 
-• `Optional` **onPointerUp**: (`event`: `PointerEvent`) => `void`
+> `optional` **onPointerUp**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `PointerEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `PointerEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPointerUp
+`Omit.onPointerUp`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:264
+node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:264
 
-___
+***
 
-### onPointerUpCapture
+### onPointerUpCapture()?
 
-• `Optional` **onPointerUpCapture**: (`event`: `PointerEvent`) => `void`
+> `optional` **onPointerUpCapture**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `PointerEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `PointerEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPointerUpCapture
+`Omit.onPointerUpCapture`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:265
+node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:265
 
-___
+***
 
-### onPressIn
+### onPress()?
 
-• `Optional` **onPressIn**: (`e`: `NativeSyntheticEvent`\<`NativeTouchEvent`\>) => `void`
+> `optional` **onPress**: (`e`) => `void`
+
+Called when a single tap gesture is detected.
+
+#### Parameters
+
+• **e**: `NativeSyntheticEvent`\<`NativeTouchEvent`\>
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`Omit.onPress`
+
+#### Source
+
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:755
+
+***
+
+### onPressIn()?
+
+> `optional` **onPressIn**: (`e`) => `void`
 
 Callback that is called when a touch is engaged.
 
-#### Type declaration
+#### Parameters
 
-▸ (`e`): `void`
+• **e**: `NativeSyntheticEvent`\<`NativeTouchEvent`\>
 
-Callback that is called when a touch is engaged.
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `e` | `NativeSyntheticEvent`\<`NativeTouchEvent`\> |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPressIn
+`Omit.onPressIn`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:744
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:760
 
-___
+***
 
-### onPressOut
+### onPressOut()?
 
-• `Optional` **onPressOut**: (`e`: `NativeSyntheticEvent`\<`NativeTouchEvent`\>) => `void`
+> `optional` **onPressOut**: (`e`) => `void`
 
 Callback that is called when a touch is released.
 
-#### Type declaration
+#### Parameters
 
-▸ (`e`): `void`
+• **e**: `NativeSyntheticEvent`\<`NativeTouchEvent`\>
 
-Callback that is called when a touch is released.
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `e` | `NativeSyntheticEvent`\<`NativeTouchEvent`\> |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onPressOut
+`Omit.onPressOut`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:749
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:765
 
-___
+***
 
-### onResponderEnd
+### onResponderEnd()?
 
-• `Optional` **onResponderEnd**: (`event`: `GestureResponderEvent`) => `void`
-
-If the View returns true and attempts to become the responder, one of the following will happen:
-
-#### Type declaration
-
-▸ (`event`): `void`
+> `optional` **onResponderEnd**: (`event`) => `void`
 
 If the View returns true and attempts to become the responder, one of the following will happen:
 
-##### Parameters
+#### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
+• **event**: `GestureResponderEvent`
 
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onResponderEnd
+`Omit.onResponderEnd`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/types/public/ReactNativeRenderer.d.ts:61
+node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:61
 
-___
+***
 
-### onResponderGrant
+### onResponderGrant()?
 
-• `Optional` **onResponderGrant**: (`event`: `GestureResponderEvent`) => `void`
+> `optional` **onResponderGrant**: (`event`) => `void`
 
 The View is now responding for touch events.
 This is the time to highlight and show the user what is happening
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `GestureResponderEvent`
 
-The View is now responding for touch events.
-This is the time to highlight and show the user what is happening
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onResponderGrant
+`Omit.onResponderGrant`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/types/public/ReactNativeRenderer.d.ts:67
+node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:67
 
-___
+***
 
-### onResponderMove
+### onResponderMove()?
 
-• `Optional` **onResponderMove**: (`event`: `GestureResponderEvent`) => `void`
+> `optional` **onResponderMove**: (`event`) => `void`
 
 The user is moving their finger
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `GestureResponderEvent`
 
-The user is moving their finger
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onResponderMove
+`Omit.onResponderMove`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/types/public/ReactNativeRenderer.d.ts:81
+node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:81
 
-___
+***
 
-### onResponderReject
+### onResponderReject()?
 
-• `Optional` **onResponderReject**: (`event`: `GestureResponderEvent`) => `void`
+> `optional` **onResponderReject**: (`event`) => `void`
 
 Something else is the responder right now and will not release it
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `GestureResponderEvent`
 
-Something else is the responder right now and will not release it
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onResponderReject
+`Omit.onResponderReject`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/types/public/ReactNativeRenderer.d.ts:72
+node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:72
 
-___
+***
 
-### onResponderRelease
+### onResponderRelease()?
 
-• `Optional` **onResponderRelease**: (`event`: `GestureResponderEvent`) => `void`
+> `optional` **onResponderRelease**: (`event`) => `void`
 
 Fired at the end of the touch, ie "touchUp"
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `GestureResponderEvent`
 
-Fired at the end of the touch, ie "touchUp"
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onResponderRelease
+`Omit.onResponderRelease`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/types/public/ReactNativeRenderer.d.ts:86
+node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:86
 
-___
+***
 
-### onResponderStart
+### onResponderStart()?
 
-• `Optional` **onResponderStart**: (`event`: `GestureResponderEvent`) => `void`
+> `optional` **onResponderStart**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `GestureResponderEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onResponderStart
+`Omit.onResponderStart`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/types/public/ReactNativeRenderer.d.ts:88
+node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:88
 
-___
+***
 
-### onResponderTerminate
+### onResponderTerminate()?
 
-• `Optional` **onResponderTerminate**: (`event`: `GestureResponderEvent`) => `void`
+> `optional` **onResponderTerminate**: (`event`) => `void`
 
 The responder has been taken from the View.
 Might be taken by other views after a call to onResponderTerminationRequest,
 or might be taken by the OS without asking (happens with control center/ notification center on iOS)
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `GestureResponderEvent`
 
-The responder has been taken from the View.
-Might be taken by other views after a call to onResponderTerminationRequest,
-or might be taken by the OS without asking (happens with control center/ notification center on iOS)
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onResponderTerminate
+`Omit.onResponderTerminate`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/types/public/ReactNativeRenderer.d.ts:103
+node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:103
 
-___
+***
 
-### onResponderTerminationRequest
+### onResponderTerminationRequest()?
 
-• `Optional` **onResponderTerminationRequest**: (`event`: `GestureResponderEvent`) => `boolean`
-
-Something else wants to become responder.
- Should this view release the responder? Returning true allows release
-
-#### Type declaration
-
-▸ (`event`): `boolean`
+> `optional` **onResponderTerminationRequest**: (`event`) => `boolean`
 
 Something else wants to become responder.
  Should this view release the responder? Returning true allows release
 
-##### Parameters
+#### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
+• **event**: `GestureResponderEvent`
 
-##### Returns
+#### Returns
 
 `boolean`
 
 #### Inherited from
 
-Omit.onResponderTerminationRequest
+`Omit.onResponderTerminationRequest`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/types/public/ReactNativeRenderer.d.ts:94
+node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:94
 
-___
+***
 
-### onScroll
+### onScroll()?
 
-• `Optional` **onScroll**: (`e`: `NativeSyntheticEvent`\<`TextInputScrollEventData`\>) => `void`
+> `optional` **onScroll**: (`e`) => `void`
 
 Invoked on content scroll with
  `{ nativeEvent: { contentOffset: { x, y } } }`.
 
 May also contain other properties from ScrollEvent but on Android contentSize is not provided for performance reasons.
 
-#### Type declaration
+#### Parameters
 
-▸ (`e`): `void`
+• **e**: `NativeSyntheticEvent`\<`TextInputScrollEventData`\>
 
-Invoked on content scroll with
- `{ nativeEvent: { contentOffset: { x, y } } }`.
-
-May also contain other properties from ScrollEvent but on Android contentSize is not provided for performance reasons.
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `e` | `NativeSyntheticEvent`\<`TextInputScrollEventData`\> |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onScroll
+`Omit.onScroll`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:790
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:806
 
-___
+***
 
-### onSelectionChange
+### onSelectionChange()?
 
-• `Optional` **onSelectionChange**: (`e`: `NativeSyntheticEvent`\<`TextInputSelectionChangeEventData`\>) => `void`
-
-Callback that is called when the text input selection is changed.
-
-#### Type declaration
-
-▸ (`e`): `void`
+> `optional` **onSelectionChange**: (`e`) => `void`
 
 Callback that is called when the text input selection is changed.
 
-##### Parameters
+#### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `NativeSyntheticEvent`\<`TextInputSelectionChangeEventData`\> |
+• **e**: `NativeSyntheticEvent`\<`TextInputSelectionChangeEventData`\>
 
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onSelectionChange
+`Omit.onSelectionChange`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:763
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:779
 
-___
+***
 
-### onStartShouldSetResponder
+### onStartShouldSetResponder()?
 
-• `Optional` **onStartShouldSetResponder**: (`event`: `GestureResponderEvent`) => `boolean`
-
-Does this view want to become responder on the start of a touch?
-
-#### Type declaration
-
-▸ (`event`): `boolean`
+> `optional` **onStartShouldSetResponder**: (`event`) => `boolean`
 
 Does this view want to become responder on the start of a touch?
 
-##### Parameters
+#### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
+• **event**: `GestureResponderEvent`
 
-##### Returns
+#### Returns
 
 `boolean`
 
 #### Inherited from
 
-Omit.onStartShouldSetResponder
+`Omit.onStartShouldSetResponder`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/types/public/ReactNativeRenderer.d.ts:46
+node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:46
 
-___
+***
 
-### onStartShouldSetResponderCapture
+### onStartShouldSetResponderCapture()?
 
-• `Optional` **onStartShouldSetResponderCapture**: (`event`: `GestureResponderEvent`) => `boolean`
+> `optional` **onStartShouldSetResponderCapture**: (`event`) => `boolean`
 
 onStartShouldSetResponder and onMoveShouldSetResponder are called with a bubbling pattern,
 where the deepest node is called first.
@@ -2732,255 +2289,188 @@ it will do a capture phase, firing on*ShouldSetResponderCapture.
 So if a parent View wants to prevent the child from becoming responder on a touch start,
 it should have a onStartShouldSetResponderCapture handler which returns true.
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `boolean`
+• **event**: `GestureResponderEvent`
 
-onStartShouldSetResponder and onMoveShouldSetResponder are called with a bubbling pattern,
-where the deepest node is called first.
-That means that the deepest component will become responder when multiple Views return true for *ShouldSetResponder handlers.
-This is desirable in most cases, because it makes sure all controls and buttons are usable.
-
-However, sometimes a parent will want to make sure that it becomes responder.
-This can be handled by using the capture phase.
-Before the responder system bubbles up from the deepest component,
-it will do a capture phase, firing on*ShouldSetResponderCapture.
-So if a parent View wants to prevent the child from becoming responder on a touch start,
-it should have a onStartShouldSetResponderCapture handler which returns true.
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `boolean`
 
 #### Inherited from
 
-Omit.onStartShouldSetResponderCapture
+`Omit.onStartShouldSetResponderCapture`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/types/public/ReactNativeRenderer.d.ts:118
+node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:118
 
-___
+***
 
-### onSubmitEditing
+### onSubmitEditing()?
 
-• `Optional` **onSubmitEditing**: (`e`: `NativeSyntheticEvent`\<`TextInputSubmitEditingEventData`\>) => `void`
-
-Callback that is called when the text input's submit button is pressed.
-
-#### Type declaration
-
-▸ (`e`): `void`
+> `optional` **onSubmitEditing**: (`e`) => `void`
 
 Callback that is called when the text input's submit button is pressed.
 
-##### Parameters
+#### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `NativeSyntheticEvent`\<`TextInputSubmitEditingEventData`\> |
+• **e**: `NativeSyntheticEvent`\<`TextInputSubmitEditingEventData`\>
 
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onSubmitEditing
+`Omit.onSubmitEditing`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:770
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:786
 
-___
+***
 
-### onTextInput
+### onTextInput()?
 
-• `Optional` **onTextInput**: (`e`: `NativeSyntheticEvent`\<`TextInputTextInputEventData`\>) => `void`
+> `optional` **onTextInput**: (`e`) => `void`
 
 Callback that is called on new text input with the argument
  `{ nativeEvent: { text, previousText, range: { start, end } } }`.
 
 This prop requires multiline={true} to be set.
 
-#### Type declaration
+#### Parameters
 
-▸ (`e`): `void`
+• **e**: `NativeSyntheticEvent`\<`TextInputTextInputEventData`\>
 
-Callback that is called on new text input with the argument
- `{ nativeEvent: { text, previousText, range: { start, end } } }`.
-
-This prop requires multiline={true} to be set.
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `e` | `NativeSyntheticEvent`\<`TextInputTextInputEventData`\> |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onTextInput
+`Omit.onTextInput`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:780
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:796
 
-___
+***
 
-### onTouchCancel
+### onTouchCancel()?
 
-• `Optional` **onTouchCancel**: (`event`: `GestureResponderEvent`) => `void`
+> `optional` **onTouchCancel**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `GestureResponderEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onTouchCancel
+`Omit.onTouchCancel`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:22
+node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:22
 
-___
+***
 
-### onTouchEnd
+### onTouchEnd()?
 
-• `Optional` **onTouchEnd**: (`event`: `GestureResponderEvent`) => `void`
+> `optional` **onTouchEnd**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `GestureResponderEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onTouchEnd
+`Omit.onTouchEnd`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:21
+node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:21
 
-___
+***
 
-### onTouchEndCapture
+### onTouchEndCapture()?
 
-• `Optional` **onTouchEndCapture**: (`event`: `GestureResponderEvent`) => `void`
+> `optional` **onTouchEndCapture**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `GestureResponderEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onTouchEndCapture
+`Omit.onTouchEndCapture`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:23
+node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:23
 
-___
+***
 
-### onTouchMove
+### onTouchMove()?
 
-• `Optional` **onTouchMove**: (`event`: `GestureResponderEvent`) => `void`
+> `optional` **onTouchMove**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `GestureResponderEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onTouchMove
+`Omit.onTouchMove`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:20
+node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:20
 
-___
+***
 
-### onTouchStart
+### onTouchStart()?
 
-• `Optional` **onTouchStart**: (`event`: `GestureResponderEvent`) => `void`
+> `optional` **onTouchStart**: (`event`) => `void`
 
-#### Type declaration
+#### Parameters
 
-▸ (`event`): `void`
+• **event**: `GestureResponderEvent`
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `event` | `GestureResponderEvent` |
-
-##### Returns
+#### Returns
 
 `void`
 
 #### Inherited from
 
-Omit.onTouchStart
+`Omit.onTouchStart`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:19
+node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:19
 
-___
+***
 
-### passwordRules
+### passwordRules?
 
-• `Optional` **passwordRules**: ``null`` \| `string`
+> `optional` **passwordRules**: `null` \| `string`
 
 Provide rules for your password.
 For example, say you want to require a password with at least eight characters consisting of a mix of uppercase and lowercase letters, at least one number, and at most two consecutive characters.
@@ -2988,49 +2478,49 @@ For example, say you want to require a password with at least eight characters c
 
 #### Inherited from
 
-Omit.passwordRules
+`Omit.passwordRules`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:184
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:187
 
-___
+***
 
-### placeholder
+### placeholder?
 
-• `Optional` **placeholder**: `string`
+> `optional` **placeholder**: `string`
 
 The string that will be rendered before text input has been entered
 
 #### Inherited from
 
-Omit.placeholder
+`Omit.placeholder`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:810
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:826
 
-___
+***
 
-### placeholderTextColor
+### placeholderTextColor?
 
-• `Optional` **placeholderTextColor**: `ColorValue`
+> `optional` **placeholderTextColor**: `ColorValue`
 
 The text color of the placeholder string
 
 #### Inherited from
 
-Omit.placeholderTextColor
+`Omit.placeholderTextColor`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:815
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:831
 
-___
+***
 
-### pointerEvents
+### pointerEvents?
 
-• `Optional` **pointerEvents**: ``"none"`` \| ``"auto"`` \| ``"box-none"`` \| ``"box-only"``
+> `optional` **pointerEvents**: `"none"` \| `"auto"` \| `"box-none"` \| `"box-only"`
 
 In the absence of auto property, none is much like CSS's none value. box-none is as if you had applied the CSS class:
 
@@ -3055,33 +2545,33 @@ we opt to not include pointerEvents on style. On some platforms, we would need t
 
 #### Inherited from
 
-Omit.pointerEvents
+`Omit.pointerEvents`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:224
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:235
 
-___
+***
 
-### readOnly
+### readOnly?
 
-• `Optional` **readOnly**: `boolean`
+> `optional` **readOnly**: `boolean`
 
 If `true`, text is not editable. The default value is `false`.
 
 #### Inherited from
 
-Omit.readOnly
+`Omit.readOnly`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:820
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:836
 
-___
+***
 
-### rejectResponderTermination
+### rejectResponderTermination?
 
-• `Optional` **rejectResponderTermination**: ``null`` \| `boolean`
+> `optional` **rejectResponderTermination**: `null` \| `boolean`
 
 If `true`, allows TextInput to pass touch events to the parent component.
 This allows components to be swipeable from the TextInput on iOS,
@@ -3090,17 +2580,17 @@ If `false`, TextInput always asks to handle the input (except when disabled).
 
 #### Inherited from
 
-Omit.rejectResponderTermination
+`Omit.rejectResponderTermination`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:192
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:195
 
-___
+***
 
-### removeClippedSubviews
+### removeClippedSubviews?
 
-• `Optional` **removeClippedSubviews**: `boolean`
+> `optional` **removeClippedSubviews**: `boolean`
 
 This is a special performance property exposed by RCTView and is useful for scrolling content when there are many subviews,
 most of which are offscreen. For this property to be effective, it must be applied to a view that contains many subviews that extend outside its bound.
@@ -3108,17 +2598,17 @@ The subviews must also have overflow: hidden, as should the containing view (or 
 
 #### Inherited from
 
-Omit.removeClippedSubviews
+`Omit.removeClippedSubviews`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:232
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:243
 
-___
+***
 
-### renderToHardwareTextureAndroid
+### renderToHardwareTextureAndroid?
 
-• `Optional` **renderToHardwareTextureAndroid**: `boolean`
+> `optional` **renderToHardwareTextureAndroid**: `boolean`
 
 Whether this view should render itself (and all of its children) into a single hardware texture on the GPU.
 
@@ -3128,193 +2618,216 @@ re-used and re-composited with different parameters. The downside is that this c
 
 #### Inherited from
 
-Omit.renderToHardwareTextureAndroid
+`Omit.renderToHardwareTextureAndroid`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:158
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:142
 
-___
+***
 
-### requiredText
+### requiredText?
 
-• `Optional` **requiredText**: `string`
+> `optional` **requiredText**: `string`
 
 The text to render besides the label text when the field is requried.
 
-**`Default`**
+#### Default
 
 ```ts
 "*"
 ```
 
-#### Defined in
+#### Source
 
 [packages/native/src/lib/fields/TextField.component.tsx:49](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L49)
 
-___
+***
 
-### returnKeyLabel
+### returnKeyLabel?
 
-• `Optional` **returnKeyLabel**: `string`
+> `optional` **returnKeyLabel**: `string`
 
 Sets the return key to the label. Use it instead of `returnKeyType`.
 
-**`Platform`**
+#### Platform
 
 android
 
 #### Inherited from
 
-Omit.returnKeyLabel
+`Omit.returnKeyLabel`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:387
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:398
 
-___
+***
 
-### returnKeyType
+### returnKeyType?
 
-• `Optional` **returnKeyType**: `ReturnKeyTypeOptions`
+> `optional` **returnKeyType**: `ReturnKeyTypeOptions`
 
 enum('default', 'go', 'google', 'join', 'next', 'route', 'search', 'send', 'yahoo', 'done', 'emergency-call')
 Determines how the return key should look.
 
 #### Inherited from
 
-Omit.returnKeyType
+`Omit.returnKeyType`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:826
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:842
 
-___
+***
 
-### role
+### role?
 
-• `Optional` **role**: `Role`
+> `optional` **role**: `Role`
 
 Indicates to accessibility services to treat UI component like a specific role.
 
 #### Inherited from
 
-Omit.role
+`Omit.role`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:108
+node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:100
 
-___
+***
 
-### scrollEnabled
+### scrollEnabled?
 
-• `Optional` **scrollEnabled**: `boolean`
+> `optional` **scrollEnabled**: `boolean`
 
 If false, scrolling of the text view will be disabled. The default value is true. Only works with multiline={true}
 
 #### Inherited from
 
-Omit.scrollEnabled
+`Omit.scrollEnabled`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:302
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:305
 
-___
+***
 
-### secureTextEntry
+### secureTextEntry?
 
-• `Optional` **secureTextEntry**: `boolean`
+> `optional` **secureTextEntry**: `boolean`
 
 If true, the text input obscures the text entered so that sensitive text like passwords stay secure.
 The default value is false.
 
 #### Inherited from
 
-Omit.secureTextEntry
+`Omit.secureTextEntry`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:838
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:854
 
-___
+***
 
-### selectTextOnFocus
+### selectTextOnFocus?
 
-• `Optional` **selectTextOnFocus**: `boolean`
+> `optional` **selectTextOnFocus**: `boolean`
 
 If true, all text will automatically be selected on focus
 
 #### Inherited from
 
-Omit.selectTextOnFocus
+`Omit.selectTextOnFocus`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:843
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:859
 
-___
+***
 
-### selection
+### selection?
 
-• `Optional` **selection**: `Object`
+> `optional` **selection**: `object`
 
 The start and end of the text input's selection. Set start and end to
 the same value to position the cursor.
 
-#### Type declaration
+#### end?
 
-| Name | Type |
-| :------ | :------ |
-| `end?` | `number` |
-| `start` | `number` |
+> `optional` **end**: `number`
+
+#### start
+
+> **start**: `number`
 
 #### Inherited from
 
-Omit.selection
+`Omit.selection`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:849
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:865
 
-___
+***
 
-### selectionColor
+### selectionColor?
 
-• `Optional` **selectionColor**: `ColorValue`
+> `optional` **selectionColor**: `ColorValue`
 
 The highlight (and cursor on ios) color of the text input
 
 #### Inherited from
 
-Omit.selectionColor
+`Omit.selectionColor`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:854
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:870
 
-___
+***
 
-### selectionState
+### selectionHandleColor?
 
-• `Optional` **selectionState**: `DocumentSelectionState`
+> `optional` **selectionHandleColor**: `null` \| `ColorValue`
+
+When provided it will set the color of the selection handles when highlighting text.
+Unlike the behavior of `selectionColor` the handle color will be set independently
+from the color of the text selection box.
+
+#### Platform
+
+android
+
+#### Inherited from
+
+`Omit.selectionHandleColor`
+
+#### Source
+
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:345
+
+***
+
+### selectionState?
+
+> `optional` **selectionState**: `DocumentSelectionState`
 
 See DocumentSelectionState.js, some state that is responsible for maintaining selection information for a document
 
 #### Inherited from
 
-Omit.selectionState
+`Omit.selectionState`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:197
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:200
 
-___
+***
 
-### shouldRasterizeIOS
+### shouldRasterizeIOS?
 
-• `Optional` **shouldRasterizeIOS**: `boolean`
+> `optional` **shouldRasterizeIOS**: `boolean`
 
 Whether this view should be rendered as a bitmap before compositing.
 
@@ -3327,33 +2840,33 @@ Test and measure when using this property.
 
 #### Inherited from
 
-Omit.shouldRasterizeIOS
+`Omit.shouldRasterizeIOS`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:124
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:124
 
-___
+***
 
-### showSoftInputOnFocus
+### showSoftInputOnFocus?
 
-• `Optional` **showSoftInputOnFocus**: `boolean`
+> `optional` **showSoftInputOnFocus**: `boolean`
 
 When false, it will prevent the soft keyboard from showing when the field is focused. The default value is true
 
 #### Inherited from
 
-Omit.showSoftInputOnFocus
+`Omit.showSoftInputOnFocus`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:408
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:419
 
-___
+***
 
-### smartInsertDelete
+### smartInsertDelete?
 
-• `Optional` **smartInsertDelete**: `boolean`
+> `optional` **smartInsertDelete**: `boolean`
 
 If `false`, the iOS system will not insert an extra space after a paste operation
 neither delete one or two spaces after a cut or delete operation.
@@ -3362,126 +2875,148 @@ The default value is `true`.
 
 #### Inherited from
 
-Omit.smartInsertDelete
+`Omit.smartInsertDelete`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:320
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:323
 
-___
+***
 
-### spellCheck
+### spellCheck?
 
-• `Optional` **spellCheck**: `boolean`
+> `optional` **spellCheck**: `boolean`
 
 If false, disables spell-check style (i.e. red underlines). The default value is inherited from autoCorrect
 
 #### Inherited from
 
-Omit.spellCheck
+`Omit.spellCheck`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:202
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:205
 
-___
+***
 
-### style
+### style?
 
-• `Optional` **style**: `StyleProp`\<`ViewStyle`\>
+> `optional` **style**: `StyleProp`\<`ViewStyle`\>
 
 The styles of the View wrapping the field.
 
 #### Overrides
 
-Omit.style
+`Omit.style`
 
-#### Defined in
+#### Source
 
 [packages/native/src/lib/fields/TextField.component.tsx:53](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L53)
 
-___
+***
 
-### supStyle
+### supStyle?
 
-• `Optional` **supStyle**: `StyleProp`\<`TextStyle`\>
+> `optional` **supStyle**: `StyleProp`\<`TextStyle`\>
 
 The styles of the superscript `<Text>` component.
 
-#### Defined in
+#### Source
 
 [packages/native/src/lib/fields/TextField.component.tsx:57](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L57)
 
-___
+***
 
-### testID
+### tabIndex?
 
-• `Optional` **testID**: `string`
+> `optional` **tabIndex**: `0` \| `-1`
+
+Indicates whether this `View` should be focusable with a non-touch input device, eg. receive focus with a hardware keyboard.
+See https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
+for more details.
+
+Supports the following values:
+-  0 (View is focusable)
+- -1 (View is not focusable)
+
+#### Inherited from
+
+`Omit.tabIndex`
+
+#### Source
+
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:158
+
+***
+
+### testID?
+
+> `optional` **testID**: `string`
 
 Used to locate this view in end-to-end tests
 
 #### Inherited from
 
-Omit.testID
+`Omit.testID`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:869
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:885
 
-___
+***
 
-### textAlign
+### textAlign?
 
-• `Optional` **textAlign**: ``"center"`` \| ``"left"`` \| ``"right"``
+> `optional` **textAlign**: `"center"` \| `"left"` \| `"right"`
 
 Align the input text to the left, center, or right sides of the input field.
 
 #### Inherited from
 
-Omit.textAlign
+`Omit.textAlign`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:864
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:880
 
-___
+***
 
-### textAlignVertical
+### textAlignVertical?
 
-• `Optional` **textAlignVertical**: ``"center"`` \| ``"auto"`` \| ``"top"`` \| ``"bottom"``
+> `optional` **textAlignVertical**: `"center"` \| `"auto"` \| `"top"` \| `"bottom"`
 
 Vertically align text when `multiline` is set to true
 
 #### Inherited from
 
-Omit.textAlignVertical
+`Omit.textAlignVertical`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:403
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:414
 
-___
+***
 
-### textBreakStrategy
+### textBreakStrategy?
 
-• `Optional` **textBreakStrategy**: ``"simple"`` \| ``"highQuality"`` \| ``"balanced"``
+> `optional` **textBreakStrategy**: `"simple"` \| `"highQuality"` \| `"balanced"`
 
 Set text break strategy on Android API Level 23+, possible values are simple, highQuality, balanced
 The default value is simple.
 
 #### Inherited from
 
-Omit.textBreakStrategy
+`Omit.textBreakStrategy`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:393
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:404
 
-___
+***
 
-### textContentType
+### textContentType?
 
-• `Optional` **textContentType**: ``"none"`` \| ``"name"`` \| ``"nickname"`` \| ``"password"`` \| ``"username"`` \| ``"URL"`` \| ``"addressCity"`` \| ``"addressCityAndState"`` \| ``"addressState"`` \| ``"countryName"`` \| ``"creditCardNumber"`` \| ``"creditCardExpiration"`` \| ``"creditCardExpirationMonth"`` \| ``"creditCardExpirationYear"`` \| ``"creditCardSecurityCode"`` \| ``"creditCardType"`` \| ``"creditCardName"`` \| ``"creditCardGivenName"`` \| ``"creditCardMiddleName"`` \| ``"creditCardFamilyName"`` \| ``"emailAddress"`` \| ``"familyName"`` \| ``"fullStreetAddress"`` \| ``"givenName"`` \| ``"jobTitle"`` \| ``"location"`` \| ``"middleName"`` \| ``"namePrefix"`` \| ``"nameSuffix"`` \| ``"organizationName"`` \| ``"postalCode"`` \| ``"streetAddressLine1"`` \| ``"streetAddressLine2"`` \| ``"sublocality"`` \| ``"telephoneNumber"`` \| ``"newPassword"`` \| ``"oneTimeCode"`` \| ``"birthdate"`` \| ``"birthdateDay"`` \| ``"birthdateMonth"`` \| ``"birthdateYear"``
+> `optional` **textContentType**: `"name"` \| `"none"` \| `"nickname"` \| `"password"` \| `"username"` \| `"URL"` \| `"addressCity"` \| `"addressCityAndState"` \| `"addressState"` \| `"countryName"` \| `"creditCardNumber"` \| `"creditCardExpiration"` \| `"creditCardExpirationMonth"` \| `"creditCardExpirationYear"` \| `"creditCardSecurityCode"` \| `"creditCardType"` \| `"creditCardName"` \| `"creditCardGivenName"` \| `"creditCardMiddleName"` \| `"creditCardFamilyName"` \| `"emailAddress"` \| `"familyName"` \| `"fullStreetAddress"` \| `"givenName"` \| `"jobTitle"` \| `"location"` \| `"middleName"` \| `"namePrefix"` \| `"nameSuffix"` \| `"organizationName"` \| `"postalCode"` \| `"streetAddressLine1"` \| `"streetAddressLine2"` \| `"sublocality"` \| `"telephoneNumber"` \| `"newPassword"` \| `"oneTimeCode"` \| `"birthdate"` \| `"birthdateDay"` \| `"birthdateMonth"` \| `"birthdateYear"`
 
 Give the keyboard and the system information about the expected
 semantic meaning for the content that users enter.
@@ -3534,152 +3069,152 @@ Possible values for `textContentType` are:
 
 #### Inherited from
 
-Omit.textContentType
+`Omit.textContentType`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:255
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:258
 
-___
+***
 
-### textInputStyle
+### textInputStyle?
 
-• `Optional` **textInputStyle**: `StyleProp`\<`TextStyle`\>
+> `optional` **textInputStyle**: `StyleProp`\<`TextStyle`\>
 
 The styles of the `<TextInput>` component.
 
-#### Defined in
+#### Source
 
 [packages/native/src/lib/fields/TextField.component.tsx:61](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L61)
 
-___
+***
 
-### tvParallaxMagnification
+### tvParallaxMagnification?
 
-• `Optional` **tvParallaxMagnification**: `number`
+> `optional` **tvParallaxMagnification**: `number`
 
 *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
 
-**`Platform`**
+#### Platform
 
 ios
 
 #### Inherited from
 
-Omit.tvParallaxMagnification
+`Omit.tvParallaxMagnification`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:110
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:110
 
-___
+***
 
-### tvParallaxProperties
+### tvParallaxProperties?
 
-• `Optional` **tvParallaxProperties**: `TVParallaxProperties`
+> `optional` **tvParallaxProperties**: `TVParallaxProperties`
 
 *(Apple TV only)* Object with properties to control Apple TV parallax effects.
 
-**`Platform`**
+#### Platform
 
 ios
 
 #### Inherited from
 
-Omit.tvParallaxProperties
+`Omit.tvParallaxProperties`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:82
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:82
 
-___
+***
 
-### tvParallaxShiftDistanceX
+### tvParallaxShiftDistanceX?
 
-• `Optional` **tvParallaxShiftDistanceX**: `number`
+> `optional` **tvParallaxShiftDistanceX**: `number`
 
 *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 2.0.
 
-**`Platform`**
+#### Platform
 
 ios
 
 #### Inherited from
 
-Omit.tvParallaxShiftDistanceX
+`Omit.tvParallaxShiftDistanceX`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:89
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:89
 
-___
+***
 
-### tvParallaxShiftDistanceY
+### tvParallaxShiftDistanceY?
 
-• `Optional` **tvParallaxShiftDistanceY**: `number`
+> `optional` **tvParallaxShiftDistanceY**: `number`
 
 *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 2.0.
 
-**`Platform`**
+#### Platform
 
 ios
 
 #### Inherited from
 
-Omit.tvParallaxShiftDistanceY
+`Omit.tvParallaxShiftDistanceY`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:96
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:96
 
-___
+***
 
-### tvParallaxTiltAngle
+### tvParallaxTiltAngle?
 
-• `Optional` **tvParallaxTiltAngle**: `number`
+> `optional` **tvParallaxTiltAngle**: `number`
 
 *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 0.05.
 
-**`Platform`**
+#### Platform
 
 ios
 
 #### Inherited from
 
-Omit.tvParallaxTiltAngle
+`Omit.tvParallaxTiltAngle`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:103
+node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:103
 
-___
+***
 
-### underlineColorAndroid
+### underlineColorAndroid?
 
-• `Optional` **underlineColorAndroid**: `ColorValue`
+> `optional` **underlineColorAndroid**: `ColorValue`
 
 The color of the textInput underline.
 
 #### Inherited from
 
-Omit.underlineColorAndroid
+`Omit.underlineColorAndroid`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:398
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:409
 
-___
+***
 
-### verticalAlign
+### verticalAlign?
 
-• `Optional` **verticalAlign**: ``"auto"`` \| ``"top"`` \| ``"bottom"`` \| ``"middle"``
+> `optional` **verticalAlign**: `"auto"` \| `"top"` \| `"bottom"` \| `"middle"`
 
 Vertically align text when `multiline` is set to true
 
 #### Inherited from
 
-Omit.verticalAlign
+`Omit.verticalAlign`
 
-#### Defined in
+#### Source
 
-node_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:413
+node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:424
