@@ -15,7 +15,6 @@ import type { ZodSchema } from "zod";
 
 import { DeepPartial, FormCtxt, Optional, Path, Struct, ValueByPath, safeFormContext } from "./Form.context";
 import { Adapter, getAdapter, handleResult } from "./helpers/adapters";
-import { isFunctionAction } from "./helpers/commons";
 
 /**
  * Generic callback function. Infers the arguments types and the return type is
@@ -166,7 +165,7 @@ export const FormProvider = memo(<T extends Struct>(props: FormProviderProps<T>)
     return action => {
       setValues(prev => {
         const prevValue: ValueByPath<T, K> = get(prev, path);
-        const next = isFunctionAction(action)
+        const next = action instanceof Function
           ? action(prevValue)
           : action;
 
@@ -178,7 +177,7 @@ export const FormProvider = memo(<T extends Struct>(props: FormProviderProps<T>)
   }, []);
 
   const handleChange = useCallback<RenderProps<T>["handleChange"]>((path, valueOrCallback) => (...args): void => {
-    const nextValue = isChangeCallback(valueOrCallback)
+    const nextValue = valueOrCallback instanceof Function
       ? valueOrCallback(...args)
       : valueOrCallback;
 
@@ -231,17 +230,3 @@ export const FormProvider = memo(<T extends Struct>(props: FormProviderProps<T>)
     </FormContext.Provider>
   );
 }, isEqual);
-
-/**
- * Type guards which narrows the type of a value or its change callback.
- *
- * @param valueOrCallback either a value or its change callback
- * @returns true if the parameter is a change callback, false otherwise
- */
-function isChangeCallback<
-  T extends Struct,
-  K extends Path<T>,
-  A extends unknown[],
->(valueOrCallback: Optional<ValueByPath<T, K>> | ChangeCallback<T, K, A>): valueOrCallback is ChangeCallback<T, K, A> {
-  return typeof valueOrCallback === "function";
-}

@@ -3,7 +3,6 @@ import { FormProvider } from "@lynxts/core";
 import { fireEvent, render, waitFor } from "@testing-library/react-native";
 import { ReactElement, useCallback, useState } from "react";
 import { Button } from "react-native";
-import { act } from "react-test-renderer";
 import Sinon from "sinon";
 import { ObjectSchema, object, string } from "yup";
 
@@ -51,13 +50,13 @@ describe("[Integration] TextField.component.test.tsx", () => {
 
       const nameField = await findByLabelText("Name: *");
 
-      await act(() => fireEvent.changeText(nameField, "bar"));
+      await waitFor(() => fireEvent.changeText(nameField, "bar"));
 
       await waitFor(() => getByDisplayValue("bar"));
 
       const submitButton = await findByRole("button", { name: "Submit!" });
 
-      await act(() => fireEvent.press(submitButton));
+      await waitFor(() => fireEvent.press(submitButton));
 
       Sinon.assert.calledOnceWithExactly(spySubmit, { name: "bar", other: "5" });
     });
@@ -71,7 +70,7 @@ describe("[Integration] TextField.component.test.tsx", () => {
 
       expect(queryByText("The name is required!")).toBeNull();
 
-      await act(() => fireEvent(nameField, "blur", { }));
+      await waitFor(() => fireEvent(nameField, "blur", { }));
 
       await waitFor(() => getByText("The name is required!"));
     });
@@ -88,13 +87,13 @@ describe("[Integration] TextField.component.test.tsx", () => {
 
       const updateButton = await findByRole("button", { name: "Update!" });
 
-      await act(() => fireEvent.press(updateButton));
+      await waitFor(() => fireEvent.press(updateButton));
 
       await waitFor(() => getByDisplayValue("foo"));
 
       const submitButton = await findByRole("button", { name: "Submit!" });
 
-      await act(() => fireEvent.press(submitButton));
+      await waitFor(() => fireEvent.press(submitButton));
 
       Sinon.assert.calledOnceWithExactly(spySubmit, { name: "foo", other: "10" });
     });
@@ -159,11 +158,11 @@ describe("[Integration] TextField.component.test.tsx", () => {
 
       const textField = await findByLabelText("Name: *");
 
-      await act(() => fireEvent.changeText(textField, "foo"));
+      await waitFor(() => fireEvent.changeText(textField, "foo"));
 
       await waitFor(() => getByDisplayValue("foo"));
 
-      await act(() => fireEvent(textField, "submitEditing"));
+      await waitFor(() => fireEvent(textField, "submitEditing"));
 
       Sinon.assert.calledOnceWithExactly(spySubmit, { name: "foo" });
     });

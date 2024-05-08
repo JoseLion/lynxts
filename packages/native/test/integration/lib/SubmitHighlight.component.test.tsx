@@ -1,7 +1,6 @@
 import { FormProvider } from "@lynxts/core";
-import { fireEvent, render } from "@testing-library/react-native";
+import { fireEvent, render, waitFor } from "@testing-library/react-native";
 import { Text } from "react-native";
-import { act } from "react-test-renderer";
 import Sinon from "sinon";
 
 import { SubmitHighlight } from "../../../src/lib/SubmitHighlight.component";
@@ -22,7 +21,7 @@ describe("[Integration] SubmitHighlight.component.test.tsx", () => {
 
         const submit = await findByText("Submit!");
 
-        await act(() => fireEvent.press(submit));
+        await waitFor(() => fireEvent.press(submit));
 
         Sinon.assert.calledOnceWithExactly(spySubmit, { name: "foo", other: 5 });
       });
@@ -42,7 +41,7 @@ describe("[Integration] SubmitHighlight.component.test.tsx", () => {
 
         const submit = await findByText("Submit!");
 
-        await act(() => fireEvent.press(submit));
+        await waitFor(() => fireEvent.press(submit));
 
         Sinon.assert.calledOnceWithExactly(spySubmit, { name: "foo", other: 5 });
         Sinon.assert.calledOnce(spyOnPress);
