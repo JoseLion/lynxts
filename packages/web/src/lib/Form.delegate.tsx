@@ -1,6 +1,7 @@
-import { FormProviderProps, RenderProps, Struct } from "@lynxts/core";
-import { ComponentProps, FormEvent, ReactNode, memo, useCallback, useMemo } from "react";
+import { type ComponentProps, type FormEvent, type ReactNode, memo, useCallback, useMemo } from "react";
 import isEqual from "react-fast-compare";
+
+import type { FormProviderProps, RenderProps, Struct } from "@lynxts/core";
 
 export type HTMLFormProps = Omit<ComponentProps<"form">, "children" | "onSubmit">;
 
@@ -31,7 +32,7 @@ export const FormDelegate = memo(<T extends Struct>(props: FormDelegateProps<T>)
 
   return (
     <form noValidate={true} onSubmit={handleSubmit} {...rest}>
-      <>{renderAsFunction ?? renderAsElement}</>
+      {renderAsFunction ?? renderAsElement}
     </form>
   );
 }, isEqual);

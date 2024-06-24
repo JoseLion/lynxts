@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/ban-types */
-import { ComponentType, ComponentProps, ForwardedRef, ReactNode, RefAttributes } from "react";
+import type { ComponentProps, ComponentType, ForwardedRef, ReactNode, RefAttributes } from "react";
 
 declare module "react" {
 

@@ -1,7 +1,7 @@
 import { useFormSelector } from "@lynxts/core";
-import { ReactElement, memo, useCallback } from "react";
+import { type ReactElement, memo, useCallback } from "react";
 import isEqual from "react-fast-compare";
-import { GestureResponderEvent, TouchableOpacity, TouchableOpacityProps } from "react-native";
+import { type GestureResponderEvent, TouchableOpacity, type TouchableOpacityProps } from "react-native";
 
 /**
  * Helper component based on {@link TouchableOpacity} which calls `submit()`

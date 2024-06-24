@@ -3,7 +3,7 @@ import { fireEvent, render, waitFor } from "@testing-library/react-native";
 import Sinon from "sinon";
 
 import { SubmitButton } from "../../../src/lib/SubmitButton.component";
-import { Foo, foo, schema } from "../../helpers/testSchema";
+import { type Foo, foo, schema } from "../../helpers/testSchema";
 
 describe("[Integration] SubmitButton.component.test.tsx", () => {
   context("when the button is pressed", () => {

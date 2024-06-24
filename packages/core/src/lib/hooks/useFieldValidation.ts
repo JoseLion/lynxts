@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useContextSelector } from "use-context-selector";
 
-import { Optional, Path, Struct, safeFormContext } from "../Form.context";
+import { type Optional, type Path, type Struct, safeFormContext } from "../Form.context";
 import { getAdapter } from "../helpers/adapters";
 
 /**

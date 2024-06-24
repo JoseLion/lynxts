@@ -1,4 +1,4 @@
-import { ObjectSchema, number, object, string } from "yup";
+import { type ObjectSchema, number, object, string } from "yup";
 
 export interface Foo {
   name: string;

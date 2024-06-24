@@ -1,8 +1,8 @@
-import { FormProvider, FormProviderProps, Struct } from "@lynxts/core";
-import { ReactElement, memo } from "react";
+import { FormProvider, type FormProviderProps, type Struct } from "@lynxts/core";
+import { type ReactElement, memo } from "react";
 import isEqual from "react-fast-compare";
 
-import { HTMLFormProps, FormDelegate } from "./Form.delegate";
+import { FormDelegate, type HTMLFormProps } from "./Form.delegate";
 
 /**
  * From component props
@@ -29,16 +29,16 @@ export const Form = memo(<T extends Struct>(props: FormProps<T>): ReactElement =
   const { children, onSubmit, validation, values, ...rest } = props;
 
   return (
-      <FormProvider<T>
-        onSubmit={onSubmit}
-        validation={validation}
-        values={values}
-      >
-        {renderProps => (
-          <FormDelegate {...renderProps} {...rest}>
-            {children}
-          </FormDelegate>
+    <FormProvider<T>
+      onSubmit={onSubmit}
+      validation={validation}
+      values={values}
+    >
+      {renderProps => (
+        <FormDelegate {...renderProps} {...rest}>
+          {children}
+        </FormDelegate>
         )}
-      </FormProvider>
+    </FormProvider>
   );
 }, isEqual);

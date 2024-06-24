@@ -1,9 +1,10 @@
-import { DependencyList, ReactElement, ReactNode, memo, useCallback, useMemo } from "react";
+import { type DependencyList, type ReactElement, type ReactNode, memo, useCallback, useMemo } from "react";
 import isEqual from "react-fast-compare";
 
-import { Optional, Path, Struct, ValueByPath } from "../Form.context";
-import { UseField, useField } from "../hooks/useField";
-import { UseFieldValidation, useFieldValidation } from "../hooks/useFieldValidation";
+import { type UseField, useField } from "../hooks/useField";
+import { type UseFieldValidation, useFieldValidation } from "../hooks/useFieldValidation";
+
+import type { Optional, Path, Struct, ValueByPath } from "../Form.context";
 
 /**
  * Helper type to describe a {@link Field} component of an specific struct `T`.

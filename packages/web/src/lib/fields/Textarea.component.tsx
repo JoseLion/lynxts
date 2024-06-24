@@ -1,10 +1,10 @@
-import { Path, Struct, useField, useFieldValidation } from "@lynxts/core";
+import { type Path, type Struct, useField, useFieldValidation } from "@lynxts/core";
 import {
-  ChangeEvent,
-  FocusEvent,
-  ReactElement,
-  ReactNode,
-  TextareaHTMLAttributes,
+  type ChangeEvent,
+  type FocusEvent,
+  type ReactElement,
+  type ReactNode,
+  type TextareaHTMLAttributes,
   memo,
   useCallback,
   useMemo,

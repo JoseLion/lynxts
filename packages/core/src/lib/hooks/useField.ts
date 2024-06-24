@@ -1,8 +1,8 @@
 import { get, set } from "dot-prop-immutable";
-import { Dispatch, SetStateAction, useCallback, useEffect, useMemo } from "react";
+import { type Dispatch, type SetStateAction, useCallback, useEffect, useMemo } from "react";
 import { useContextSelector } from "use-context-selector";
 
-import { Optional, Path, Struct, ValueByPath, safeFormContext } from "../Form.context";
+import { type Optional, type Path, type Struct, type ValueByPath, safeFormContext } from "../Form.context";
 import { getAdapter, handleResult } from "../helpers/adapters";
 
 /**

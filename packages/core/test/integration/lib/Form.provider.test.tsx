@@ -1,13 +1,13 @@
 import { expect } from "@assertive-ts/core";
 import { render, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { ReactElement, useCallback, useState } from "react";
+import { type ReactElement, useCallback, useState } from "react";
 import Sinon from "sinon";
-import { ObjectSchema, boolean, isSchema, number, object, string } from "yup";
+import { type ObjectSchema, boolean, isSchema, number, object, string } from "yup";
 import { z } from "zod";
 
 import { useFormSelector } from "../../../src/lib/Form.context";
-import { FormProvider, FormProviderProps } from "../../../src/lib/Form.provider";
+import { FormProvider, type FormProviderProps } from "../../../src/lib/Form.provider";
 
 interface Foo {
   x: number;

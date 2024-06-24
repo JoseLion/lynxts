@@ -1,12 +1,13 @@
 import { expect } from "@assertive-ts/core";
-import { RenderHookResult, renderHook, waitFor } from "@testing-library/react";
+import { type RenderHookResult, renderHook, waitFor } from "@testing-library/react";
 import Sinon from "sinon";
-import { ObjectSchema, isSchema, number, object, string } from "yup";
+import { type ObjectSchema, isSchema, number, object, string } from "yup";
 import { z } from "zod";
 
-import { Path } from "../../../../src/lib/Form.context";
-import { FormProvider, FormProviderProps } from "../../../../src/lib/Form.provider";
-import { UseFieldValidation, useFieldValidation } from "../../../../src/lib/hooks/useFieldValidation";
+import { FormProvider, type FormProviderProps } from "../../../../src/lib/Form.provider";
+import { type UseFieldValidation, useFieldValidation } from "../../../../src/lib/hooks/useFieldValidation";
+
+import type { Path } from "../../../../src/lib/Form.context";
 
 interface User {
   age?: number;

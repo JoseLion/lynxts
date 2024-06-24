@@ -1,9 +1,9 @@
 import { v4 } from "@lukeed/uuid";
 import { useCallback, useMemo, useRef } from "react";
 
-import { Path, Struct } from "../Form.context";
-
 import { useField } from "./useField";
+
+import type { Path, Struct } from "../Form.context";
 
 /**
  * The result of the {@link useArrayField} hook.
