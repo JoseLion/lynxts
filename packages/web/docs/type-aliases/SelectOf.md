@@ -30,4 +30,4 @@ struct type of the form values
 
 ## Source
 
-[packages/web/src/lib/fields/Select.component.tsx:68](https://github.com/JoseLion/lynxts/blob/main/packages/web/src/lib/fields/Select.component.tsx#L68)
+[packages/web/src/lib/fields/Select.component.tsx:77](https://github.com/JoseLion/lynxts/blob/main/packages/web/src/lib/fields/Select.component.tsx#L77)

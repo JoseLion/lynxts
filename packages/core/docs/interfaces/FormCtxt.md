@@ -29,7 +29,7 @@ either a new touched `Map<Path<T>, boolean>` or its equivalent
 
 #### Source
 
-[lib/Form.context.ts:136](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L136)
+[lib/Form.context.ts:137](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L137)
 
 ***
 
@@ -45,7 +45,7 @@ either a new `T` object or its equivalent action callback
 
 #### Source
 
-[lib/Form.context.ts:142](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L142)
+[lib/Form.context.ts:143](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L143)
 
 ***
 
@@ -62,7 +62,7 @@ either a new violations `Map<Path<T>, string>` or its equivalent
 
 #### Source
 
-[lib/Form.context.ts:149](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L149)
+[lib/Form.context.ts:150](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L150)
 
 ***
 
@@ -78,7 +78,7 @@ Submits the form when called.
 
 #### Source
 
-[lib/Form.context.ts:153](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L153)
+[lib/Form.context.ts:154](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L154)
 
 ***
 
@@ -90,7 +90,7 @@ True if the form was submitted before, false otherwise.
 
 #### Source
 
-[lib/Form.context.ts:157](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L157)
+[lib/Form.context.ts:158](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L158)
 
 ***
 
@@ -102,7 +102,7 @@ A Map of the path and a touched state boolean.
 
 #### Source
 
-[lib/Form.context.ts:161](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L161)
+[lib/Form.context.ts:162](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L162)
 
 ***
 
@@ -116,7 +116,7 @@ Form context provider.
 
 #### Source
 
-[lib/Form.context.ts:167](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L167)
+[lib/Form.context.ts:168](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L168)
 
 ***
 
@@ -128,7 +128,7 @@ The state of the values `T` of the form.
 
 #### Source
 
-[lib/Form.context.ts:171](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L171)
+[lib/Form.context.ts:172](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L172)
 
 ***
 
@@ -140,4 +140,4 @@ A Map of the path and a violation message (if any).
 
 #### Source
 
-[lib/Form.context.ts:175](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L175)
+[lib/Form.context.ts:176](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L176)
