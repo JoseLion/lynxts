@@ -1,6 +1,6 @@
 import { expect } from "@assertive-ts/core";
 
-describe("[Integration] main.ts", () => {
+describe("[Integration] main.test.ts", () => {
   it("re-exports the library exports", async () => {
     const web = await expect(import("../../src/main")).toBeResolved();
 

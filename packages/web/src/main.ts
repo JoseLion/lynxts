@@ -1,23 +1,9 @@
-export {
-  type FormProps,
-  Form,
-} from "./lib/Form.component";
+export { Form } from "./lib/Form.component";
+export { Input, inputOf } from "./lib/fields/Input.component";
+export { Select, selectOf } from "./lib/fields/Select.component";
+export { Textarea, textareaOf } from "./lib/fields/Textarea.component";
 
-export {
-  type InputOf,
-  type InputProps,
-  Input,
-  inputOf,
-} from "./lib/fields/Input.component";
-
-export { Select,
-  type SelectOf,
-  type SelectProps,
-  selectOf,
-} from "./lib/fields/Select.component";
-
-export { Textarea,
-  type TextareaOf,
-  type TextareaProps,
-  textareaOf,
-} from "./lib/fields/Textarea.component";
+export type { FormProps } from "./lib/Form.component";
+export type { InputOf, InputProps } from "./lib/fields/Input.component";
+export type { SelectOf, SelectProps } from "./lib/fields/Select.component";
+export type { TextareaOf, TextareaProps } from "./lib/fields/Textarea.component";

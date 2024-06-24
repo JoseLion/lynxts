@@ -1,8 +1,9 @@
-import { DependencyList, ReactElement, ReactNode, memo, useMemo } from "react";
+import { type DependencyList, type ReactElement, type ReactNode, memo, useMemo } from "react";
 import isEqual from "react-fast-compare";
 
-import { Path, Struct, ValueByPath } from "../Form.context";
-import { UseArrayField, useArrayField } from "../hooks/useArrayField";
+import { type UseArrayField, useArrayField } from "../hooks/useArrayField";
+
+import type { Path, Struct, ValueByPath } from "../Form.context";
 
 /**
  * Helper type to look up the inner type of an array field.

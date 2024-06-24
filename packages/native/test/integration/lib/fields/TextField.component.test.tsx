@@ -1,10 +1,10 @@
 import { expect } from "@assertive-ts/core";
 import { FormProvider } from "@lynxts/core";
 import { fireEvent, render, waitFor } from "@testing-library/react-native";
-import { ReactElement, useCallback, useState } from "react";
+import { type ReactElement, useCallback, useState } from "react";
 import { Button } from "react-native";
 import Sinon from "sinon";
-import { ObjectSchema, object, string } from "yup";
+import { type ObjectSchema, object, string } from "yup";
 
 import { SubmitButton } from "../../../../src/lib/SubmitButton.component";
 import { textFieldOf } from "../../../../src/lib/fields/TextField.component";

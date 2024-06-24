@@ -1,6 +1,6 @@
 import { render, waitFor } from "@testing-library/react";
 import Sinon from "sinon";
-import { ObjectSchema, boolean, object, string } from "yup";
+import { type ObjectSchema, boolean, object, string } from "yup";
 
 import { FormProvider } from "../../../../src/lib/Form.provider";
 import { fieldOf } from "../../../../src/lib/components/Field.component";

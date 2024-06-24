@@ -1,7 +1,7 @@
 import { expectTypeOf } from "expect-type";
-import { ReactNode } from "react";
 
-import { ArrayFieldOf, ArrayFieldProps, ArrayValue } from "../../../../src/lib/components/ArrayField.component";
+import type { ArrayFieldOf, ArrayFieldProps, ArrayValue } from "../../../../src/lib/components/ArrayField.component";
+import type { ReactNode } from "react";
 
 interface Foo {
   x: number;

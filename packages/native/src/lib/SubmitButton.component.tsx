@@ -1,7 +1,7 @@
 import { useFormSelector } from "@lynxts/core";
-import { ReactElement, memo, useCallback } from "react";
+import { type ReactElement, memo, useCallback } from "react";
 import isEqual from "react-fast-compare";
-import { GestureResponderEvent, Button, ButtonProps } from "react-native";
+import { Button, type ButtonProps, type GestureResponderEvent } from "react-native";
 
 /**
  * Helper component based on {@link Button} which calls `submit()` from the

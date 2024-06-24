@@ -1,6 +1,6 @@
 import { expectTypeOf } from "expect-type";
 
-import { Path, ValueByPath } from "../../../src/lib/Form.context";
+import type { Path, ValueByPath } from "../../../src/lib/Form.context";
 
 interface Foo {
   x: number;

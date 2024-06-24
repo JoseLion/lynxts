@@ -28,4 +28,4 @@ the array field props
 
 ## Source
 
-[lib/components/ArrayField.component.tsx:62](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L62)
+[lib/components/ArrayField.component.tsx:63](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L63)

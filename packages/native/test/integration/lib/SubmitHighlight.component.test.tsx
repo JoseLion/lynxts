@@ -4,7 +4,7 @@ import { Text } from "react-native";
 import Sinon from "sinon";
 
 import { SubmitHighlight } from "../../../src/lib/SubmitHighlight.component";
-import { Foo, foo, schema } from "../../helpers/testSchema";
+import { type Foo, foo, schema } from "../../helpers/testSchema";
 
 describe("[Integration] SubmitHighlight.component.test.tsx", () => {
   context("when the button is pressed", () => {

@@ -1,9 +1,9 @@
 import { expect } from "@assertive-ts/core";
 import { fireEvent, render, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { ReactElement, useCallback, useState } from "react";
+import { type ReactElement, useCallback, useState } from "react";
 import Sinon from "sinon";
-import { ObjectSchema, object, string } from "yup";
+import { type ObjectSchema, object, string } from "yup";
 
 import { Form } from "../../../../src/lib/Form.component";
 import { inputOf } from "../../../../src/lib/fields/Input.component";

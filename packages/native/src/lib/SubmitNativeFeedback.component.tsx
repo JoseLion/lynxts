@@ -1,7 +1,7 @@
 import { useFormSelector } from "@lynxts/core";
-import { ReactElement, memo, useCallback } from "react";
+import { type ReactElement, memo, useCallback } from "react";
 import isEqual from "react-fast-compare";
-import { GestureResponderEvent, TouchableNativeFeedback, TouchableNativeFeedbackProps } from "react-native";
+import { type GestureResponderEvent, TouchableNativeFeedback, type TouchableNativeFeedbackProps } from "react-native";
 
 /**
  * Helper component based on {@link TouchableNativeFeedback} which calls

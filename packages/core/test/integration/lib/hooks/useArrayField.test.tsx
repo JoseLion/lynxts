@@ -1,10 +1,10 @@
 import { expect } from "@assertive-ts/core";
-import { RenderHookResult, renderHook } from "@testing-library/react";
+import { type RenderHookResult, renderHook } from "@testing-library/react";
 import Sinon from "sinon";
-import { ObjectSchema, array, object, string } from "yup";
+import { type ObjectSchema, array, object, string } from "yup";
 
 import { FormProvider } from "../../../../src/lib/Form.provider";
-import { UseArrayField, useArrayField } from "../../../../src/lib/hooks/useArrayField";
+import { type UseArrayField, useArrayField } from "../../../../src/lib/hooks/useArrayField";
 
 interface User {
   name: string;

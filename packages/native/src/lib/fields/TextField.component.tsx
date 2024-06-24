@@ -1,17 +1,17 @@
-import { Path, Struct, useField, useFieldValidation, useFormSelector } from "@lynxts/core";
-import { ReactElement, memo, useCallback } from "react";
+import { type Path, type Struct, useField, useFieldValidation, useFormSelector } from "@lynxts/core";
+import { type ReactElement, memo, useCallback } from "react";
 import isEqual from "react-fast-compare";
 import {
-  NativeSyntheticEvent,
-  StyleProp,
+  type NativeSyntheticEvent,
+  type StyleProp,
   Text,
   TextInput,
-  TextInputFocusEventData,
-  TextInputProps,
-  TextInputSubmitEditingEventData,
-  TextStyle,
+  type TextInputFocusEventData,
+  type TextInputProps,
+  type TextInputSubmitEditingEventData,
+  type TextStyle,
   View,
-  ViewStyle,
+  type ViewStyle,
 } from "react-native";
 
 import { SS } from "./TextField.styles";

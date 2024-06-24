@@ -1,5 +1,14 @@
-import { Path, Struct, ValueByPath, useField, useFieldValidation } from "@lynxts/core";
-import { FocusEvent, HTMLAttributes, ReactElement, ReactNode, SyntheticEvent, memo, useCallback, useMemo } from "react";
+import { type Path, type Struct, type ValueByPath, useField, useFieldValidation } from "@lynxts/core";
+import {
+  type FocusEvent,
+  type HTMLAttributes,
+  type ReactElement,
+  type ReactNode,
+  type SyntheticEvent,
+  memo,
+  useCallback,
+  useMemo,
+} from "react";
 import isEqual from "react-fast-compare";
 
 /**

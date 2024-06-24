@@ -4,7 +4,7 @@ import { Text } from "react-native";
 import Sinon from "sinon";
 
 import { SubmitWithoutFeedback } from "../../../src/lib/SubmitWithoutFeedback.component";
-import { Foo, foo, schema } from "../../helpers/testSchema";
+import { type Foo, foo, schema } from "../../helpers/testSchema";
 
 describe("[Integration] SubmitWithoutFeedback.component.test.tsx", () => {
   context("when the button is pressed", () => {

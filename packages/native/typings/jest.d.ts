@@ -1,8 +1,8 @@
 /* eslint-disable no-var */
-import { Global } from "@jest/types";
+import type { Global } from "@jest/types";
 
 declare global {
-  var context: Global.Describe;
-  var describe: Global.Describe;
-  var it: Global.ItConcurrent;
+  export var context: Global.Describe;
+  export var describe: Global.Describe;
+  export var it: Global.ItConcurrent;
 }

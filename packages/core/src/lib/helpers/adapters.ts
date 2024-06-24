@@ -1,8 +1,8 @@
 import { get } from "dot-prop-immutable";
-import type { ObjectSchema, ValidationError } from "yup";
-import type { ZodObject, ZodSchema } from "zod";
 
 import type { Optional, Path, Struct, ValueByPath } from "../Form.context";
+import type { ObjectSchema, ValidationError } from "yup";
+import type { ZodObject, ZodSchema } from "zod";
 
 /**
  * A result type used to represent either a success or an error value.

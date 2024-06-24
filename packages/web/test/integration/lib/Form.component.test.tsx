@@ -1,7 +1,7 @@
 import { render, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Sinon from "sinon";
-import { ObjectSchema, number, object, string } from "yup";
+import { type ObjectSchema, number, object, string } from "yup";
 
 import { Form } from "../../../src/lib/Form.component";
 

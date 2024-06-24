@@ -1,10 +1,11 @@
-import { Dispatch, SetStateAction, useMemo } from "react";
-import { Context, createContext, useContext, useContextSelector } from "use-context-selector";
+import { type Dispatch, type SetStateAction, useMemo } from "react";
+import { type Context, createContext, useContext, useContextSelector } from "use-context-selector";
+
+import { type Adapter, noValidate } from "./helpers/adapters";
+import { noop } from "./helpers/commons";
+
 import type { ObjectSchema } from "yup";
 import type { ZodSchema } from "zod";
-
-import { noValidate, type Adapter } from "./helpers/adapters";
-import { noop } from "./helpers/commons";
 
 /**
  * Helper type alias to make another type optional (undefinable).

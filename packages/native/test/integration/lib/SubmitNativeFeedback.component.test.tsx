@@ -4,7 +4,7 @@ import { Text } from "react-native";
 import Sinon from "sinon";
 
 import { SubmitNativeFeedback } from "../../../src/lib/SubmitNativeFeedback.component";
-import { Foo, foo, schema } from "../../helpers/testSchema";
+import { type Foo, foo, schema } from "../../helpers/testSchema";
 
 describe("[Integration] SubmitNativeFeedback.component.test.tsx", () => {
   context("when the button is pressed", () => {

@@ -1,8 +1,8 @@
 import { get, set } from "dot-prop-immutable";
 import {
-  ReactElement,
-  ReactNode,
-  SetStateAction,
+  type ReactElement,
+  type ReactNode,
+  type SetStateAction,
   memo,
   useCallback,
   useLayoutEffect,
@@ -10,11 +10,20 @@ import {
   useState,
 } from "react";
 import isEqual from "react-fast-compare";
+
+import {
+  type DeepPartial,
+  type FormCtxt,
+  type Optional,
+  type Path,
+  type Struct,
+  type ValueByPath,
+  safeFormContext,
+} from "./Form.context";
+import { type Adapter, getAdapter, handleResult } from "./helpers/adapters";
+
 import type { ObjectSchema } from "yup";
 import type { ZodSchema } from "zod";
-
-import { DeepPartial, FormCtxt, Optional, Path, Struct, ValueByPath, safeFormContext } from "./Form.context";
-import { Adapter, getAdapter, handleResult } from "./helpers/adapters";
 
 /**
  * Generic callback function. Infers the arguments types and the return type is

@@ -22,4 +22,4 @@ the path type of the array field
 
 ## Source
 
-[lib/components/ArrayField.component.tsx:13](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L13)
+[lib/components/ArrayField.component.tsx:14](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L14)
