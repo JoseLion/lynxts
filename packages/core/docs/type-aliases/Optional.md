@@ -4,18 +4,18 @@
 
 [@lynxts/core](../README.md) / Optional
 
-# Type alias: Optional\<T\>
+# Type Alias: Optional\<T\>
 
 > **Optional**\<`T`\>: `T` \| `undefined`
 
 Helper type alias to make another type optional (undefinable).
 
-## Type parameters
+## Type Parameters
 
 • **T**
 
 the type to make optional
 
-## Source
+## Defined in
 
-[lib/Form.context.ts:15](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L15)
+[Form.context.ts:15](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L15)

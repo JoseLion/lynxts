@@ -21,6 +21,6 @@ same as TouchableOpacityProps
 
 `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
-## Source
+## Defined in
 
 [packages/native/src/lib/SubmitOpacity.component.tsx:12](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/SubmitOpacity.component.tsx#L12)

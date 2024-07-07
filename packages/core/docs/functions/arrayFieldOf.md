@@ -12,7 +12,7 @@ Utility function which helps you create an [ArrayField](ArrayField.md) component
 an specific struct type. Once you have this, the only type parameter left is
 the [Path\<T\>](../type-aliases/Path.md) of the property which is an array.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -37,6 +37,6 @@ const ArrayField = arrayFieldOf<User>();
 </ArrayField>
 ```
 
-## Source
+## Defined in
 
-[lib/components/ArrayField.component.tsx:101](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L101)
+[components/ArrayField.component.tsx:101](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L101)

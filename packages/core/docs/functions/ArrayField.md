@@ -10,11 +10,15 @@
 
 Helper component for array fields with finner control over the re-renders.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
+struct type of the form values
+
 • **K** *extends* `string`
+
+the type of the path of the array field
 
 ## Parameters
 
@@ -26,6 +30,6 @@ the array field props
 
 `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
-## Source
+## Defined in
 
-[lib/components/ArrayField.component.tsx:63](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L63)
+[components/ArrayField.component.tsx:63](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L63)

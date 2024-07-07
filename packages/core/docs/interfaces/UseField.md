@@ -12,7 +12,7 @@ The result of the [useField](../functions/useField.md) hook
 
 - [`FieldRenderProps`](FieldRenderProps.md)
 
-## Type parameters
+## Type Parameters
 
 • **V**
 
@@ -34,9 +34,9 @@ Changes the touched state of the field to `true`
 
 `void`
 
-#### Source
+#### Defined in
 
-[lib/hooks/useField.ts:18](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L18)
+[hooks/useField.ts:18](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L18)
 
 ***
 
@@ -46,9 +46,9 @@ Changes the touched state of the field to `true`
 
 Changes the value of the field.
 
-#### Source
+#### Defined in
 
-[lib/hooks/useField.ts:22](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L22)
+[hooks/useField.ts:22](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L22)
 
 ***
 
@@ -58,6 +58,6 @@ Changes the value of the field.
 
 The actual value of the field.
 
-#### Source
+#### Defined in
 
-[lib/hooks/useField.ts:26](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L26)
+[hooks/useField.ts:26](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L26)

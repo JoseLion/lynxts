@@ -11,7 +11,7 @@
 Helper function that creates an [Adapter\<T\>](../interfaces/Adapter.md) to bypass the
 form validation.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -23,6 +23,6 @@ struct type of the form values
 
 an adapter to bypass validation
 
-## Source
+## Defined in
 
-[lib/helpers/adapters.ts:65](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/helpers/adapters.ts#L65)
+[helpers/adapters.ts:65](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/helpers/adapters.ts#L65)

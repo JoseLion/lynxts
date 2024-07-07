@@ -4,20 +4,20 @@
 
 [@lynxts/core](../README.md) / ArrayFieldOf
 
-# Type alias: ArrayFieldOf()\<T\>
+# Type Alias: ArrayFieldOf()\<T\>
 
 > **ArrayFieldOf**\<`T`\>: \<`K`\>(`props`) => `ReactNode`
 
 Helper type to describe an [ArrayField](../functions/ArrayField.md) component of an specific
 struct `T`.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](Struct.md)
 
 struct type of the form values
 
-## Type parameters
+## Type Parameters
 
 • **K** *extends* [`Path`](Path.md)\<`T`, [`ArrayValue`](ArrayValue.md)\<`T`, `K`\>[]\>
 
@@ -29,6 +29,6 @@ struct type of the form values
 
 `ReactNode`
 
-## Source
+## Defined in
 
-[lib/components/ArrayField.component.tsx:25](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L25)
+[components/ArrayField.component.tsx:25](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L25)

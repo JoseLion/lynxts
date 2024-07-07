@@ -16,9 +16,11 @@ are wrapped around a `<form>` HTML element. This means you can simply use a
 **Note:** Because the FormProvider is in charge of the validation, the
 defualt value of the `noValidate` prop of the `<form>` is set to `true`.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* `Struct`
+
+struct type of the form values
 
 ## Parameters
 
@@ -30,6 +32,6 @@ the FromProvider props plus the HTMLFormElement props
 
 `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
-## Source
+## Defined in
 
 [packages/web/src/lib/Form.component.tsx:28](https://github.com/JoseLion/lynxts/blob/main/packages/web/src/lib/Form.component.tsx#L28)

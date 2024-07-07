@@ -13,7 +13,7 @@ specific struct type. Once you have this, the possible values for the `name`
 prop can be inferred based on the struct type and the type of the values is
 infered from the resulting `Path<T>` of `name`.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* `Struct`
 
@@ -43,6 +43,6 @@ const Select = selectOf<User>();
 />
 ```
 
-## Source
+## Defined in
 
 [packages/web/src/lib/fields/Select.component.tsx:211](https://github.com/JoseLion/lynxts/blob/main/packages/web/src/lib/fields/Select.component.tsx#L211)

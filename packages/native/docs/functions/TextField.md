@@ -13,9 +13,11 @@ Helper component to work with TextInput core component within a
 useFieldValidation hooks to provide the value state management and
 validation helpers right out of the box.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* `Struct`
+
+struct type of the form values
 
 ## Parameters
 
@@ -27,6 +29,6 @@ the TextFiedProps plus the TextInput props
 
 `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
-## Source
+## Defined in
 
 [packages/native/src/lib/fields/TextField.component.tsx:81](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L81)

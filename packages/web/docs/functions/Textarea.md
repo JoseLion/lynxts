@@ -13,9 +13,11 @@ Helper component to work with `<textarea>` elements within a
 useFieldValidation hooks to provide the value state management and
 validation helpers right out of the box.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* `Struct`
+
+struct type of the form values
 
 ## Parameters
 
@@ -27,6 +29,6 @@ the TextareaProps plus the HTMLTextAreaElement attributes
 
 `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
-## Source
+## Defined in
 
 [packages/web/src/lib/fields/Textarea.component.tsx:62](https://github.com/JoseLion/lynxts/blob/main/packages/web/src/lib/fields/Textarea.component.tsx#L62)

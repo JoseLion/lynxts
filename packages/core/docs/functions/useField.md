@@ -13,7 +13,7 @@ field and helper function to change its state.
 
 If the `fallback` parameter is not set, the default value is `undefined`.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -37,6 +37,6 @@ optional default value the field should take
 
 an object with the field value and some helper functions
 
-## Source
+## Defined in
 
-[lib/hooks/useField.ts:39](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L39)
+[hooks/useField.ts:39](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L39)

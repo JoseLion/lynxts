@@ -8,7 +8,7 @@
 
 The result of the [useArrayField](../functions/useArrayField.md) hook.
 
-## Type parameters
+## Type Parameters
 
 • **V**
 
@@ -32,9 +32,9 @@ the item to append
 
 `void`
 
-#### Source
+#### Defined in
 
-[lib/hooks/useArrayField.ts:19](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L19)
+[hooks/useArrayField.ts:19](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L19)
 
 ***
 
@@ -48,9 +48,9 @@ Clears the array by setting it's value to `undefined`.
 
 `void`
 
-#### Source
+#### Defined in
 
-[lib/hooks/useArrayField.ts:23](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L23)
+[hooks/useArrayField.ts:23](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L23)
 
 ***
 
@@ -58,16 +58,7 @@ Clears the array by setting it's value to `undefined`.
 
 > **handle**: \<`F`\>(`action`, ...`args`) => () => `void`
 
-Helper function that creates a handler function which runs the given
-action with the given parameters.
-
-#### Example
-
-```
-<button onClick={handle(append, { })}>{"Add Item"}</button>
-```
-
-#### Type parameters
+#### Type Parameters
 
 • **F** *extends* (...`args`) => `void`
 
@@ -85,13 +76,15 @@ the parameters of the action
 
 `Function`
 
+a handle function that runs the action with the given parameters
+
 ##### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[lib/hooks/useArrayField.ts:37](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L37)
+[hooks/useArrayField.ts:37](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L37)
 
 ***
 
@@ -120,9 +113,9 @@ the index to insert the item at
 
 `void`
 
-#### Source
+#### Defined in
 
-[lib/hooks/useArrayField.ts:49](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L49)
+[hooks/useArrayField.ts:49](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L49)
 
 ***
 
@@ -133,9 +126,9 @@ the index to insert the item at
 The currret items `Partial<V>[]` of the array. These values are partial
 because they might not be present or changed by the user yet.
 
-#### Source
+#### Defined in
 
-[lib/hooks/useArrayField.ts:54](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L54)
+[hooks/useArrayField.ts:54](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L54)
 
 ***
 
@@ -143,15 +136,7 @@ because they might not be present or changed by the user yet.
 
 > **keygen**: \<`S`\>(`index`, `key`?) => `string`
 
-Helper function to retrieve an auto-generated key string which is memoized
-for each index. The second parameter serves as a prefferd unique key
-override to use instead of the auto-generated one.
-
-You should pass the second parameter whenever it's possible because the
-auto-generated key is index-based, so it may cause additional renders upon
-reordering the array.
-
-#### Type parameters
+#### Type Parameters
 
 • **S** *extends* `object`
 
@@ -169,9 +154,11 @@ the preferred key value to use
 
 `string`
 
-#### Source
+a key value to use on React.js `key` prop
 
-[lib/hooks/useArrayField.ts:68](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L68)
+#### Defined in
+
+[hooks/useArrayField.ts:68](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L68)
 
 ***
 
@@ -191,9 +178,9 @@ the item to prepend
 
 `void`
 
-#### Source
+#### Defined in
 
-[lib/hooks/useArrayField.ts:74](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L74)
+[hooks/useArrayField.ts:74](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L74)
 
 ***
 
@@ -213,9 +200,9 @@ the index of the item
 
 `void`
 
-#### Source
+#### Defined in
 
-[lib/hooks/useArrayField.ts:80](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L80)
+[hooks/useArrayField.ts:80](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L80)
 
 ***
 
@@ -245,6 +232,6 @@ the index that should be replaced
 
 `void`
 
-#### Source
+#### Defined in
 
-[lib/hooks/useArrayField.ts:93](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L93)
+[hooks/useArrayField.ts:93](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L93)

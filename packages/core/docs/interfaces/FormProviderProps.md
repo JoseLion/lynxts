@@ -8,7 +8,7 @@
 
 The [FormProvider](../functions/FormProvider.md) component props.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -24,9 +24,9 @@ The children of the provider may rather be any kind of React.js node(s),
 or a function which takes [<T>|RenderProps\<T\>](RenderProps.md) and
 returns a React.js node.
 
-#### Source
+#### Defined in
 
-[lib/Form.provider.tsx:119](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L119)
+[Form.provider.tsx:119](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L119)
 
 ***
 
@@ -46,9 +46,9 @@ the validated values `T` of the form
 
 `void`
 
-#### Source
+#### Defined in
 
-[lib/Form.provider.tsx:125](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L125)
+[Form.provider.tsx:125](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L125)
 
 ***
 
@@ -63,9 +63,9 @@ However, if you want to use another validation library, or your own
 schemas, you can also pass a validation [Adapter<T>](Adapter.md) which
 tells the form and the hooks how to handle the validation.
 
-#### Source
+#### Defined in
 
-[lib/Form.provider.tsx:134](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L134)
+[Form.provider.tsx:134](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L134)
 
 ***
 
@@ -76,6 +76,6 @@ tells the form and the hooks how to handle the validation.
 The values `T` of the form. Changing this prop with a state will change
 the field values as well.
 
-#### Source
+#### Defined in
 
-[lib/Form.provider.tsx:139](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L139)
+[Form.provider.tsx:139](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L139)

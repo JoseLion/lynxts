@@ -8,7 +8,7 @@
 
 The props of the [ArrayField](../functions/ArrayField.md) component.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -28,10 +28,6 @@ the default type to use in case of fallback
 
 > **children**: (`props`) => `ReactNode`
 
-The children is a function which takes the result of [useField](../functions/useField.md) and
-[useFieldValidation](../functions/useFieldValidation.md) hooks in the first argument and returns a
-React.js node.
-
 #### Parameters
 
 • **props**: [`FieldRenderProps`](FieldRenderProps.md)\<`T`, `K`, `D`\>
@@ -42,9 +38,11 @@ the render props same as `useField` result
 
 `ReactNode`
 
-#### Source
+a React.js node
 
-[lib/components/Field.component.tsx:54](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L54)
+#### Defined in
+
+[components/Field.component.tsx:54](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L54)
 
 ***
 
@@ -57,9 +55,9 @@ change if the field value or its validation props changes. This prop lets
 you add an additional dependency list to that memoization, so you can add
 external state changes when required.
 
-#### Source
+#### Defined in
 
-[lib/components/Field.component.tsx:61](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L61)
+[components/Field.component.tsx:61](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L61)
 
 ***
 
@@ -69,9 +67,9 @@ external state changes when required.
 
 optional default value the field should take
 
-#### Source
+#### Defined in
 
-[lib/components/Field.component.tsx:65](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L65)
+[components/Field.component.tsx:65](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L65)
 
 ***
 
@@ -81,6 +79,6 @@ optional default value the field should take
 
 the path of the field in `T`
 
-#### Source
+#### Defined in
 
-[lib/components/Field.component.tsx:69](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L69)
+[components/Field.component.tsx:69](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L69)

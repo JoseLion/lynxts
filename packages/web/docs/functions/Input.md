@@ -13,9 +13,11 @@ I.e., it implements the useField and useFieldValidation
 hooks to provide the value state management and validation helpers right out
 of the box.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* `Struct`
+
+struct type of the form values
 
 ## Parameters
 
@@ -27,6 +29,6 @@ the InputProps plus the HTMLInputElement attributes
 
 `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
-## Source
+## Defined in
 
 [packages/web/src/lib/fields/Input.component.tsx:60](https://github.com/JoseLion/lynxts/blob/main/packages/web/src/lib/fields/Input.component.tsx#L60)

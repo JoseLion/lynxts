@@ -13,7 +13,7 @@ TextInputProps.
 
 - `Omit`\<`TextInputProps`, `"value"`\>
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* `Struct`
 
@@ -31,7 +31,7 @@ Provides an array of custom actions available for accessibility.
 
 `Omit.accessibilityActions`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:27
 
@@ -52,7 +52,7 @@ ios
 
 `Omit.accessibilityElementsHidden`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:284
 
@@ -68,7 +68,7 @@ An accessibility hint helps users understand what will happen when they perform 
 
 `Omit.accessibilityHint`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:64
 
@@ -88,7 +88,7 @@ ios
 
 `Omit.accessibilityIgnoresInvertColors`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:314
 
@@ -105,7 +105,7 @@ label is constructed by traversing all the children and accumulating all the Tex
 
 `Omit.accessibilityLabel`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:33
 
@@ -126,7 +126,7 @@ android
 
 `Omit.accessibilityLabelledBy`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:227
 
@@ -147,7 +147,7 @@ ios
 
 `Omit.accessibilityLanguage`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:321
 
@@ -170,7 +170,7 @@ See https://reactnative.dev/docs/view#accessibilityliveregion
 
 `Omit.accessibilityLiveRegion`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:245
 
@@ -186,7 +186,7 @@ Accessibility Role tells a person using either VoiceOver on iOS or TalkBack on A
 
 `Omit.accessibilityRole`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:44
 
@@ -202,7 +202,7 @@ Accessibility State tells a person using either VoiceOver on iOS or TalkBack on 
 
 `Omit.accessibilityState`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:48
 
@@ -219,7 +219,7 @@ it contains range information (minimum, current, and maximum).
 
 `Omit.accessibilityValue`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:69
 
@@ -239,7 +239,7 @@ ios
 
 `Omit.accessibilityViewIsModal`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:290
 
@@ -256,7 +256,7 @@ By default, all the touchable elements are accessible.
 
 `Omit.accessible`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:22
 
@@ -273,7 +273,7 @@ The default is `true`.
 
 `Omit.allowFontScaling`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:509
 
@@ -291,7 +291,7 @@ see https://reactnative.dev/docs/accessibility#accessibilitystate
 
 `Omit.aria-busy`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:55
 
@@ -305,7 +305,7 @@ node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:55
 
 `Omit.aria-checked`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:56
 
@@ -319,7 +319,7 @@ node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:56
 
 `Omit.aria-disabled`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:57
 
@@ -333,7 +333,7 @@ node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:57
 
 `Omit.aria-expanded`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:58
 
@@ -350,7 +350,7 @@ this accessibility element are hidden.
 
 `Omit.aria-hidden`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:93
 
@@ -367,7 +367,7 @@ https://github.com/facebook/react-native/issues/34424
 
 `Omit.aria-label`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:39
 
@@ -388,7 +388,7 @@ android
 
 `Omit.aria-labelledby`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:235
 
@@ -411,7 +411,7 @@ See https://reactnative.dev/docs/view#accessibilityliveregion
 
 `Omit.aria-live`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:255
 
@@ -425,7 +425,7 @@ node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:255
 
 `Omit.aria-modal`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:95
 
@@ -439,7 +439,7 @@ node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:95
 
 `Omit.aria-selected`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:59
 
@@ -453,7 +453,7 @@ node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:59
 
 `Omit.aria-valuemax`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:71
 
@@ -467,7 +467,7 @@ node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:71
 
 `Omit.aria-valuemin`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:72
 
@@ -481,7 +481,7 @@ node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:72
 
 `Omit.aria-valuenow`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:73
 
@@ -495,7 +495,7 @@ node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:73
 
 `Omit.aria-valuetext`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:74
 
@@ -517,7 +517,7 @@ https://reactnative.dev/docs/textinput#autocapitalize
 
 `Omit.autoCapitalize`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:520
 
@@ -525,7 +525,7 @@ node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:520
 
 ### autoComplete?
 
-> `optional` **autoComplete**: `"name"` \| `"off"` \| `"additional-name"` \| `"address-line1"` \| `"address-line2"` \| `"birthdate-day"` \| `"birthdate-full"` \| `"birthdate-month"` \| `"birthdate-year"` \| `"cc-csc"` \| `"cc-exp"` \| `"cc-exp-day"` \| `"cc-exp-month"` \| `"cc-exp-year"` \| `"cc-number"` \| `"cc-name"` \| `"cc-given-name"` \| `"cc-middle-name"` \| `"cc-family-name"` \| `"cc-type"` \| `"country"` \| `"current-password"` \| `"email"` \| `"family-name"` \| `"gender"` \| `"given-name"` \| `"honorific-prefix"` \| `"honorific-suffix"` \| `"name-family"` \| `"name-given"` \| `"name-middle"` \| `"name-middle-initial"` \| `"name-prefix"` \| `"name-suffix"` \| `"new-password"` \| `"nickname"` \| `"one-time-code"` \| `"organization"` \| `"organization-title"` \| `"password"` \| `"password-new"` \| `"postal-address"` \| `"postal-address-country"` \| `"postal-address-extended"` \| `"postal-address-extended-postal-code"` \| `"postal-address-locality"` \| `"postal-address-region"` \| `"postal-code"` \| `"street-address"` \| `"sms-otp"` \| `"tel"` \| `"tel-country-code"` \| `"tel-national"` \| `"tel-device"` \| `"url"` \| `"username"` \| `"username-new"`
+> `optional` **autoComplete**: `"off"` \| `"name"` \| `"additional-name"` \| `"address-line1"` \| `"address-line2"` \| `"birthdate-day"` \| `"birthdate-full"` \| `"birthdate-month"` \| `"birthdate-year"` \| `"cc-csc"` \| `"cc-exp"` \| `"cc-exp-day"` \| `"cc-exp-month"` \| `"cc-exp-year"` \| `"cc-number"` \| `"cc-name"` \| `"cc-given-name"` \| `"cc-middle-name"` \| `"cc-family-name"` \| `"cc-type"` \| `"country"` \| `"current-password"` \| `"email"` \| `"family-name"` \| `"gender"` \| `"given-name"` \| `"honorific-prefix"` \| `"honorific-suffix"` \| `"name-family"` \| `"name-given"` \| `"name-middle"` \| `"name-middle-initial"` \| `"name-prefix"` \| `"name-suffix"` \| `"new-password"` \| `"nickname"` \| `"one-time-code"` \| `"organization"` \| `"organization-title"` \| `"password"` \| `"password-new"` \| `"postal-address"` \| `"postal-address-country"` \| `"postal-address-extended"` \| `"postal-address-extended-postal-code"` \| `"postal-address-locality"` \| `"postal-address-region"` \| `"postal-code"` \| `"street-address"` \| `"sms-otp"` \| `"tel"` \| `"tel-country-code"` \| `"tel-national"` \| `"tel-device"` \| `"url"` \| `"username"` \| `"username-new"`
 
 Specifies autocomplete hints for the system, so it can provide autofill.
 On Android, the system will always attempt to offer autofill by using heuristics to identify the type of content.
@@ -596,7 +596,7 @@ The following values work on Android only:
 
 `Omit.autoComplete`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:588
 
@@ -613,7 +613,7 @@ The default value is true.
 
 `Omit.autoCorrect`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:652
 
@@ -630,7 +630,7 @@ The default value is false.
 
 `Omit.autoFocus`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:658
 
@@ -647,7 +647,7 @@ The default value is true.
 
 `Omit.blurOnSubmit`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:664
 
@@ -663,7 +663,7 @@ If true, caret is hidden. The default value is false.
 
 `Omit.caretHidden`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:669
 
@@ -677,7 +677,7 @@ node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:669
 
 `Omit.children`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:171
 
@@ -694,7 +694,7 @@ When the clear button should appear on the right side of the text view
 
 `Omit.clearButtonMode`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:141
 
@@ -710,7 +710,7 @@ If true, clears the text field automatically when editing begins
 
 `Omit.clearTextOnFocus`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:151
 
@@ -728,7 +728,7 @@ Set this property to false to disable this optimization and ensure that this Vie
 
 `Omit.collapsable`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:133
 
@@ -744,7 +744,7 @@ If true, context menu is hidden. The default value is false.
 
 `Omit.contextMenuHidden`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:674
 
@@ -766,7 +766,7 @@ android
 
 `Omit.cursorColor`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:337
 
@@ -795,7 +795,7 @@ Possible values for `dataDetectorTypes` are:
 
 `Omit.dataDetectorTypes`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:169
 
@@ -813,7 +813,7 @@ and updating the value prop to keep the controlled state in sync.
 
 `Omit.defaultValue`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:681
 
@@ -832,7 +832,7 @@ Defaults to false.
 
 `Omit.disableFullscreenUI`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:376
 
@@ -848,7 +848,7 @@ If false, text is not editable. The default value is true.
 
 `Omit.editable`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:686
 
@@ -865,7 +865,7 @@ The default value is false.
 
 `Omit.enablesReturnKeyAutomatically`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:175
 
@@ -882,7 +882,7 @@ Has precedence over the returnKeyType prop.
 
 `Omit.enterKeyHint`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:848
 
@@ -894,7 +894,7 @@ node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:848
 
 The styles of the error `<Text>` component.
 
-#### Source
+#### Defined in
 
 [packages/native/src/lib/fields/TextField.component.tsx:29](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L29)
 
@@ -910,7 +910,7 @@ Whether this `View` should be focusable with a non-touch input device, eg. recei
 
 `Omit.focusable`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:147
 
@@ -930,7 +930,7 @@ ios
 
 `Omit.hasTVPreferredFocus`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:75
 
@@ -953,7 +953,7 @@ hits two overlapping views.
 
 `Omit.hitSlop`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:182
 
@@ -969,7 +969,7 @@ Used to reference react managed views from native code.
 
 `Omit.id`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:187
 
@@ -985,7 +985,7 @@ node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:187
 
 `Omit.importantForAccessibility`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:85
 
@@ -1013,7 +1013,7 @@ The following values work on Android only:
 
 `Omit.importantForAutofill`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:362
 
@@ -1029,7 +1029,7 @@ If defined, the provided image resource will be rendered on the left.
 
 `Omit.inlineImageLeft`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:381
 
@@ -1045,7 +1045,7 @@ Padding between the inline image, if any, and the text input itself.
 
 `Omit.inlineImagePadding`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:386
 
@@ -1063,7 +1063,7 @@ See https://reactnative.dev/docs/inputaccessoryview for more information.
 
 `Omit.inputAccessoryViewID`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:892
 
@@ -1079,7 +1079,7 @@ Works like the inputmode attribute in HTML, it determines which keyboard to open
 
 `Omit.inputMode`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:701
 
@@ -1100,7 +1100,7 @@ ios
 
 `Omit.isTVSelectable`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:68
 
@@ -1108,7 +1108,7 @@ node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:68
 
 ### keyboardAppearance?
 
-> `optional` **keyboardAppearance**: `"default"` \| `"light"` \| `"dark"`
+> `optional` **keyboardAppearance**: `"light"` \| `"default"` \| `"dark"`
 
 Determines the color of the keyboard.
 
@@ -1116,7 +1116,7 @@ Determines the color of the keyboard.
 
 `Omit.keyboardAppearance`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:180
 
@@ -1137,7 +1137,7 @@ The following values work on Android: - visible-password
 
 `Omit.keyboardType`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:696
 
@@ -1151,7 +1151,7 @@ The text to use as label on top of the field. The component does not
 render the `<Text>` component when this prop is omited, `undefined`, or an
 empty string.
 
-#### Source
+#### Defined in
 
 [packages/native/src/lib/fields/TextField.component.tsx:35](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L35)
 
@@ -1163,7 +1163,7 @@ empty string.
 
 The styles of the label `<Text>` component.
 
-#### Source
+#### Defined in
 
 [packages/native/src/lib/fields/TextField.component.tsx:39](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L39)
 
@@ -1179,7 +1179,7 @@ Set line break strategy on iOS.
 
 `Omit.lineBreakStrategyIOS`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:310
 
@@ -1198,7 +1198,7 @@ Specifies largest possible scale a font can reach when allowFontScaling is enabl
 
 `Omit.maxFontSizeMultiplier`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:909
 
@@ -1215,7 +1215,7 @@ Use this instead of implementing the logic in JS to avoid flicker.
 
 `Omit.maxLength`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:707
 
@@ -1231,7 +1231,7 @@ If true, the text input can be multiple lines. The default value is false.
 
 `Omit.multiline`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:712
 
@@ -1243,7 +1243,7 @@ node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:712
 
 The name of the field as a Path|Path\<T, string\>.
 
-#### Source
+#### Defined in
 
 [packages/native/src/lib/fields/TextField.component.tsx:43](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L43)
 
@@ -1259,7 +1259,7 @@ Used to reference react managed views from native code.
 
 `Omit.nativeID`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:255
 
@@ -1286,7 +1286,7 @@ saved in a hardware texture, and then composited onto the screen with an alpha e
 
 `Omit.needsOffscreenAlphaCompositing`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:203
 
@@ -1303,7 +1303,7 @@ Use it with multiline set to true to be able to fill the lines.
 
 `Omit.numberOfLines`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:392
 
@@ -1327,7 +1327,7 @@ When `accessible` is true, the system will try to invoke this function when the 
 
 `Omit.onAccessibilityAction`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:78
 
@@ -1339,19 +1339,19 @@ node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:78
 
 When accessible is true, the system will invoke this function when the user performs the escape gesture (scrub with two fingers).
 
-#### Platform
-
-ios
-
 #### Returns
 
 `void`
+
+#### Platform
+
+ios
 
 #### Inherited from
 
 `Omit.onAccessibilityEscape`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:296
 
@@ -1363,19 +1363,19 @@ node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:296
 
 When `accessible` is true, the system will try to invoke this function when the user performs accessibility tap gesture.
 
-#### Platform
-
-ios
-
 #### Returns
 
 `void`
+
+#### Platform
+
+ios
 
 #### Inherited from
 
 `Omit.onAccessibilityTap`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:302
 
@@ -1399,7 +1399,7 @@ Callback that is called when the text input is blurred
 
 `Omit.onBlur`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:717
 
@@ -1423,7 +1423,7 @@ Callback that is called when the text input's text changes.
 
 `Omit.onChange`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:724
 
@@ -1448,7 +1448,7 @@ Changed text is passed as an argument to the callback handler.
 
 `Omit.onChangeText`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:732
 
@@ -1476,7 +1476,7 @@ Only called for multiline text inputs.
 
 `Omit.onContentSizeChange`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:741
 
@@ -1500,7 +1500,7 @@ Callback that is called when text input ends.
 
 `Omit.onEndEditing`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:748
 
@@ -1524,7 +1524,7 @@ Callback that is called when the text input is focused
 
 `Omit.onFocus`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:772
 
@@ -1554,7 +1554,7 @@ Note: on Android only the inputs from soft keyboard are handled, not the hardwar
 
 `Omit.onKeyPress`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:819
 
@@ -1580,7 +1580,7 @@ Invoked on mount and layout changes with
 
 `Omit.onLayout`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:210
 
@@ -1592,19 +1592,19 @@ node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:210
 
 When accessible is true, the system will invoke this function when the user performs the magic tap gesture.
 
-#### Platform
-
-ios
-
 #### Returns
 
 `void`
+
+#### Platform
+
+ios
 
 #### Inherited from
 
 `Omit.onMagicTap`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:308
 
@@ -1628,7 +1628,7 @@ Called for every touch move on the View when it is not the responder: does this 
 
 `Omit.onMoveShouldSetResponder`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:53
 
@@ -1662,7 +1662,7 @@ it should have a onStartShouldSetResponderCapture handler which returns true.
 
 `Omit.onMoveShouldSetResponderCapture`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:135
 
@@ -1684,7 +1684,7 @@ node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:135
 
 `Omit.onPointerCancel`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:260
 
@@ -1706,7 +1706,7 @@ node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:260
 
 `Omit.onPointerCancelCapture`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:261
 
@@ -1728,7 +1728,7 @@ node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:261
 
 `Omit.onPointerDown`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:262
 
@@ -1750,7 +1750,7 @@ node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:262
 
 `Omit.onPointerDownCapture`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:263
 
@@ -1772,7 +1772,7 @@ node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:263
 
 `Omit.onPointerEnter`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:254
 
@@ -1794,7 +1794,7 @@ node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:254
 
 `Omit.onPointerEnterCapture`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:255
 
@@ -1816,7 +1816,7 @@ node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:255
 
 `Omit.onPointerLeave`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:256
 
@@ -1838,7 +1838,7 @@ node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:256
 
 `Omit.onPointerLeaveCapture`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:257
 
@@ -1860,7 +1860,7 @@ node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:257
 
 `Omit.onPointerMove`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:258
 
@@ -1882,7 +1882,7 @@ node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:258
 
 `Omit.onPointerMoveCapture`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:259
 
@@ -1904,7 +1904,7 @@ node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:259
 
 `Omit.onPointerUp`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:264
 
@@ -1926,7 +1926,7 @@ node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:264
 
 `Omit.onPointerUpCapture`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Types/CoreEventTypes.d.ts:265
 
@@ -1950,7 +1950,7 @@ Called when a single tap gesture is detected.
 
 `Omit.onPress`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:755
 
@@ -1974,7 +1974,7 @@ Callback that is called when a touch is engaged.
 
 `Omit.onPressIn`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:760
 
@@ -1998,7 +1998,7 @@ Callback that is called when a touch is released.
 
 `Omit.onPressOut`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:765
 
@@ -2022,7 +2022,7 @@ If the View returns true and attempts to become the responder, one of the follow
 
 `Omit.onResponderEnd`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:61
 
@@ -2047,7 +2047,7 @@ This is the time to highlight and show the user what is happening
 
 `Omit.onResponderGrant`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:67
 
@@ -2071,7 +2071,7 @@ The user is moving their finger
 
 `Omit.onResponderMove`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:81
 
@@ -2095,7 +2095,7 @@ Something else is the responder right now and will not release it
 
 `Omit.onResponderReject`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:72
 
@@ -2119,7 +2119,7 @@ Fired at the end of the touch, ie "touchUp"
 
 `Omit.onResponderRelease`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:86
 
@@ -2141,7 +2141,7 @@ node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:86
 
 `Omit.onResponderStart`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:88
 
@@ -2167,7 +2167,7 @@ or might be taken by the OS without asking (happens with control center/ notific
 
 `Omit.onResponderTerminate`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:103
 
@@ -2192,7 +2192,7 @@ Something else wants to become responder.
 
 `Omit.onResponderTerminationRequest`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:94
 
@@ -2219,7 +2219,7 @@ May also contain other properties from ScrollEvent but on Android contentSize is
 
 `Omit.onScroll`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:806
 
@@ -2243,7 +2243,7 @@ Callback that is called when the text input selection is changed.
 
 `Omit.onSelectionChange`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:779
 
@@ -2267,7 +2267,7 @@ Does this view want to become responder on the start of a touch?
 
 `Omit.onStartShouldSetResponder`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:46
 
@@ -2301,7 +2301,7 @@ it should have a onStartShouldSetResponderCapture handler which returns true.
 
 `Omit.onStartShouldSetResponderCapture`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/types/public/ReactNativeRenderer.d.ts:118
 
@@ -2325,7 +2325,7 @@ Callback that is called when the text input's submit button is pressed.
 
 `Omit.onSubmitEditing`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:786
 
@@ -2352,7 +2352,7 @@ This prop requires multiline={true} to be set.
 
 `Omit.onTextInput`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:796
 
@@ -2374,7 +2374,7 @@ node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:796
 
 `Omit.onTouchCancel`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:22
 
@@ -2396,7 +2396,7 @@ node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:22
 
 `Omit.onTouchEnd`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:21
 
@@ -2418,7 +2418,7 @@ node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:21
 
 `Omit.onTouchEndCapture`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:23
 
@@ -2440,7 +2440,7 @@ node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:23
 
 `Omit.onTouchMove`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:20
 
@@ -2462,7 +2462,7 @@ node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:20
 
 `Omit.onTouchStart`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/Touchable/Touchable.d.ts:19
 
@@ -2480,7 +2480,7 @@ For example, say you want to require a password with at least eight characters c
 
 `Omit.passwordRules`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:187
 
@@ -2496,7 +2496,7 @@ The string that will be rendered before text input has been entered
 
 `Omit.placeholder`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:826
 
@@ -2512,7 +2512,7 @@ The text color of the placeholder string
 
 `Omit.placeholderTextColor`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:831
 
@@ -2547,7 +2547,7 @@ we opt to not include pointerEvents on style. On some platforms, we would need t
 
 `Omit.pointerEvents`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:235
 
@@ -2563,7 +2563,7 @@ If `true`, text is not editable. The default value is `false`.
 
 `Omit.readOnly`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:836
 
@@ -2582,7 +2582,7 @@ If `false`, TextInput always asks to handle the input (except when disabled).
 
 `Omit.rejectResponderTermination`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:195
 
@@ -2600,7 +2600,7 @@ The subviews must also have overflow: hidden, as should the containing view (or 
 
 `Omit.removeClippedSubviews`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:243
 
@@ -2620,7 +2620,7 @@ re-used and re-composited with different parameters. The downside is that this c
 
 `Omit.renderToHardwareTextureAndroid`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:142
 
@@ -2638,7 +2638,7 @@ The text to render besides the label text when the field is requried.
 "*"
 ```
 
-#### Source
+#### Defined in
 
 [packages/native/src/lib/fields/TextField.component.tsx:49](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L49)
 
@@ -2658,7 +2658,7 @@ android
 
 `Omit.returnKeyLabel`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:398
 
@@ -2675,7 +2675,7 @@ Determines how the return key should look.
 
 `Omit.returnKeyType`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:842
 
@@ -2691,7 +2691,7 @@ Indicates to accessibility services to treat UI component like a specific role.
 
 `Omit.role`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewAccessibility.d.ts:100
 
@@ -2707,7 +2707,7 @@ If false, scrolling of the text view will be disabled. The default value is true
 
 `Omit.scrollEnabled`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:305
 
@@ -2724,7 +2724,7 @@ The default value is false.
 
 `Omit.secureTextEntry`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:854
 
@@ -2740,7 +2740,7 @@ If true, all text will automatically be selected on focus
 
 `Omit.selectTextOnFocus`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:859
 
@@ -2765,7 +2765,7 @@ the same value to position the cursor.
 
 `Omit.selection`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:865
 
@@ -2781,7 +2781,7 @@ The highlight (and cursor on ios) color of the text input
 
 `Omit.selectionColor`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:870
 
@@ -2803,7 +2803,7 @@ android
 
 `Omit.selectionHandleColor`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:345
 
@@ -2819,7 +2819,7 @@ See DocumentSelectionState.js, some state that is responsible for maintaining se
 
 `Omit.selectionState`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:200
 
@@ -2842,7 +2842,7 @@ Test and measure when using this property.
 
 `Omit.shouldRasterizeIOS`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:124
 
@@ -2858,7 +2858,7 @@ When false, it will prevent the soft keyboard from showing when the field is foc
 
 `Omit.showSoftInputOnFocus`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:419
 
@@ -2877,7 +2877,7 @@ The default value is `true`.
 
 `Omit.smartInsertDelete`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:323
 
@@ -2893,7 +2893,7 @@ If false, disables spell-check style (i.e. red underlines). The default value is
 
 `Omit.spellCheck`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:205
 
@@ -2909,7 +2909,7 @@ The styles of the View wrapping the field.
 
 `Omit.style`
 
-#### Source
+#### Defined in
 
 [packages/native/src/lib/fields/TextField.component.tsx:53](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L53)
 
@@ -2921,7 +2921,7 @@ The styles of the View wrapping the field.
 
 The styles of the superscript `<Text>` component.
 
-#### Source
+#### Defined in
 
 [packages/native/src/lib/fields/TextField.component.tsx:57](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L57)
 
@@ -2943,7 +2943,7 @@ Supports the following values:
 
 `Omit.tabIndex`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:158
 
@@ -2959,7 +2959,7 @@ Used to locate this view in end-to-end tests
 
 `Omit.testID`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:885
 
@@ -2975,7 +2975,7 @@ Align the input text to the left, center, or right sides of the input field.
 
 `Omit.textAlign`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:880
 
@@ -2991,7 +2991,7 @@ Vertically align text when `multiline` is set to true
 
 `Omit.textAlignVertical`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:414
 
@@ -3008,7 +3008,7 @@ The default value is simple.
 
 `Omit.textBreakStrategy`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:404
 
@@ -3016,7 +3016,7 @@ node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:404
 
 ### textContentType?
 
-> `optional` **textContentType**: `"name"` \| `"none"` \| `"nickname"` \| `"password"` \| `"username"` \| `"URL"` \| `"addressCity"` \| `"addressCityAndState"` \| `"addressState"` \| `"countryName"` \| `"creditCardNumber"` \| `"creditCardExpiration"` \| `"creditCardExpirationMonth"` \| `"creditCardExpirationYear"` \| `"creditCardSecurityCode"` \| `"creditCardType"` \| `"creditCardName"` \| `"creditCardGivenName"` \| `"creditCardMiddleName"` \| `"creditCardFamilyName"` \| `"emailAddress"` \| `"familyName"` \| `"fullStreetAddress"` \| `"givenName"` \| `"jobTitle"` \| `"location"` \| `"middleName"` \| `"namePrefix"` \| `"nameSuffix"` \| `"organizationName"` \| `"postalCode"` \| `"streetAddressLine1"` \| `"streetAddressLine2"` \| `"sublocality"` \| `"telephoneNumber"` \| `"newPassword"` \| `"oneTimeCode"` \| `"birthdate"` \| `"birthdateDay"` \| `"birthdateMonth"` \| `"birthdateYear"`
+> `optional` **textContentType**: `"none"` \| `"name"` \| `"nickname"` \| `"password"` \| `"username"` \| `"URL"` \| `"addressCity"` \| `"addressCityAndState"` \| `"addressState"` \| `"countryName"` \| `"creditCardNumber"` \| `"creditCardExpiration"` \| `"creditCardExpirationMonth"` \| `"creditCardExpirationYear"` \| `"creditCardSecurityCode"` \| `"creditCardType"` \| `"creditCardName"` \| `"creditCardGivenName"` \| `"creditCardMiddleName"` \| `"creditCardFamilyName"` \| `"emailAddress"` \| `"familyName"` \| `"fullStreetAddress"` \| `"givenName"` \| `"jobTitle"` \| `"location"` \| `"middleName"` \| `"namePrefix"` \| `"nameSuffix"` \| `"organizationName"` \| `"postalCode"` \| `"streetAddressLine1"` \| `"streetAddressLine2"` \| `"sublocality"` \| `"telephoneNumber"` \| `"newPassword"` \| `"oneTimeCode"` \| `"birthdate"` \| `"birthdateDay"` \| `"birthdateMonth"` \| `"birthdateYear"`
 
 Give the keyboard and the system information about the expected
 semantic meaning for the content that users enter.
@@ -3071,7 +3071,7 @@ Possible values for `textContentType` are:
 
 `Omit.textContentType`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:258
 
@@ -3083,7 +3083,7 @@ node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:258
 
 The styles of the `<TextInput>` component.
 
-#### Source
+#### Defined in
 
 [packages/native/src/lib/fields/TextField.component.tsx:61](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L61)
 
@@ -3103,7 +3103,7 @@ ios
 
 `Omit.tvParallaxMagnification`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:110
 
@@ -3123,7 +3123,7 @@ ios
 
 `Omit.tvParallaxProperties`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:82
 
@@ -3143,7 +3143,7 @@ ios
 
 `Omit.tvParallaxShiftDistanceX`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:89
 
@@ -3163,7 +3163,7 @@ ios
 
 `Omit.tvParallaxShiftDistanceY`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:96
 
@@ -3183,7 +3183,7 @@ ios
 
 `Omit.tvParallaxTiltAngle`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:103
 
@@ -3199,7 +3199,7 @@ The color of the textInput underline.
 
 `Omit.underlineColorAndroid`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:409
 
@@ -3215,6 +3215,6 @@ Vertically align text when `multiline` is set to true
 
 `Omit.verticalAlign`
 
-#### Source
+#### Defined in
 
 node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:424

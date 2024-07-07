@@ -12,7 +12,7 @@ A hook to access the entire value of `FormCtxt<T>`. If you want just some
 properties of the context, use [useFormSelector](useFormSelector.md) instead for an
 increased performance and avoid unnecessary renders.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -22,6 +22,6 @@ increased performance and avoid unnecessary renders.
 
 the entire value of the form context
 
-## Source
+## Defined in
 
-[lib/Form.context.ts:210](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L210)
+[Form.context.ts:210](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L210)

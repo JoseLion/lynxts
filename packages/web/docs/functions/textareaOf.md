@@ -12,7 +12,7 @@ Utility function which helps you create a [Textarea](Textarea.md) component of a
 specific struct type. Once you have this, the possible values for the `name`
 prop can be inferred based on the struct type.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* `Struct`
 
@@ -36,6 +36,6 @@ const Textarea = textareaOf<User>();
 <Textarea name="role" label="Role:" />
 ```
 
-## Source
+## Defined in
 
 [packages/web/src/lib/fields/Textarea.component.tsx:149](https://github.com/JoseLion/lynxts/blob/main/packages/web/src/lib/fields/Textarea.component.tsx#L149)

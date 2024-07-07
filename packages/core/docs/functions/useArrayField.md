@@ -12,7 +12,7 @@ A hook to handle array field in the form. It provides the array field items
 to iterate over and a few helper functions to handle changes and renders on
 the array.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -30,6 +30,6 @@ the path of the array field in `T`
 
 an object containing the array items and helper array functions
 
-## Source
+## Defined in
 
-[lib/hooks/useArrayField.ts:104](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L104)
+[hooks/useArrayField.ts:104](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useArrayField.ts#L104)
