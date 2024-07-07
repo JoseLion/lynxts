@@ -10,9 +10,11 @@
 
 The form context provider component.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
+
+struct type of the form values
 
 ## Parameters
 
@@ -24,6 +26,6 @@ the provider component props
 
 `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
-## Source
+## Defined in
 
-[lib/Form.provider.tsx:148](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L148)
+[Form.provider.tsx:148](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L148)

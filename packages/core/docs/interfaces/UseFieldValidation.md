@@ -20,9 +20,9 @@ The result of the [useFieldValidation](../functions/useFieldValidation.md) hook.
 
 The error message of the field (if any).
 
-#### Source
+#### Defined in
 
-[lib/hooks/useFieldValidation.ts:14](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useFieldValidation.ts#L14)
+[hooks/useFieldValidation.ts:14](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useFieldValidation.ts#L14)
 
 ***
 
@@ -32,6 +32,6 @@ The error message of the field (if any).
 
 True when the field is marked as required, false otherwise.
 
-#### Source
+#### Defined in
 
-[lib/hooks/useFieldValidation.ts:18](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useFieldValidation.ts#L18)
+[hooks/useFieldValidation.ts:18](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useFieldValidation.ts#L18)

@@ -4,14 +4,14 @@
 
 [@lynxts/core](../README.md) / ChangeCallback
 
-# Type alias: ChangeCallback()\<T, K, A\>
+# Type Alias: ChangeCallback()\<T, K, A\>
 
 > **ChangeCallback**\<`T`, `K`, `A`\>: (...`args`) => [`Optional`](Optional.md)\<[`ValueByPath`](ValueByPath.md)\<`T`, `K`\>\>
 
 Generic callback function. Infers the arguments types and the return type is
 resolved from the path type.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](Struct.md)
 
@@ -33,6 +33,6 @@ callback arguments types
 
 [`Optional`](Optional.md)\<[`ValueByPath`](ValueByPath.md)\<`T`, `K`\>\>
 
-## Source
+## Defined in
 
-[lib/Form.provider.tsx:36](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L36)
+[Form.provider.tsx:36](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L36)

@@ -12,7 +12,7 @@ Utility function which helps you create an [Input](Input.md) component of an
 specific struct type. Once you have this, the possible values for the `name`
 prop can be inferred based on the struct type.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* `Struct`
 
@@ -36,6 +36,6 @@ const Input = inputOf<User>();
 <Input name="role" label="Role:" />
 ```
 
-## Source
+## Defined in
 
 [packages/web/src/lib/fields/Input.component.tsx:147](https://github.com/JoseLion/lynxts/blob/main/packages/web/src/lib/fields/Input.component.tsx#L147)

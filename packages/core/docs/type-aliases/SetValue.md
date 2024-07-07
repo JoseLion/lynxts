@@ -4,13 +4,13 @@
 
 [@lynxts/core](../README.md) / SetValue
 
-# Type alias: SetValue()\<V\>
+# Type Alias: SetValue()\<V\>
 
 > **SetValue**\<`V`\>: (`action`) => `void`
 
 Function that receives an action to set a value of `V` and retunrs void.
 
-## Type parameters
+## Type Parameters
 
 • **V**
 
@@ -24,6 +24,6 @@ the type of the value to change
 
 `void`
 
-## Source
+## Defined in
 
-[lib/Form.provider.tsx:47](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L47)
+[Form.provider.tsx:47](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L47)

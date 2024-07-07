@@ -15,7 +15,7 @@ import isEqual from "react-fast-compare";
  * The {@link Input} component props which extends from the
  * {@link HTMLInputElement} attributes.
  *
- * @param T struct type of the form values
+ * @template T struct type of the form values
  */
 export interface InputProps<T extends Struct> extends InputHTMLAttributes<HTMLInputElement> {
   /**
@@ -44,7 +44,7 @@ export interface InputProps<T extends Struct> extends InputHTMLAttributes<HTMLIn
 /**
  * Helper type to describe an {@link Input} component of an specific struct `T`.
  *
- * @param T struct type of the form values
+ * @template T struct type of the form values
  */
 export type InputOf<T extends Struct> = (props: InputProps<T>) => ReactElement;
 
@@ -54,8 +54,8 @@ export type InputOf<T extends Struct> = (props: InputProps<T>) => ReactElement;
  * hooks to provide the value state management and validation helpers right out
  * of the box.
  *
- * @param T struct type of the form values
  * @param props the InputProps plus the HTMLInputElement attributes
+ * @template T struct type of the form values
  */
 export const Input = memo(<T extends Struct>(props: InputProps<T>): ReactElement => {
   const {

@@ -4,13 +4,13 @@
 
 [@lynxts/core](../README.md) / Result
 
-# Type alias: Result\<S, E\>
+# Type Alias: Result\<S, E\>
 
 > **Result**\<`S`, `E`\>: `object` \| `object`
 
 A result type used to represent either a success or an error value.
 
-## Type parameters
+## Type Parameters
 
 • **S**
 
@@ -20,6 +20,6 @@ the success value type
 
 the error value type
 
-## Source
+## Defined in
 
-[lib/helpers/adapters.ts:13](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/helpers/adapters.ts#L13)
+[helpers/adapters.ts:13](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/helpers/adapters.ts#L13)

@@ -42,28 +42,28 @@
   },
   "devDependencies": {
     "@assertive-ts/core": "^2.1.0",
-    "@testing-library/dom": "^10.1.0",
-    "@testing-library/react": "^15.0.7",
+    "@testing-library/dom": "^10.3.1",
+    "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
-    "@types/mocha": "^10.0.6",
-    "@types/react": "^18.3.1",
+    "@types/mocha": "^10.0.7",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/sinon": "^17.0.3",
     "expect-type": "^0.19.0",
-    "jsdom": "^24.0.0",
+    "jsdom": "^24.1.0",
     "jsdom-global": "^3.0.2",
-    "mocha": "^10.4.0",
+    "mocha": "^10.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "semantic-release": "^23.0.8",
+    "semantic-release": "^24.0.0",
     "semantic-release-yarn": "^3.0.2",
-    "sinon": "^17.0.2",
-    "tslib": "^2.6.2",
-    "typescript": "^5.4.5"
+    "sinon": "^18.0.0",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.3"
   },
   "optionalDependencies": {
     "yup": "^1.4.0",
-    "zod": "^3.23.7"
+    "zod": "^3.23.8"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

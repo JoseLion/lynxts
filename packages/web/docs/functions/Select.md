@@ -13,11 +13,15 @@ I.e., it implements the useField and useFieldValidation
 hooks to provide the value state management and validation helpers right out
 of the box.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* `Struct`
 
+struct type of the form values
+
 • **K** *extends* `string`
+
+the type of the Path<T> of the field
 
 ## Parameters
 
@@ -29,6 +33,6 @@ the SelectProps plus the HTMLSelectElement attributes
 
 `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
-## Source
+## Defined in
 
 [packages/web/src/lib/fields/Select.component.tsx:90](https://github.com/JoseLion/lynxts/blob/main/packages/web/src/lib/fields/Select.component.tsx#L90)

@@ -8,7 +8,7 @@
 
 The renders props when the children of [FormProvider](../functions/FormProvider.md) is a function.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -20,21 +20,7 @@ struct type of the form values
 
 > **handleChange**: \<`K`, `A`\>(`path`, `valueOrCallback`) => (...`args`) => `void`
 
-Helper function which creates a handler to use on callback props and
-change form values. It infers the arguments of the callback so they can be
-used dreing the change callback.
-
-#### Example
-
-```
-<Input<Foo>
-  name="foo"
-  onChange={handleChange("foo", event => event.target.value)}
-  value={values.foo}
-/>
-```
-
-#### Type parameters
+#### Type Parameters
 
 • **K** *extends* `string`
 
@@ -54,6 +40,9 @@ either a value or a callback to change it
 
 `Function`
 
+a function which infers the arguments of a callback where applied
+         and returns void
+
 ##### Parameters
 
 • ...**args**: `A`
@@ -62,9 +51,9 @@ either a value or a callback to change it
 
 `void`
 
-#### Source
+#### Defined in
 
-[lib/Form.provider.tsx:74](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L74)
+[Form.provider.tsx:74](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L74)
 
 ***
 
@@ -72,22 +61,7 @@ either a value or a callback to change it
 
 > **setValue**: \<`K`\>(`path`) => [`SetValue`](../type-aliases/SetValue.md)\<[`ValueByPath`](../type-aliases/ValueByPath.md)\<`T`, `K`\>\>
 
-Helper function which creates a setter function for the specified path.
-
-#### Example
-
-```
-<Input<Foo>
-  name="foo"
-  onChange={event => {
-    const setFoo = setValue("foo");
-    setFoo(event.target.value);
-  }}
-  value={values.foo}
-/>
-```
-
-#### Type parameters
+#### Type Parameters
 
 • **K** *extends* `string`
 
@@ -101,9 +75,11 @@ the path to change the value
 
 [`SetValue`](../type-aliases/SetValue.md)\<[`ValueByPath`](../type-aliases/ValueByPath.md)\<`T`, `K`\>\>
 
-#### Source
+a value setter function
 
-[lib/Form.provider.tsx:96](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L96)
+#### Defined in
+
+[Form.provider.tsx:96](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L96)
 
 ***
 
@@ -117,9 +93,9 @@ Helper function that triggers the form submit on demand.
 
 `void`
 
-#### Source
+#### Defined in
 
-[lib/Form.provider.tsx:100](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L100)
+[Form.provider.tsx:100](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L100)
 
 ***
 
@@ -130,6 +106,6 @@ Helper function that triggers the form submit on demand.
 The curretn values `Partial<T>` of the form. These values are partial
 because they might not be present or changed by the user yet.
 
-#### Source
+#### Defined in
 
-[lib/Form.provider.tsx:105](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L105)
+[Form.provider.tsx:105](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.provider.tsx#L105)

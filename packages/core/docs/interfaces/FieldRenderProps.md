@@ -12,7 +12,7 @@ The result of the [useField](../functions/useField.md) hook
 
 - [`UseField`](UseField.md)\<[`ValueByPath`](../type-aliases/ValueByPath.md)\<`T`, `K`\>, `D`\>.[`UseFieldValidation`](UseFieldValidation.md)
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -36,9 +36,9 @@ The error message of the field (if any).
 
 [`UseFieldValidation`](UseFieldValidation.md).[`error`](UseFieldValidation.md#error)
 
-#### Source
+#### Defined in
 
-[lib/hooks/useFieldValidation.ts:14](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useFieldValidation.ts#L14)
+[hooks/useFieldValidation.ts:14](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useFieldValidation.ts#L14)
 
 ***
 
@@ -46,10 +46,7 @@ The error message of the field (if any).
 
 > **handleChange**: \<`A`\>(`mapper`) => (...`args`) => `void`
 
-Helper function that creates a handler function which runs the field
-setter with the value obtaioed by the `mapper`.
-
-#### Type parameters
+#### Type Parameters
 
 • **A** *extends* `unknown`[]
 
@@ -63,6 +60,8 @@ a function to map the callback arguments to the next value
 
 `Function`
 
+a callback function that changes the value upon called
+
 ##### Parameters
 
 • ...**args**: `A`
@@ -71,9 +70,9 @@ a function to map the callback arguments to the next value
 
 `void`
 
-#### Source
+#### Defined in
 
-[lib/components/Field.component.tsx:31](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L31)
+[components/Field.component.tsx:31](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L31)
 
 ***
 
@@ -87,9 +86,9 @@ True when the field is marked as required, false otherwise.
 
 [`UseFieldValidation`](UseFieldValidation.md).[`required`](UseFieldValidation.md#required)
 
-#### Source
+#### Defined in
 
-[lib/hooks/useFieldValidation.ts:18](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useFieldValidation.ts#L18)
+[hooks/useFieldValidation.ts:18](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useFieldValidation.ts#L18)
 
 ***
 
@@ -107,9 +106,9 @@ Changes the touched state of the field to `true`
 
 [`UseField`](UseField.md).[`setTouched`](UseField.md#settouched)
 
-#### Source
+#### Defined in
 
-[lib/hooks/useField.ts:18](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L18)
+[hooks/useField.ts:18](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L18)
 
 ***
 
@@ -123,9 +122,9 @@ Changes the value of the field.
 
 [`UseField`](UseField.md).[`setValue`](UseField.md#setvalue)
 
-#### Source
+#### Defined in
 
-[lib/hooks/useField.ts:22](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L22)
+[hooks/useField.ts:22](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L22)
 
 ***
 
@@ -139,6 +138,6 @@ The actual value of the field.
 
 [`UseField`](UseField.md).[`value`](UseField.md#value)
 
-#### Source
+#### Defined in
 
-[lib/hooks/useField.ts:26](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L26)
+[hooks/useField.ts:26](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useField.ts#L26)

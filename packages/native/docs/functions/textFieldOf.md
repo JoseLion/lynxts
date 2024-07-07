@@ -12,7 +12,7 @@ Utility function which helps you create a [TextField](TextField.md) component of
 specific struct type. Once you have this, the possible values for the `name`
 prop can be inferred based on the struct type.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* `Struct`
 
@@ -36,6 +36,6 @@ const TextField = textFieldOf<User>();
 <TextField name="role" label="Role:" />
 ```
 
-## Source
+## Defined in
 
 [packages/native/src/lib/fields/TextField.component.tsx:162](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/fields/TextField.component.tsx#L162)

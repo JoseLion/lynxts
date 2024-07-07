@@ -15,7 +15,7 @@ import isEqual from "react-fast-compare";
  * The {@link Textarea} component props which extends from the
  * {@link HTMLTextAreaElement} attributes.
  *
- * @param T struct type of the form values
+ * @template T struct type of the form values
  */
 export interface TextareaProps<T extends Struct> extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   /**
@@ -46,7 +46,7 @@ export interface TextareaProps<T extends Struct> extends TextareaHTMLAttributes<
  * Helper type to describe a {@link Textarea} component of an specific struct
  * `T`.
  *
- * @param T struct type of the form values
+ * @template T struct type of the form values
  */
 export type TextareaOf<T extends Struct> = (props: TextareaProps<T>) => ReactElement;
 
@@ -56,8 +56,8 @@ export type TextareaOf<T extends Struct> = (props: TextareaProps<T>) => ReactEle
  * {@link useFieldValidation} hooks to provide the value state management and
  * validation helpers right out of the box.
  *
- * @param T struct type of the form values
  * @param props the TextareaProps plus the HTMLTextAreaElement attributes
+ * @template T struct type of the form values
  */
 export const Textarea = memo(<T extends Struct>(props: TextareaProps<T>): ReactElement => {
   const {

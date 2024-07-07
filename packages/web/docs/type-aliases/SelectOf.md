@@ -4,19 +4,19 @@
 
 [@lynxts/web](../README.md) / SelectOf
 
-# Type alias: SelectOf()\<T\>
+# Type Alias: SelectOf()\<T\>
 
 > **SelectOf**\<`T`\>: \<`K`\>(`props`) => `ReactElement`
 
 Helper type to describe a [Select](../functions/Select.md) component of an specific struct `T`.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* `Struct`
 
 struct type of the form values
 
-## Type parameters
+## Type Parameters
 
 • **K** *extends* `Path`\<`T`\>
 
@@ -28,6 +28,6 @@ struct type of the form values
 
 `ReactElement`
 
-## Source
+## Defined in
 
 [packages/web/src/lib/fields/Select.component.tsx:77](https://github.com/JoseLion/lynxts/blob/main/packages/web/src/lib/fields/Select.component.tsx#L77)

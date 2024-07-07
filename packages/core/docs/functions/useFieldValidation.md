@@ -10,7 +10,7 @@
 
 A hook to retrieve validation related states of a field.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -26,6 +26,6 @@ the path of the field in `T`
 
 an object with validation related states
 
-## Source
+## Defined in
 
-[lib/hooks/useFieldValidation.ts:27](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useFieldValidation.ts#L27)
+[hooks/useFieldValidation.ts:27](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/hooks/useFieldValidation.ts#L27)

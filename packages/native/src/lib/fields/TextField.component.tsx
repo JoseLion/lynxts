@@ -20,7 +20,7 @@ import { SS } from "./TextField.styles";
  * The {@link TextField} component props which extend from
  * {@link TextInputProps}.
  *
- * @param T struct type of the form values
+ * @template T struct type of the form values
  */
 export interface TextFiedProps<T extends Struct> extends Omit<TextInputProps, "value"> {
   /**
@@ -65,7 +65,7 @@ export interface TextFiedProps<T extends Struct> extends Omit<TextInputProps, "v
  * Helper type to describe a {@link TextField} component of an specific struct
  * `T`.
  *
- * @param T struct type of the form values
+ * @template T struct type of the form values
  */
 export type TextFieldOf<T extends Struct> = (props: TextFiedProps<T>) => ReactElement;
 
@@ -75,8 +75,8 @@ export type TextFieldOf<T extends Struct> = (props: TextFiedProps<T>) => ReactEl
  * {@link useFieldValidation} hooks to provide the value state management and
  * validation helpers right out of the box.
  *
- * @param T struct type of the form values
  * @param props the TextFiedProps plus the TextInput props
+ * @template T struct type of the form values
  */
 export const TextField = memo(<T extends Struct>(props: TextFiedProps<T>): ReactElement => {
   const {

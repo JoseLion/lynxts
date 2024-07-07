@@ -21,6 +21,6 @@ same as TouchableNativeFeedbackProps
 
 `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
-## Source
+## Defined in
 
 [packages/native/src/lib/SubmitNativeFeedback.component.tsx:12](https://github.com/JoseLion/lynxts/blob/main/packages/native/src/lib/SubmitNativeFeedback.component.tsx#L12)

@@ -8,7 +8,7 @@
 
 The props of the [ArrayField](../functions/ArrayField.md) component.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -24,9 +24,6 @@ the path type of the array field
 
 > **children**: (`props`) => `ReactNode`
 
-The children is a function which takes the result of [useArrayField](../functions/useArrayField.md)
-hook in the first argument and returns a React.js node.
-
 #### Parameters
 
 • **props**: [`UseArrayField`](UseArrayField.md)\<[`ArrayValue`](../type-aliases/ArrayValue.md)\<`T`, `K`\>\>
@@ -37,9 +34,11 @@ render props same as the `useArrayField` hook result
 
 `ReactNode`
 
-#### Source
+a React.js node
 
-[lib/components/ArrayField.component.tsx:42](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L42)
+#### Defined in
+
+[components/ArrayField.component.tsx:42](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L42)
 
 ***
 
@@ -52,9 +51,9 @@ change if the array field value changes. This prop lets you add an
 additional dependency list to that memoization, so you can add external
 state changes when required.
 
-#### Source
+#### Defined in
 
-[lib/components/ArrayField.component.tsx:49](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L49)
+[components/ArrayField.component.tsx:49](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L49)
 
 ***
 
@@ -64,6 +63,6 @@ state changes when required.
 
 The path to the array field in `T`.
 
-#### Source
+#### Defined in
 
-[lib/components/ArrayField.component.tsx:53](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L53)
+[components/ArrayField.component.tsx:53](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/ArrayField.component.tsx#L53)

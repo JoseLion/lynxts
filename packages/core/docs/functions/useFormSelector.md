@@ -10,7 +10,7 @@
 
 A hook to select a value from the form `FormCtxt<T>`.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -28,6 +28,6 @@ a function to select a value from the context
 
 the selected value
 
-## Source
+## Defined in
 
-[lib/Form.context.ts:222](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L222)
+[Form.context.ts:222](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/Form.context.ts#L222)

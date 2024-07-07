@@ -12,7 +12,7 @@ Utility function which helps you create a [Field](Field.md) component of an
 specific struct type. Once you have this, the only type parameters left is
 the [Path\<T\>](../type-aliases/Path.md) of the property and the optional fallback type.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
@@ -49,6 +49,6 @@ const Field = fieldOf<User>();
 </Field>
 ```
 
-## Source
+## Defined in
 
-[lib/components/Field.component.tsx:138](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L138)
+[components/Field.component.tsx:138](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L138)

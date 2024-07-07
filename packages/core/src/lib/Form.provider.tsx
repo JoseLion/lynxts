@@ -142,8 +142,8 @@ export interface FormProviderProps<T extends Struct> {
 /**
  * The form context provider component.
  *
- * @param T struct type of the form values
  * @param props the provider component props
+ * @template T struct type of the form values
  */
 export const FormProvider = memo(<T extends Struct>(props: FormProviderProps<T>): ReactElement => {
   const { children, onSubmit, validation } = props;

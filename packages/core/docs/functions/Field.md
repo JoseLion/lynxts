@@ -10,11 +10,15 @@
 
 Helper component for rendering fields with finner control over the re-renders
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](../type-aliases/Struct.md)
 
+struct type of the form values
+
 • **K** *extends* `string`
+
+the type of the path of the field
 
 • **D** = [`Optional`](../type-aliases/Optional.md)\<[`ValueByPath`](../type-aliases/ValueByPath.md)\<`T`, `K`\>\>
 
@@ -28,6 +32,6 @@ the field props
 
 `ReactElement`\<`any`, `string` \| `JSXElementConstructor`\<`any`\>\>
 
-## Source
+## Defined in
 
-[lib/components/Field.component.tsx:79](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L79)
+[components/Field.component.tsx:79](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L79)

@@ -4,19 +4,19 @@
 
 [@lynxts/core](../README.md) / FieldOf
 
-# Type alias: FieldOf()\<T\>
+# Type Alias: FieldOf()\<T\>
 
 > **FieldOf**\<`T`\>: \<`K`, `D`\>(`props`) => `ReactNode`
 
 Helper type to describe a [Field](../functions/Field.md) component of an specific struct `T`.
 
-## Type parameters
+## Type Parameters
 
 • **T** *extends* [`Struct`](Struct.md)
 
 struct type of the form values
 
-## Type parameters
+## Type Parameters
 
 • **K** *extends* [`Path`](Path.md)\<`T`, [`ValueByPath`](ValueByPath.md)\<`T`, `K`\>\>
 
@@ -30,6 +30,6 @@ struct type of the form values
 
 `ReactNode`
 
-## Source
+## Defined in
 
-[lib/components/Field.component.tsx:14](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L14)
+[components/Field.component.tsx:14](https://github.com/JoseLion/lynxts/blob/main/packages/core/src/lib/components/Field.component.tsx#L14)
