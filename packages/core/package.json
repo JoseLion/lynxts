@@ -14,17 +14,32 @@
     "yup",
     "zod"
   ],
-  "main": "./dist/main.js",
+  "type": "module",
+  "sideEffects": false,
+  "source": "./src/main.ts",
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.js",
+  "unpkg": "./dist/main.umd.cjs",
   "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs",
+      "types": "./dist/main.d.ts",
+      "default": "./dist/main.js"
+    },
+    "./package.json": "./package.json"
+  },
   "files": [
-    "dist/",
-    "src/"
+    "./dist/",
+    "./src/",
+    "./package.json"
   ],
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.prod.json",
+    "build": "vite build",
     "check": "yarn compile && yarn test",
     "compile": "tsc -p tsconfig.json",
     "docs": "typedoc",
@@ -59,7 +74,9 @@
     "semantic-release-yarn": "^3.0.2",
     "sinon": "^18.0.0",
     "tslib": "^2.6.3",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vite-plugin-dts": "^3.9.1"
   },
   "optionalDependencies": {
     "yup": "^1.4.0",

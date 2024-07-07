@@ -1,6 +1,8 @@
 /**
  * @type {import('@babel/core').TransformOptions}
  */
-module.exports = {
+const babelConfig = {
   presets: ["module:@react-native/babel-preset"],
 };
+
+export default babelConfig;

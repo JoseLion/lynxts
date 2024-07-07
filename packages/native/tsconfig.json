@@ -3,10 +3,9 @@
   "compilerOptions": {
     "outDir": "./build",
     "typeRoots": [
-      "../../node_modules/@types/",
-      "./typings/"
+      "../../node_modules/@types",
+      "./typings"
     ],
-    "target": "ESNext",
     // Jest and Mocha types conflict with eachother.
     // Check: https://github.com/microsoft/TypeScript/issues/18588#issuecomment-704482601
     "types": [
@@ -17,7 +16,7 @@
     ]
   },
   "exclude": [
-    "build/*",
-    "dist/*"
+    "build/**",
+    "dist/**"
   ]
 }

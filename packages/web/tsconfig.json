@@ -3,12 +3,12 @@
   "compilerOptions": {
     "outDir": "./build",
     "typeRoots": [
-      "../../node_modules/@types/",
-      "./typings/"
+      "../../node_modules/@types",
+      "./typings"
     ]
   },
   "exclude": [
-    "build/*",
-    "dist/*"
+    "build/**",
+    "dist/**"
   ]
 }
