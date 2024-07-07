@@ -22,8 +22,8 @@ export interface FormProps<T extends Struct> extends FormProviderProps<T>, HTMLF
  * **Note:** Because the FormProvider is in charge of the validation, the
  * defualt value of the `noValidate` prop of the `<form>` is set to `true`.
  *
- * @param T struct type of the form values
  * @param props the FromProvider props plus the HTMLFormElement props
+ * @template T struct type of the form values
  */
 export const Form = memo(<T extends Struct>(props: FormProps<T>): ReactElement => {
   const { children, onSubmit, validation, values, ...rest } = props;

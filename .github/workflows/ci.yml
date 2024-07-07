@@ -27,25 +27,12 @@ jobs:
       - run: yarn compile
       - run: yarn lint
       - run: yarn test
-
-  docs:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: .nvmrc
-          cache: yarn
-      - run: yarn install --immutable
       - run: yarn docs
       - uses: tj-actions/verify-changed-files@v20
-        id: verify-changed-files
         with:
-          files: |
-            **/docs/**
-      - name: Fail on missing docs
-        if: steps.verify-changed-files.outputs.files_changed == 'true'
-        run: |
-          echo "::error::The API reference docs have uncommitted changes:"
-          echo "::error::${{ steps.verify-changed-files.outputs.changed_files }}"
-          exit 1
+          files: docs/**
+          fail-if-changed: true
+          fail-message: >-
+            Uncommited API Reference docs found! Run `yarn docs` locally and 
+            commit the changes.
+      

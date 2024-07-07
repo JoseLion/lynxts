@@ -15,8 +15,8 @@ import isEqual from "react-fast-compare";
  * The {@link Select} component props which extends from the
  * {@link HTMLSelectElement} attributes.
  *
- * @param T struct type of the form values
- * @param K the type of the Path<T> of the field
+ * @template T struct type of the form values
+ * @template K the type of the Path<T> of the field
  */
 export interface SelectProps<T extends Struct, K extends Path<T>> extends HTMLAttributes<HTMLSelectElement> {
   /**
@@ -72,7 +72,7 @@ export interface SelectProps<T extends Struct, K extends Path<T>> extends HTMLAt
 /**
  * Helper type to describe a {@link Select} component of an specific struct `T`.
  *
- * @param T struct type of the form values
+ * @template T struct type of the form values
  */
 export type SelectOf<T extends Struct> =
   <K extends Path<T>>(props: SelectProps<T, K>) => ReactElement;
@@ -83,9 +83,9 @@ export type SelectOf<T extends Struct> =
  * hooks to provide the value state management and validation helpers right out
  * of the box.
  *
- * @param T struct type of the form values
- * @param K the type of the Path<T> of the field
  * @param props the SelectProps plus the HTMLSelectElement attributes
+ * @template T struct type of the form values
+ * @template K the type of the Path<T> of the field
  */
 export const Select = memo(<T extends Struct, K extends Path<T>>(props: SelectProps<T, K>): ReactElement => {
   const {

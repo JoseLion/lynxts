@@ -72,9 +72,9 @@ export interface FieldProps<
 /**
  * Helper component for rendering fields with finner control over the re-renders
  *
- * @param T struct type of the form values
- * @param K the type of the path of the field
  * @param props the field props
+ * @template T struct type of the form values
+ * @template K the type of the path of the field
  */
 export const Field = memo(<
   T extends Struct,
