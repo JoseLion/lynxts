@@ -3373,12 +3373,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shikijs/core@npm:1.10.2":
-  version: 1.10.2
-  resolution: "@shikijs/core@npm:1.10.2"
+"@shikijs/core@npm:1.10.3":
+  version: 1.10.3
+  resolution: "@shikijs/core@npm:1.10.3"
   dependencies:
     "@types/hast": "npm:^3.0.4"
-  checksum: 10/e5d7a975771b21e5823b971fef69e4f1f8e7c1e9d7329567f2226246e8c3238839cdf5aa31fc4cbf332bb7ab5c84f8fa3b01b1fa68c76fda2db92c3a578b124b
+  checksum: 10/4f8ef8d972f6ee5ff451d300c39db17aea673a8071b92cb3ae0546064412e75df754d24e5726fb681ed35e06438e8184963990878e54cb0582a4b6569ba70a43
   languageName: node
   linkType: hard
 
@@ -8918,9 +8918,9 @@ __metadata:
   linkType: hard
 
 "lru-cache@npm:^10.0.1, lru-cache@npm:^10.2.0, lru-cache@npm:^10.2.2":
-  version: 10.3.1
-  resolution: "lru-cache@npm:10.3.1"
-  checksum: 10/52938a77f14f874e88fd9bf0fc8a39873e52deff85a4e3bb86d7c3a38b0ef2dcaddf1f7f59b2a131a66f3bdb56e26c1843eddbf7dddc02acc69279f74e4331c9
+  version: 10.4.0
+  resolution: "lru-cache@npm:10.4.0"
+  checksum: 10/5073575d9afa20eced8a776d7ac20d79d4ef10bde984faa2b67fb685a94bb014d554951b2d475cf7cdaa0da749170ba91b67144a72f571907eb417a80c649884
   languageName: node
   linkType: hard
 
@@ -11850,12 +11850,12 @@ __metadata:
   linkType: hard
 
 "shiki@npm:^1.9.1":
-  version: 1.10.2
-  resolution: "shiki@npm:1.10.2"
+  version: 1.10.3
+  resolution: "shiki@npm:1.10.3"
   dependencies:
-    "@shikijs/core": "npm:1.10.2"
+    "@shikijs/core": "npm:1.10.3"
     "@types/hast": "npm:^3.0.4"
-  checksum: 10/bbb41bc396201883a2bc49f04bfdbe47f5aaa0ac3e0c0d5a1b0a572f88628af66e47a3a3f43f38af9f7bbfe8d18411bfdb50481bba74c01b44dcd67d4665c39b
+  checksum: 10/3ea852e944f4eced8d1df395f9ca24cd686d4f2fe00043a2450d89b878dc86f3ad8cb5f7d71fd31213228f58b1d8c618df26741bfd19676542072d1e12c9d05e
   languageName: node
   linkType: hard
 
