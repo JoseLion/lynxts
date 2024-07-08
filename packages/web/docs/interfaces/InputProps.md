@@ -111,7 +111,7 @@ node\_modules/@types/react/index.d.ts:2595
 
 ### aria-autocomplete?
 
-> `optional` **aria-autocomplete**: `"list"` \| `"none"` \| `"inline"` \| `"both"`
+> `optional` **aria-autocomplete**: `"inline"` \| `"none"` \| `"list"` \| `"both"`
 
 Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
 presented if they are made.
@@ -402,7 +402,7 @@ node\_modules/@types/react/index.d.ts:2664
 
 ### ~~aria-dropeffect?~~
 
-> `optional` **aria-dropeffect**: `"link"` \| `"none"` \| `"copy"` \| `"execute"` \| `"move"` \| `"popup"`
+> `optional` **aria-dropeffect**: `"none"` \| `"link"` \| `"copy"` \| `"execute"` \| `"move"` \| `"popup"`
 
 Indicates what functions can be performed when a dragged object is released on the drop target.
 
@@ -1132,7 +1132,7 @@ node\_modules/@types/react/index.d.ts:2935
 
 ### capture?
 
-> `optional` **capture**: `boolean` \| `"user"` \| `"environment"`
+> `optional` **capture**: `boolean` \| `"environment"` \| `"user"`
 
 #### Inherited from
 
@@ -1518,7 +1518,7 @@ node\_modules/@types/react/index.d.ts:2923
 
 ### inputMode?
 
-> `optional` **inputMode**: `"search"` \| `"text"` \| `"none"` \| `"tel"` \| `"url"` \| `"email"` \| `"numeric"` \| `"decimal"`
+> `optional` **inputMode**: `"none"` \| `"search"` \| `"text"` \| `"tel"` \| `"url"` \| `"email"` \| `"numeric"` \| `"decimal"`
 
 Hints at the type of data that might be entered by the user while editing the element or its contents
 

@@ -1,6 +1,7 @@
 import { expect } from "@assertive-ts/core";
 import { type RenderHookResult, renderHook, waitFor } from "@testing-library/react";
 import Sinon from "sinon";
+import { describe, it, suite } from "vitest";
 import { type ObjectSchema, isSchema, number, object, string } from "yup";
 import { z } from "zod";
 
@@ -43,12 +44,12 @@ function renderWith(options: RenderOptions): RenderHookResult<UseFieldValidation
   });
 }
 
-describe("[Integration] useFieldValidation.test.tsx", () => {
+suite("[Integration] useFieldValidation.test.tsx", () => {
   [yupSchema, zodSchema].forEach(schema => {
     const schemaName = isSchema(schema) ? "Yup" : "Zod";
 
     describe(`[${schemaName}] when the validation is a schema`, () => {
-      context("and the hook is rendered", () => {
+      describe("and the hook is rendered", () => {
         it("returns the error and required states", async () => {
           const { result } = renderWith({ path: "name", schema });
           const { current } = result;
@@ -60,7 +61,7 @@ describe("[Integration] useFieldValidation.test.tsx", () => {
         });
       });
 
-      context("and the field is required", () => {
+      describe("and the field is required", () => {
         it("sets the required state to true", async () => {
           const { result } = renderWith({ path: "name", schema });
 
@@ -70,7 +71,7 @@ describe("[Integration] useFieldValidation.test.tsx", () => {
         });
       });
 
-      context("and the field is not required", () => {
+      describe("and the field is not required", () => {
         it("sets the required state to false", async () => {
           const { result } = renderWith({ path: "age", schema });
 

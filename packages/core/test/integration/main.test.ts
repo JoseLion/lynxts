@@ -1,8 +1,9 @@
 import { expect } from "@assertive-ts/core";
+import { it, suite } from "vitest";
 
-describe("[Integration] main.test.tsx", () => {
+suite("[Integration] main.test.tsx", () => {
   it("re-exports the library exports", async () => {
-    const core = await expect(import("../../src/main")).toBeResolved();
+    const core = await import("../../src/main");
 
     expect(core).toHaveKeys(
       "ArrayField",

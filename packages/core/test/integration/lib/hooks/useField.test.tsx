@@ -1,8 +1,9 @@
 import { expect } from "@assertive-ts/core";
 import { type RenderHookResult, fireEvent, render, renderHook, waitFor } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { userEvent } from "@testing-library/user-event";
 import { type ChangeEvent, type ReactElement, useCallback } from "react";
 import Sinon from "sinon";
+import { describe, it, suite } from "vitest";
 import { type ObjectSchema, isSchema, number, object, string } from "yup";
 import { z } from "zod";
 
@@ -86,8 +87,8 @@ function Field(): ReactElement {
   );
 }
 
-describe("[Integration] useField.test.tsx", () => {
-  context("when the hook is rendered", () => {
+suite("[Integration] useField.test.tsx", () => {
+  describe("when the hook is rendered", () => {
     it("returns the field value and state setters", () => {
       const { result } = renderWith({ path: "name", values: { name: "Alice" } });
       const { current } = result;
@@ -99,7 +100,7 @@ describe("[Integration] useField.test.tsx", () => {
   });
 
   describe("fallback", () => {
-    context("when the fallback is not provided", () => {
+    describe("when the fallback is not provided", () => {
       it("starts the value as undefined and can change it back to undefined", () => {
         const { result, rerender } = renderWith({ path: "name" });
 
@@ -119,7 +120,7 @@ describe("[Integration] useField.test.tsx", () => {
       });
     });
 
-    context("when the fallback is defined", () => {
+    describe("when the fallback is defined", () => {
       it("starts the value with a default and falls back if changed to undefined", () => {
         const { result, rerender } = renderWith({ fallback: 0, path: "age" });
 
@@ -159,8 +160,8 @@ describe("[Integration] useField.test.tsx", () => {
     const schemaName = isSchema(schema) ? "Yup" : "Zod";
 
     describe(`[${schemaName}] validation`, () => {
-      context("when the field is valid", () => {
-        context("and the field is untouched", () => {
+      describe("when the field is valid", () => {
+        describe("and the field is untouched", () => {
           it("does not show any error", async () => {
             const { findByRole, getByText } = render(<TestApp schema={schema} />);
 
@@ -180,7 +181,7 @@ describe("[Integration] useField.test.tsx", () => {
           });
         });
 
-        context("and the field is touched", () => {
+        describe("and the field is touched", () => {
           it("does not show any error", async () => {
             const { findByRole, getByText } = render(<TestApp schema={schema} />);
 
@@ -208,8 +209,8 @@ describe("[Integration] useField.test.tsx", () => {
         });
       });
 
-      context("when the field is invalid", () => {
-        context("and the field is untouched", () => {
+      describe("when the field is invalid", () => {
+        describe("and the field is untouched", () => {
           it("does not show the error", async () => {
             const { findByRole, getByText } = render(<TestApp schema={schema} />);
 
@@ -236,7 +237,7 @@ describe("[Integration] useField.test.tsx", () => {
           });
         });
 
-        context("and the field is touched", () => {
+        describe("and the field is touched", () => {
           it("shows the error", async () => {
             const { findByRole, getByText } = render(<TestApp schema={schema} />);
 

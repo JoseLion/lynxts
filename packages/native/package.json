@@ -15,23 +15,38 @@
     "yup",
     "zod"
   ],
-  "main": "./dist/main.js",
+  "type": "module",
+  "sideEffects": false,
+  "source": "./src/main.ts",
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.js",
   "types": "./dist/main.d.ts",
-  "react-native": "./src/main.ts",
+  "react-native": "./dist/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs",
+      "react-native": "./dist/main.js",
+      "types": "./dist/main.d.ts",
+      "default": "./dist/main.js"
+    },
+    "./package.json": "./package.json"
+  },
   "files": [
-    "dist/",
-    "src/"
+    "./dist/",
+    "./src/",
+    "./package.json"
   ],
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.prod.json",
-    "check": "yarn compile && yarn test",
+    "build": "vite build",
+    "check": "yarn compile && yarn test --run",
     "compile": "tsc -p tsconfig.json",
     "docs": "typedoc",
     "release": "semantic-release",
-    "test": "NODE_ENV=test jest",
+    "test": "vitest",
     "test:silent": "DEBUG_PRINT_LIMIT=0 yarn test",
     "test:verbose": "DEBUG_PRINT_LIMIT=1000000 yarn test"
   },
@@ -41,21 +56,20 @@
   },
   "devDependencies": {
     "@assertive-ts/core": "^2.1.0",
+    "@assertive-ts/sinon": "^1.0.0",
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/runtime": "^7.24.7",
     "@lynxts/core": "workspace:^",
     "@react-native/babel-preset": "^0.74.85",
-    "@react-native/metro-config": "^0.74.85",
     "@testing-library/react-native": "^12.5.1",
     "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
     "@types/react-test-renderer": "^18.3.0",
     "@types/sinon": "^17.0.3",
-    "babel-jest": "^29.7.0",
-    "jest": "^29.7.0",
     "react": "^18.3.1",
     "react-native": "^0.74.3",
+    "react-native-testing-mocks": "^1.4.1",
     "react-test-renderer": "^18.3.1",
     "semantic-release": "^24.0.0",
     "semantic-release-yarn": "^3.0.2",
@@ -63,6 +77,9 @@
     "ts-node": "^10.9.2",
     "tslib": "^2.6.3",
     "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vite-plugin-dts": "^3.9.1",
+    "vitest": "^1.6.0",
     "yup": "^1.4.0"
   },
   "peerDependencies": {

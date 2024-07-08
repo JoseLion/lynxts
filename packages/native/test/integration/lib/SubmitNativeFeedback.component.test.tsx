@@ -1,18 +1,20 @@
+import { expect } from "@assertive-ts/core";
 import { FormProvider } from "@lynxts/core";
-import { fireEvent, render, waitFor } from "@testing-library/react-native";
+import { render, userEvent, waitFor } from "@testing-library/react-native";
 import { Text } from "react-native";
 import Sinon from "sinon";
+import { describe, it, suite } from "vitest";
 
 import { SubmitNativeFeedback } from "../../../src/lib/SubmitNativeFeedback.component";
 import { type Foo, foo, schema } from "../../helpers/testSchema";
 
-describe("[Integration] SubmitNativeFeedback.component.test.tsx", () => {
-  context("when the button is pressed", () => {
-    context("and the onPress callback is not set", () => {
+suite("[Integration] SubmitNativeFeedback.component.test.tsx", () => {
+  describe("when the button is pressed", () => {
+    describe("and the onPress callback is not set", () => {
       it("submits the form", async () => {
-        const spySubmit = Sinon.spy<(values: Foo) => void>(() => undefined);
+        const submitSpy = Sinon.spy<(values: Foo) => void>(() => undefined);
         const { findByText } = render(
-          <FormProvider onSubmit={spySubmit} validation={schema} values={foo}>
+          <FormProvider onSubmit={submitSpy} validation={schema} values={foo}>
             <SubmitNativeFeedback>
               <Text>{"Submit!"}</Text>
             </SubmitNativeFeedback>
@@ -21,19 +23,23 @@ describe("[Integration] SubmitNativeFeedback.component.test.tsx", () => {
 
         const submit = await findByText("Submit!");
 
-        await waitFor(() => fireEvent.press(submit));
+        await userEvent.press(submit);
 
-        Sinon.assert.calledOnceWithExactly(spySubmit, { name: "foo", other: 5 });
+        await waitFor(() => {
+          expect(submitSpy)
+            .toBeCalledOnce()
+            .toHaveArgs({ name: "foo", other: 5 });
+        });
       });
     });
 
-    context("and the onPress callback is set", () => {
+    describe("and the onPress callback is set", () => {
       it("submits the form and calls the onPress callback", async () => {
-        const spySubmit = Sinon.spy<(values: Foo) => void>(() => undefined);
-        const spyOnPress = Sinon.spy<() => void>(() => undefined);
+        const submitSpy = Sinon.spy<(values: Foo) => void>(() => undefined);
+        const onPressSpy = Sinon.spy<() => void>(() => undefined);
         const { findByText } = render(
-          <FormProvider onSubmit={spySubmit} validation={schema} values={foo}>
-            <SubmitNativeFeedback onPress={spyOnPress}>
+          <FormProvider onSubmit={submitSpy} validation={schema} values={foo}>
+            <SubmitNativeFeedback onPress={onPressSpy}>
               <Text>{"Submit!"}</Text>
             </SubmitNativeFeedback>
           </FormProvider>,
@@ -41,10 +47,14 @@ describe("[Integration] SubmitNativeFeedback.component.test.tsx", () => {
 
         const submit = await findByText("Submit!");
 
-        await waitFor(() => fireEvent.press(submit));
+        await userEvent.press(submit);
 
-        Sinon.assert.calledOnceWithExactly(spySubmit, { name: "foo", other: 5 });
-        Sinon.assert.calledOnce(spyOnPress);
+        await waitFor(() => {
+          expect(submitSpy)
+            .toBeCalledOnce()
+            .toHaveArgs({ name: "foo", other: 5 });
+          expect(onPressSpy).toBeCalledOnce();
+        });
       });
     });
   });

@@ -1,6 +1,7 @@
 import { usePlugin } from "@assertive-ts/core";
 import { SinonPlugin } from "@assertive-ts/sinon";
-import { cleanup, userEvent } from "@testing-library/react-native";
+import { cleanup } from "@testing-library/react";
+import { userEvent } from "@testing-library/user-event";
 import Sinon from "sinon";
 import { afterEach, beforeEach } from "vitest";
 

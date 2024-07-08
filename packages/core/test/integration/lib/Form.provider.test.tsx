@@ -1,8 +1,9 @@
 import { expect } from "@assertive-ts/core";
 import { render, waitFor } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { userEvent } from "@testing-library/user-event";
 import { type ReactElement, useCallback, useState } from "react";
 import Sinon from "sinon";
+import { describe, it, suite } from "vitest";
 import { type ObjectSchema, boolean, isSchema, number, object, string } from "yup";
 import { z } from "zod";
 
@@ -94,8 +95,8 @@ function WasSubmitted(): ReactElement {
   );
 }
 
-describe("[Integration] Form.provider.test.tsx", () => {
-  context("when the provider children is a function", () => {
+suite("[Integration] Form.provider.test.tsx", () => {
+  describe("when the provider children is a function", () => {
     it("renders the result passing context as parameters", async () => {
       const { getByText } = render(
         <FormProvider<Foo>
@@ -121,7 +122,7 @@ describe("[Integration] Form.provider.test.tsx", () => {
     });
   });
 
-  context("when the provider children is not a function", () => {
+  describe("when the provider children is not a function", () => {
     it("renders the children elements", async () => {
       const { getByText } = render(
         <FormProvider<Foo>
@@ -137,7 +138,7 @@ describe("[Integration] Form.provider.test.tsx", () => {
     });
   });
 
-  context("when the values prop changes", () => {
+  describe("when the values prop changes", () => {
     it("updates the from values in the context", async () => {
       const { getByText, findByRole } = render(<TestApp />);
 
@@ -159,12 +160,12 @@ describe("[Integration] Form.provider.test.tsx", () => {
     });
   });
 
-  context("when the submit function is called from the context", () => {
+  describe("when the submit function is called from the context", () => {
     it("calls the onSubmit callback once", async () => {
-      const spySubmit = Sinon.spy<(v: Foo) => void>(() => undefined);
+      const submitSpy = Sinon.spy<(v: Foo) => void>(() => undefined);
       const { findByRole } = render(
         <FormProvider<Foo>
-          onSubmit={spySubmit}
+          onSubmit={submitSpy}
           validation={yupSchema}
           values={{ x: 1, y: "foo", z: true }}
         >
@@ -180,19 +181,23 @@ describe("[Integration] Form.provider.test.tsx", () => {
 
       await userEvent.click(submitButton);
 
-      Sinon.assert.calledOnceWithExactly(spySubmit, { x: 1, y: "foo", z: true });
+      await waitFor(() => {
+        expect(submitSpy)
+          .toBeCalledOnce()
+          .toHaveArgs({ x: 1, y: "foo", z: true });
+      });
     });
   });
 
   [yupSchema, zodSchema].forEach(schema => {
     const schemaName = isSchema(schema) ? "Yup" : "Zod";
 
-    context("when the validation fails", () => {
+    describe("when the validation fails", () => {
       it("sets all the violations, does not call the onSubmit callback, sets the form as submitted", async () => {
-        const spySubmit = Sinon.spy<(v: Foo) => void>(() => undefined);
+        const submitSpy = Sinon.spy<(v: Foo) => void>(() => undefined);
           const { findByRole, getByText } = render(
             <TestApp
-              onSubmit={spySubmit}
+              onSubmit={submitSpy}
               schema={schema}
             />,
           );
@@ -205,19 +210,19 @@ describe("[Integration] Form.provider.test.tsx", () => {
 
           await waitFor(() => getByText("Errors: x, y, z"));
 
-          Sinon.assert.notCalled(spySubmit);
+          expect(submitSpy).toNeverBeCalled();
 
           await waitFor(() => getByText("Submitted? true"));
       });
     });
 
     describe(`[${schemaName}] validate`, () => {
-      context("when the validation success", () => {
+      describe("when the validation success", () => {
         it("clears the errors, calls the onSubmit callback once, and sets the form as submitted", async () => {
-          const spySubmit = Sinon.spy<(v: Foo) => void>(() => undefined);
+          const submitSpy = Sinon.spy<(v: Foo) => void>(() => undefined);
           const { findByRole, getByText, queryByText } = render(
             <TestApp
-              onSubmit={spySubmit}
+              onSubmit={submitSpy}
               schema={schema}
             />,
           );
@@ -244,11 +249,12 @@ describe("[Integration] Form.provider.test.tsx", () => {
 
           await waitFor(() => {
             expect(queryByText("Errors: x, y, z")).toBeNull();
+            getByText("Submitted? true");
           });
 
-          Sinon.assert.calledWithExactly(spySubmit, { x: 5, y: "foo", z: true });
-
-          await waitFor(() => getByText("Submitted? true"));
+          expect(submitSpy)
+            .toBeCalledOnce()
+            .toHaveArgs({ x: 5, y: "foo", z: true });
         });
       });
     });

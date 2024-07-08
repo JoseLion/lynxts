@@ -1,6 +1,7 @@
 import { expect } from "@assertive-ts/core";
 import { type RenderHookResult, renderHook } from "@testing-library/react";
 import Sinon from "sinon";
+import { describe, it, suite } from "vitest";
 import { type ObjectSchema, array, object, string } from "yup";
 
 import { FormProvider } from "../../../../src/lib/Form.provider";
@@ -28,8 +29,8 @@ function renderWith(...roles: string[]): RenderHookResult<UseArrayField<string>,
   });
 }
 
-describe("[Integration] useArrayField.test.tsx", () => {
-  context("when the hook is rendered", () => {
+suite("[Integration] useArrayField.test.tsx", () => {
+  describe("when the hook is rendered", () => {
     it("returns the array items and helpers", () => {
       const { result } = renderWith("foo", "bar", "baz");
       const { current } = result;
@@ -89,7 +90,7 @@ describe("[Integration] useArrayField.test.tsx", () => {
   });
 
   describe(".insert", () => {
-    context("when the index in inbounds", () => {
+    describe("when the index in inbounds", () => {
       it("insters the item at the index", () => {
         const { result, rerender } = renderWith("foo", "baz");
 
@@ -103,7 +104,7 @@ describe("[Integration] useArrayField.test.tsx", () => {
       });
     });
 
-    context("when the index is greater than the array size", () => {
+    describe("when the index is greater than the array size", () => {
       it("insert the item at the end of the array", () => {
         const { result, rerender } = renderWith("foo", "bar");
 
@@ -117,7 +118,7 @@ describe("[Integration] useArrayField.test.tsx", () => {
       });
     });
 
-    context("when the index is negative", () => {
+    describe("when the index is negative", () => {
       it("treats the index as an offset", () => {
         const { result, rerender } = renderWith("foo", "baz");
 
@@ -133,7 +134,7 @@ describe("[Integration] useArrayField.test.tsx", () => {
   });
 
   describe(".keygen", () => {
-    context("when a key is not provided", () => {
+    describe("when a key is not provided", () => {
       it("returns a generated uuid", () => {
         const pattern = /[A-F0-9]{8}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{12}/i;
         const { result } = renderWith("foo", "bar");
@@ -147,7 +148,7 @@ describe("[Integration] useArrayField.test.tsx", () => {
       });
     });
 
-    context("when the key is provided", () => {
+    describe("when the key is provided", () => {
       it("prefers the key over the generated uuid", () => {
         const today = new Date();
         const { result } = renderWith("foo", "bar");
@@ -190,7 +191,7 @@ describe("[Integration] useArrayField.test.tsx", () => {
   });
 
   describe(".replace", () => {
-    context("when the index is inbounds", () => {
+    describe("when the index is inbounds", () => {
       it("replaces the item at the index", () => {
         const { result, rerender } = renderWith("foo", "bar", "baz");
 
@@ -204,7 +205,7 @@ describe("[Integration] useArrayField.test.tsx", () => {
       });
     });
 
-    context("when the index is greater than the array size", () => {
+    describe("when the index is greater than the array size", () => {
       it("insert the item at the end of the array", () => {
         const { result, rerender } = renderWith("foo", "bar", "baz");
 
@@ -218,7 +219,7 @@ describe("[Integration] useArrayField.test.tsx", () => {
       });
     });
 
-    context("when the index is negative", () => {
+    describe("when the index is negative", () => {
       it("treats the index as na offset", () => {
         const { result, rerender } = renderWith("foo", "bar", "baz");
 

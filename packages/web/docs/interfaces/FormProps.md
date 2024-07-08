@@ -110,7 +110,7 @@ node\_modules/@types/react/index.d.ts:2595
 
 ### aria-autocomplete?
 
-> `optional` **aria-autocomplete**: `"list"` \| `"none"` \| `"inline"` \| `"both"`
+> `optional` **aria-autocomplete**: `"inline"` \| `"none"` \| `"list"` \| `"both"`
 
 Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
 presented if they are made.
@@ -401,7 +401,7 @@ node\_modules/@types/react/index.d.ts:2664
 
 ### ~~aria-dropeffect?~~
 
-> `optional` **aria-dropeffect**: `"link"` \| `"none"` \| `"copy"` \| `"execute"` \| `"move"` \| `"popup"`
+> `optional` **aria-dropeffect**: `"none"` \| `"link"` \| `"copy"` \| `"execute"` \| `"move"` \| `"popup"`
 
 Indicates what functions can be performed when a dragged object is released on the drop target.
 
@@ -1143,7 +1143,7 @@ returns a React.js node.
 
 #### Defined in
 
-packages/core/dist/lib/Form.provider.d.ts:87
+packages/core/dist/lib/Form.provider.d.ts:88
 
 ***
 
@@ -1363,7 +1363,7 @@ node\_modules/@types/react/index.d.ts:2923
 
 ### inputMode?
 
-> `optional` **inputMode**: `"search"` \| `"text"` \| `"none"` \| `"tel"` \| `"url"` \| `"email"` \| `"numeric"` \| `"decimal"`
+> `optional` **inputMode**: `"none"` \| `"search"` \| `"text"` \| `"tel"` \| `"url"` \| `"email"` \| `"numeric"` \| `"decimal"`
 
 Hints at the type of data that might be entered by the user while editing the element or its contents
 
@@ -3513,7 +3513,7 @@ the validated values `T` of the form
 
 #### Defined in
 
-packages/core/dist/lib/Form.provider.d.ts:93
+packages/core/dist/lib/Form.provider.d.ts:94
 
 ***
 
@@ -4130,7 +4130,7 @@ tells the form and the hooks how to handle the validation.
 
 #### Defined in
 
-packages/core/dist/lib/Form.provider.d.ts:102
+packages/core/dist/lib/Form.provider.d.ts:103
 
 ***
 
@@ -4147,7 +4147,7 @@ the field values as well.
 
 #### Defined in
 
-packages/core/dist/lib/Form.provider.d.ts:107
+packages/core/dist/lib/Form.provider.d.ts:108
 
 ***
 

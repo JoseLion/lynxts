@@ -1,9 +1,10 @@
 import { expect } from "@assertive-ts/core";
 import { FormProvider } from "@lynxts/core";
-import { fireEvent, render, waitFor } from "@testing-library/react-native";
+import { fireEvent, render, userEvent, waitFor } from "@testing-library/react-native";
 import { type ReactElement, useCallback, useState } from "react";
 import { Button } from "react-native";
 import Sinon from "sinon";
+import { describe, it, suite } from "vitest";
 import { type ObjectSchema, object, string } from "yup";
 
 import { SubmitButton } from "../../../../src/lib/SubmitButton.component";
@@ -42,27 +43,31 @@ function TestForm({ onSubmit = Sinon.fake }: TestFormProps): ReactElement {
   );
 }
 
-describe("[Integration] TextField.component.test.tsx", () => {
-  context("when the text field changes", () => {
+suite("[Integration] TextField.component.test.tsx", () => {
+  describe("when the text field changes", () => {
     it("sets the new value in the form context", async () => {
-      const spySubmit = Sinon.spy<(values: Foo) => void>(() => undefined);
-      const { findByLabelText, getByDisplayValue, findByRole } = render(<TestForm onSubmit={spySubmit} />);
+      const submitSpy = Sinon.spy<(values: Foo) => void>(() => undefined);
+      const { findByLabelText, getByDisplayValue, findByRole } = render(<TestForm onSubmit={submitSpy} />);
 
       const nameField = await findByLabelText("Name: *");
 
-      await waitFor(() => fireEvent.changeText(nameField, "bar"));
+      await userEvent.type(nameField, "bar");
 
       await waitFor(() => getByDisplayValue("bar"));
 
       const submitButton = await findByRole("button", { name: "Submit!" });
 
-      await waitFor(() => fireEvent.press(submitButton));
+      await userEvent.press(submitButton);
 
-      Sinon.assert.calledOnceWithExactly(spySubmit, { name: "bar", other: "5" });
+      await waitFor(() => {
+        expect(submitSpy)
+          .toBeCalledOnce()
+          .toHaveArgs({ name: "bar", other: "5" });
+      });
     });
   });
 
-  context("when the field looses focus", () => {
+  describe("when the field looses focus", () => {
     it("sets the field as touched", async () => {
       const { findByLabelText, queryByText, getByText } = render(<TestForm />);
 
@@ -76,10 +81,10 @@ describe("[Integration] TextField.component.test.tsx", () => {
     });
   });
 
-  context("when the form context value changes", () => {
+  describe("when the form context value changes", () => {
     it("changes the text field value", async () => {
-      const spySubmit = Sinon.spy<(values: Foo) => void>(() => undefined);
-      const { queryByDisplayValue, findByRole, getByDisplayValue } = render(<TestForm onSubmit={spySubmit} />);
+      const submitSpy = Sinon.spy<(values: Foo) => void>(() => undefined);
+      const { queryByDisplayValue, findByRole, getByDisplayValue } = render(<TestForm onSubmit={submitSpy} />);
 
       await waitFor(() => {
         expect(queryByDisplayValue("foo")).toBeNull();
@@ -87,19 +92,23 @@ describe("[Integration] TextField.component.test.tsx", () => {
 
       const updateButton = await findByRole("button", { name: "Update!" });
 
-      await waitFor(() => fireEvent.press(updateButton));
+      await userEvent.press(updateButton);
 
       await waitFor(() => getByDisplayValue("foo"));
 
-      const submitButton = await findByRole("button", { name: "Submit!" });
+      const submit = await findByRole("button", { name: "Submit!" });
 
-      await waitFor(() => fireEvent.press(submitButton));
+      await userEvent.press(submit);
 
-      Sinon.assert.calledOnceWithExactly(spySubmit, { name: "foo", other: "10" });
+      await waitFor(() => {
+        expect(submitSpy)
+          .toBeCalledOnce()
+          .toHaveArgs({ name: "foo", other: "10" });
+      });
     });
   });
 
-  context("when the label prop is omitted", () => {
+  describe("when the label prop is omitted", () => {
     it("does not render a label on the field", async () => {
       const { getByPlaceholderText, queryByText } = render(
         <FormProvider<Foo> onSubmit={Sinon.fake} validation={schema}>
@@ -113,8 +122,8 @@ describe("[Integration] TextField.component.test.tsx", () => {
     });
   });
 
-  context("when the requiredText prop is changed", () => {
-    context("and the required text is not empty", () => {
+  describe("when the requiredText prop is changed", () => {
+    describe("and the required text is not empty", () => {
       it("uses the text instead of the asterisk", async () => {
         const { getByLabelText } = render(
           <FormProvider<Foo> onSubmit={Sinon.fake} validation={schema}>
@@ -130,7 +139,7 @@ describe("[Integration] TextField.component.test.tsx", () => {
       });
     });
 
-    context("and the required text is empty", () => {
+    describe("and the required text is empty", () => {
       it("does not show the required text", async () => {
         const { getByLabelText } = render(
           <FormProvider<Foo> onSubmit={Sinon.fake} validation={schema}>
@@ -147,24 +156,28 @@ describe("[Integration] TextField.component.test.tsx", () => {
     });
   });
 
-  context("when the keyboard submit is pressed", () => {
+  describe("when the keyboard submit is pressed", () => {
     it("submits the form", async () => {
-      const spySubmit = Sinon.spy<(values: Foo) => void>(() => undefined);
+      const submitSpy = Sinon.spy<(values: Foo) => void>(() => undefined);
       const { findByLabelText, getByDisplayValue } = render(
-        <FormProvider<Foo> onSubmit={spySubmit} validation={schema}>
+        <FormProvider<Foo> onSubmit={submitSpy} validation={schema}>
           <TextField name="name" label="Name:" returnKeyType="done" />
         </FormProvider>,
       );
 
       const textField = await findByLabelText("Name: *");
 
-      await waitFor(() => fireEvent.changeText(textField, "foo"));
+      await userEvent.type(textField, "foo");
 
       await waitFor(() => getByDisplayValue("foo"));
 
       await waitFor(() => fireEvent(textField, "submitEditing"));
 
-      Sinon.assert.calledOnceWithExactly(spySubmit, { name: "foo" });
+      await waitFor(() => {
+        expect(submitSpy)
+          .toBeCalledOnce()
+          .toHaveArgs({ name: "foo" });
+      });
     });
   });
 });
