@@ -20,7 +20,6 @@
   "source": "./src/main.ts",
   "main": "./dist/main.cjs",
   "module": "./dist/main.js",
-  "unpkg": "./dist/main.umd.cjs",
   "types": "./dist/main.d.ts",
   "exports": {
     ".": {
@@ -41,11 +40,11 @@
   },
   "scripts": {
     "build": "vite build",
-    "check": "yarn compile && yarn test",
+    "check": "yarn compile && yarn test --run",
     "compile": "tsc -p tsconfig.json",
     "docs": "typedoc",
     "release": "semantic-release",
-    "test": "NODE_ENV=test mocha",
+    "test": "vitest",
     "test:silent": "DEBUG_PRINT_LIMIT=0 yarn test",
     "test:verbose": "DEBUG_PRINT_LIMIT=1000000 yarn test"
   },
@@ -55,17 +54,15 @@
   },
   "devDependencies": {
     "@assertive-ts/core": "^2.1.0",
+    "@assertive-ts/sinon": "^1.0.0",
     "@lynxts/core": "workspace:^",
     "@testing-library/dom": "^10.3.1",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
-    "@types/mocha": "^10.0.7",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/sinon": "^17.0.3",
-    "jsdom": "^24.1.0",
-    "jsdom-global": "^3.0.2",
-    "mocha": "^10.6.0",
+    "happy-dom": "^14.12.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "semantic-release": "^24.0.0",
@@ -75,6 +72,7 @@
     "typescript": "^5.5.3",
     "vite": "^5.3.3",
     "vite-plugin-dts": "^3.9.1",
+    "vitest": "^1.6.0",
     "yup": "^1.4.0"
   },
   "peerDependencies": {

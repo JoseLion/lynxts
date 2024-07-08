@@ -1,6 +1,8 @@
+import { expect } from "@assertive-ts/core";
 import { render, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Sinon from "sinon";
+import { describe, it, suite } from "vitest";
 import { type ObjectSchema, number, object, string } from "yup";
 
 import { Form } from "../../../src/lib/Form.component";
@@ -15,14 +17,14 @@ const schema: ObjectSchema<Foo> = object({
   other: number().required(),
 });
 
-describe("[Integration] Form.component.test.tsx", () => {
-  context("when the From component is rendered", () => {
+suite("[Integration] Form.component.test.tsx", () => {
+  describe("when the From component is rendered", () => {
     it("renders a FormProvider children wrapped around a <form> element", async () => {
-      const spySubmit = Sinon.spy<(values: Foo) => void>(() => undefined);
+      const submitSpy = Sinon.spy<(values: Foo) => void>(() => undefined);
       const { getByText, findByRole } = render(
         <Form
           aria-label="foo-form"
-          onSubmit={spySubmit}
+          onSubmit={submitSpy}
           validation={schema}
           values={{ name: "foo", other: 5 }}
         >
@@ -47,7 +49,11 @@ describe("[Integration] Form.component.test.tsx", () => {
 
       await userEvent.click(submitButton);
 
-      Sinon.assert.calledOnceWithExactly(spySubmit, { name: "foo", other: 5 });
+      await waitFor(() => {
+        expect(submitSpy)
+          .toBeCalledOnce()
+          .toHaveArgs({ name: "foo", other: 5 });
+      });
     });
   });
 });

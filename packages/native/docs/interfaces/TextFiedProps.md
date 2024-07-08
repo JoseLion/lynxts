@@ -1108,7 +1108,7 @@ node\_modules/react-native/Libraries/Components/View/ViewPropTypes.d.ts:68
 
 ### keyboardAppearance?
 
-> `optional` **keyboardAppearance**: `"light"` \| `"default"` \| `"dark"`
+> `optional` **keyboardAppearance**: `"default"` \| `"light"` \| `"dark"`
 
 Determines the color of the keyboard.
 
@@ -2983,7 +2983,7 @@ node\_modules/react-native/Libraries/Components/TextInput/TextInput.d.ts:880
 
 ### textAlignVertical?
 
-> `optional` **textAlignVertical**: `"center"` \| `"auto"` \| `"top"` \| `"bottom"`
+> `optional` **textAlignVertical**: `"auto"` \| `"center"` \| `"top"` \| `"bottom"`
 
 Vertically align text when `multiline` is set to true
 

@@ -6,10 +6,16 @@ export default defineConfig({
     lib: {
       entry: "./src/main.ts",
       fileName: "main",
-      formats: ["cjs", "es", "umd"],
-      name: "LynxtsCore",
+      formats: ["cjs", "es"],
+    },
+    rollupOptions: {
+      output: {
+        exports: "named",
+        preserveModules: true,
+      },
     },
     sourcemap: true,
+    ssr: true,
   },
   plugins: [
     dts({

@@ -3,6 +3,7 @@ import { fireEvent, render, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { type ReactElement, useCallback, useState } from "react";
 import Sinon from "sinon";
+import { describe, it, suite } from "vitest";
 import { type ObjectSchema, object, string } from "yup";
 
 import { Form } from "../../../../src/lib/Form.component";
@@ -42,11 +43,11 @@ function TestForm({ onSubmit = Sinon.fake }: TestFormProps): ReactElement {
   );
 }
 
-describe("[Integration] Input.component.test.tsx", () => {
-  context("when the input changes", () => {
+suite("[Integration] Input.component.test.tsx", () => {
+  describe("when the input changes", () => {
     it("sets the new value in the form context", async () => {
-      const spySubmit = Sinon.spy<(values: Foo) => void>(() => undefined);
-      const { findByRole } = render(<TestForm onSubmit={spySubmit} />);
+      const submitSpy = Sinon.spy<(values: Foo) => void>(() => undefined);
+      const { findByRole } = render(<TestForm onSubmit={submitSpy} />);
 
       const nameInput = await findByRole("textbox", { name: "Name: *" });
 
@@ -56,11 +57,15 @@ describe("[Integration] Input.component.test.tsx", () => {
 
       await userEvent.click(submitButton);
 
-      Sinon.assert.calledOnceWithExactly(spySubmit, { name: "foo" });
+      await waitFor(() => {
+        expect(submitSpy)
+          .toBeCalledOnce()
+          .toHaveArgs({ name: "foo" });
+      });
     });
   });
 
-  context("when the field looses focus", () => {
+  describe("when the field looses focus", () => {
     it("sets the field as touched", async () => {
       const { findByRole, queryByText, getByText } = render(<TestForm />);
 
@@ -74,7 +79,7 @@ describe("[Integration] Input.component.test.tsx", () => {
     });
   });
 
-  context("when the form context value changes", () => {
+  describe("when the form context value changes", () => {
     it("changes the input value", async () => {
       const { queryByDisplayValue, findByRole, getByDisplayValue } = render(<TestForm />);
 
@@ -94,7 +99,7 @@ describe("[Integration] Input.component.test.tsx", () => {
     });
   });
 
-  context("when the label prop is omitted", () => {
+  describe("when the label prop is omitted", () => {
     it("does not render a label on the field", async () => {
       const { getByRole, queryByRole } = render(
         <Form<Foo> onSubmit={Sinon.fake} validation={schema}>
@@ -108,8 +113,8 @@ describe("[Integration] Input.component.test.tsx", () => {
     });
   });
 
-  context("when the requiredText prop is changed", () => {
-    context("and the required text is not empty", () => {
+  describe("when the requiredText prop is changed", () => {
+    describe("and the required text is not empty", () => {
       it("uses the text instead of the asterisk", async () => {
         const { getByRole } = render(
           <Form<Foo> onSubmit={Sinon.fake} validation={schema}>
@@ -125,7 +130,7 @@ describe("[Integration] Input.component.test.tsx", () => {
       });
     });
 
-    context("and the required text is empty", () => {
+    describe("and the required text is empty", () => {
       it("does not show the required text", async () => {
         const { getByRole } = render(
           <Form<Foo> onSubmit={Sinon.fake} validation={schema}>

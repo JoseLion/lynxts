@@ -6,13 +6,16 @@ export default defineConfig({
     lib: {
       entry: "./src/main.ts",
       fileName: "main",
-      formats: ["cjs", "es", "umd"],
-      name: "LynxtsNative",
+      formats: ["cjs", "es"],
     },
     rollupOptions: {
-      external: ["react-native", "@react-native"],
+      output: {
+        exports: "named",
+        preserveModules: true,
+      },
     },
     sourcemap: true,
+    ssr: true,
   },
   plugins: [
     dts({

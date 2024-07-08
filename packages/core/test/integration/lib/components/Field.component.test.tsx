@@ -1,5 +1,6 @@
 import { render, waitFor } from "@testing-library/react";
 import Sinon from "sinon";
+import { describe, it, suite } from "vitest";
 import { type ObjectSchema, boolean, object, string } from "yup";
 
 import { FormProvider } from "../../../../src/lib/Form.provider";
@@ -17,8 +18,8 @@ const schema: ObjectSchema<Foo> = object({
   other: boolean().required(),
 });
 
-describe("[Integration] Field.component.test.tsx", () => {
-  context("when the field is rendered", () => {
+suite("[Integration] Field.component.test.tsx", () => {
+  describe("when the field is rendered", () => {
     it("renders the result of the function in the children", async () => {
       const { getByDisplayValue } = render(
         <FormProvider<Foo>

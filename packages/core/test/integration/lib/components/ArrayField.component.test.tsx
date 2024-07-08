@@ -1,5 +1,6 @@
 import { render, waitFor } from "@testing-library/react";
 import Sinon from "sinon";
+import { describe, it, suite } from "vitest";
 import { type ObjectSchema, array, number, object, string } from "yup";
 
 import { FormProvider } from "../../../../src/lib/Form.provider";
@@ -17,8 +18,8 @@ const schema: ObjectSchema<Foo> = object({
   name: string().required(),
 });
 
-describe("[Integration] ArrayField.component.test.tsx", () => {
-  context("when the array field is rendered", () => {
+suite("[Integration] ArrayField.component.test.tsx", () => {
+  describe("when the array field is rendered", () => {
     it("renders the result of the function in the children", async () => {
       const { getByRole } = render(
         <FormProvider<Foo>

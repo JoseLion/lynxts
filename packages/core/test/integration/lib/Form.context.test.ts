@@ -1,11 +1,12 @@
 import { expect } from "@assertive-ts/core";
 import { renderHook } from "@testing-library/react";
+import { describe, it, suite } from "vitest";
 
 import { useForm, useFormSelector } from "../../../src/lib/Form.context";
 
-describe("[Integration] Form.context.test.ts", () => {
+suite("[Integration] Form.context.test.ts", () => {
   describe(".useForm", () => {
-    context("when the hook is rendered", () => {
+    describe("when the hook is rendered", () => {
       it("returns the complete Form context", () => {
         const { result } = renderHook(() => useForm());
         const { current } = result;
@@ -24,7 +25,7 @@ describe("[Integration] Form.context.test.ts", () => {
   });
 
   describe(".useFormSelector", () => {
-    context("when the hook is rendered", () => {
+    describe("when the hook is rendered", () => {
       it("returns only the selected value from the Form context", () => {
         const { result } = renderHook(() => useFormSelector(ctxt => ctxt.values));
 
