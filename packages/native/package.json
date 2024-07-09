@@ -2,7 +2,7 @@
   "name": "@lynxts/native",
   "version": "0.0.0",
   "description": "Lynx.ts native package",
-  "repository": "https://github.com/JoseLion/lynxts.git",
+  "repository": "git@github.com:JoseLion/lynxts.git",
   "homepage": "https://joselion.gitbook.io/lynx.ts/",
   "author": "Jose Luis Leon <joseluis5000l@gmail.com>",
   "license": "MIT",

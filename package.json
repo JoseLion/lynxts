@@ -2,7 +2,7 @@
   "name": "lynxts",
   "version": "0.0.0",
   "description": "The Lynx.ts workspace",
-  "repository": "https://github.com/JoseLion/lynxts.git",
+  "repository": "git@github.com:JoseLion/lynxts.git",
   "homepage": "https://joselion.gitbook.io/lynx.ts/",
   "author": "Jose Luis Leon <joseluis5000l@gmail.com>",
   "type": "module",
