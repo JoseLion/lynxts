@@ -8970,7 +8970,6 @@ __metadata:
     eslint-plugin-react: "npm:^7.34.3"
     eslint-plugin-sonarjs: "npm:^1.0.3"
     globals: "npm:^15.8.0"
-    semantic-release: "npm:^24.0.0"
     tslib: "npm:^2.6.3"
     turbo: "npm:^2.0.6"
     typedoc: "npm:^0.26.3"
