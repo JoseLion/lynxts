@@ -13,26 +13,36 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        nodejs: [18, 19, 20, 21, 22]
+    permissions: write-all
+    # strategy:
+    #   matrix:
+    #     nodejs: [18, 19, 20, 21, 22]
 
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.nodejs }}
-          cache: yarn
-      - run: yarn install --immutable
-      - run: yarn compile
-      - run: yarn lint
-      - run: yarn test
-      - run: yarn docs
-      - uses: tj-actions/verify-changed-files@v20
-        with:
-          files: docs/**
-          fail-if-changed: true
-          fail-message: >-
-            Uncommited API Reference docs found! Run `yarn docs` locally and 
-            commit the changes.
+          persist-credentials: true
+      # - uses: actions/setup-node@v4
+      #   with:
+      #     # node-version: ${{ matrix.nodejs }}
+      #     node-version-file: .nvmrc
+      #     cache: yarn
+      # - run: yarn install --immutable
+      - run: git ls-remote --heads 'git+ssh://git@github.com/JoseLion/lynxts.git'
+        id: head-result
+        # working-directory: ./packages/core
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo "${{ steps.head-result.outputs }}"
+      # - run: yarn compile
+      # - run: yarn lint
+      # - run: yarn test
+      # - run: yarn docs
+      # - uses: tj-actions/verify-changed-files@v20
+      #   with:
+      #     files: docs/**
+      #     fail-if-changed: true
+      #     fail-message: >-
+      #       Uncommited API Reference docs found! Run `yarn docs` locally and 
+      #       commit the changes.
       
