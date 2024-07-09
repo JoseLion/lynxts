@@ -16,7 +16,7 @@
   "packageManager": "yarn@4.3.1",
   "scripts": {
     "build": "turbo build",
-    "check": "yarn lint && turbo check",
+    "check": "turbo check && yarn lint",
     "compile": "turbo compile",
     "docs": "turbo docs",
     "lint": "eslint .",
@@ -48,6 +48,6 @@
     "typedoc-plugin-markdown": "^4.1.2",
     "typedoc-plugin-merge-modules": "^6.0.0",
     "typescript": "^5.5.3",
-    "typescript-eslint": "^7.15.0"
+    "typescript-eslint": "^7.16.0"
   }
 }
