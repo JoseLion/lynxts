@@ -1,5 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultBase": "main",
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"],
@@ -26,8 +27,8 @@
     },
     "test": {
       "dependsOn": ["^build", "^test"],
+      "outputs": ["{projectRoot}/node_modules/.vite/vitest/results.json"],
       "cache": true
     }
-  },
-  "defaultBase": "main"
+  }
 }
