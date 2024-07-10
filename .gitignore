@@ -1,5 +1,6 @@
-# Turborepo
-.turbo/
+# Nx
+.nx/cache
+.nx/workspace-data
 
 # Node.js
 node_modules/

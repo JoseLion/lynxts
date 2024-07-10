@@ -1,0 +1,33 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist"],
+      "cache": true
+    },
+    "check": {
+      "dependsOn": ["^build", "^check"],
+      "cache": false
+    },
+    "compile": {
+      "dependsOn": ["^build", "^compile"],
+      "outputs": ["{projectRoot}/build"],
+      "cache": true
+    },
+    "docs": {
+      "dependsOn": ["^build", "^docs"],
+      "outputs": ["{projectRoot}/docs"],
+      "cache": true
+    },
+    "release": {
+      "dependsOn": ["^build", "build", "^release"],
+      "cache": false
+    },
+    "test": {
+      "dependsOn": ["^build", "^test"],
+      "cache": true
+    }
+  },
+  "defaultBase": "main"
+}
